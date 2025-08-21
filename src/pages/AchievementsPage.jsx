@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import React from 'react';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
@@ -146,7 +147,7 @@ const AchievementsPage = () => {
                 <div className="flex items-start space-x-3">
                   <SafeIcon icon={FiCheckCircle} className="w-5 h-5 text-medical-blue mt-1 flex-shrink-0" />
                   <p className="text-gray-600">Stereotactic Radiosurgery (SRS) for maximum precision</p>
-                </div>
+            </div>
                 <div className="flex items-start space-x-3">
                   <SafeIcon icon={FiCheckCircle} className="w-5 h-5 text-medical-blue mt-1 flex-shrink-0" />
                   <p className="text-gray-600">Advanced IMRT and hypofractionated radiotherapy protocols</p>
