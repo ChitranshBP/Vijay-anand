@@ -16,110 +16,115 @@ const containerVariants = {
 
 // Attach your images in the 'image' field for each award
 const awards = [
-{
-  title: "Clinical Pioneer Award",
-  date: "5th February 2025",
-  event: "Apollo Hospitals, Chennai",
-  image: "/awards/clinical-pioneer-apollo-2025.jpg", // supply correct path
-  description: `Deeply humbled and honoured to receive the Clinical Pioneer Award on Apollo Founder's Day. A heartfelt thanks to our Chairman Sir and the Reddy family for recognizing my patient care and Apollo mission dedication.`
-},
-{
-  title: "ISOO 2024 Oration",
-  date: "6th December 2024",
-  event: "International Society of Ocular Oncology, Goa",
-  image: "/awards/isoo-2024.jpg",
-  description: `Awarded the prestigious ISOO 2024 Oration for contributions to ocular oncology.`
-},
-{
-  title: "AROICON 2024 Gold Medal – Best Scientific Paper",
-  date: "1st December 2024",
-  event: "AROICON 2024, Mangaluru, INDIA",
-  image: "/awards/aroicon-gold-2024.jpg",
-  description: `For a study on SBRT Prostate for Non Metastatic Prostate Cancer – focus on acute toxicities & QOL.`
-},
-{
-  title: "AROICON 2022 Gold Medal – Best Scientific Paper",
-  date: "4th December 2022",
-  event: "AROICON 2022, New Delhi, INDIA",
-  image: "/awards/aroicon-gold-2022.jpg",
-  description: `For feasibility study on extreme hypofractionation in post operative breast cancer.`
-},
-{
-  title: "Lions Club International Excellence Award",
-  date: "11th August 2019",
-  event: "Lions Club International",
-  image: "/awards/lions-club-2019.jpg",
-  description: `Awarded for extraordinary service and contribution to the field of Oncology.`
-},
-{
-  title: "BOA Gold Medal",
-  date: "25th August 2018",
-  event: "Bombay Ophthalmologists Association – FOCUS 2018, Mumbai",
-  image: "/awards/boa-gold-2018.jpg",
-  description: `For exemplary work at the FOCUS conference.`
-},
-{
-  title: "AOS Achievement Award",
-  date: "January 2018",
-  event: "American Academy of Ophthalmology Society, CA, USA",
-  image: "/awards/aos-achievement-2018.jpg",
-  description: `Prestigious award for long-term contributions to ophthalmic science.`
-},
-{
-  title: "Legend in the Field of Oncology",
-  date: "28th Feb 2017",
-  event: "Times Healthcare Achievers Awards, Hyderabad",
-  image: "/awards/times-legend-2017.jpg",
-  description: `Recognized as “The Legend in the Field of Oncology” at the Times Healthcare Achievers Awards.`
-},
-// add all other awards similarly...
-{
-  title: "AROICON – Best Scientific Paper & Poster Awards",
-  date: "2009, 2015, 2014, 1996",
-  event: "AROICON Annual Conferences, India",
-  image: "/awards/aroicon-best-paper.jpg",
-  description: `Multiple best paper and best poster awards for pathbreaking clinical studies and innovations.`
-},
-{
-  title: "American Academy of Ophthalmology – Best Poster Award",
-  date: "2008",
-  event: "AAO, Atlanta, GA, USA",
-  image: "/awards/aao-best-poster-2008.jpg",
-  description: `For outstanding scientific poster presentations.`
-},
-{
-  title: "Young Investigators Award",
-  date: "2001",
-  event: "Eli Lilly & Company, USA, New Delhi",
-  image: "/awards/young-investigators-2001.jpg",
-  description: "Recognized for early-career innovation in cancer research."
-},
-{
-  title: "International Cancer Research Technology Transfer Award",
-  date: "1998, 1992",
-  event: "UICC, Geneva, Switzerland",
-  image: "/awards/uicc-icrett-1998.jpg",
-  description: `Recognized for significant contributions to international cancer research technology transfer.`
-},
-{
-  title: "Young Scientist Award",
-  date: "1996",
-  event: "Indo-American Cancer Congress, New York, USA",
-  image: "/awards/young-scientist-indiams-1996.jpg",
-  description: `Young Scientist Award for trailblazing research, with Dr. Kalluri Subrahmanyam & Dr. Chitti R. Moorthy.`
-},
-{
-  title: "Nargis Dutt Memorial Foundation Award",
-  date: "1995",
-  event: "Nargis Dutt Memorial Foundation, New York, USA",
-  image: "/awards/nargis-dutt-1995.jpg",
-  description: `For service and research in oncology, bestowed by Dr. Dattetreyudu Nori.`
-}
-// ...continue for all awards
+  {
+    title: "Clinical Pioneer Award",
+    date: "5th February 2025",
+    event: "Apollo Hospitals, Chennai",
+    image: "assets/awards/ISOO-2024-Oration.png",
+    description: `Deeply humbled and honoured to receive the Clinical Pioneer Award on Apollo Founder's Day. A heartfelt thanks to our Chairman Sir and the Reddy family for recognizing my patient care and Apollo mission dedication.`
+  },
+  {
+    title: "ISOO 2024 Oration",
+    date: "6th December 2024",
+    event: "International Society of Ocular Oncology, Goa",
+    image: "assets/awards/AROICON-2022-Gold-Medal – Best-Scientific-Paper.png",
+    description: `Awarded the prestigious ISOO 2024 Oration for contributions to ocular oncology.`
+  },
+  {
+    title: "AROICON 2024 Gold Medal – Best Scientific Paper",
+    date: "1st December 2024",
+    event: "AROICON 2024, Mangaluru, INDIA",
+    image: "assets/awards/AROICON-2024-Gold-Medal – Best-Scientific-Paper.png",
+    description: `For a study on SBRT Prostate for Non Metastatic Prostate Cancer – focus on acute toxicities & QOL.`
+  },
+  {
+    title: "AROICON 2022 Gold Medal – Best Scientific Paper",
+    date: "4th December 2022",
+    event: "AROICON 2022, New Delhi, INDIA",
+    image: "assets/awards/AROICON-2022-Gold-Medal – Best-Scientific-Paper.png",
+    description: `For feasibility study on extreme hypofractionation in post operative breast cancer.`
+  },
+  {
+    title: "Lions Club International Excellence Award",
+    date: "11th August 2019",
+    event: "Lions Club International",
+    image: "assets/awards/Lions-Club-International-Excellence-Award.png",
+    description: `Awarded for extraordinary service and contribution to the field of Oncology.`
+  },
+  {
+    title: "BOA Gold Medal",
+    date: "25th August 2018",
+    event: "Bombay Ophthalmologists Association – FOCUS 2018, Mumbai",
+    image: "assets/awards/BOA-Gold-Medal.png",
+    description: `For exemplary work at the FOCUS conference.`
+  },
+  {
+    title: "AOS Achievement Award",
+    date: "January 2018",
+    event: "American Academy of Ophthalmology Society, CA, USA",
+    image: "assets/awards/AOS-Achievement-Award.png",
+    description: `Prestigious award for long-term contributions to ophthalmic science.`
+  },
+  {
+    title: "Legend in the Field of Oncology",
+    date: "28th Feb 2017",
+    event: "Times Healthcare Achievers Awards, Hyderabad",
+    image: "assets/awards/American-Academy-of-Ophthalmology – Best-Poster-Award.png",
+    description: `Recognized as “The Legend in the Field of Oncology” at the Times Healthcare Achievers Awards.`
+  },
+  {
+    title: "AROICON – Best Scientific Paper Awards",
+    date: "2009, 2015, 2014, 1996",
+    event: "AROICON Annual Conferences, India",
+    image: "assets/awards/AROICON – Best-Scientific-Paper & Poster-Awards.png",
+    description: `Multiple best paper and best poster awards for pathbreaking clinical studies and innovations.`
+  },
+    {
+    title: "AROICON – Best Poster Award",
+    date: "2009",
+    event: "AROICON Annual Conferences, India",
+    image: "assets/awards/Young-Investigators-Award.png",
+    description: `Histopathology of Retinoblastoma after primary Chemotherapy `
+  },
+  {
+    title: "American Academy of Ophthalmology – Best Poster Award",
+    date: "2008",
+    event: "AAO, Atlanta, GA, USA",
+    image: "assets/awards/American-Academy-of-Ophthalmology – Best-Poster-Award.png",
+    description: `For outstanding scientific poster presentations.`
+  },
+  {
+    title: "Young Investigators Award",
+    date: "2001",
+    event: "Eli Lilly & Company, USA, New Delhi",
+    image: "assets/awards/Young-Investigators-Award.png",
+    description: "Recognized for early-career innovation in cancer research."
+  },
+  {
+    title: "International Cancer Research Technology Transfer Award",
+    date: "1998, 1992",
+    event: "UICC, Geneva, Switzerland",
+    image: "assets/awards/International-Cancer-Research-Technology-Transfer-Award.png",
+    description: `Recognized for significant contributions to international cancer research technology transfer.`
+  },
+  {
+    title: "Young Scientist Award",
+    date: "1996",
+    event: "Indo-American Cancer Congress, New York, USA",
+    image: "assets/awards/Young-Scientist-Award.png",
+    description: `Young Scientist Award for trailblazing research, with Dr. Kalluri Subrahmanyam & Dr. Chitti R. Moorthy.`
+  },
+  {
+    title: "Nargis Dutt Memorial Foundation Award",
+    date: "1995",
+    event: "Nargis Dutt Memorial Foundation, New York, USA",
+    image: "assets/awards/Nargis-Dutt-Memorial-Foundation-Award.png",
+    description: `For service and research in oncology, bestowed by Dr. Dattetreyudu Nori.`
+  }
 ];
 
+
 const felicitations = [
-"Felicitated at Indian educational institutes and by the Indian Medical Association in Hyderabad, Mahbubnagar, Karimnagar, Nizamabad, Vizag, and Warangal for contributions to oncology.",
 "On Doctor’s Day 2013, received special felicitation from Apollo Hospitals, Hyderabad, for extensive social service for poor and needy cancer patients via CURE Foundation."];
 
 
@@ -188,23 +193,37 @@ const AwardsPage = () => {
         </div>
       </section>
       {/* Felicitations */}
-      <section ref={felicitationRef} className="py-12 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={felicitationInView ? "visible" : "hidden"}
-            className="text-center">
+   <section ref={felicitationRef} className="py-12 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate={felicitationInView ? "visible" : "hidden"}
+      className="text-center">
 
-            <h2 className="text-2xl md:text-3xl font-bold text-medical-dark mb-4">Felicitations & Social Service</h2>
-            <div className="text-lg text-gray-700 space-y-4">
-              {felicitations.map((item, i) =>
-              <p key={i} className="mb-2">{item}</p>
-              )}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <h2 className="text-2xl md:text-3xl font-bold text-medical-dark mb-4">
+        Felicitations & Social Service
+      </h2>
+
+      <p className="mt-5 mb-10 text-gray-700">
+            Dr. Reddy’s work has been spread across urban, semi urban and rural areas. He has been felicitated at various educational institutes, organizations and at Indian Medical Association at Hyderabad, Mahbubnagar, Karimnagar, Nizamabad, Vizag and Warangal.
+      </p>
+
+      {/* Static Image */}
+      <img 
+        src="assets/awards/BOA-Gold-Medal.png" 
+        alt="Felicitations" 
+        className="mx-auto mb-6 rounded-2xl shadow-md w-full max-w-md"
+      />
+
+      <div className="text-lg text-gray-700 space-y-4 max-w-3xl mx-auto">
+        {felicitations.map((item, i) => (
+          <p key={i} className="mb-2">{item}</p>
+        ))}
+      </div>
+    </motion.div>
+  </div>
+</section>
       <Footer />
     </div>);
 

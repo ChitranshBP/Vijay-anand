@@ -87,45 +87,67 @@ const AchievementsPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section ref={heroRef} className="pt-32 pb-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={heroInView ? "visible" : "hidden"}
-            className="text-center">
+ <section ref={heroRef} className="pt-32 pb-16 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      {/* LEFT SIDE - TEXT */}
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate={heroInView ? "visible" : "hidden"}
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={heroInView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="inline-flex items-center bg-medical-blue/10 px-6 py-3 rounded-full mb-8"
+        >
+          <SafeIcon icon={FiAward} className="w-5 h-5 text-medical-blue mr-2" />
+          <span className="text-medical-blue font-semibold">
+            Best Radiation Oncologist in India
+          </span>
+        </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={heroInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-flex items-center bg-medical-blue/10 px-6 py-3 rounded-full mb-8">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={heroInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-medical-dark mb-6 leading-tight"
+        >
+          Dr. Vijay Anand Reddy
+          <span className="block text-medical-blue mt-2">
+            India’s Most Trusted Cancer Specialist
+          </span>
+        </motion.h1>
 
-              <SafeIcon icon={FiAward} className="w-5 h-5 text-medical-blue mr-2" />
-              <span className="text-medical-blue font-semibold">
-                Best Radiation Oncologist in India
-              </span>
-            </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-medical-dark mb-6 leading-tight">
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={heroInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-xl text-gray-600 mb-12 max-w-3xl leading-relaxed"
+        >
+      When patients search for the best oncologist in India, Dr. Vijay Anand Reddy’s name stands out. A pioneer in radiation oncology, he has decades of experience, introduced advanced therapies, and is known for blending technology with compassion to deliver exceptional cancer care.
+        </motion.p>
+      </motion.div>
 
-              Dr. Vijay Anand Reddy
-              <span className="block text-medical-blue mt-2">India’s Most Trusted Cancer Specialist</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={heroInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+      {/* RIGHT SIDE - IMAGE */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={heroInView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="flex justify-center"
+      >
+        <img
+          src="assets\vijay-snand-hero.png" // <-- update with correct image path
+          alt="Dr. Vijay Anand Reddy"
+          className="rounded-2xl shadow-lg max-h-[500px] object-cover"
+        />
+      </motion.div>
+    </div>
+  </div>
+</section>
 
-              When patients search for the <strong>Best oncologist in India</strong>, one name that consistently stands out is Dr. Vijay Anand Reddy. With decades of experience, cutting-edge clinical acumen, and a compassionate approach, he’s not only regarded as the Best Radiation Oncologist in India but also a pioneer who has transformed cancer treatment across the country. He’s widely respected for introducing advanced radiation therapy methods that have significantly improved patient outcomes, and for combining technology with empathy for unmatched care.
-            </motion.p>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Innovation-Driven Cancer Care */}
       <section ref={innovationRef} className="py-16 bg-gray-50">
