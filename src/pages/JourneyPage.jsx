@@ -46,56 +46,56 @@ const fellowships = [
     location: "Klinikum Frankfurt (Oder) GmbH, Frankfurt (Oder), Germany",
     supervisor: "Dr. Reinhard E. Wurm",
     month: "March 2010",
-    image: "/fellowships/frankfurt-germany.jpg"
+    image: "assets/journey/Stereotactic-Radiosurgery.png"
   },
   {
     title: "Ocular Oncology Fellowship",
     location: "Will’s Eye Hospital, Philadelphia, USA",
     supervisor: "Dr. Mr & Mrs. Shields",
     month: "May – June 2003",
-    image: "/fellowships/wills-philadelphia.jpg"
+    image: "assets/journey/Ocular-Oncology.png"
   },
   {
     title: "Pediatric Oncology Fellowship",
     location: "Children’s Hospital of Philadelphia, USA",
     supervisor: "Dr. Anna Meadows",
     month: "May – June 2003",
-    image: "/fellowships/childrens-philly.jpg"
+    image: "assets/journey/Pediatric-Oncology.png"
   },
   {
     title: "Head & Neck Oncology Fellowship",
     location: "Peter McCallum Cancer Institute, Melbourne, Australia",
     supervisor: "Dr. Lester Peters",
     month: "July – August 1998",
-    image: "/fellowships/peter-maccallum.jpg"
+    image: "assets/journey/Head & Neck-Oncology.png"
   },
   {
     title: "Hyperthermia Fellowship",
     location: "New York Medical College, Valhalla, NY, USA",
     supervisor: "Dr. Chitty R. Moorthy",
     month: "1995",
-    image: "/fellowships/ny-medical-college.jpg"
+    image: "assets/journey/Hyperthermia-Fellowship.png"
   },
   {
     title: "Nargis Dutt Memorial Cancer Foundation Fellowship",
     location: "New York Hospital, Medical Centre of Queens, NY, USA",
     supervisor: "Dr. Dattetreyudu Nori",
     month: "May – July 1995",
-    image: "/fellowships/ny-hospital-queens.jpg"
+    image: "assets/journey/The-Nargis-Dutt-Memorial.png"
   },
   {
     title: "Head & Neck Brachytherapy Observership",
     location: "Memorial Sloan Kettering Cancer Centre, New York, USA",
     supervisor: "Dr. Louise Harrison",
     month: "June 1995",
-    image: "/fellowships/mskcc-ny.jpg"
+    image: "assets/journey/Head & Neck-Brachytherapy.png"
   },
   {
     title: "Clinical Oncology Fellowship",
     location: "Meyerstein Institute of Clinical Oncology, Middlesex Hospital, London",
     supervisor: "—",
     month: "July – Sept 1992",
-    image: "/fellowships/meyerstein-london.jpg"
+    image: "assets/journey/The-Clinical-Oncology.png"
   },
   // No images for the following
   {
@@ -123,6 +123,7 @@ const fellowships = [
     month: "March 1990"
   }
 ];
+
 
 const JourneyPage = () => {
   const [heroRef, heroInView] = useInView({ threshold: 0.1, triggerOnce: true });
@@ -153,42 +154,65 @@ const JourneyPage = () => {
       </section>
 
       {/* Timeline of Early Life, Medical Education, Oncology Calling */}
-   <section ref={timelineRef} className="py-12 bg-white">
-  <div className="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
-    {/* Image side for large screens */}
+<section ref={timelineRef} className="py-16 bg-gradient-to-b from-white to-gray-50">
+  <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    
+    {/* Left Image */}
     <motion.div
-      className="w-full lg:w-1/2 rounded-lg overflow-hidden shadow-lg"
+      className="relative w-full h-full rounded-2xl overflow-hidden shadow-xl"
       variants={containerVariants}
       initial="hidden"
       animate={timelineInView ? "visible" : "hidden"}
     >
       <img
-        src="/images/journey-timeline.jpg"  // Replace with actual image path
+        src="assets/journey/Early-Life.png"
         alt="Dr. Vijay Anand Reddy's Journey"
-        className="object-cover w-full h-72 lg:h-full"
+        className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
         loading="lazy"
       />
+      {/* Decorative gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
     </motion.div>
 
-    {/* Timeline text content */}
+    {/* Right Timeline */}
     <motion.div
-      className="w-full lg:w-1/2 space-y-12"
+      className="relative space-y-10"
       variants={containerVariants}
       initial="hidden"
       animate={timelineInView ? "visible" : "hidden"}
     >
+      {/* Vertical line down the side */}
+      <div className="absolute top-0 bottom-0 left-6 w-1 bg-medical-blue/30 rounded-full" />
+
       {timelineItems.map((item, idx) => (
-        <div key={idx} className="flex gap-6 items-start">
-          <SafeIcon icon={item.icon} className="w-14 h-14 text-medical-blue flex-shrink-0 mt-1" />
-          <div>
-            <h2 className="text-2xl font-bold text-medical-dark mb-3">{item.title}</h2>
-            <p className="text-gray-700 text-lg leading-relaxed">{item.content}</p>
+        <motion.div
+          key={idx}
+          className="relative flex gap-6 pl-16"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: idx * 0.2 }}
+        >
+          {/* Circle Marker */}
+          <div className="absolute left-0 top-1 w-10 h-10 flex items-center justify-center 
+                         rounded-full bg-medical-blue text-white shadow-lg">
+            <SafeIcon icon={item.icon} className="w-6 h-6" />
           </div>
-        </div>
+
+          {/* Text */}
+          <div>
+            <h2 className="text-2xl font-semibold text-medical-dark mb-2">
+              {item.title}
+            </h2>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              {item.content}
+            </p>
+          </div>
+        </motion.div>
       ))}
     </motion.div>
   </div>
 </section>
+
       {/* Degrees */}
       <section ref={eduRef} className="py-10 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
