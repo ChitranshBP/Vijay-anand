@@ -6,6 +6,7 @@ import AchievementsPage from './pages/AchievementsPage';
 import AwardsPage from './pages/AwardsPage';
 import PublicationsList from './pages/PublicationsPage';
 import './App.css';
+import BooksPage from './pages/BooksPage';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/achievements" element={<AchievementsPage />} />
           <Route path="/awards" element={<AwardsPage />} />
            <Route path="/publications" element={<PublicationsList/>} />
+           <Route path="/books" element={<BooksPage/>} />
+      
         </Routes>
       </div>
     </Router>);
