@@ -17,7 +17,7 @@ const books = [
   },
   {
     title: "I AM A SURVIVOR – 108 Stories of Triumph Over Cancer",
-    description: "Celebrates resilience through 108 survivor stories. Inspires hope and awareness, supporting families and encouraging early detection.",
+    description: "Celebrates resilience through 108 survivor stories. Inspires hope and awareness, supporting families and encouraging early detection and treatment.",
     cover: "assets/books/i-am-survivor-book.jpeg", // Replace with your image path or URL
     pdfUrl: "public/assets/books/3-stories-1-book.pdf",   // Update with actual PDF path or URL
     buyUrl: "https://amzn.in/d/afn8ojH" // Replace with actual buying link

@@ -16,6 +16,7 @@ const containerVariants = {
 
 // Attach your images in the 'image' field for each award
 const awards = [
+  // 🏆 Awards WITH images (12 only)
   {
     title: "Clinical Pioneer Award",
     date: "5th February 2025",
@@ -27,101 +28,146 @@ const awards = [
     title: "ISOO 2024 Oration",
     date: "6th December 2024",
     event: "International Society of Ocular Oncology, Goa",
-    image: "assets/awards/AROICON-2022-Gold-Medal – Best-Scientific-Paper.png",
+    image: "assets/awards/AROICON-2024-Gold-Medal – Best-Scientific-Paper.png",
     description: `Awarded the prestigious ISOO 2024 Oration for contributions to ocular oncology.`
   },
   {
-    title: "AROICON 2024 Gold Medal – Best Scientific Paper",
-    date: "1st December 2024",
-    event: "AROICON 2024, Mangaluru, INDIA",
-    image: "assets/awards/AROICON-2024-Gold-Medal – Best-Scientific-Paper.png",
-    description: `For a study on SBRT Prostate for Non Metastatic Prostate Cancer – focus on acute toxicities & QOL.`
+    title: "Dr. B. D. Gupta Memorial Oration Award",
+    date: "30th November 2019",
+    event: "41st AROICON, Ahmedabad, INDIA",
+    image: "assets/awards/bd-gupta-award.jpg",
+    description: `For outstanding contribution in the field of Radiation Oncology.`
   },
   {
-    title: "AROICON 2022 Gold Medal – Best Scientific Paper",
-    date: "4th December 2022",
-    event: "AROICON 2022, New Delhi, INDIA",
-    image: "assets/awards/AROICON-2022-Gold-Medal – Best-Scientific-Paper.png",
-    description: `For feasibility study on extreme hypofractionation in post operative breast cancer.`
-  },
-  {
-    title: "Lions Club International Excellence Award",
+    title: "Excellence Award",
     date: "11th August 2019",
-    event: "Lions Club International",
+    event: "Lions Club International in association with Apollo Hospitals",
     image: "assets/awards/Lions-Club-International-Excellence-Award.png",
-    description: `Awarded for extraordinary service and contribution to the field of Oncology.`
+    description: `For extraordinary service and contribution to the field of Oncology.`
   },
-  {
-    title: "BOA Gold Medal",
-    date: "25th August 2018",
-    event: "Bombay Ophthalmologists Association – FOCUS 2018, Mumbai",
-    image: "assets/awards/BOA-Gold-Medal.png",
-    description: `For exemplary work at the FOCUS conference.`
-  },
+
   {
     title: "AOS Achievement Award",
     date: "January 2018",
     event: "American Academy of Ophthalmology Society, CA, USA",
     image: "assets/awards/AOS-Achievement-Award.png",
-    description: `Prestigious award for long-term contributions to ophthalmic science.`
+    description: `For long-term contributions to ophthalmic science.`
   },
   {
     title: "Legend in the Field of Oncology",
-    date: "28th Feb 2017",
+    date: "28th February 2017",
     event: "Times Healthcare Achievers Awards, Hyderabad",
-    image: "assets/awards/American-Academy-of-Ophthalmology – Best-Poster-Award.png",
+    image: "assets/awards/timesHealthcare-award.png",
     description: `Recognized as “The Legend in the Field of Oncology” at the Times Healthcare Achievers Awards.`
   },
   {
-    title: "AROICON – Best Scientific Paper Awards",
-    date: "2009, 2015, 2014, 1996",
-    event: "AROICON Annual Conferences, India",
-    image: "assets/awards/AROICON – Best-Scientific-Paper & Poster-Awards.png",
-    description: `Multiple best paper and best poster awards for pathbreaking clinical studies and innovations.`
-  },
-    {
-    title: "AROICON – Best Poster Award",
-    date: "2009",
-    event: "AROICON Annual Conferences, India",
-    image: "assets/awards/Young-Investigators-Award.png",
-    description: `Histopathology of Retinoblastoma after primary Chemotherapy `
+    title: "Achievement Award",
+    date: "2013",
+    event: "American Academy of Ophthalmology",
+    image: "assets/awards/achievement-award-opthalmology.jpg",
+    description: `For many years of distinguished service in the programs of the society.`
   },
   {
-    title: "American Academy of Ophthalmology – Best Poster Award",
-    date: "2008",
-    event: "AAO, Atlanta, GA, USA",
-    image: "assets/awards/American-Academy-of-Ophthalmology – Best-Poster-Award.png",
-    description: `For outstanding scientific poster presentations.`
-  },
-  {
-    title: "Young Investigators Award",
-    date: "2001",
-    event: "Eli Lilly & Company, USA, New Delhi",
-    image: "assets/awards/Young-Investigators-Award.png",
-    description: "Recognized for early-career innovation in cancer research."
-  },
-  {
-    title: "International Cancer Research Technology Transfer Award",
-    date: "1998, 1992",
-    event: "UICC, Geneva, Switzerland",
-    image: "assets/awards/International-Cancer-Research-Technology-Transfer-Award.png",
-    description: `Recognized for significant contributions to international cancer research technology transfer.`
+    title: "Best Scientific Paper Award",
+    date: "1996",
+    event: "AROICON 1996, Aurangabad, INDIA",
+    image: "assets/awards/Best-Scientific-Paper.png",
+    description: `Awarded at the XVIII National Conference of AROI with Dr. K. A. Dinshaw.`
   },
   {
     title: "Young Scientist Award",
     date: "1996",
     event: "Indo-American Cancer Congress, New York, USA",
     image: "assets/awards/Young-Scientist-Award.png",
-    description: `Young Scientist Award for trailblazing research, with Dr. Kalluri Subrahmanyam & Dr. Chitti R. Moorthy.`
+    description: `Young Scientist Award with Dr. Kalluri Subrahmanyam & Dr. Chitti R. Moorthy.`
   },
   {
     title: "Nargis Dutt Memorial Foundation Award",
     date: "1995",
     event: "Nargis Dutt Memorial Foundation, New York, USA",
     image: "assets/awards/Nargis-Dutt-Memorial-Foundation-Award.png",
-    description: `For service and research in oncology, bestowed by Dr. Dattetreyudu Nori.`
+    description: `Awarded with Dr. Dattetreyudu Nori at New York Hospital.`
+  },
+  {
+    title: "International Cancer Research Technology Transfer Award",
+    date: "1992",
+    event: "UICC, Geneva, Switzerland",
+    image: "assets/awards/International-Cancer-Research-Technology-Transfer-Award.png",
+    description: `With Dr. Margarett Spittle at the Meyerstein Institute of Oncology.`
+  },
+    {
+    title: "Best Scientific Poster Award",
+    date: "29th November 2009",
+    event: "AROICON 2009, Hyderabad, INDIA",
+        image: "assets/awards/Young-Investigators-Award.png",
+
+    description: `Histopathology of Retinoblastoma after primary Chemotherapy.`
+  },
+
+  // 🏅 Awards WITHOUT images (rest of them)
+    {
+    title: "Gold Medal – BOA FOCUS 2018",
+    date: "25th August 2018",
+    event: "Bombay Ophthalmologists Association, Mumbai",
+    description: `For exemplary work at the FOCUS 2018 conference.`
+  },
+  {
+    title: "Gold Medal – Best Scientific Paper",
+    date: "1st December 2024",
+    event: "AROICON 2024, Mangaluru, INDIA",
+    description: `Prospective open-label study on patient-reported toxicities & QOL in SBRT Prostate for Non-Metastatic Prostate Cancer.`
+  },
+  {
+    title: "Gold Medal – Best Scientific Paper",
+    date: "4th December 2022",
+    event: "AROICON 2022, New Delhi, INDIA",
+    description: `Feasibility study on extreme hypofractionation in post-operative breast cancer.`
+  },
+  {
+    title: "Best Scientific Paper Award",
+    date: "2015",
+    event: "AROICON 2015, Lucknow, INDIA",
+    description: `Prospective study of neurocognitive function, QOL, and local control in brain metastases treated with SRS.`
+  },
+  {
+    title: "Best Scientific Paper Award",
+    date: "2014",
+    event: "AROICON 2014, Imphal, INDIA",
+    description: `Prospective observational feasibility study of hypofractionated radiotherapy for localized prostate cancer.`
+  },
+  {
+    title: "Best Scientific Paper Award",
+    date: "29th November 2009",
+    event: "AROICON 2009, Hyderabad, INDIA",
+    description: `Ruthenium 106 Plaque Brachytherapy: Indications and Outcome in Ocular Tumors.`
+  },
+  {
+    title: "Best Scientific Poster Award",
+    date: "29th November 2009",
+    event: "AROICON 2009, Hyderabad, INDIA",
+    description: `Histopathology of Retinoblastoma after primary Chemotherapy.`
+  },
+  {
+    title: "Best Poster Award",
+    date: "2008",
+    event: "American Academy of Ophthalmology, Atlanta, USA",
+    description: `Recognized for outstanding poster presentation in ophthalmology.`
+  },
+  {
+    title: "Young Investigators Award",
+    date: "2001",
+    event: "Eli Lilly & Company, New Delhi, INDIA",
+    description: `For early-career innovation in cancer research.`
+  },
+  {
+    title: "International Cancer Research Technology Transfer Award",
+    date: "1998",
+    event: "UICC, Geneva, Switzerland",
+    description: `For contributions to international cancer research technology transfer.`
   }
 ];
+
+
 
 
 const felicitations = [

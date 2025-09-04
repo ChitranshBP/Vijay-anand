@@ -35,7 +35,7 @@ const timelineItems = [
 const degrees = [
   { title: "M.B.B.S.", institution: "Osmania Medical College, Hyderabad", year: 1982 },
   { title: "M.D. (Radiation Therapy)", institution: "Osmania Medical College, Hyderabad", year: 1992 },
-  { title: "D.N.B. (Oncology)", institution: "—", year: 1993 },
+  { title: "D.N.B. (Oncology)", institution: "Osmania Medical College, Hyderabad", year: 1993 },
   { title: "ESMO Medical Oncology Board", institution: "Europe", year: 2005 },
   { title: "ESMO Board Recertification", institution: "Europe", year: 2010 }
 ];
@@ -73,27 +73,27 @@ const fellowships = [
     title: "Hyperthermia Fellowship",
     location: "New York Medical College, Valhalla, NY, USA",
     supervisor: "Dr. Chitty R. Moorthy",
-    month: "1995",
+    month: "May 1995",
     image: "assets/journey/Hyperthermia-Fellowship.png"
   },
   {
     title: "Nargis Dutt Memorial Cancer Foundation Fellowship",
     location: "New York Hospital, Medical Centre of Queens, NY, USA",
     supervisor: "Dr. Dattetreyudu Nori",
-    month: "May – July 1995",
+    month: "June 1995",
     image: "assets/journey/The-Nargis-Dutt-Memorial.png"
   },
   {
     title: "Head & Neck Brachytherapy Observership",
     location: "Memorial Sloan Kettering Cancer Centre, New York, USA",
     supervisor: "Dr. Louise Harrison",
-    month: "June 1995",
+    month: "July 1995",
     image: "assets/journey/Head & Neck-Brachytherapy.png"
   },
   {
     title: "Clinical Oncology Fellowship",
     location: "Meyerstein Institute of Clinical Oncology, Middlesex Hospital, London",
-    supervisor: "—",
+    supervisor: "Dr Margaret Spittle",
     month: "July – Sept 1992",
     image: "assets/journey/The-Clinical-Oncology.png"
   },
@@ -101,26 +101,52 @@ const fellowships = [
   {
     title: "Clinical Oncology Observership",
     location: "Christie Hospital, Manchester, UK",
-    supervisor: "—",
+    supervisor: "Dr Ghattamaneni Hanumantha Rao",
     month: "Sept 1992"
   },
   {
     title: "Clinical Oncology Fellowship",
     location: "Adyar Cancer Institute, Chennai, India",
-    supervisor: "—",
+    supervisor: "Dr. S. Krishnamurthy",
     month: "Jan 1990"
   },
   {
     title: "Medical Oncology Fellowship",
     location: "Nizam Institute of Medical Sciences, Hyderabad, India",
-    supervisor: "—",
+    supervisor: "Dr. D. Raghunadha Rao",
     month: "Sept 1990"
   },
   {
     title: "Radiation Oncology Fellowship",
     location: "Tata Memorial Hospital, Bombay, India",
-    supervisor: "—",
+    supervisor: "Dr. K A Dinshaw",
     month: "March 1990"
+  },
+    {
+    "title": "Radiation Oncology Fellowship",
+    "location": "Tata Memorial Hospital, Bombay, India",
+    "supervisor": "Dr. K A Dinshaw",
+    "month": "March 1990"
+  },
+  {
+    "title": "Assistant Professor",
+    "location": "MNJ Institute of Oncology, Red Hills, Hyderabad",
+    "month": "April 1992 - 1999"
+  },
+  {
+    "title": "Associate Professor of Radiation Oncology",
+    "location": "Kakatiya Medical College, Warangal",
+    "month": "April 1999 - April 2001"
+  },
+  {
+    "title": "Consultant Ocular Oncologist",
+    "location": "L.V. Prasad Eye Institute",
+    "month": "Since 1998"
+  },
+  {
+    "title": "Director & Sr. Consultant",
+    "location": "Apollo Cancer Centers, Hyderabad",
+    "month": "Since April 2002"
   }
 ];
 
