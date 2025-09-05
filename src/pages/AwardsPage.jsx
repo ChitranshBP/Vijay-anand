@@ -35,7 +35,7 @@ const awards = [
     title: "Dr. B. D. Gupta Memorial Oration Award",
     date: "30th November 2019",
     event: "41st AROICON, Ahmedabad, INDIA",
-    image: "assets/awards/bd-gupta-award.jpg",
+    image: "assets/awards/dr-b.d-gupta.png",
     description: `For outstanding contribution in the field of Radiation Oncology.`
   },
   {
@@ -64,7 +64,7 @@ const awards = [
     title: "Achievement Award",
     date: "2013",
     event: "American Academy of Ophthalmology",
-    image: "assets/awards/achievement-award-opthalmology.jpg",
+    image: "assets/awards/american.png",
     description: `For many years of distinguished service in the programs of the society.`
   },
   {
@@ -221,8 +221,8 @@ const AwardsPage = () => {
                     <img
                   src={award.image}
                   alt={award.title}
-                  className="h-full w-full object-cover object-center"
-                  style={{ maxHeight: '12rem' }}
+                  className="h-full w-full object-cover object-top"
+                  style={{ maxHeight: '16rem' }}
                   loading="lazy" />
 
                   </div>
