@@ -14,7 +14,7 @@ const containerVariants = {
   }
 };
 const housePhotos = [
-  "assets/family/house-1.jpg",
+  // "assets/family/house-1.jpg",
   "assets/family/house-2.jpg",
   "assets/family/house-3.jpg",
   "assets/family/house-4.jpg",
@@ -26,7 +26,7 @@ const housePhotos = [
   "assets/family/house-10.jpg",
   "assets/family/house-11.jpg",
   "assets/family/house-12.jpg",
-  // "assets/family/house-13.jpg",
+  "assets/family/house-13.jpg",
 ]; // 14 house photos URLs
 
 const FamilyPage = () => {
@@ -112,18 +112,36 @@ const FamilyPage = () => {
     ))}
   </section>
 
-  <section className="bg-purple-100 p-6 rounded-md text-center mx-auto max-w-lg">
-    <h2 className="text-2xl font-semibold mb-4 text-[#9B528F]">Residence</h2>
-    <address className="not-italic text-gray-800 leading-relaxed mb-4 text-base">
-      Indraprasta, Plot No. 54A, Road No. 8, Site II Film Nagar,<br />
-      Hyderabad 500 096,<br />
-      Telangana, India.
-    </address>
-    <p className="text-[#9B528F] space-y-1 text-base">
-      <a href="mailto:cancercare@drvijayanandreddy.com" className="underline hover:text-[#9B528F] block">cancercare@drvijayanandreddy.com</a>
-      <a href="mailto:drvareddy_p@apollohospitals.com" className="underline hover:text-[#9B528F] block">drvareddy_p@apollohospitals.com</a>
-    </p>
-  </section>
+<section className="bg-purple-100 p-6 rounded-md mx-auto max-w-lg">
+  <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+    {/* Left side: Image */}
+    <div className="flex-shrink-0">
+      <img
+        src="assets/family/house-1.jpg" 
+        alt="Residence"
+        className="w-48 h-48 object-cover rounded-lg shadow-md"
+      />
+    </div>
+
+    {/* Right side: Content */}
+    <div className="text-center md:text-left">
+      <h2 className="text-2xl font-semibold mb-4 text-[#9B528F]">Residence</h2>
+      <address className="not-italic text-gray-800 leading-relaxed mb-4 text-base">
+        Indraprasta, Plot No. 54A, Road No. 8, Site II Film Nagar,<br />
+        Hyderabad 500 096,<br />
+        Telangana, India.
+      </address>
+      <p className="text-[#9B528F] space-y-1 text-base">
+        <a href="mailto:cancercare@drvijayanandreddy.com" className="underline hover:text-[#9B528F] block">
+          cancercare@drvijayanandreddy.com
+        </a>
+        <a href="mailto:drvareddy_p@apollohospitals.com" className="underline hover:text-[#9B528F] block">
+          drvareddy_p@apollohospitals.com
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
 
   {modalOpen && (
     <div
