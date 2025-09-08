@@ -7,6 +7,7 @@ import AwardsPage from './pages/AwardsPage';
 import PublicationsList from './pages/PublicationsPage';
 import './App.css';
 import BooksPage from './pages/BooksPage';
+import FamilyPage from './pages/FamilyPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/awards" element={<AwardsPage />} />
            <Route path="/publications" element={<PublicationsList/>} />
            <Route path="/books" element={<BooksPage/>} />
+           <Route path="/family" element={<FamilyPage/>} />
       
         </Routes>
       </div>
