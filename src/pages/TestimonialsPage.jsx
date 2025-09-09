@@ -38,38 +38,82 @@ const patientGallery = [
 
 const youtubeTestimonials = [
   {
-    id: "YOUTUBE_VIDEO_ID1",
-    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID1/hqdefault.jpg",
-    title: "Cancer Survivor Story: Asha",
+    id: "ugvDtjZrXxE",
+    thumbnail: "https://img.youtube.com/vi/ugvDtjZrXxE/hqdefault.jpg",
+    title: "Talk by a cancer survivor | Happy Patient | Best Cancer/ Radiation oncology doctor in india",
   },
   {
-    id: "YOUTUBE_VIDEO_ID2",
-    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID2/hqdefault.jpg",
-    title: "Life after treatment: Rohit's Journey",
+    id: "hefT59hk4Tk",
+    thumbnail: "https://img.youtube.com/vi/hefT59hk4Tk/hqdefault.jpg",
+    title: "What do my patients think about my treatment?",
   },
   {
-    id: "YOUTUBE_VIDEO_ID3",
-    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID3/hqdefault.jpg",
-    title: "Beating the odds: Maya's Words",
-  },
-  // Add more...
-
-    {
-    id: "YOUTUBE_VIDEO_ID1",
-    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID1/hqdefault.jpg",
-    title: "Cancer Survivor Story: Asha",
+    id: "_fQ1-kAPh64",
+    thumbnail: "https://img.youtube.com/vi/_fQ1-kAPh64/hqdefault.jpg",
+    title: "Stage 3 Breast Cancer",
   },
   {
-    id: "YOUTUBE_VIDEO_ID2",
-    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID2/hqdefault.jpg",
-    title: "Life after treatment: Rohit's Journey",
+    id: "MaWOvdr6RDw",
+    thumbnail: "https://img.youtube.com/vi/MaWOvdr6RDw/hqdefault.jpg",
+    title: "Cervical Cancer Treatment",
   },
   {
-    id: "YOUTUBE_VIDEO_ID3",
-    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID3/hqdefault.jpg",
-    title: "Beating the odds: Maya's Words",
+    id: "532AAKNrSb4",
+    thumbnail: "https://img.youtube.com/vi/532AAKNrSb4/hqdefault.jpg",
+    title: "Vocal Cord Radiation Treatment",
+  },
+  {
+    id: "C_qQ8O6LnS0",
+    thumbnail: "https://img.youtube.com/vi/C_qQ8O6LnS0/hqdefault.jpg",
+    title: "I am a survivor",
+  },
+  {
+    id: "EpnMFGogu4g",
+    thumbnail: "https://img.youtube.com/vi/EpnMFGogu4g/hqdefault.jpg",
+    title: "Mr Naresh Chand Goel recalls his experience with Breast Cancer & Esophagus Cancer.",
+  },
+  {
+    id: "_O3k6TzS1NE",
+    thumbnail: "https://img.youtube.com/vi/_O3k6TzS1NE/hqdefault.jpg",
+    title: "Mr Gopal Rao talks about his experience with Oral Cancer.",
+  },
+  {
+    id: "Fctiw6Lqhd0",
+    thumbnail: "https://img.youtube.com/vi/Fctiw6Lqhd0/hqdefault.jpg",
+    title: "Sunitha Kumari shares her experience with cancer.",
+  },
+  {
+    id: "8DqwIx_2sek",
+    thumbnail: "https://img.youtube.com/vi/8DqwIx_2sek/hqdefault.jpg",
+    title: "Ms. Sravanthy is full of praise for Dr. Reddy's treatment.",
+  },
+  {
+    id: "hvNsBe1vxUM",
+    thumbnail: "https://img.youtube.com/vi/hvNsBe1vxUM/hqdefault.jpg",
+    title: "Ms. Bramara speaks about her diagnosis of Breast Cancer.",
+  },
+  {
+    id: "WBs7btOnJt0",
+    thumbnail: "https://img.youtube.com/vi/WBs7btOnJt0/hqdefault.jpg",
+    title: "A patient's brother talks about her cancer experience.",
+  },
+  {
+    id: "pbILSeAS32w",
+    thumbnail: "https://img.youtube.com/vi/pbILSeAS32w/hqdefault.jpg",
+    title: "B. C Jain, 64 years, Tongue Cancer",
+  },
+  {
+    id: "0FGKF2_dWtY",
+    thumbnail: "https://img.youtube.com/vi/0FGKF2_dWtY/hqdefault.jpg",
+    title: "J. Nageswara Rao, 70 years, Ca Esophagus",
+  },
+  {
+    id: "dQBfT-0xEKU",
+    thumbnail: "https://img.youtube.com/vi/dQBfT-0xEKU/hqdefault.jpg",
+    title: "Keshav Rao P. Patve, Oral Cancer",
   },
 ];
+
 
 const IMAGES_PER_PAGE = 10;
 const VIDEOS_PER_PAGE = 3;
@@ -149,7 +193,7 @@ const TestimonialPage = () => {
                   <img
                     src={p.image}
                     alt={p.name}
-                    className="w-full h-40 object-cover object-center transform transition-transform duration-200 ease-in-out hover:scale-105"
+                    className="w-full h-48 object-cover object-center transform transition-transform duration-200 ease-in-out hover:scale-105"
                     loading="lazy"
                   />
                 ) : (

@@ -16,54 +16,54 @@ const Testimonials = () => {
 
   const testimonials = [
   {
-    name: "Priya Sharma",
-    age: 45,
-    condition: "Breast Cancer Survivor",
+    name: "Uday Pepe",
+    // age: 45,
+    // condition: "Breast Cancer Survivor",
     image: "https://lh3.googleusercontent.com/a/ACg8ocKxVyVZZ1tUG8V5YoQzE5QzE5QzE5QzE5QzE5QzE5QzE5=s96-c",
     rating: 5,
-    quote: "Dr. Reddy not only saved my life but gave me hope when I had none. His compassionate approach and expertise made all the difference in my journey to recovery.",
-    treatment: "Radiation Therapy + Chemotherapy",
-    location: "Hyderabad"
+    quote: "One stop for all cancer treatment - doctor holds that crucial communication and support, helping patients and their families understand the diagnosis providing treatment options, prognosis, and how to navigate during treatment. Been to many hospitals across twin cities for mother's treatment and Vijay Anand Reddy sir remains irreplaceable and best one 😊",
+    // treatment: "Radiation Therapy + Chemotherapy",
+    // location: "Hyderabad"
   },
   {
-    name: "Rajesh Kumar",
-    age: 58,
-    condition: "Lung Cancer Survivor",
+    name: "Satvinder Saluja",
+    // age: 58,
+    // condition: "Lung Cancer Survivor",
     image: "https://lh3.googleusercontent.com/a/ACg8ocJxVyVZZ1tUG8V5YoQzE5QzE5QzE5QzE5QzE5QzE5QzE5=s96-c",
     rating: 5,
-    quote: "The personalized treatment plan Dr. Reddy created for me was exactly what I needed. Today, I'm cancer-free and living life to the fullest. Eternally grateful!",
-    treatment: "IMRT + Targeted Therapy",
-    location: "Secunderabad"
+    quote: "Good treatment with Good precision surgery performed everything 💯 % .I will recommend another patient .he was given Good and best treatment for me he look like to God for me .and all doctors and staff very helpful and 👍 good",
+    // treatment: "IMRT + Targeted Therapy",
+    // location: "Secunderabad"
   },
   {
-    name: "Lakshmi Devi",
-    age: 62,
-    condition: "Head & Neck Cancer Survivor",
+    name: "Anitha Kesireddy",
+    // age: 62,
+    // condition: "Head & Neck Cancer Survivor",
     image: "https://lh3.googleusercontent.com/a/ACg8ocKxVyVZZ1tUG8V5YoQzE5QzE5QzE5QzE5QzE5QzE5QzE5=s96-c",
     rating: 5,
-    quote: "Dr. Reddy's team provided exceptional care throughout my treatment. The advanced technology and caring staff made my recovery smooth and successful.",
-    treatment: "Stereotactic Radiosurgery",
-    location: "Hyderabad"
+    quote: "Satisfied with the services.Dr.vijay Anand Reddy sir was excellent Doctor.he was talking like family member.we are happy to take treatment here.thanks to Dr.vijay Anand Reddy sir and sir team Doctors and sir supportive assistant s was good corporate thanks to every one He is very concern for the patient, gives hope and confidence.Our whole family owe to him forever.Thank you very much sir 🙏🙏🙏",
+    // treatment: "Stereotactic Radiosurgery",
+    // location: "Hyderabad"
   },
   {
-    name: "Vikram Reddy",
-    age: 52,
-    condition: "Brain Tumor Survivor",
+    name: "rishika avaldar",
+    // age: 52,
+    // condition: "Brain Tumor Survivor",
     image: "https://lh3.googleusercontent.com/a/ACg8ocJxVyVZZ1tUG8V5YoQzE5QzE5QzE5QzE5QzE5QzE5QzE5=s96-c",
     rating: 5,
-    quote: "The precision and care with which Dr. Reddy handled my brain tumor treatment was remarkable. I'm back to my normal life, thanks to his expertise.",
-    treatment: "Gamma Knife Radiosurgery",
-    location: "Hyderabad"
+    quote: "Very grateful for Dr. Vijay Anand Reddy and team for successfully treating my moms cervical cancer. Their expertise, care and support helped our family through a very difficult time. Couldn’t have asked for better support and treatment.",
+    // treatment: "Gamma Knife Radiosurgery",
+    // location: "Hyderabad"
   },
   {
-    name: "Sunitha Rao",
-    age: 48,
-    condition: "Cervical Cancer Survivor",
+    name: "kumari daniel",
+    // age: 48,
+    // condition: "Cervical Cancer Survivor",
     image: "https://lh3.googleusercontent.com/a/ACg8ocKxVyVZZ1tUG8V5YoQzE5QzE5QzE5QzE5QzE5QzE5QzE5=s96-c",
     rating: 5,
-    quote: "Dr. Reddy's holistic approach to cancer treatment addressed not just the disease but also my emotional well-being. I felt supported every step of the way.",
-    treatment: "Brachytherapy + External Radiation",
-    location: "Hyderabad"
+    quote: "Dr.vijay anand reddy .He is most caring and understanding doctor I have ever met.he really cares about the patient and their health he ever proposes the best solutions for everything he answers simple questions asked by the patient hope he and his family stay safe and happy Thank you",
+    // treatment: "Brachytherapy + External Radiation",
+    // location: "Hyderabad"
   }];
 
 
@@ -78,7 +78,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-14 medical-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
+        {/* <div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -92,7 +92,7 @@ const Testimonials = () => {
             Real stories from real patients who have overcome cancer with Dr. Vijay Anand Reddy's 
             expert care and compassionate treatment.
           </p>
-        </div>
+        </div> */}
 
         {/* Featured Testimonial */}
         <div
@@ -102,9 +102,9 @@ const Testimonials = () => {
           className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 mb-12 relative overflow-hidden">
 
           {/* Background Quote Icon */}
-          <div className="absolute top-6 right-6 opacity-10">
+         {/* <div className="absolute top-6 right-6 opacity-10">
             <SafeIcon icon={FiQuote} className="w-24 h-24 text-medical-blue" />
-          </div>
+          </div>  */}
 
           <div className="grid lg:grid-cols-3 gap-8 items-center relative z-10">
             {/* Patient Image & Info */}
@@ -125,9 +125,9 @@ const Testimonials = () => {
               <h3 className="text-2xl font-bold text-medical-dark mb-2">
                 {testimonials[currentTestimonial].name}
               </h3>
-              <p className="text-gray-600 mb-2">
+              {/* <p className="text-gray-600 mb-2">
                 Age {testimonials[currentTestimonial].age} • {testimonials[currentTestimonial].location}
-              </p>
+              </p> */}
               <p className="text-medical-blue font-semibold mb-4">
                 {testimonials[currentTestimonial].condition}
               </p>
@@ -146,12 +146,12 @@ const Testimonials = () => {
                 "{testimonials[currentTestimonial].quote}"
               </blockquote>
 
-              <div className="bg-medical-light p-4 rounded-xl">
+              {/* <div className="bg-medical-light p-4 rounded-xl">
                 <div className="text-sm text-gray-600 mb-1">Treatment Received:</div>
                 <div className="font-semibold text-medical-blue">
                   {testimonials[currentTestimonial].treatment}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

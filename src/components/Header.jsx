@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   const navItems = [
-  { name: 'Home', href: '#' },
+  // { name: 'Home', href: '#' },
   {
     name: 'Know the Doctor',
     href: '#',
@@ -47,15 +47,13 @@ const Header = () => {
       href: '#conferences',
       submenu: [
       { name: 'Cancer CI', href: '#cancer-ci' },
-      { name: 'Short CV', href: '#short-cv' },
-      { name: 'Detailed CV', href: '#detailed-cv' }]
+     ]
 
     },
     {
       name: 'CV',
       href: '#cv',
       submenu: [
-      { name: 'Cancer CI', href: '#cancer-ci' },
       { name: 'Short CV', href: '#short-cv' },
       { name: 'Detailed CV', href: '#detailed-cv' }]
 

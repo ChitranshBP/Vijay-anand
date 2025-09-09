@@ -79,18 +79,20 @@ const Footer = () => {
 
 
             {/* Social Links */}
-            <div className="flex space-x-4 mt-6">
-              {socialLinks.map((social, index) =>
-              <a
-                key={index}
-                href={social.href}
-                aria-label={social.name}
-                className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-medical-blue transition-colors duration-200">
-
-                  <SafeIcon icon={social.icon} className="w-5 h-5" />
-                </a>
-              )}
-            </div>
+           <div className="flex space-x-4 mt-6">
+  {socialLinks.map((social, index) => (
+    <a
+      key={index}
+      href={social.href}
+      aria-label={social.name}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-medical-blue transition-colors duration-200"
+    >
+      <SafeIcon icon={social.icon} className="w-5 h-5" />
+    </a>
+  ))}
+</div>
           </div>
 
           {/* Quick Links */}

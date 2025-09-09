@@ -111,15 +111,18 @@ const Contact = () => {
                 className="bg-medical-light p-4 sm:p-6 rounded-xl hover:shadow-lg transition-all duration-300">
 
         <div className="flex items-start space-x-4 sm:space-x-5">
-          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-medical-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
+          <div className="w-12 h-10 sm:w-12 sm:h-12 bg-medical-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
             <SafeIcon icon={info.icon} className="w-5 h-5 sm:w-6 sm:h-6 text-medical-blue" />
           </div>
           <div className="flex-1 min-w-0">
             <h4 className="font-bold text-medical-dark text-base sm:text-lg mb-1">{info.title}</h4>
             {info.details.map((detail, idx) =>
-                    <p key={idx} className="text-gray-600 text-sm sm:text-base break-words">
-                {detail}
-              </p>
+         <p
+    key={idx}
+    className="text-gray-600 text-sm sm:text-base whitespace-nowrap"
+  >
+    {detail}
+  </p>
                     )}
             {info.link ?
                     <a

@@ -13,6 +13,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
 import Test from '../components/Test';
+import FinalTest from '../components/FinalTest';
 
 
 const HomePage = () => {
@@ -20,13 +21,16 @@ const HomePage = () => {
     <div className="min-h-screen  bg-white">
  
       <Header />
+    
       <Hero />
       <About />
       <Services />
       <WhyChoose />
-      <HighestRated />
+      {/* <HighestRated /> */}
       <Awards />
-      <Test />
+      {/* <Test /> */}
+      {/* <Testimonials/> */}
+        <FinalTest/>
       <Blog />
       <Contact />
       <Footer />

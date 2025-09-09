@@ -46,7 +46,7 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-xl text-gray-600 mb-8 leading-relaxed">
 
-              Dr. Vijay Anand Reddy, Senior Oncologist , Director at Apollo Cancer Centres, Hyderabad 
+              Dr. Vijay Anand Reddy, Senior Oncologist , Director at Apollo Cancer Centres, Hyderabad, 
               pioneering advanced cancer treatments with personalized care for over three decades.
             </motion.p>
 

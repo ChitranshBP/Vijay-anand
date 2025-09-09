@@ -19,7 +19,7 @@ const About = () => {
   "FUICC (UK), FNDM (USA), FUICC (AUS)",
   "Sr. Consultant Oncologist",
   "Prof. & Head, Dept. of Radiation Oncology",
-  "Director"];
+  "Director,Apollo Cancer Center, Hyderabad"];
 
 
   const achievements = [
