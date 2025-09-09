@@ -36,8 +36,6 @@ const patientGallery = [
   { image: "assets/testimonials/IMG_9518.webp" },
 ];
 
-
-
 const youtubeTestimonials = [
   {
     id: "YOUTUBE_VIDEO_ID1",
@@ -55,12 +53,42 @@ const youtubeTestimonials = [
     title: "Beating the odds: Maya's Words",
   },
   // Add more...
+
+    {
+    id: "YOUTUBE_VIDEO_ID1",
+    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID1/hqdefault.jpg",
+    title: "Cancer Survivor Story: Asha",
+  },
+  {
+    id: "YOUTUBE_VIDEO_ID2",
+    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID2/hqdefault.jpg",
+    title: "Life after treatment: Rohit's Journey",
+  },
+  {
+    id: "YOUTUBE_VIDEO_ID3",
+    thumbnail: "https://img.youtube.com/vi/YOUTUBE_VIDEO_ID3/hqdefault.jpg",
+    title: "Beating the odds: Maya's Words",
+  },
 ];
 
+const IMAGES_PER_PAGE = 10;
+const VIDEOS_PER_PAGE = 3;
 const TestimonialPage = () => {
+  const [visibleCount, setVisibleCount] = useState(IMAGES_PER_PAGE);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const [videoPage, setVideoPage] = useState(1);
   const [selectedVideo, setSelectedVideo] = useState(null);
+
+  const visibleVideos = youtubeTestimonials.slice(0, videoPage * VIDEOS_PER_PAGE);
+
+  const loadMoreVideos = () => {
+    setVideoPage((prev) => Math.min(prev + 1, Math.ceil(youtubeTestimonials.length / VIDEOS_PER_PAGE)));
+  };
+
+
+
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -77,25 +105,24 @@ const TestimonialPage = () => {
     setSelectedImage(patient);
     setModalOpen(true);
   };
-
   const closeModal = () => {
     setModalOpen(false);
     setSelectedImage(null);
   };
+  const openVideo = (id) => setSelectedVideo(id);
+  const closeVideo = () => setSelectedVideo(null);
 
-  const openVideo = (id) => {
-    setSelectedVideo(id);
+  const loadMoreImages = () => {
+    setVisibleCount((prev) => Math.min(prev + IMAGES_PER_PAGE, patientGallery.length));
   };
 
-  const closeVideo = () => {
-    setSelectedVideo(null);
-  };
+  const visibleImages = patientGallery.slice(0, visibleCount);
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Header />
 
-      {/* Page Hero */}
+      {/* Hero Section */}
       <section className="pt-32 pb-10 text-center bg-medical-blue/10">
         <h1 className="text-4xl md:text-5xl font-bold text-medical-dark mb-4">Patient Testimonials</h1>
         <p className="max-w-2xl mx-auto text-gray-700 text-lg">
@@ -103,46 +130,53 @@ const TestimonialPage = () => {
         </p>
       </section>
 
-      {/* Patient Gallery */}
- {/* Patient Gallery */}
-<section className="py-12 bg-white">
-  <div className="max-w-7xl mx-auto px-4">
-    <h2 className="text-3xl font-bold text-medical-dark mb-10 text-center">Patient Gallery</h2>
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-      {patientGallery.map((p, i) => (
-        <div
-          key={i}
-          className="relative cursor-pointer overflow-hidden rounded-lg"
-          onClick={() => openModal(p)}
-          role="button"
-          tabIndex={0}
-          onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && openModal(p)}
-          aria-label={`Open large view for ${p.name}`}
-        >
-          {p.image ? (
-            <img
-              src={p.image}
-              alt={p.name}
-              className="w-full h-48 object-cover object-center transform transition-transform duration-200 ease-in-out hover:scale-105"
-              loading="lazy"
-            />
-          ) : (
-            <div className="flex items-center justify-center bg-gray-100 h-40">
-              <FiUser className="text-medical-blue w-12 h-12" />
+      {/* Patient Gallery with Pagination */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-medical-dark mb-10 text-center">Patient Gallery</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {visibleImages.map((p, i) => (
+              <div
+                key={i}
+                className="relative cursor-pointer overflow-hidden rounded-lg"
+                onClick={() => openModal(p)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && openModal(p)}
+                aria-label={`Open large view for ${p.name}`}
+              >
+                {p.image ? (
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-40 object-cover object-center transform transition-transform duration-200 ease-in-out hover:scale-105"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="flex items-center justify-center bg-gray-100 h-40">
+                    <FiUser className="text-medical-blue w-12 h-12" />
+                  </div>
+                )}
+                <div className="absolute bottom-0 left-0 right-0 bg-black/40 text-white text-sm text-center py-1 rounded-b-lg select-none opacity-0 hover:opacity-100 transition-opacity duration-200">
+                  {p.name}
+                </div>
+              </div>
+            ))}
+          </div>
+          {visibleCount < patientGallery.length && (
+            <div className="flex justify-center mt-10">
+              <button
+                onClick={loadMoreImages}
+                className="px-6 py-3 rounded-lg bg-medical-blue text-white font-semibold hover:bg-medical-dark transition"
+              >
+                Load More
+              </button>
             </div>
           )}
-          {/* Optional name overlay on hover */}
-          <div className="absolute bottom-0 left-0 right-0 bg-black/40 text-white text-sm text-center py-1 opacity-0 hover:opacity-100 transition-opacity duration-200 rounded-b-lg select-none">
-            {p.name}
-          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-
-      {/* Image Modal */}
+      {/* Modal */}
       {modalOpen && selectedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
@@ -179,38 +213,53 @@ const TestimonialPage = () => {
         </div>
       )}
 
-      {/* YouTube Testimonials Section */}
-      <section className="py-14 bg-gray-50">
+      {/* YouTube Testimonials Section (unchanged, place below the gallery) */}
+  <section className="py-14 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-medical-dark mb-8 text-center">
             Watch Our Patient Stories
           </h2>
+
           {!selectedVideo ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-              {youtubeTestimonials.map((video) => (
-                <button
-                  key={video.id}
-                  className="relative rounded-lg overflow-hidden shadow-lg bg-white focus:outline-none transition hover:scale-105"
-                  onClick={() => openVideo(video.id)}
-                  aria-label={`Play ${video.title}`}
-                >
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-56 object-cover object-center"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-white opacity-90" fill="none" viewBox="0 0 68 48">
-                      <rect width="68" height="48" rx="8" fill="#000" fillOpacity="0.5" />
-                      <path d="M45 24L27 34V14l18 10z" fill="#fff" />
-                    </svg>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-base font-bold px-4 py-2">
-                    {video.title}
-                  </div>
-                </button>
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                {visibleVideos.map((video) => (
+                  <button
+                    key={video.id}
+                    className="relative rounded-lg overflow-hidden shadow-lg bg-white focus:outline-none transition hover:scale-105"
+                    onClick={() => openVideo(video.id)}
+                    aria-label={`Play ${video.title}`}
+                  >
+                    <img
+                      src={video.thumbnail}
+                      alt={video.title}
+                      className="w-full h-56 object-cover object-center"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <svg className="w-16 h-16 text-white opacity-90" fill="none" viewBox="0 0 68 48">
+                        <rect width="68" height="48" rx="8" fill="#000" fillOpacity="0.5" />
+                        <path d="M45 24L27 34V14l18 10z" fill="#fff" />
+                      </svg>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-base font-bold px-4 py-2">
+                      {video.title}
+                    </div>
+                  </button>
+                ))}
+              </div>
+
+              {visibleVideos.length < youtubeTestimonials.length && (
+                <div className="flex justify-center mt-10">
+                  <button
+                    onClick={loadMoreVideos}
+                    className="px-6 py-3 rounded-lg bg-medical-blue text-white font-semibold hover:bg-medical-dark transition"
+                  >
+                    Load More Videos
+                  </button>
+                </div>
+              )}
+            </>
           ) : (
             <div className="flex flex-col items-center">
               <div className="w-full max-w-3xl aspect-video mb-6 rounded-lg overflow-hidden shadow-lg">
@@ -235,6 +284,7 @@ const TestimonialPage = () => {
           )}
         </div>
       </section>
+      {/*...YouTube testimonials code here... */}
 
       <Footer />
     </div>
