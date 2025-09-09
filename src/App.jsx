@@ -8,7 +8,8 @@ import PublicationsList from './pages/PublicationsPage';
 import './App.css';
 import BooksPage from './pages/BooksPage';
 import FamilyPage from './pages/FamilyPage';
-
+import ContactUs from './pages/ContactPage';
+import TestimonialPage from './pages/TestimonialsPage';
 function App() {
   return (
     <Router>
@@ -21,6 +22,8 @@ function App() {
            <Route path="/publications" element={<PublicationsList/>} />
            <Route path="/books" element={<BooksPage/>} />
            <Route path="/family" element={<FamilyPage/>} />
+           <Route path="/contact" element={<ContactUs/>}/>
+           <Route path="/testimonials" element={<TestimonialPage/>}/>
       
         </Routes>
       </div>
