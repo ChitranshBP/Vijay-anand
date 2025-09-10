@@ -316,14 +316,17 @@ const Contact = () => {
 
               <div className="w-full lg:col-span-2">
                 <div className="relative w-full h-[450px] rounded-xl overflow-hidden">
-  <iframe
-                    src="https://share.google/SKoMRJJyy7bwGMTCU"
-                    className="absolute top-0 left-0 w-full h-full border-0 rounded-xl"
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Dr Vijay Anand Reddy - Apollo Cancer Centre Location">
-                  </iframe>
+<iframe
+  title="Apollo Cancer Centre Location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.9362473193!2d78.41015217577959!3d17.41484690201227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96cf2ac35539%3A0x87682b53a99a8ea1!2sApollo%20Cancer%20Centre!5e0!3m2!1sen!2sin!4v1757494001423!5m2!1sen!2sin"
+  width="100%"
+  height="100%"
+  style={{ border: 0, minHeight: "16rem" }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="w-full h-full"
+/>
                 </div>
               </div>
         </div>
