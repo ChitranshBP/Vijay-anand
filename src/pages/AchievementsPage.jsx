@@ -83,7 +83,7 @@ const AchievementsPage = () => {
 
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="mt-12 min-h-screen bg-white">
       <Header />
 
       {/* Hero Section */}

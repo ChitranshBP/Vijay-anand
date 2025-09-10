@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FiUser, FiX } from "react-icons/fi";
+import Test from "../components/Test"
 
 const patientGallery = [
   { image: "assets/testimonials/IMG_0638.webp" },
@@ -163,7 +164,8 @@ const TestimonialPage = () => {
   const visibleImages = patientGallery.slice(0, visibleCount);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    
+    <div className=" mt-12 min-h-screen bg-white flex flex-col">
       <Header />
 
       {/* Hero Section */}
@@ -173,7 +175,7 @@ const TestimonialPage = () => {
           Real stories, real recovery. Hear directly from patients and their families about their journey to healing and hope, guided by Dr. Vijay Anand Reddy.
         </p>
       </section>
-
+<Test/>
       {/* Patient Gallery with Pagination */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">

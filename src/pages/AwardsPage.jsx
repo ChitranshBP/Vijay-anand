@@ -179,7 +179,7 @@ const AwardsPage = () => {
   const [felicitationRef, felicitationInView] = useInView({ threshold: 0.1, triggerOnce: true });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="mt-12 min-h-screen bg-white">
       <Header />
       {/* Hero/Title Section */}
       <section className="pt-32 pb-12 bg-medical-blue/10">

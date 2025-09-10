@@ -7,7 +7,7 @@ const { FiAward, FiUsers, FiHeart, FiCalendar } = FiIcons;
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[700px] mt-10 pt-44 pb-5 overflow-hidden">
+    <section id="home" className="relative min-h-[700px] pt-44 pb-5 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 medical-gradient"></div>
 

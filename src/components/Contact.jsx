@@ -317,7 +317,7 @@ const Contact = () => {
               <div className="w-full lg:col-span-2">
                 <div className="relative w-full h-[450px] rounded-xl overflow-hidden">
   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d144505.05386313668!2d78.412148!3d17.414722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96c8d6de4619%3A0x181979dd13dd8cfe!2sDr%20Vijay%20Anand%20Reddy%20-%20Best%20Oncologist%20in%20Hyderabad%2C%20India%20%7C%20Best%20Cancer%20Specialist%20in%20Hyderabad%20-%20Apollo%20Hospitals!5e1!3m2!1sen!2sus!4v1754484598634!5m2!1sen!2sus"
+                    src="https://share.google/SKoMRJJyy7bwGMTCU"
                     className="absolute top-0 left-0 w-full h-full border-0 rounded-xl"
                     allowFullScreen
                     loading="lazy"

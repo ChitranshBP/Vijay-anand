@@ -242,27 +242,25 @@ const Header = () => {
         {/* Add a container with better responsive handling */}
         <div className="w-full">
         <div className="max-w-full 2xl:max-w-[1800px] mx-auto px-2 sm:px-4 lg:px-4 xl:px-6 2xl:px-8">
-          <div className="flex justify-between items-center py-2 sm:py-3 lg:py-3 min-h-14 sm:min-h-16 gap-1">
+          <div className="flex justify-between items-center py-2 sm:py-3 lg:py-0 min-h-14 sm:min-h-16 gap-1">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
-              <img
-                  src="/assets/Dr.vijay-anand-reddy-logo.png"
-                  alt="Dr. Palkonda Vijay Anand Reddy - MD Radiation Oncology, Director Apollo Cancer Centres"
-                  className="h-10 w-auto object-contain sm:h-12 md:h-14 lg:h-16"
-                  style={{ maxWidth: '180px' }}
-                  onError={(e) => {
-                    // Try alternative paths
-                    if (e.target.src.includes('/assets/')) {
-                      e.target.src = 'assets/Dr.vijay-anand-reddy-logo.png';
-                    } else if (e.target.src.includes('assets/Dr.vijay')) {
-                      e.target.src = './assets/Dr.vijay-anand-reddy-logo.png';
-                    } else {
-                      // If all attempts fail, show fallback
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }
-                  }} />
-
+<img
+  src="/assets/Dr.vijay-anand-reddy-logo.png"
+  alt="Dr. Palkonda Vijay Anand Reddy - MD Radiation Oncology, Director Apollo Cancer Centres"
+  className="h-20 w-auto object-contain sm:h-24 md:h-28 lg:h-32"
+  style={{ maxWidth: '320px' }}
+  onError={(e) => {
+    if (e.target.src.includes('/assets/')) {
+      e.target.src = 'assets/Dr.vijay-anand-reddy-logo.png';
+    } else if (e.target.src.includes('assets/Dr.vijay')) {
+      e.target.src = './assets/Dr.vijay-anand-reddy-logo.png';
+    } else {
+      e.target.style.display = 'none';
+      e.target.nextSibling.style.display = 'flex';
+    }
+  }}
+/>
               {/* Fallback text logo (always ready as backup) */}
               <div className="flex items-center space-x-2 flex-shrink-0" style={{ display: 'none' }}>
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-medical-blue flex items-center justify-center text-white font-bold text-xs sm:text-sm">
@@ -480,6 +478,10 @@ const Header = () => {
           }
         </AnimatePresence>
       </motion.header>
+
+
+<div className='md:h-4'></div>
+
     </>);
 
 };

@@ -46,7 +46,7 @@ const FamilyPage = () => {
   return (
     <>
     <Header/>
-      <section className="pt-32 pb-12 bg-medical-blue/10">
+      <section className="pt-32 mt-12 pb-12 bg-medical-blue/10">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <motion.div
             variants={containerVariants}

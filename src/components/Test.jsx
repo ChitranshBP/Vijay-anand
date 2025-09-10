@@ -28,7 +28,7 @@ const Test = () => {
     }
   }, []);
 
-  return <div id="wid_1754467080840" className="my-10" />;
+  return <div id="wid_1754467080840" className="my-10 container mx-auto" />;
 };
 
 export default Test;

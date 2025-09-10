@@ -3,8 +3,9 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { FiPhone, FiMail, FiMapPin, FiInstagram, FiFacebook, FiLinkedin } from 'react-icons/fi';
 
+
 const ContactUs = () => (
-  <div className="min-h-screen bg-white flex flex-col">
+  <div className="mt-12 min-h-screen bg-white flex flex-col">
     <Header />
 
     {/* Hero Section */}
@@ -14,6 +15,8 @@ const ContactUs = () => (
         We’re here to help you. Schedule a consultation, ask a question, or simply say hello.
       </p>
     </section>
+
+      
 
     {/* Main Content */}
     <section className="flex-1 bg-white py-12">
@@ -90,11 +93,11 @@ const ContactUs = () => (
               <a href="tel:+919676720002" className="flex items-center gap-2 hover:underline">
                 <FiPhone /> +91-9676720002
               </a>
-              <a href="mailto:info@drvijayanandreddy.com" className="flex items-center gap-2 hover:underline">
-                <FiMail /> info@drvijayanandreddy.com
+              <a href="mailto:cancercare@drvijayanandreddy.com" className="flex items-center gap-2 hover:underline">
+                <FiMail />cancercare@drvijayanandreddy.com
               </a>
               <span className="flex items-center gap-2">
-                <FiMapPin /> Apollo Cancer Institute, Hyderabad, India
+                <FiMapPin /> Apollo Cancer Center, Hyderabad, India
               </span>
             </div>
             <div className="flex gap-5 mt-5">

@@ -28,7 +28,7 @@ function BooksPage() {
   return (
     <>
     <Header/>
-      <div className="min-h-screen bg-[#faf7fc] flex flex-col items-center py-12 mt-24 px-4 font-sans">
+      <div className="min-h-screen  bg-[#faf7fc] flex flex-col items-center py-12 mt-28 px-4 font-sans">
       <header className="max-w-2xl mb-10 text-center">
         <h1 className="text-4xl font-extrabold text-[#9B528F] mb-3">Books Published by Doctor</h1>
         <p className="text-lg text-[#61375d] opacity-80">
