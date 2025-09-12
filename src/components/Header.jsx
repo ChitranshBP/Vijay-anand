@@ -80,19 +80,12 @@ const Header = () => {
   {
     name: 'Doctor\'s Awareness Talks',
     href: '#',
-    dropdown: [
-    { name: 'All Cancer Awareness Videos', href: '#awareness-videos' },
-    { name: 'Video Gallery', href: '#video-gallery' },
-    { name: 'YouTube Channel', href: '#youtube-channel' }]
 
   },
   {
     name: 'Patient\'s Testimonials',
     href: '#',
-    dropdown: [
-    { name: 'Client Testimonials', href: '#client-testimonials' },
-    { name: 'Healing through Compassion: Patient Interactions', href: '#patient-interactions' },
-    { name: 'Patient\'s Talk', href: '#patients-talk' }]
+
 
   },
   {

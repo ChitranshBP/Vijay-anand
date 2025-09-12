@@ -10,6 +10,9 @@ import BooksPage from './pages/BooksPage';
 import FamilyPage from './pages/FamilyPage';
 import ContactUs from './pages/ContactPage';
 import TestimonialPage from './pages/TestimonialsPage';
+import AwarenessLecturesPage from './pages/AwarenessLecturesPage';
+import ProfessionalAssociationPage from './pages/ProfessionalAssociationPage'
+
 function App() {
   return (
     <Router>
@@ -24,6 +27,9 @@ function App() {
            <Route path="/family" element={<FamilyPage/>} />
            <Route path="/contact" element={<ContactUs/>}/>
            <Route path="/testimonials" element={<TestimonialPage/>}/>
+           <Route path="/awareness-lectures" element={<AwarenessLecturesPage/>}/>
+          <Route path="/professional-association" element={<ProfessionalAssociationPage/>}/>
+
       
         </Routes>
       </div>
