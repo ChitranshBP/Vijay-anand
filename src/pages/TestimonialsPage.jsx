@@ -5,6 +5,8 @@ import { FiUser, FiX } from "react-icons/fi";
 import Test from "../components/Test"
 
 const patientGallery = [
+    { image: "assets/testimonials/test-new-1.jpg" },
+  { image: "assets/testimonials/test-new-2.jpg" },
   { image: "assets/testimonials/IMG_0638.webp" },
   { image: "assets/testimonials/IMG_0639.webp" },
   { image: "assets/testimonials/IMG_0640.webp" },

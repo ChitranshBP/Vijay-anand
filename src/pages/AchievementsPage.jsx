@@ -235,6 +235,91 @@ const AchievementsPage = () => {
         </div>
       </section>
 
+{/* Milestone Achievement in Ocular Oncology */}
+<section className="py-16 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="text-center mb-12"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-6">
+        Milestone Achievement in
+        <span className="block text-medical-blue">Ocular Oncology</span>
+      </h2>
+      <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Apollo Cancer Centre, Hyderabad, has emerged as a global Centre of Excellence for eye tumours. 
+        Since establishing our dedicated department in 2003 in collaboration with LV Prasad Eye Institute 
+        and later Centre for Sight, we have become a premier tertiary referral centre for India 
+        and neighbouring countries.
+      </p>
+    </motion.div>
+
+    <div className="grid lg:grid-cols-2 gap-12 items-start">
+      {/* LEFT TEXT */}
+      <div>
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Over the years, our team has successfully treated and published pioneering work on a wide spectrum 
+          of ocular cancers, including retinoblastoma (RB), melanoma, rhabdomyosarcoma (RMS), 
+          lacrimal gland carcinoma, ocular surface squamous neoplasia (OSSN), optic nerve glioma, 
+          and several rare tumours of the eye and orbit.
+        </p>
+
+        <p className="text-gray-700 leading-relaxed mb-6">
+          Our expertise includes advanced procedures such as plaque brachytherapy, 
+          interstitial brachytherapy, intraocular chemotherapy, and intra-arterial chemotherapy.
+        </p>
+
+        <ul className="space-y-3 mb-6">
+          <li className="flex items-start space-x-2">
+            <SafeIcon icon={FiCheckCircle} className="w-5 h-5 text-medical-blue mt-1" />
+            <span className="text-gray-700">Treatment of over 10,000 cases of retinoblastoma</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <SafeIcon icon={FiCheckCircle} className="w-5 h-5 text-medical-blue mt-1" />
+            <span className="text-gray-700">More than 1,000 plaque brachytherapy procedures</span>
+          </li>
+          <li className="flex items-start space-x-2">
+            <SafeIcon icon={FiCheckCircle} className="w-5 h-5 text-medical-blue mt-1" />
+            <span className="text-gray-700">Over 1,000 ophthalmic intra-arterial chemotherapy procedures</span>
+          </li>
+        </ul>
+
+        <p className="text-gray-700 leading-relaxed">
+          We are proud to share one unique accomplishment – the world’s only reported case of 
+          interstitial brachytherapy for lacrimal gland carcinoma, successfully performed at our centre. <br />
+          <em>Case highlight: A 33-year-old lady with right orbit lacrimal gland carcinoma underwent 
+          3 cycles of neoadjuvant chemotherapy (Paclitaxel + Cisplatin), followed by excision and 
+          per-operative interstitial brachytherapy.</em>
+        </p>
+      </div>
+
+      {/* RIGHT IMAGES */}
+      <div className="grid gap-6">
+        <img
+          src="assets/achievements/achievement-2.jpg"
+          alt="Ocular Oncology Treatment Case 1"
+          className="rounded-lg shadow-lg object-cover"
+        />
+        <img
+          src="assets/achievements/achievement-1.jpg"
+          alt="Ocular Oncology Treatment Case 2"
+          className="rounded-lg shadow-lg object-cover"
+        />
+      </div>
+    </div>
+
+    <div className="mt-12 text-center">
+      <p className="text-gray-600 italic">
+        “We extend our heartfelt gratitude to the management and our oncology team for their 
+        unwavering support and dedication to advancing patient care.”
+      </p>
+    </div>
+  </div>
+</section>
+
+
       {/* Recognized Nationally and Internationally */}
       <section ref={recognitionRef} className="py-16 bg-medical-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
