@@ -13,13 +13,13 @@ const books = [
     title: "Apollo Life: The Oncology Issue",
     description: "A resource on oncology, presenting expert perspectives. Covers personalized treatment, diagnosis, supportive care, and latest research for cancer care.",
     cover: "assets/books/apoll-book.jpg", // Replace with your image path or URL
-    pdfUrl: "public/assets/books/oncology-issue-book.pdf"    // Update with actual PDF path or URL
+    pdfUrl: "assets/books/oncology-issue-book.pdf"    // Update with actual PDF path or URL
   },
   {
     title: "I AM A SURVIVOR – 108 Stories of Triumph Over Cancer",
     description: "Celebrates resilience through 108 survivor stories. Inspires hope and awareness, supporting families and encouraging early detection and treatment.",
     cover: "assets/books/i-am-survivor-book.jpeg", // Replace with your image path or URL
-    pdfUrl: "public/assets/books/3-stories-1-book.pdf",   // Update with actual PDF path or URL
+    pdfUrl: "assets/books/3-stories-1-book.pdf",   // Update with actual PDF path or URL
     buyUrl: "https://amzn.in/d/afn8ojH" // Replace with actual buying link
   },
     {

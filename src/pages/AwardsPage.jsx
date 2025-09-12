@@ -115,12 +115,14 @@ const awards = [
     title: "Gold Medal – Best Scientific Paper",
     date: "1st December 2024",
     event: "AROICON 2024, Mangaluru, INDIA",
+      image: "assets/awards/AROICON-2024.png",
     description: `Prospective open-label study on patient-reported toxicities & QOL in SBRT Prostate for Non-Metastatic Prostate Cancer.`
   },
   {
     title: "Gold Medal – Best Scientific Paper",
     date: "4th December 2022",
     event: "AROICON 2022, New Delhi, INDIA",
+      image: "assets/awards/AROICON-2022.png",
     description: `Feasibility study on extreme hypofractionation in post-operative breast cancer.`
   },
   {

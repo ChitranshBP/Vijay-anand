@@ -33,11 +33,11 @@ const timelineItems = [
 ];
 
 const degrees = [
-  { title: "M.B.B.S.", institution: "Osmania Medical College, Hyderabad", year: 1982 },
+  { title: "M.B.B.S.", institution: "Osmania Medical College, Hyderabad", year: 1983 },
   { title: "M.D. (Radiation Therapy)", institution: "Osmania Medical College, Hyderabad", year: 1992 },
   { title: "D.N.B. (Oncology)", institution: "Osmania Medical College, Hyderabad", year: 1993 },
-  { title: "ESMO Medical Oncology Board", institution: "Europe", year: 2005 },
-  { title: "ESMO Board Recertification", institution: "Europe", year: 2010 }
+  { title: "European Certification in Medical Oncology (ESMO)", institution: "Europe", year: 2005 },
+  { title: "Re-certification in European Certification in Medical Oncology (ESMO)", institution: "Europe", year: 2010 }
 ];
 
 const fellowships = [
