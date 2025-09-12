@@ -176,11 +176,11 @@ const awards = [
 
 const felicitations = [
   {
-    image: "assets/awards/BOA-Gold-Medal.png",
+    image: "assets/awards/felicitation1.png",
     text: "On Doctor’s Day 2013, received special felicitation from Apollo Hospitals, Hyderabad, for extensive social service for poor and needy cancer patients via CURE Foundation."
   },
   {
-    image: "assets/awards/felicitation-2.jpg", // 👈 replace with actual image
+    image: "assets/awards/felicitation2.png", // 👈 replace with actual image
     text: "A huge round of applause for Vijay Anand Reddy for his phenomenal oration on 31st August 2025 at the Karimnagar IMA branch — “The meaning of life is to give life a meaning”. His masterful, deeply moving presentation captivated everyone and left the audience uplifted."
   }
 ];
@@ -280,7 +280,7 @@ const AwardsPage = () => {
             <img 
               src={item.image} 
               alt={`Felicitation ${i + 1}`} 
-              className="w-full h-64 object-cover "
+              className="w-full h-72 object-cover "
             />
             <div className="p-6">
               <p className="text-gray-700 leading-relaxed">{item.text}</p>
