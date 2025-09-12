@@ -12,7 +12,7 @@ import ContactUs from './pages/ContactPage';
 import TestimonialPage from './pages/TestimonialsPage';
 import AwarenessLecturesPage from './pages/AwarenessLecturesPage';
 import ProfessionalAssociationPage from './pages/ProfessionalAssociationPage'
-
+import ProfessionalPresentationsPage from './pages/ProfessionalPresentationsPage';
 function App() {
   return (
     <Router>
@@ -29,6 +29,7 @@ function App() {
            <Route path="/testimonials" element={<TestimonialPage/>}/>
            <Route path="/awareness-lectures" element={<AwarenessLecturesPage/>}/>
           <Route path="/professional-association" element={<ProfessionalAssociationPage/>}/>
+                     <Route path="/presentations" element={<ProfessionalPresentationsPage/>}/>
 
       
         </Routes>
