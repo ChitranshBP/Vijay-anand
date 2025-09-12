@@ -103,6 +103,20 @@ const awards = [
 
     description: `Histopathology of Retinoblastoma after primary Chemotherapy.`
   },
+    {
+    title: "Gold Medal – Best Scientific Paper",
+    date: "1st December 2024",
+    event: "AROICON 2024, Mangaluru, INDIA",
+      image: "assets/awards/aerocon-2024.png",
+    description: `Prospective open-label study on patient-reported toxicities & QOL in SBRT Prostate for Non-Metastatic Prostate Cancer.`
+  },
+  {
+    title: "Gold Medal – Best Scientific Paper",
+    date: "4th December 2022",
+    event: "AROICON 2022, New Delhi, INDIA",
+      image: "assets/awards/aerocon-2022.png",
+    description: `Feasibility study on extreme hypofractionation in post-operative breast cancer.`
+  },
 
   // 🏅 Awards WITHOUT images (rest of them)
     {
@@ -111,20 +125,7 @@ const awards = [
     event: "Bombay Ophthalmologists Association, Mumbai",
     description: `For exemplary work at the FOCUS 2018 conference.`
   },
-  {
-    title: "Gold Medal – Best Scientific Paper",
-    date: "1st December 2024",
-    event: "AROICON 2024, Mangaluru, INDIA",
-      image: "assets/awards/AROICON-2024.png",
-    description: `Prospective open-label study on patient-reported toxicities & QOL in SBRT Prostate for Non-Metastatic Prostate Cancer.`
-  },
-  {
-    title: "Gold Medal – Best Scientific Paper",
-    date: "4th December 2022",
-    event: "AROICON 2022, New Delhi, INDIA",
-      image: "assets/awards/AROICON-2022.png",
-    description: `Feasibility study on extreme hypofractionation in post-operative breast cancer.`
-  },
+
   {
     title: "Best Scientific Paper Award",
     date: "2015",
@@ -172,8 +173,17 @@ const awards = [
 
 
 
+
 const felicitations = [
-"On Doctor’s Day 2013, received special felicitation from Apollo Hospitals, Hyderabad, for extensive social service for poor and needy cancer patients via CURE Foundation."];
+  {
+    image: "assets/awards/BOA-Gold-Medal.png",
+    text: "On Doctor’s Day 2013, received special felicitation from Apollo Hospitals, Hyderabad, for extensive social service for poor and needy cancer patients via CURE Foundation."
+  },
+  {
+    image: "assets/awards/felicitation-2.jpg", // 👈 replace with actual image
+    text: "A huge round of applause for Vijay Anand Reddy for his phenomenal oration on 31st August 2025 at the Karimnagar IMA branch — “The meaning of life is to give life a meaning”. His masterful, deeply moving presentation captivated everyone and left the audience uplifted."
+  }
+];
 
 
 const AwardsPage = () => {
@@ -219,7 +229,7 @@ const AwardsPage = () => {
               transition={{ duration: 0.7, delay: i * 0.07 }}>
 
                 {award.image &&
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
+              <div className="h-54 bg-gray-200 flex items-center justify-center">
                     <img
                   src={award.image}
                   alt={award.title}
@@ -241,7 +251,7 @@ const AwardsPage = () => {
         </div>
       </section>
       {/* Felicitations */}
-   <section ref={felicitationRef} className="py-12 bg-gray-50">
+<section ref={felicitationRef} className="py-12 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4">
     <motion.div
       variants={containerVariants}
@@ -249,29 +259,41 @@ const AwardsPage = () => {
       animate={felicitationInView ? "visible" : "hidden"}
       className="text-center">
 
-      <h2 className="text-2xl md:text-3xl font-bold text-medical-dark mb-4">
+      <h2 className="text-2xl md:text-3xl font-bold text-medical-dark mb-6">
         Felicitations & Social Service
       </h2>
 
-      <p className="mt-5 mb-10 text-gray-700">
-            Dr. Reddy’s work has been spread across urban, semi urban and rural areas. He has been felicitated at various educational institutes, organizations and at Indian Medical Association at Hyderabad, Mahbubnagar, Karimnagar, Nizamabad, Vizag and Warangal.
+      <p className="mt-2 mb-12 text-gray-700 max-w-3xl mx-auto">
+        Dr. Reddy’s work has been spread across urban, semi urban and rural areas. 
+        He has been felicitated at various educational institutes, organizations and at 
+        Indian Medical Association at Hyderabad, Mahbubnagar, Karimnagar, Nizamabad, Vizag and Warangal.
       </p>
 
-      {/* Static Image */}
-      <img 
-        src="assets/awards/BOA-Gold-Medal.png" 
-        alt="Felicitations" 
-        className="mx-auto mb-6 rounded-2xl shadow-md w-full max-w-md"
-      />
-
-      <div className="text-lg text-gray-700 space-y-4 max-w-3xl mx-auto">
+      {/* Felicitations Grid */}
+      <div className="grid md:grid-cols-2 gap-8">
         {felicitations.map((item, i) => (
-          <p key={i} className="mb-2">{item}</p>
+          <motion.div
+            key={i}
+            whileHover={{ scale: 1.02 }}
+            className="bg-white rounded-2xl shadow-md overflow-hidden text-left flex flex-col"
+          >
+            <img 
+              src={item.image} 
+              alt={`Felicitation ${i + 1}`} 
+              className="w-full h-64 object-cover "
+            />
+            <div className="p-6">
+              <p className="text-gray-700 leading-relaxed">{item.text}</p>
+            </div>
+          </motion.div>
         ))}
       </div>
     </motion.div>
   </div>
 </section>
+
+
+
       <Footer />
     </div>);
 
