@@ -13,6 +13,11 @@ import TestimonialPage from './pages/TestimonialsPage';
 import AwarenessLecturesPage from './pages/AwarenessLecturesPage';
 import ProfessionalAssociationPage from './pages/ProfessionalAssociationPage'
 import ProfessionalPresentationsPage from './pages/ProfessionalPresentationsPage';
+import GolfChampionshipPage from './pages/GolfChampionshipPage';
+import CureFoundationPage from './pages/CureFoundationPage';
+
+
+
 function App() {
   return (
     <Router>
@@ -30,6 +35,9 @@ function App() {
            <Route path="/awareness-lectures" element={<AwarenessLecturesPage/>}/>
           <Route path="/professional-association" element={<ProfessionalAssociationPage/>}/>
                      <Route path="/presentations" element={<ProfessionalPresentationsPage/>}/>
+                     <Route path="/ccgc-2" element={<GolfChampionshipPage/>}/>
+                     <Route path="/cure-2" element={<CureFoundationPage/>}/>
+
 
       
         </Routes>
