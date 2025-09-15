@@ -38,7 +38,7 @@ function App() {
                      <Route path="/ccgc-2" element={<GolfChampionshipPage/>}/>
                      <Route path="/cure-2" element={<CureFoundationPage/>}/>
 
-
+   
       
         </Routes>
       </div>
