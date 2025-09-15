@@ -1,0 +1,579 @@
+146fc408f4532db0cc443ba06b1a1292d0eef184
+488cd2035fad0a876d68ca1584e317a57b8c55b6
+4d22908bab8564961d6bd03f239ed2ff8548baa3
+5c87555adc291e50cdfca66968d8d418bffd155d
+7207d77f4e134291d3e826cf1354fa395b0e2165
+73b281d67a672ac986844549abfb77466198335d
+7fbf49ee60bca4fef6e4cb66d7fdb72a650d0b50
+811cd7d4fd2fafb2c204ddb2396c183ada2f3192
+a083d4e782803f76b3fdda9e32de18d1f8cd8f14
+a3ce5612eb3717814585564e7d717888d5441851
+a7c66b4e525c4aa71b0931d728b75bf2ecb5285b
+ae677b7fa218e0c69b85a16cd3e118aeffc232d5
+b470dbd68eca168fd20c03a1af755a2c1259cad7
+c4ca683611d3bfa25cfa2eafcb5a1ce53ef0af14
+c5688794c0d34bfda4874df51629ae1d7f32c422
+c740164ccdda913d1ecf251d6accde01844d6fb9
+cd8483defa2749c198dc70c56a1dfc9f0fc8586e
+cfe4ccce641404271693e469a81ab8015634c8a0
+d5a4dbd2239f9224711d3edf3dc2de24fb1fb341
+ecf4ecbf98b782dd10a67c805a83d83a4938a784
+eeff36ded7cd373e1bb380ba0533b3c3db1d67ed
+f02c2f5213ac074f7c743a9ea3dc2e080a49d39d
+f2cd19197aea9a259161213de449e394b8130b1d
+fb9552c7279875b8bd6cc22615401774a5da9de6
+fcb9ea3c011aac02e6b5ad8bc6be0264261d6f6c
+218651b0ff04c4f035cb32256d4ff8c0f121a84a 
+2ec1d4484ba31ae1fbeef557db1663b1274c2da6 
+367fa434c0c31204279195b0b80ecff9ef56681d 
+377fe3c138c4f4aa0ed91b851d07edcc37d89537 
+3aad07abf8a01dd12903ee6457eae6eab1bcd89e 
+4db8eb65c171f8dac9d0d57e7124858568af6c3a 
+518ef2389dfdd6810ec6b44fa2b89a8ec0196a23 
+5250b3be3b612f420c939fa5d4a811751d003765 
+55fe22e1a976e594752c3d3234f20635761d38da 
+5bf13642a2bafecf84f311c7deb04a16c46487b8 
+5eccc53df2df17e58977980c6a919bd2684835ba 
+61e0e8c43c56a7b6eddc6e083a0abba33074b13f 
+64efcff94ad0dc1552ac1b4e7970f762bf57b6d6 
+6e0528c206ffb1c1f2797bc9aabbc94b1bfbc927 
+76c3132188b87f78b642d517a4601cbe73614390 
+799c5f62904255104d2b69a5d33c9baeed513ecb 
+8d68137dbb880c2c65f29e3406f32e29db302112 
+a4ac921f898428a6070717e3a3e1e7c2a2d0460c 
+bea1481cb2016768567f7ee3388984d4a0596b0d 
+c850fe1233de7ace5d3c92060bcf6b229703b703 
+d639d6f27be4857abe2e4b79afa61d83451d1f7c 
+d79371687bb5229f3299cfc9a655d0e46fd94a07 
+f2a7c52f58c5fd94e29d9a37e78a374f84ae0aa0 
+f9431a8dce3b3c84d9f9790f8cf718211b7d1ff9 
+fa49d197a622d3e81079e27a357001c2efa1afcb 
+ae10623cc2ba56482f97464030f15f1ee59bb7a4 .gitignore
+775af6e66f12e94dcf2c52dd3211a3ef72779a39 eslint.config.js
+9fe6765407600209bff1d1feba20e27ccfdebf4d index.html
+1ce26743fb723ccd282f2c8b2a2df9cef8a7572d package.json
+3ce68518d9ca3305ed61e299bba81c43cf9de168 package.json
+5c45a3f2e2e7bec83e5b20f751835ce27fa015ac postcss.config.js
+10d381af325495592f02c947610fa594b967442a public
+1186a35ba1105713d0cb9e716a76ce933abc4413 public
+120244bb4f199db4000a47138b4027b4d9530bf5 public
+16af9d1acad9c7300526c5d6c64f5e34bf8f94a8 public
+2d800d9386ef24da5d38465accc21be08a952c75 public
+43858b092a8670110cedce207b89ae4f2e491631 public
+4b525e0f1fefd8b091add7bcfd22a11495137245 public
+53e30d034bc37a1e13f0a53a66aeaf1f0b5555b2 public
+5eaeb63c4951f69699e67cd20c87f69c2ed0ba11 public
+63fb8f8d497b7c4d3dd30df369d86d53c390c40f public
+7a364709dae67f8d42b317a703ac8e307e67df80 public
+84b5e0652f14cd9f58d6df74bca98c9714fa2da6 public
+861a4c0408969d70fc7a2d2a03d85f816da0b047 public
+c75580f629daf501d0a583c5801c58a83663a6e1 public
+d3151353189f1ecfd19f26499af94504e58feded public
+276e612cc083b1abb14b4609a29155984bf74bdc public/assets
+2b22aec629acf55a238e08e8583550ed39af5e06 public/assets
+3b24ce518bcd6a778309d0e6c8107010cd8e0405 public/assets
+4404da9cc6d63a77ede0d40f6ea36e8f033474df public/assets
+4f760bc217096b2f552df7e996e1e8308581ae7f public/assets
+56d6c29205833431cd35c1e94563cab0df4dd6aa public/assets
+687cd796a3d308553e34257d5cc7c9ab19bda306 public/assets
+727242abc017d023364122b4664f1bd9aff495ec public/assets
+741af34b088af610fdf6fa3ef0b48759f5566ae5 public/assets
+795d31b491913691803aac327b0cee07886cb88a public/assets
+92b7eab4f0574e33174fe3f54d3922d5ad038d90 public/assets
+9de2e35fda5de818e777d1a8656fe37eb9ef5c5f public/assets
+b9ed786ca50ef498e49ea3a1d40691c00ea4ce21 public/assets
+c6f99e29bab77e6b78228e4bde20cf08485b5ac6 public/assets
+faf91c89d397cbaca05f8bd7a4845e16a3e698c0 public/assets
+994dc462ffe6b50535c94cd84151bcf5d7735420 public/assets/achievements
+146323c7f7f58b5c8f902b1707e6ac6bb898d0e5 public/assets/achievements/achievement-1.jpg
+7b45f2cc17a44a132abd48714347f2346e38818c public/assets/achievements/achievement-2.jpg
+40ed54d62f13ff7b7c6681c2a276d6fbc01c0d7b public/assets/Advanced-Radiation-Therapy.png
+98050b9d06f92b0d07c9d16f2277700b223a002a public/assets/Advanced-Radiation-Therapy.png
+050a09ee320342c3c916b0a575ac3fec3faeff43 public/assets/awards
+339ce5f33bd858d779d48cb08e2f812d9726a44d public/assets/awards
+a388b3f438ea2c4c4a7db4c9b5dc4dc572962b3d public/assets/awards
+d21e78ae29fafee7458684276e386dcd13f93f70 public/assets/awards
+e408c98015e1bf7813aadecd67eb9fc0afbd3f3e public/assets/awards
+f57c72c493410a52e1d7c869e430008a52345e44 public/assets/awards
+2e0545ce731f78048d2dcef0312485ba5dcbc4d8 public/assets/awards/achievement-award-opthalmology.jpg
+2121eaaf8a9c86fb8f240e610334bc4c10fbac39 public/assets/awards/aerocon-2022.png
+c73530d9bf1fdefb296cc7979d742115bde0a349 public/assets/awards/aerocon-2024.png
+080b1404f6a42772391b2fd3d2f55004219acb16 public/assets/awards/american.png
+1584ca861aa87418f54ce7fc5d130b7dc7c1fd49 public/assets/awards/AOS-Achievement-Award.png
+fec69076798ac049631a72e79e49082961d31a1e public/assets/awards/AROICON-2022-Gold-Medal – Best-Scientific-Paper.png
+393ee4fcd012eec40f89cc6e9fca1206e7a7e237 public/assets/awards/AROICON-2022.png
+b43163215d929aac7b422b3bbd3c3d4b8da811b4 public/assets/awards/AROICON-2024-Gold-Medal – Best-Scientific-Paper.png
+7291c6ebad372b39bfb0aee7025ba2dc017d8292 public/assets/awards/AROICON-2024.png
+bcb1a6fadcc676ef92092fc7f2a791ffca09d1fa public/assets/awards/bd-gupta-award.jpg
+e0e8fe05a9994b5bd5a3d7a7ca3db824b1a7ee5f public/assets/awards/Best-Scientific-Paper.png
+15e3148771f0b8543e27a71ca55cccde9a88b0dd public/assets/awards/BOA-Gold-Medal.png
+b5974e4fa507019af59c3bcca7ba255cffc65627 public/assets/awards/Clinical-Pioneer-Award.png
+10e365524ac8e325ed252a9a7aad0754e9467b42 public/assets/awards/dr-b.d-gupta.png
+8d46b87a075614faf9e2a56278940af5b20abe7f public/assets/awards/felicitation-2.jpg
+ba1baa4e37ca3964ecad3d83891373556f341af8 public/assets/awards/felicitation1.png
+f324eabc83d1ff8490aa9d5b2bfb93d54548142f public/assets/awards/felicitation2.png
+dde9e22079663e0be50aa35a985b73b9b1e0f935 public/assets/awards/International-Cancer-Research-Technology-Transfer-Award.png
+6868a67eaf6b97a3d3f3ec0a9fd923a64bef92a4 public/assets/awards/ISOO-2024-Oration.png
+14efd58e98a6211a2255cca967c31299baa72d9e public/assets/awards/Legend-in the-Field of-Oncology.png
+0c27cc71ea5377cca5a78f3a05a91a2130117877 public/assets/awards/Lions-Club-International-Excellence-Award.png
+4d5539554b7e28342790daccda884473615b1436 public/assets/awards/Nargis-Dutt-Memorial-Foundation-Award.png
+abcde3ab33c1c46a845c266e54615fcf4a4b675b public/assets/awards/timesHealthcare-award.png
+51e708bc6c172d4ce4829c28d492f2b332b2b303 public/assets/awards/Young-Investigators-Award.png
+c397598ed4464fa852a9896891afe89e2ed666fd public/assets/awards/Young-Scientist-Award.png
+21ba650f95a51cf82f94d4aabdbd8eb1fb3475ef public/assets/books
+268d67d337fefe1d956a45df2a7dc650b027ba06 public/assets/books
+2689fe4a95ec6b9498401190f86da57bffa0cc76 public/assets/books/3-stories-1-book.pdf
+7c4a9e58c7f2fb47aaa26be6b6aafd25b2f11742 public/assets/books/apoll-book.jpg
+25006e06850d0e95a30bf9493f4a90f91bd13fd9 public/assets/books/Hindi-version.jpg
+3b1a1a4139a0c9c96e0524b620e78f1de26f1652 public/assets/books/i-am-survivor-book.jpeg
+83c3315df339e1f2f8f11338044797b5fbd37955 public/assets/books/oncology-issue-book.pdf
+e19d466800cf7c735647b90beccf0840fe6a3640 public/assets/books/ret-book.jpg
+91008a9ce39b130503fe059a7965dba7453edf21 public/assets/books/retinoblastoma-they-live-and-see-book.pdf
+44cbf670d51fd81294c723814f2f824d56dcf68f public/assets/books/telugu-version.jpg
+1a166398e6aefc3c53c418a1bc7b2f00d2f9a9c5 public/assets/cure-foundation
+8a00d303f3ecd87569e4c15b001e783b66ceb72f public/assets/cure-foundation/cure-1.png
+888e49d0a9ca12c6c19576929f7f966e4e63ee69 public/assets/cure-foundation/cure-2.jpg
+ddc4158e5f9cc3bc74054c54176ab0e1ae5dd373 public/assets/cure-foundation/cure-3.jpg
+008ff33a741a47b2ba3f5b910a7f4304af7ec0f2 public/assets/Dr.vijay-anand-reddy-logo.png
+7379224f9f0949ef21e01d1271a4615aaad0f60c public/assets/Dr.vijay-anand-reddy-logo.png
+733c8b75c4beadb52c4999514386cc40050a1048 public/assets/family
+a8f822a335ed5f6420c5c5ad96138e5e38d14728 public/assets/family/house-1.jpg
+d3cf25a2b8bc9087aab1daefc89747b2f796b87a public/assets/family/house-10.jpg
+3efc430cd4799a6d5aada4c49d141a97a1cf8893 public/assets/family/house-11.jpg
+27d928cedee919aec5eb302fd3b727607787bad6 public/assets/family/house-12.jpg
+49408e733e0a2f8b6ca3daba16fc1c7b1deb9da6 public/assets/family/house-13.jpg
+b095ace6216237ae9d6d65b67cfda2826427c88d public/assets/family/house-2.jpg
+81fe4f0f7518354c3e25a98e3af6b0158d222d52 public/assets/family/house-3.jpg
+8def17496b1a75f20e92ef16bf8fd0171155e01a public/assets/family/house-4.jpg
+eecc44800742398bccb045de87fabbd7a927318f public/assets/family/house-5.jpg
+6d40912ffb191e0fc9dca55df829fe1a4658429a public/assets/family/house-6.jpg
+a5f867c3772b7f766595b34e0bac1bdbbd12ea1d public/assets/family/house-7.jpg
+0ba7aab80c7aed83aa1c2ee6d35276bbf0a4719c public/assets/family/house-8.jpg
+c6350488ef4bf726751c06857b1a8cfb0c8142e6 public/assets/family/house-9.jpg
+c8b53b6b9ad831d1def1ef53f9902c54e7c2d5bf public/assets/family/vijay-family.jpg
+725d84a7a391ac084557f69a05145e10a69ce9a2 public/assets/golf-championship
+5759723eda59baf362aebfed6f1560d416379dfd public/assets/golf-championship/golf-1.jpg
+1e6910d0ba81ecb82cd2ac556e383b18b7fb1f31 public/assets/golf-championship/golf-2.jpg
+32e6345d794e24514ccbbe87377eeca8fee59a5b public/assets/golf-championship/golf-3.png
+1f44662193ac294a55a21f618b2c3b947992a07f public/assets/homepage
+6f7b444cdd82d38224621fbbfd82c997a4d49b3d public/assets/homepage
+2db317642d46e2a2ce58b0922811c5c9d70d8246 public/assets/homepage/Cervical-Cancer-Care.jpg
+f687e04dc8e15d6b77c85354a2f9d69cdf09e5f7 public/assets/homepage/Cervical-Cancer-Care.jpg
+51b3a49a9bd6b7870596a3b4846480f654c9e395 public/assets/homepage/Head-&-Neck-Cancer.jpg
+861db8e8cd3a5d0fd15e5326ecfa8b056b38259f public/assets/homepage/Head-&-Neck-Cancer.jpg
+5f99fb3157343b0602a7dd9445f08f741acaabb2 public/assets/homepage/Lung-Cancer-Treatment.jpg
+b58297da35a8ff65f2bf057a0e269c8fc0c4b4f4 public/assets/homepage/Lung-Cancer-Treatment.jpg
+1c400e238f71fbe27ad9a0a5dbc7a80647c7bc5a public/assets/homepage/Medical-Oncology.jpg
+aae21e86a5b50f83e05d95b7c170f54b76af0dd5 public/assets/homepage/Medical-Oncology.jpg
+746ef793919e4b2a8a273eb73a8a88ef88ffadc3 public/assets/homepage/Neuro-Oncology.jpg
+b77dfa423a954f6856206299ce7aaafa3d032f91 public/assets/homepage/Neuro-Oncology.jpg
+03940c5d6c949d667973b9b83c9e5becf3735235 public/assets/homepage/Precision-Oncology.jpg
+5902e896a3f57f993a439635372fce74a9e82cb4 public/assets/homepage/Precision-Oncology.jpg
+9e84f6aaf1bbdafed74fec9dc512af1411902419 public/assets/homepage/Proton-Therapy.jpg
+a70076bb9756423f5694553aaf4d26b1ba87b45c public/assets/homepage/Proton-Therapy.jpg
+0005ad3cc8462bf200badcd72f1b582e1e761340 public/assets/homepage/Radiation-Therapy.jpg
+0c7c8d6b669ab67a0665d5a76922a09906b69211 public/assets/homepage/Radiation-Therapy.jpg
+a06bb278c63b438c4e940ac0420a100bbf6fbc4b public/assets/journey
+92ef43e08115c1abd9fa70badd90b5cf1f8c3568 public/assets/journey/Early-Life.png
+5414ee89d23c6bc20288839f529b3608a0e9be9f public/assets/journey/Head & Neck-Brachytherapy.png
+72432d5415b9655df923c18098948da95217d775 public/assets/journey/Head & Neck-Oncology.png
+7e62004be1378a587cb10e685ef0b65f0e4c0f14 public/assets/journey/Hyperthermia-Fellowship.png
+0af7cf96625ef3dcd35b9f7f3858ef31645554ad public/assets/journey/Ocular-Oncology.png
+4852c49915ec138054c7d61a9f51bc799e6c1499 public/assets/journey/Pediatric-Oncology.png
+f16b6d2f857090ac501464376549f93c6b79c22c public/assets/journey/Stereotactic-Radiosurgery.png
+111a660c729fa1aed3a72ffb044a94d10adce5a5 public/assets/journey/The-Clinical-Oncology.png
+dc1da9c0e93528c0de2a5098cd6b59894a0f9d70 public/assets/journey/The-Nargis-Dutt-Memorial.png
+3ec28e22287a80828f17cff06fdc90dbd6091967 public/assets/key-to-early.png
+f464e97c569f02d976226b09f7db0db011084b25 public/assets/key-to-early.png
+1c0a8570164417b9563f412d652988e8a9ff2ed2 public/assets/Publications (Year wise)
+04f09f819441200f7f061162333a5c3eba78cef6 public/assets/Publications (Year wise)/1992
+c685874601d2e0698619b3d2a09a5dfcc98a22e7 public/assets/Publications (Year wise)/1992/Assessment of pain in cancer patients (1992).htm
+191c249846f1c75e798c6113adc5c0264ac03421 public/assets/Publications (Year wise)/1992/JCRO_abst_files
+876436b14b7f8bb1ea6a1c0c5dcd27a636c6a332 public/assets/Publications (Year wise)/1992/JCRO_abst_files/imcsl2.gif
+535313cea3bc9b168802a30943bc5b624cc88c9c public/assets/Publications (Year wise)/1992/JCRO_abst_files/indmedsl.gif
+ab9005b991111c417c70fa1f6d1bc7da4a8cafe6 public/assets/Publications (Year wise)/1997
+c443da996c2edb29abf7fcd652944e7eb06b05c2 public/assets/Publications (Year wise)/1997/A prospective randomized study.htm
+af284bfa0d9d6e364c8f29b7f5beacad327785cf public/assets/Publications (Year wise)/1997/Low dose rate Intraluminal Brachytherapy.doc
+dd667e684e9f4bfa2723bbdd2e86cbb4ff7b443a public/assets/Publications (Year wise)/2001
+ace6840c2aac197d53e59a9e3e471f63fa33279c public/assets/Publications (Year wise)/2001/Ultrasound guided Conformal Brachytherapy in Prostate Ca..pdf
+89b599bc102a73d4fdf84ab5996db0ebd8eecb6e public/assets/Publications (Year wise)/2003
+0b0c9a147c29836fdec764575ddb0dea165a0288 public/assets/Publications (Year wise)/2003/Thermochemotherapy in hereditary Retinoblastoma.pdf
+4f5b22e41c35ca44a5aeb223b8ade47124a1a436 public/assets/Publications (Year wise)/2004
+11a699ec06d375662a05eb8f54a451f113ce2f51 public/assets/Publications (Year wise)/2004/Clinicopathologic findings in Choroidal Melanomas.pdf
+19ac3ad97793a47910914157330322c5ce8ad6da public/assets/Publications (Year wise)/2004/Concurrent chemo radiotherapy.mht
+e1d26d4444be217a03820b6a44db744509f89311 public/assets/Publications (Year wise)/2004/Retinoblastoma in Older Children.pdf
+00a25644423648f16d54d9d9ad425431b025ecd1 public/assets/Publications (Year wise)/2005
+d756c1cb2fcc908d300f5f196e704f2b10f1b46d public/assets/Publications (Year wise)/2005/Neoadjuvant Chemo in the Management of Sebaceous Gland Ca.mht
+194cf083d094b8a7570365a34574ad3edb78de20 public/assets/Publications (Year wise)/2005/Ruthenium-106 plaque brachytherapy (2005).pdf
+a79bf25cd3d2c273022bae7d926b5ef5aaf922e0 public/assets/Publications (Year wise)/2006
+b2e88d4889c17aeb1a932744d6d86fef3f09504f public/assets/Publications (Year wise)/2006/Acute Respiratory Distress Syndrome.pdf
+9d762ecb36826b2f6d41e3f5bdd5c9ef04f9e3d1 public/assets/Publications (Year wise)/2007
+77e846cdeed9ac01007d75fc8a5742f01e04bee2 public/assets/Publications (Year wise)/2007/Best Paper of Pediatric Ophth..pdf
+2a315d2bd7021a17dee05a2f18a1769ed4cde67b public/assets/Publications (Year wise)/2007/Metastasis to the Eye and Orbit from Renal Cell Carcinoma.pdf
+42fb52d3ee8ea28504a73fd290faf393d4571ebd public/assets/Publications (Year wise)/2007/Orbit Plastic Surgery - Session I.pdf
+54cca36e7cdf1c190d14d6af18672476fe92d24a public/assets/Publications (Year wise)/2007/Orbital Embryonal Rhabdomyosarcoma in Association.mht
+59a815a9cfca681beb9f06648a00275dc69b9267 public/assets/Publications (Year wise)/2007/Systemic Metastasis Following Hyphema Drainage.mht
+011f04314a9eba6860d3f4e65cd6fe94701ec94d public/assets/Publications (Year wise)/2009
+ab4628a518fd7dcdf721ee66d01bae33c1d703bf public/assets/Publications (Year wise)/2009/Atlas - Management of Oph. Tumors.pdf
+15457d51df1e359aa98d7aa97a975960143c8f55 public/assets/Publications (Year wise)/2009/Clinical Article - 2&3.pdf
+9c08cab1ed9d22f94b0eb9e9fb7d45ea5558666e public/assets/Publications (Year wise)/2009/Clinical Article.pdf
+2b81d7bdf7c6f4ba8c67e377d4b3cdde20a73e21 public/assets/Publications (Year wise)/2009/Extramedullary Leukemia in Children presenting with Proptosis.pdf
+5b349ff4d60382cd58772958b8066ade31ceab54 public/assets/Publications (Year wise)/2009/Histopathologic risk factors in retinoblastoma in India (2009).pdf
+0442a774cc0ddecdc9600e2ce83f957e893fea4b public/assets/Publications (Year wise)/2009/Histopathologic risk factors in Retinoblastoma in India.pdf
+743e15e4efd01ff02b421b4c66a67a3b1ae54b03 public/assets/Publications (Year wise)/2009/Periocular Carb Inj in the management of RB with Diffuse Vitreous Seeds - ICOO 2009 Abstracts (Pg. 277).pdf
+ce42e6fd1ea53da86872236f23e1ba4454fdade8 public/assets/Publications (Year wise)/2009/Ruthenium 106 plaque brachytherapy indications and outcomes in ocular tumors.pdf
+a0a59c5a6706ce069ff59a9bd31b85a0c9fdaa5a public/assets/Publications (Year wise)/2009/Sebaceous Carcinoma of the Eyelid Metastasizing.mht
+01886a8a9a61f233e8696a4332febc3ce8ca7ae9 public/assets/Publications (Year wise)/2010
+0641bad9488154d105da908ff0dd4193ef067213 public/assets/Publications (Year wise)/2010/16 & 17 (Pg. 80, 110).pdf
+4f246da03aa88bbb8ca0aec777c0c8317e7e38bf public/assets/Publications (Year wise)/2010/32, 33 & 34.pdf
+c14df76813788fa0007d55ec05b332f4dfda2365 public/assets/Publications (Year wise)/2010/Cervical Cancer Screening - Role of Serotyping.pdf
+2f128f40ecdf274fef5187a412d704ecdb27978b public/assets/Publications (Year wise)/2010/Cultivation and Characterization of Human Lacrimal Gland.pdf
+6ac783145afabdce0017a08079ac44e156a9c19c public/assets/Publications (Year wise)/2010/Evisceration in unsuspected Intraocular Tumors.pdf
+6a6c09de29a9b654d4275cdd00f452ce8bb9318f public/assets/Publications (Year wise)/2010/Genotype and phenotype correlation analysis in RB.pdf
+5867e599d8fb3cd331f3f05f7b9220f9e7280441 public/assets/Publications (Year wise)/2010/Orbital Retinoblastoma.pdf
+d59095bf8f2f9d09dd95bf9cb456dd51e72814c8 public/assets/Publications (Year wise)/2010/RB1 gene mutations in retinoblastoma and its clinical correlation.pdf
+64ce765eaf12e052d228088475ab4fc9a5dbdff0 public/assets/Publications (Year wise)/2010/RBI Gene Mutations in Ratinoblastoma (2010).pdf
+9e9f0a4e5e24e124341c31fd700fbc7eea956d9d public/assets/Publications (Year wise)/2010/Ruthenium 106 Plaque Brachy (IERG).pdf
+ea1ecfb7d037717d309857ca5234117327130f01 public/assets/Publications (Year wise)/2010/Ruthenium 106 Plaque Brachy (IFHNOS).pdf
+14c42a0168a3b9a381832216d238aead9a5d64f5 public/assets/Publications (Year wise)/2010/Ruthenium 106 Plaque Brachy (Pg. 233).pdf
+805a7b40cd326fb28a51716653e8afe534a93dea public/assets/Publications (Year wise)/2010/Ruthenium 106 Plaque Brachytherapy.pdf
+0d8f2da7ae0ea0ae74b908c9424f810071554f46 public/assets/Publications (Year wise)/2010/SOS 2010 abstracts.pdf
+3aef601abc9274fdde5199e9376bd709b00a559a public/assets/Publications (Year wise)/2011
+9c85ac2a891267c8adf9bab95f44c478c82bd805 public/assets/Publications (Year wise)/2011/AAO - 2011 Best Paper Articles.doc
+4495c7954f9e9b913ebeddb0048785952258de5e public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris
+5ae81cfc760efa958a345208720f5220b4a69ca4 public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris/Comparison of Intensity Modulated Stereotactic Radiosurgery (POSTER).pdf
+762b67924422067bf5b19e5cd9127ddfd97b68b2 public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris/Comparison of Intensity Modulated Stereotactic Radiosurgery.pdf
+aed8b1b9976792cff15a1884ad82272a7dcdf8c9 public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris/First Indian Experience with Shaped Beam Radiosurgery (POSTER).pdf
+bf65cf914e7a329b711a8f556379ae81c58648ad public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris/First Indian Experience with Shaped Beam Radiosurgery.pdf
+9ae425eceb209922fd21f8d25417c8f02929172f public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris/ISRS 2011 Abstract Book.pdf
+2d9ecda88d2e5550bb78edb73ad3af3031d34e73 public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris/Set-up Accuracy with Frameless Radiosurgery (POSTER).pdf
+f19caf07bef2930222c4fd658e9c7312f5b32b5a public/assets/Publications (Year wise)/2011/Abstracts & Posters - ISRS 2011, Paris/Set-up Accuracy with Frameless Radiosurgery.pdf
+d3ff7d2245efdadc843758504f020b31f6c32250 public/assets/Publications (Year wise)/2011/Establishing Human Lacrimal Gland (2012).pdf
+9ead6ce06ce4395afcd48e9759fbc291eb108977 public/assets/Publications (Year wise)/2011/Evaluation of Human Lacrimal Gland Cultures (IERG).pdf
+f1b73747bb01a615ebb1a7f9b1992d3c27369be0 public/assets/Publications (Year wise)/2011/High Dose Rate Interstitial Brachy.pdf
+74f177622fd45ea73b6b59b4eb1d5d438a289294 public/assets/Publications (Year wise)/2011/IERG  2011 Abstract Book.pdf
+79f41a36a236fb94cc041c7172bc07279799bd0c public/assets/Publications (Year wise)/2011/Orbital RB - where do we go from here.pdf
+c249d596b511229598b68f46b3fdb3f64b7c95a0 public/assets/Publications (Year wise)/2011/ORBITAL RB- OPAI.doc
+65071202f8c3ca6870179368890fcc8403a99601 public/assets/Publications (Year wise)/2011/Orbital RB.PDF
+0b81590672deb128dd29305d44f31c642f84d760 public/assets/Publications (Year wise)/2011/Orbital Retinoblastoma  Present status and future challenges – A review
+9f3ae4ad0b000c483b0b02e9e4ac39fdd322c782 public/assets/Publications (Year wise)/2011/Orbital Retinoblastoma  Present status and future challenges – A review/eyecancer.net profile.htm
+2950f584483aa6be483dd681fcc7ed2182cc1871 public/assets/Publications (Year wise)/2011/Orbital Retinoblastoma  Present status and future challenges – A review/Javed - Email.doc
+ad336320d4dc8d2890d5379d30557dc8229e63c7 public/assets/Publications (Year wise)/2011/Orbital Retinoblastoma  Present status and future challenges – A review/SJO most read 2011.pdf
+33a1257dd0e20ea1812e419254509682f0e3d7c3 public/assets/Publications (Year wise)/2011/Orbital Retinoblastoma.pdf
+850b8264e6b0d1815c20878846fec1e390cf2627 public/assets/Publications (Year wise)/2011/Outcome of Retinoblastoma with Vitreous Seeds copy.docx
+3a0391eb272dd16b7aef9cfcf58e5434e7ed1c17 public/assets/Publications (Year wise)/2012
+2c84e8254c5369498924b69f04b42fe4b9c95c89 public/assets/Publications (Year wise)/2012/AAO - Article Conf..doc
+e60a26246406ca2c34132006ae08a5fd3cbd456e public/assets/Publications (Year wise)/2012/AAO Prog Participant Req..doc
+f8d369cb16515107dac600beb18a528b082da096 public/assets/Publications (Year wise)/2012/Abstract - 1 Brain Mets.pdf
+8f2ad8651f0f583c92d5eb2385410c4eabc7080e public/assets/Publications (Year wise)/2012/Abstract - 2 Spine Mets.pdf
+54b50236538b61d4228abcd58031730cbdc22187 public/assets/Publications (Year wise)/2012/Approval.jpg
+6ee71777546deb9806b841fabc325cd7e8757210 public/assets/Publications (Year wise)/2012/ARVO 2013 Disclosure Needed.doc
+a395652ed586c70e9c1a025de4e35f5056b9c938 public/assets/Publications (Year wise)/2012/Eval. of HER-2neu status in Br. Ca..pdf
+679f700a08589f10e6530f3d0f132119b4f090f4 public/assets/Publications (Year wise)/2012/Manuscript Central - Account Created.doc
+d67462281909615ffac9f401205bb4173806b013 public/assets/Publications (Year wise)/2012/Orbital Plasmablastic Lymphoma 26-07-2012
+8020ddaebafa8deb91ee76a5914a237bcbcd6d68 public/assets/Publications (Year wise)/2012/Orbital Plasmablastic Lymphoma 26-07-2012/06. Orbital Plasmablastic Lymphoma.pdf
+231b735f3efc78a5d6286eb67c3dd012ee4a4a37 public/assets/Publications (Year wise)/2012/Orbital Plasmablastic Lymphoma 26-07-2012/cover letter.pdf
+574962a8349875d5af8cf15d1bdd65751ec7ada0 public/assets/Publications (Year wise)/2012/Orbital Plasmablastic Lymphoma 26-07-2012/Journal of Oncology - Ack. Receipt.doc
+e96d44f7672ec853e12f8b5476a1fe5baaa894fe public/assets/Publications (Year wise)/2012/Orbital Plasmablastic Lymphoma.pdf
+e2375fa748fa9eb7d16df12d8ce6761307d779fb public/assets/Publications (Year wise)/2012/Published Article in IJMR.doc
+2986b7a8c46c44b63190145dc8d34c8f5d6a26ed public/assets/Publications (Year wise)/2012/Rad Onco Review.pdf
+650cb2188d4c1c4c515f3c92b4559d706f010d23 public/assets/Publications (Year wise)/2013
+3c4a78c8244d30f950afa4d02bd2046113cddc5b public/assets/Publications (Year wise)/2013/ABS Plaque Radiation Therapy - Manuscript
+292e8a464a68a34085fb1bec67c8a0282bfa65a1 public/assets/Publications (Year wise)/2013/ABS Plaque Radiation Therapy - Manuscript/ABS Guidelines for Plaque Brachy - Manuscript Confirm 2013.pdf
+d5a88e2055e02482e15b149adf38ee3e1d000e87 public/assets/Publications (Year wise)/2013/ABS Plaque Radiation Therapy - Manuscript/ABS-OOTF Manuscript No. 2013-H14.pdf
+8f02a8507bb7d8bb93c71bc444f12bc187dcebc4 public/assets/Publications (Year wise)/2013/ABS Plaque Radiation Therapy - Manuscript/conflict of interest form for ABS - 2009 DRAFT.doc
+8b238fb8f385447b5507bf0186b72ed6faf8c47d public/assets/Publications (Year wise)/2013/Adenoid Cystic ca of the lacrimal gland - SNo. 12.pdf
+6457d77c05b9dc06b55510584bec32ae45923139 public/assets/Publications (Year wise)/2013/Evaluation of response to Carboplatin in putative Cancer Stem Cells of Retinoblastoma Y79 cell line.pdf
+3b208d7f05c56ee4d679d739747a5e0322517f59 public/assets/Publications (Year wise)/2013/Gene expression signature of putative Cancer Stem Cells in Retinoblastoma Y79 cell line.pdf
+44a7bccec2e31b3a2d707873ecb896a556d5188a public/assets/Publications (Year wise)/2013/Primary Intraocular Malignant Extrarenal Rhabdoid tumor.pdf
+188e50130d92ce62feb874958a97f83bd85389d6 public/assets/Publications (Year wise)/2014
+cda8d77563791d7a0d15ea69ed4506cf37d06b7c public/assets/Publications (Year wise)/2014/Plaque Brachy Melanoma RB.pdf
+724e549e2fd9f48c7d5cbad15646c1404e6d67e0 public/assets/Publications (Year wise)/2015
+ae6f234e4bb89074754478febfe936ac523fb26b public/assets/Publications (Year wise)/2015/AAO - 2015 Abstracts.pdf
+d934467b013405a2afc1bd97ef8a4de073de6003 public/assets/Publications (Year wise)/2015/AAO Participation.pdf
+77b9932ace8919b0ec6a524dca0f69a09dcf9aa1 public/assets/Publications (Year wise)/2015/AIOC - 2016
+328b2a76ebe7738fa280014851e9ed2854682e18 public/assets/Publications (Year wise)/2015/AIOC - 2016/Dr Faraz Ali - Abstract.pdf
+22fc7498f24adf49806f38ca5531ad25d0d911ae public/assets/Publications (Year wise)/2015/AIOC - 2016/Dr Prerana - Abstract.pdf
+98a7ba5b281cb14d59dfef3b4f37b73f3c468c96 public/assets/Publications (Year wise)/2015/AIOC - 2016/Dr Raksha Rao - Abstract.pdf
+f5a8399d004510cf6a8c274f8e266c3c1ab549af public/assets/Publications (Year wise)/2015/AIOC - 2016/Dr Santosh - Abstract 2.pdf
+d285e10e72ae6195de58d5fddb5a5e5e4fe0215c public/assets/Publications (Year wise)/2015/AIOC - 2016/Dr Santosh - Abstract.pdf
+9f80550e54be17a39752257cb7ff01c47013927e public/assets/Publications (Year wise)/2015/AIOC - 2016/Dr Sonal - Abstract 2.pdf
+12b5d4ad1a051a9426579650733dd477922c9d10 public/assets/Publications (Year wise)/2015/AIOC - 2016/Dr Sonal - Abstract.pdf
+72b285446c5465b73b82461f175ad16794422c0a public/assets/Publications (Year wise)/2015/article.xls
+2c5ffe80d645420616d5a6ef5fe4f83f54f54332 public/assets/Publications (Year wise)/2015/CFS - ISOO Presentations
+f6b17eaf72673cbb5c0e0173bc37b62d2985df81 public/assets/Publications (Year wise)/2015/CFS - ISOO Presentations/Orbital mets from breast Ca Poster.pdf
+f3e046197829be77c61f7f5e416f1016f23e0585 public/assets/Publications (Year wise)/2015/CFS - ISOO Presentations/Orbital Rhabdomyosarcoma- Clinical profile and outcome following multimodal management.pdf
+bc7a278b18370bdc192589dc93e4ce4f85a69a8c public/assets/Publications (Year wise)/2015/CFS - ISOO Presentations/Orbital Rhabdomyosarcoma- Clinical profile and outcome following multimodal management.ppt
+23a758245d6bff49d4d00c008b296077557fbf5a public/assets/Publications (Year wise)/2015/CFS - ISOO Publications.pdf
+80b837e71b2727bb017e5ee54e4a50ba125bf81b public/assets/Publications (Year wise)/2015/Effect of Orbital Radiotherapy on the Development of Dry Eye Syndrome.pdf
+30682ea2c85d41289ad9769e818998236bdf55a1 public/assets/Publications (Year wise)/2015/Eye.pdf
+73e4f9831842e9aa6f8c49dfe40babeb20e8d6c6 public/assets/Publications (Year wise)/2015/Neoadjuvant Systemic Chemo.pdf
+91c5f913f063ca070ee8ba8435a75330a5c65675 public/assets/Publications (Year wise)/2015/Publications - 2015.doc
+dd46894da68728926832906563021e1761fcb403 public/assets/Publications (Year wise)/2015/Raksha Rao, LVPEI.pdf
+3146e010a9fe0c3eb53b0e524ef6dcff3b845015 public/assets/Publications (Year wise)/2015/Shubha Tiwari - Disclosure forms
+95c4be5be30639b75edeb968e0821723b51359a1 public/assets/Publications (Year wise)/2015/Shubha Tiwari - Disclosure forms/Copyright Assignment_Stem Cells.pdf
+78275033d57258ba7d39e6824e378438a64bb64e public/assets/Publications (Year wise)/2015/Shubha Tiwari - Disclosure forms/Disclosure form (2).pdf
+065b09ec95ebf182fa37f69ef6f0d5fd47eb72f5 public/assets/Publications (Year wise)/2015/Shubha Tiwari - Disclosure forms/Disclosure form.pdf
+ec99aea1c5bfd1382759d6adceecd5ea90402c0c public/assets/Publications (Year wise)/2015/Therapy and Lacrimal Drainage System Toxicity.pdf
+44b6a7a4fa7cef7e34f6a22f445183f1040d458c public/assets/Publications (Year wise)/2016
+e162858d9c2742627e018034a0ad8e22b0a723d6 public/assets/Publications (Year wise)/2016/AIOS
+cc683241dc047386484d5e58eb830ef7ebd42038 public/assets/Publications (Year wise)/2016/AIOS/FREE PAPER 1 [FP1193].pdf
+b6d0be8920c4532caf7e257d5328013175ce0c77 public/assets/Publications (Year wise)/2016/AIOS/FREE PAPER 2 [FP1494].pdf
+2d368b0d153dc7b0c4ed25d2ecf2108ff75504f0 public/assets/Publications (Year wise)/2016/AIOS/FREE PAPER 3 [FP1514].pdf
+b1d38ce5517a3da978ffaa46e63c86f79343a4c4 public/assets/Publications (Year wise)/2016/AIOS/FREE PAPER 4 [FP1430].pdf
+1d702bd1a3e1b2638a13ec4ef70df3333b0fe757 public/assets/Publications (Year wise)/2016/AIOS/FREE PAPER 5 [FP1384].pdf
+90c0127b349f8a0a6e0caa6fd36668be13589ec7 public/assets/Publications (Year wise)/2016/Asian expert recommendation on management of skin.pdf
+49fb58f7f32889ec6b1363ffda344fc800105487 public/assets/Publications (Year wise)/2016/Eosinophilic granuloma of the orbit - A study of 8 cases 1.pdf
+85aaaf81f7008bef3efff1c252fe33275e8aee6d public/assets/Publications (Year wise)/2016/Eosinophilic granuloma of the orbit - A study of 8 cases.pdf
+cf669706a316c694bd2c0c10eaa8650d5312fb0b public/assets/Publications (Year wise)/2016/Lacrispheres from human Lacrimal Gland Stemness and Secretory Potential 23-06-2016.pdf
+1ba68d93cba4b7891f8f9fb6bf5a4336138c46bb public/assets/Publications (Year wise)/2017
+e8eaff136c0bb9333edea89e3abbd32507a39afe public/assets/Publications (Year wise)/2017/Aqueous Deficient Dry Eye Syndrome Post Orbital Radiotherapy A 10-Year Retrospective Study.pdf
+b54a73d02365490fc8ea72c0ded544b1a26af17f public/assets/Publications (Year wise)/2017/BOPH-D-17-00582_R1.pdf
+896b283b57a042e1560d9cfef10038fe2753dbb2 public/assets/Publications (Year wise)/2017/Clinical presentation & Outcomes of Stage III or Stage IV RB in 80 Asian Indian Patients.pdf
+9fd9be156ce4d374ab2237a5a2c010da1f6b2413 public/assets/Publications (Year wise)/2017/mdx657.010.pdf
+b74b44df4dd2b7ca16617c37414fe2247245538a public/assets/Publications (Year wise)/2017/Orbital RB An update.pdf
+fc34ec93a0432259cd7c95ab6f30340d9d9b21f4 public/assets/Publications (Year wise)/2017/Role of EBRT in Management of RB - Confirm.pdf
+3c3b3caa321c3c941dc6975e528dc89780e431bf public/assets/Publications (Year wise)/2018
+d94890e014920aba8f43a4869efcf851bcd67c32 public/assets/Publications (Year wise)/2018/1-s2.0-S0360301618334606-main.pdf
+7641ed6883f79b7325cb47ede09b85c6821cca3f public/assets/Publications (Year wise)/2018/10.1016@j.clon.2018.08.021.pdf
+cd3ed4d669d629f93430b9d64b66c07ab5084f0d public/assets/Publications (Year wise)/2018/A prospective collaborative protocol for newly diagnosed patients of Retinoblastoma in India (6.1).doc
+19e67f119f9ed1b11f8880f35705d2176f69e1ab public/assets/Publications (Year wise)/2018/Clinical Presentation and Outcome in 1457 Patients (2074 Eyes).pdf
+37bb1503e8c5b4602eeb5ae6a47694b2582307f5 public/assets/Publications (Year wise)/2018/Corrections.pdf
+e30bebdd90bc2bf93e9a7ad2f06fb70e4f604d91 public/assets/Publications (Year wise)/2018/Eye Salvage.pdf
+92ca10a9c1021d56e27c7e3f383c264036636aa4 public/assets/Publications (Year wise)/2018/Management of RB with Extraocular Tumor Extension.jpg
+40203544e560873cf4d61166cf5397472ef909a4 public/assets/Publications (Year wise)/2018/mealnorrhea.pdf
+1ce23a27efb79f67bad913ac6f0410b2aa7387b4 public/assets/Publications (Year wise)/2018/Outcome of Multimodal Management of Orbital Rhabdomyosarcoma 06-06-2018.pdf
+d5f14c08b20fc269667843dcf99f85d476ed1f34 public/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018
+58dd469d6f224c2729b5296e87110d9c0d84db80 public/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018/Email - Swathi Kaliki.pdf
+42d7ad18630fc0248abfeb4e4f05d01258532306 public/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018/retinoblastoma based on age at presentation clinical features and outcome.docx
+0e8fb9052fc94d80a45f1bdc8411bf82d23c1d04 public/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018/Table 1.docx
+c2ca6b176b40d08f382cda7cfaf923772b980634 public/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018/Table 2.docx
+8cc76f11eee1bbfaed53559ac148217633a4aa5f public/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018/Table 3.docx
+599bca53c8d6da67aca438338cb3a62218044a77 public/assets/Publications (Year wise)/2018/Sayan Paul - Abstracts
+d61d9cd06fce685d57324174b6718bb6c9e6017a public/assets/Publications (Year wise)/2018/Sayan Paul - Abstracts/JCurrOncol1135-8477898_233258.pdf
+8ec24000fb3f512a44f8f1ab87059571137deb70 public/assets/Publications (Year wise)/2018/Sayan Paul - Abstracts/JCurrOncol1140-8478088_233300.pdf
+fd213359c6c417d18474cab32199edc43d2d2c33 public/assets/Publications (Year wise)/2019
+c1b99c85113637b45e4975811521a8af829b70f5 public/assets/Publications (Year wise)/2019/ASTRO - 2019 Abstract Reject.pdf
+d0e16b4a4bb3859978dda2cb3801033ba0665e3d public/assets/Publications (Year wise)/2019/ASTRO - Abstract Confirm 2019.pdf
+25ba22651fffcaba523d65f8a92f51e0ebcc1ee5 public/assets/Publications (Year wise)/2019/ASTRO 2019 Abstract.docx
+40f1c379ae4eb230f61c9556aff36665bced1e46 public/assets/Publications (Year wise)/2019/ASTRO 2019 Call for Abstracts 17-02-2019 (CFS)
+9c5dfa90de2124d837ce35c327e69719f2bd802c public/assets/Publications (Year wise)/2019/ASTRO 2019 Call for Abstracts 17-02-2019 (CFS)/Abstract 2.docx
+d79179669202de4c7e32d4e7e5efed670458f87c public/assets/Publications (Year wise)/2019/ASTRO 2019 Call for Abstracts 17-02-2019 (CFS)/Abstract.docx
+13cf904d2ca0e5948bd3a57765ffcb49ce655f7e public/assets/Publications (Year wise)/2019/ASTRO Abstract Receipt 22-02-2019.pdf
+dac436ccb9c323231e97762c8a8057e918ea7aec public/assets/Publications (Year wise)/2019/Choosing wisely.pdf
+0cbd3af141c62a0577691f0682bb071e5ce61ca2 public/assets/Publications (Year wise)/2019/Poster - ECR2019_C-1856.pdf
+94d823306556e7030c5c10e405426ddef29d632f public/assets/Publications (Year wise)/2019/Preservation of Retinoblastoma Group E Eyes.pdf
+dc1172e1f3a36790c604888c4e21829c4323d6d3 public/assets/Publications (Year wise)/2020
+803d5134d831372911dfeb7475c598f6db7d9a9f public/assets/Publications (Year wise)/2020/CWI commentary IJS.pdf
+bc05fbfa6fd2f3e6d57d963846672963742bd9ae public/assets/Publications (Year wise)/2020/IJO 2020.pdf
+e627f06698ba4c9394d6c724fce6f1fe6f154e0f public/assets/Publications (Year wise)/2020/Int Ophth 2020.pdf
+d6baa0001582f3fce973a84c5760359af4121fba public/assets/Publications (Year wise)/2020/IntJNeurooncol 3293.pdf
+20a3535d6629dc2de0ef31386da940fafc9006b8 public/assets/Publications (Year wise)/2020/Publication - PIIS1.pdf
+e902262f70d3c800f85dd56956ff7afc193e98c6 public/assets/Publications (Year wise)/2020/Publications - Nov 2020.jpeg
+a20ac00486513bd04a98ecda48ca1eeedeaf3757 public/assets/Publications (Year wise)/2020/Second primary tumors in retinoblastoma survivors.pdf
+0747486a521175e86d5ffb73f24cdc330b510177 public/assets/Publications (Year wise)/2021
+a45de627c14969a7a71a1772ae14a3785ec05a88 public/assets/Publications (Year wise)/2021/AIOS Publication 24-06-2021.pdf
+8553e41dc0af7cb0e29917d110605956a084dc42 public/assets/Publications (Year wise)/2021/Bevacizumab in Advanced Ovar.pdf
+1ac9ffa7e2e6f925f06419424c22b09c3163cb01 public/assets/Publications (Year wise)/2021/bjophthalmol-2021.pdf
+4107be7e02112f698ed48df0961a3eb937d8f2f9 public/assets/Publications (Year wise)/2021/Does Multimod Tx Improve Eye and Life.pdf
+e821ab8bf4bc466b2c0d5ebade35ab7bf260a5a5 public/assets/Publications (Year wise)/2022
+dfb8abdeae74a33effe28c409ed77c93ad3249c0 public/assets/Publications (Year wise)/2022/A retrospective analysis.pdf
+2d6983307fb6bda46f65a11e7a1fe5f92dde269a public/assets/Publications (Year wise)/2022/Epidemiology Br Ca Study 1st MS THB 26.11.2021 Final JJ 25-01-22 clean version for authors to review.doc
+04c09b870cfd516cb3a4f11bc329eaeed6d5686a public/assets/Publications (Year wise)/2022/Epidemiology Br Ca Study 1st MS THB 26.11.2021 Final JJ 25-01-22 clean version for authors to review.pdf
+0f0ef426d5b0889b4b3c7dd9dff50007dbab5f8e public/assets/Publications (Year wise)/2022/IntJNeurooncol_2022_5_1_1_373923.pdf
+3ef9b19e18ab5a8ebf8350e3f5640a36336dc324 public/assets/Publications (Year wise)/2022/Journal of VRD Confirm.pdf
+0233b33bd089ebadab501914fe232e0635680646 public/assets/Publications (Year wise)/2022/WOC22 Abstract.pdf
+a2fdecdcb070076169aeb8f760ec947db73250f6 public/assets/Publications (Year wise)/2023
+ecd65e461568032b6c5e93f3f07ff735176b3efa public/assets/Publications (Year wise)/2023/Brachytherapy training in India.pdf
+a00a06f02500508c38f74428beb279ddf312b17f public/assets/Publications (Year wise)/2023/OOP-2023-1-2R1 Accepted MS.docx
+8ef82ef47ab8023ba61f2e232d1e890e222811d5 public/assets/Publications (Year wise)/2023/Publication.pdf
+bbaabaefb7da4c6d251b15aa7f9112a15813c99c public/assets/Publications (Year wise)/2024
+1c96ae4dd3a3d50cd183c64867a5b77ded8a9298 public/assets/Publications (Year wise)/2024/IJO Aug 2024 HTC low.pdf
+b29df2547ccf3d350c62334cc91f3965d2cc441d public/assets/Publications (Year wise)/2024/Neoadjuvant chemotherapy.pdf
+e850c1ce1d72ccdde33b9a5e7425579b5a73cebc public/assets/Publications (Year wise)/2024/Ruthenium.pdf
+2939defe4518598b0d707dfa420573d58654a550 public/assets/Publications (Year wise)/2025
+4c2a45815354788c5a40a7ac735ef74328c99853 public/assets/Publications (Year wise)/2025/A prospective feasibility study on extreme.pdf
+1d8ba9e3b53fe0821b438f611d6dfaed3e85174c public/assets/Publications (Year wise)/2025/lag time for diagnosis and treatment in 1120.9.pdf
+d530488299eae271f912315cad228bc487c74c24 public/assets/Publications (Year wise)/JCRT Login details.doc
+9e9dffcf18898aeac8fe1dec974415466e4586af public/assets/Publications (Year wise)/Unbound MEDLINE  Reddy VA articles found in PubMed.mht
+b41728f96291f4df9b0e2213a4be96f41ea9aa33 public/assets/testimonials
+dded9888b4a0da16c0b444ade8cfc5fb18a7c5cf public/assets/testimonials
+b9300432299b0a72e22f90e6694cff4c9ad7c430 public/assets/testimonials/IMG_0638.webp
+706abc0c56320b2ec98a17fcb14c888b00b8a9ed public/assets/testimonials/IMG_0639.webp
+35b9a314d8cf2bd49da23ad8323eaa4f14c7f54f public/assets/testimonials/IMG_0640.webp
+40a921ee0bea7be3a2e237fcb4b266fc5e95fb83 public/assets/testimonials/IMG_0641.webp
+ff05c31cb14f19d3199e51789fdd4f8408560511 public/assets/testimonials/IMG_0642.webp
+580c8150b2a4be109b7bf6095b10bda3ccace6c1 public/assets/testimonials/IMG_0643.webp
+1c844b7a863588863761e683cda1cfc44f3792d1 public/assets/testimonials/IMG_0644.webp
+2fe2cb2d701ebb26ab98b8cccb298bc60765940b public/assets/testimonials/IMG_1818.webp
+9bcb80f8d33c83fc4d3555c8ea505377afb6981f public/assets/testimonials/IMG_2093.webp
+55c71a376c5f5b5a37447c8fe1920dc66ba66d12 public/assets/testimonials/IMG_2096.webp
+99fb6cff5c2b84072757540d1e402a7889e190fd public/assets/testimonials/IMG_2098.webp
+1da0c62012f633f23ff049d5470d3e553d90ebfa public/assets/testimonials/IMG_2099.webp
+df60f59afdfede8a7e53e916f78aacffd7196dbd public/assets/testimonials/IMG_8069.webp
+a371a2ec669e7f761e346b50a73067310c9bd17c public/assets/testimonials/IMG_8070.webp
+97f585c039fceabeff02d01331a899a3e527a5a1 public/assets/testimonials/IMG_8073.webp
+8f8714e97bb7fef8d9391c1ecad4428b35c53185 public/assets/testimonials/IMG_8074.webp
+1ca45f130bd7c6184279b95484369e07726214cf public/assets/testimonials/IMG_8076.webp
+e2c795e3478f5d9bb9735ec97f96bdbed0af2bdf public/assets/testimonials/IMG_8079.webp
+c1dcf6fc1e0663d250f3abdc22e1fc06d0aad49b public/assets/testimonials/IMG_9318.webp
+cc6da7293af5d63ac969f623cd3ed5efb65e5264 public/assets/testimonials/IMG_9479.webp
+877e7ac5e33cf7db3856cde23361c0008a455dee public/assets/testimonials/IMG_9488.webp
+b31698a618192abc572b9329ef838e62b1480d34 public/assets/testimonials/IMG_9490.webp
+0b5de1658360a7fa7e9ee9625faf7236f54204a4 public/assets/testimonials/IMG_9491.webp
+837db49fd8c854cf089477b5787164d637b2e9aa public/assets/testimonials/IMG_9492.webp
+fa1b8bb98c6671112cd10b25a916108fd942a090 public/assets/testimonials/IMG_9493.webp
+9465cd1b636a1e357ef531e2173acf037b1df606 public/assets/testimonials/IMG_9497.webp
+c37aea10bb8528e41d51b67ece6f50c11284caef public/assets/testimonials/IMG_9502.webp
+44f8cd970f57e2da915db037531cc28db9e85c0c public/assets/testimonials/IMG_9509.webp
+5bc42720021852288fd1a046b78b5563007108ff public/assets/testimonials/IMG_9510.webp
+8cbdf36007ec36929bc1f286cfda642acaa1c6b1 public/assets/testimonials/IMG_9518.webp
+288469c63e89740666b60768eba6c78a3244e368 public/assets/testimonials/test-new-1.HEIC
+425fa57f9e6dddd17c978e7e67676ca28b915abd public/assets/testimonials/test-new-1.jpg
+9e37e0be02d85f573465b5ae038bc3370d34304c public/assets/testimonials/test-new-2.jpg
+33fd6ecac3e0f7b408cacfc83a22362844ce8d9b public/assets/vijay-anand-about.jpg
+4eff07219c20fa5d9dda989d1212544bc65e3dc7 public/assets/vijay-anand-about.jpg
+bc591096410aaaa8a2fbc9bce224f3b57bd12afe public/assets/vijay-snand-hero.png
+0ec3502962aafc4e5a4becf5da3bd5d7f4faf558 src
+166612f74642b93599fd061588d78de7d3092efc src
+2e92e9f5a71e38d4b8de7fca7d2f6086ef923bc1 src
+34f42663ec73b0e31e1df7bfae6a8b4365fb168b src
+38f99f060957d2216b063c1018d2fffd4340c08f src
+39462fd00c2618cbb2351e63bda3a0dff1536f08 src
+45a3b0fa6573423cd0ede930188b62f751271655 src
+5490b48fb76f499764c34cf98de1dd42b78f412a src
+5ae1c0b1e9df41e9402d129e9619cb84f5b5e778 src
+66aece1ec33038cbaa5b169e4c91fe523306d980 src
+676f91f2de8e415230c58eb8c3aa5c2acebb3e47 src
+71a132e5d47d9be94daffcf214824e4c4c1dd0bc src
+85075c9765a1893a96990226863ec7a3d47bcde9 src
+985d76c474e470d9d4f714590e62fa1b14cea111 src
+9fa8be11870af6c2ad7bbb9d9a261788424e2eb3 src
+abdfb3fbe351521c1f9ff67147f1bdb4a6603ab3 src
+b7b27e799d7317288410963269b2cdfb24463d46 src
+ba766f3fe205d39750aa3e1789b89564e9f41887 src
+d3dd6ec27f2fd31d2ccf0f68f7916ac1a84300a8 src
+d56f9165e4520e4a52a622c445f5fc6e72f361e3 src
+dc04eb68c6b94bc758794f2ba69145560e99ec90 src
+e81fdf4909849f3a1afd722f85bdb047af44d299 src
+ef7ae0c817597322427c70309f9c3ad18e08bcad src
+f00febf4067776665a23482eee05f1d9307a6245 src
+f773d0885974b3fcc8586ed5cf8dd601534eb833 src
+7552aa55741d0e91477f1d9bbd6dee72db164c32 src/App.css
+0e20de5a2551d18dfffcc51e8aaf7a50d812b161 src/App.jsx
+1d90c35124f392a054d274ac8738fdcca01800a6 src/App.jsx
+221eb72101ba3694cf8bc912701bb11270c16f05 src/App.jsx
+3fef472d6e0826a62033f22b679d53baf717c1bb src/App.jsx
+40b0a0451fcf20d498ac4519af8ccbeacf4463c7 src/App.jsx
+49b00539d061ecab955e86d5c71359fa1f5ae413 src/App.jsx
+54ead5f83cd2ad6474b8d0f5269b015ea32a0c5d src/App.jsx
+8ef9681347c136668763d00768e38841f03aa858 src/App.jsx
+e0ef42c0689dddfb0cd2f6c4dab3f00ed63b56ff src/App.jsx
+ae65e7a2bd25391b45c563ad073ab75acb33b0a9 src/common
+139aec5f41602fba213d5bc773cac1fc4317a25b src/common/SafeIcon.jsx
+1a7f96604140e402b076a97aeaa93471a0b78a8d src/components
+7f12adb5400301e0637bb2c47de63a66d1343945 src/components
+a66aa91b305ec4b6b48cff74a5a336275c79cbe5 src/components
+c36dcfdc85ddf332487aa7d6c6ddafe9e39ac0df src/components
+c95bb481438fb5aa02e940d2472281dacf047de7 src/components
+21ee6d64e8e98d28a379def7c8c200f49b2f40ea src/components/About.jsx
+9dd5c5d822af45ff7422b76475b367c03048dc2f src/components/About.jsx
+7af4b8f22b38d774b05074eb4deb180bbb8f9f4c src/components/Awards.jsx
+d78f653acd240039476d4b83ac377aada363887b src/components/Blog.jsx
+79b426b6ab8437c79ae29100ecd040e911c94fc7 src/components/Contact.jsx
+7a2ece7c9f22715b22c68235a03b9fcf8f93da31 src/components/Contact.jsx
+aa6b1a0bd18b66acd19a496b4e3a4fd4372f3d2f src/components/Contact.jsx
+d83fb45e3e5bab0348567600f8fd9941b3544e8b src/components/Contact.jsx
+094e513ea4a3578c1bcb04fd2a404230be2a07f5 src/components/CookieBanner.jsx
+705a2b53543272ebadbbdcc99cc8ca2731f1b52e src/components/FinalTest.jsx
+12cce70d364cca13fbd0909f31d69e637fd61842 src/components/Footer.jsx
+6e3554409d6d3db209934a27e28be27d3ee7657e src/components/Footer.jsx
+112d6ef34ee6f2d16a5e76eb534bab65cd41a476 src/components/Header.jsx
+1dae305a1ef7cde7e463057b68c9acf7e490d614 src/components/Header.jsx
+49a2c6d779fcf071d217c59365f0d779e6206840 src/components/Header.jsx
+5a31a0eb32312712c4a65115d825806b25b25f3c src/components/Header.jsx
+1f136315dea7b68cf6a660452fd3d506dc6de7c2 src/components/Hero.jsx
+b8f6fa5c2986b1765e2a5e8771cc0d48d783213b src/components/Hero.jsx
+fdbabf96acb36939d809daa43ff0d0fbad45d606 src/components/Hero.jsx
+d568e907a025907dac1bd99fffeafc64f0e4223a src/components/HighestRated.jsx
+60ea0bc16b583b5900b2cfc647b1ae54d5f01b9f src/components/InternationalPatients.jsx
+87b065e54b1da6d77def0f6921626c440cb80860 src/components/Services.jsx
+9ccdf21fffcfdb84210aa7f5648f50b719f359cd src/components/Stats.jsx
+3fc90a724fdbe64bbaac9655a5b545e791954f60 src/components/Test.jsx
+eaf5042c784cae6c9f747282339a1b41315b6d03 src/components/Test.jsx
+c64e91f41ceef542f2581cb809ae80b4cb0087e5 src/components/Testimonials.jsx
+eb3e43d5e721b52350bd9716bdf9338c9dfe05d0 src/components/Testimonials.jsx
+5a101061f3a570310bab7061ad9938120e1051d6 src/components/WhyChoose.jsx
+8d8819247d948155cbce40d4b259fa57e77c029d src/index.css
+987c65a013418e1743e4c0f3092b79be3c9357e3 src/main.jsx
+074919f0b3f08c836a526f10217aed6e41fad406 src/pages
+1849f378cbfd15edf35f9a087a7d33041d927ea2 src/pages
+1dbf8d7a75f9c0573d2a0e90112471042934c14d src/pages
+2a8437bd4d44f0256e70d11ca842480fada5b370 src/pages
+31a8223559faaf3b49fe9295d4b79acdc1ac0481 src/pages
+508b4919f8bbf455f09af9372333380593409e5b src/pages
+595affabb12e6d54695f1a20ae7b9b7031e7ae3e src/pages
+6c5946c5cd708e3c60591714f2f51c2792fafc69 src/pages
+6e878df560923521cf7a325817e5b9f105d99966 src/pages
+802e9cd6c577870f9213797eb5a9a9b88e0ebaa8 src/pages
+823da6de351a0e1401889706582c5e5db2fa6f2a src/pages
+901083593ca789f120285c888bd408e19469ca12 src/pages
+9abbde1362f02eb0996ae7d7bfed03d64a3d54a9 src/pages
+a1ca3cfa6a067fee6f1c359d12811f3b734bc9fe src/pages
+aa9d2ed68cf4f75092edbc8d65c091e19738b9c0 src/pages
+b135424c89ad792528c46bca37be004ce9717449 src/pages
+b16070ea29964234675181168444613ad9783e93 src/pages
+b873bb8515cf06be54bfea3375492dc3c860be3a src/pages
+c578d482a21af18e41df7336b6014f26d6992be0 src/pages
+cd0ede43978b5b43f2e1cb3811bb175b8395969c src/pages
+d0dd85a5bbdb11ce35afaa261d44df85eb55b380 src/pages
+db8d45c791b5d950476459824db7787ff42a831e src/pages
+e1fe067465d5987e1d200d6a461651f5a7240e62 src/pages
+f7c6dfd94bc0577f1c1be671b7d2530f4240f0a5 src/pages
+17e7269ba56bdb7dfac946730372184b85176bf6 src/pages/AchievementsPage.jsx
+27cf339ebcc17c1b3487e8dbdd652908b9884c21 src/pages/AchievementsPage.jsx
+83c7ecb0d8e9d0017f61c15c7a9f3d3e05ec7ffb src/pages/AchievementsPage.jsx
+8d4478ee737f628cf991a2547fc67afc339dee3e src/pages/AchievementsPage.jsx
+9a1a0d594cbabc9ddf98214a8b5ed401130401d8 src/pages/AchievementsPage.jsx
+0bcea93047fea8bc06d1adc3aed3272f18916733 src/pages/AwardsPage.jsx
+1baa5f6d9a75aab411843109d65028946ac2d380 src/pages/AwardsPage.jsx
+4ab15c4a0bef3401e5519fadc82894cfb1844a5f src/pages/AwardsPage.jsx
+5d547754a49761fb2898b5428184e52ab87b0e5e src/pages/AwardsPage.jsx
+a676637e02278f006ae7fade244efd706a79a055 src/pages/AwardsPage.jsx
+bdf0031f0879d90cf4942b38f70b3505c8a79593 src/pages/AwardsPage.jsx
+d6885a87a0d3980f1d010ebe4f06e11a3fd46a97 src/pages/AwardsPage.jsx
+f09012b866007393bd3271a63ceba014e70f1e3f src/pages/AwardsPage.jsx
+835dca95cc4c8dfefaf70ecd831e7cf5ef474be9 src/pages/AwarenessLecturesPage.jsx
+4447a1ed1e65b682ac8c288604fe0e8ae7080e3b src/pages/BooksPage.jsx
+8810362fa467128f1d453d1723b2056b231afb81 src/pages/BooksPage.jsx
+8feabc33fb3040a8068591b0df2c86bfcdff39c3 src/pages/BooksPage.jsx
+97b42ff47c0f0322c249902f6eefa8e52be809a9 src/pages/BooksPage.jsx
+c84ce0aa19c6e5863f65abb80c398a502a979446 src/pages/BooksPage.jsx
+3028711f96f3195aea55e30824244131d31074f3 src/pages/ContactPage.jsx
+97b1b6f193afacadc27c0cde8d2aa4d5af1e16cc src/pages/ContactPage.jsx
+ae60d74152c05924d349ee7e8fe380a2f92053c6 src/pages/ContactPage.jsx
+8d89d9d75f0ef5ec75bfab4af689aa36ac4c87ec src/pages/CureFoundationPage.jsx
+1e323e6606632ed7b55945d9a5ecbf24537272bf src/pages/FamilyPage.jsx
+8f6807fd4d32fd6b16323d3feb910788bbdf68ab src/pages/FamilyPage.jsx
+eee6e213180aacacb56bdc991cb2b9a211cc95c5 src/pages/FamilyPage.jsx
+f5fad14c45942952bc4b2b7dfedf148072db9ad3 src/pages/FamilyPage.jsx
+71edee045ae6d5b61bdcdcbcb26e5c0d8ed0da5d src/pages/GolfChampionshipPage.jsx
+9750cfa6a6ba25870a87cb21a8fbd8309cd1f97e src/pages/HomePage.jsx
+afc78842e00c36706217c77454cceafa64f2d779 src/pages/HomePage.jsx
+25da9c908761717b8cd9268a4ceed2ed01a1ed9b src/pages/JourneyPage.jsx
+279e9b916d823db91933fb8543f77cd623b94baa src/pages/JourneyPage.jsx
+5b45992fef62c3e12cabe03cbe04d2c75b618334 src/pages/JourneyPage.jsx
+721fcc7e3ce824b5a5b5fbd709b290d5bf6c0117 src/pages/JourneyPage.jsx
+be70692e68b7a6543704a9758545cf5bf1838d04 src/pages/JourneyPage.jsx
+e2d6f9f4b42a4d56b3bd3708596ed281eadf124e src/pages/JourneyPage.jsx
+c98ceca3c066b7f37db9be62e6168df6e2ed66cc src/pages/ProfessionalAssociationPage.jsx
+5bb97fc2a901a05e81d4f4f7d2db072bdafb0330 src/pages/ProfessionalPresentationsPage.jsx
+87663706de0935718dca32b692c71a7cd3368be1 src/pages/publications (1).js
+4f7981ca08aa42e467bb64da04adb97382944170 src/pages/PublicationsPage.jsx
+51093555cdcea2c1f2c6cbeb01cebaeb0925714f src/pages/TestimonialsPage.jsx
+630d3abd92af9df58e2f16f6bafa8e426cb618d7 src/pages/TestimonialsPage.jsx
+7b528af05cf4c993e6f7668003939c12655ad0dc src/pages/TestimonialsPage.jsx
+ca65e1f3a504fe7a9b0ec5c8cc5e48bdb04ed97e src/pages/TestimonialsPage.jsx
+e1fa36b0a9684904e9bfaa35e532cb8b81933c55 src/pages/TestimonialsPage.jsx
+6cd983e99141626e9b8b489442917408e1026544 tailwind.config.js
+13320f0d07da0dba3263db6b3c9b698227eb5b70 vite.config.js
