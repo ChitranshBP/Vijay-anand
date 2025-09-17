@@ -176,7 +176,7 @@ const GolfChampionshipPage = () => (
           rel="noopener noreferrer"
           className="flex items-center gap-3 px-8 py-4 bg-white text-medical-blue text-lg font-bold rounded-2xl shadow-md hover:bg-blue-50 hover:scale-105 transition"
         >
-          Visit Cure Foundation
+         Visit Cancer Crusaders Golf Championship
           <FiArrowRightCircle className="w-7 h-7" />
         </a>
       </div>

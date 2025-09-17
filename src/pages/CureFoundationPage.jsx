@@ -9,7 +9,7 @@ const photos = [
   "assets/cure-foundation/cure-3.jpg"
 ];
 
-const EVENT_LINK = "https://www.curefoundation.com/"; // Replace with actual Cure Foundation link
+const EVENT_LINK = "http://www.curefoundationindia.com"; // Replace with actual Cure Foundation link
 
 
 const Carousel = ({ images, interval = 5000 }) => {
