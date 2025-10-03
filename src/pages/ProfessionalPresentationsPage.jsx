@@ -4,6 +4,319 @@ import Footer from "../components/Footer";
 import { FiCalendar, FiMic } from "react-icons/fi";
 
 const presentations = [
+
+
+  {
+    title: "Invited as a Moderator for the Session on “Head & Neck”",
+    event: "XXII Annual TMC Radiotherapy Practicum & 1st TMC – IBA Proton Therapy Practicum conference, Mumbai",
+    date: "September 12-13, 2025",
+  },
+  {
+    title: "Invited as a Guest Faculty for the Gunilla C Bentel Oration on “The Meaning of Life is to give Life a Meaning”",
+    event: "ARTTICON 2025 conference, Hyderabad",
+    date: "September 12-14, 2025",
+  },
+  {
+    title: "Invited as a Moderator for the Session on “My Most Difficult Case”",
+    event: "4th Edition of EyeCAN Conference, Hyderabad",
+    date: "July 27, 2025",
+  },
+  {
+    title: "Invited as a Presenter for the Session on “Retinoblastoma Multidiscipline team meeting (RB MDT)”",
+    event: "ISOO Virtual 2025 – Virtual meeting",
+    date: "July 26, 2025",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Academic Session – Head & Neck”",
+    event: "Best of ASCO India 2025 conference, Chandigarh",
+    date: "June 27-29, 2025",
+  },
+  {
+    title: "Invited as an Expert Panel for the Session on “Leveraging the Role of Immunotherapy in Resectable Locally Advanced Head and Neck Squamous Cell Cancers”",
+    event: "MSD Group Input meeting, Mumbai",
+    date: "June 14, 2025",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Therapeutic Monitoring”",
+    event: "Precision Oncology Leadership Summit (POLeS) 2025 conference, Mumbai",
+    date: "April 5-6, 2025",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Cases 8: Orbital Tumors”",
+    event: "International Society of Ocular Oncology (ISOO) 2024, Goa",
+    date: "December 3-7, 2024",
+  },
+  {
+    title: "Invited as an Orator for the Session on “Orations 3, Keynote Lecture and ISOO 2024 Orations”",
+    event: "International Society of Ocular Oncology (ISOO) 2024, Goa",
+    date: "December 3-7, 2024",
+  },
+  {
+    title: "Invited as an Expert Panelist for the Session on “Cases 6 : Ocular Surface Tumors”",
+    event: "International Society of Ocular Oncology (ISOO) 2024, Goa",
+    date: "December 3-7, 2024",
+  },
+  {
+    title: "Invited as an Expert Panelist for the Session on “Papers 10 Retinoblastoma 5”",
+    event: "International Society of Ocular Oncology (ISOO) 2024, Goa",
+    date: "December 3-7, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the YROC Session for panel discussion on “Next-Gen Sequencing and precision Oncology: Perceptions and Barriers”",
+    event: "AROICON 2024, Mangaluru",
+    date: "November 28 – December 1, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the Key Note 2 address on “Probabilistic radiotherapy planning: from Black and White to the Fifty shades of Grey”",
+    event: "AROICON 2024, Mangaluru",
+    date: "November 28 – December 1, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Uro Oncology”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as a Panelist for the Session on “Uro Oncology”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the Panel discussion on “Systemic therapy in HCC : myths and facts”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Precision Radiotherapy & Palliative Care”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as Expert comments for the Topic on “Expert comments and applicability of Precision oncology care in Indian setting”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Precision Oncology”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as a Moderator for Debate for the Session on “Proton for all”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as Lead Discussant for the Session on “Meet the Professor Session”",
+    event: "Apollo Cancer Conclave 2024, Mumbai",
+    date: "November 8-10, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Sarcomas”",
+    event: "13th National Conference on Teenage and Young Adult Cancer (TYACAN) 2024, Hyderabad",
+    date: "September 21-22, 2024",
+  },
+  {
+    title: "Invited as a Moderator for the Topic on “Guidelines in Management of Prostate Cancer”",
+    event: "Therapeutics in Management of Prostate Cancer – Cipla Oncology Webinar – Virtual meeting",
+    date: "August 29, 2024",
+  },
+  {
+    title: "Invited as a Guest Faculty for the Topic on “Role of Oncologist in Eyelid and Orbital Tumors”",
+    event: "Cutting Edge 2024, Hyderabad",
+    date: "July 27-28, 2024",
+  },
+  {
+    title: "Invited as a Guest Faculty for the Topic on “Is Intravenous Chemotherapy still relevant in Retinoblastoma”",
+    event: "International Symposium on “What is new in Retinoblastoma in 2024?”, Hyderabad",
+    date: "May 12, 2024",
+  },
+  {
+    title: "Invited as a Chairperson for the Topic on “Proton therapy for other Pediatric Malignant Brain Tumors”",
+    event: "4th Apollo Annual Proton Practicum, Chennai",
+    date: "May 10-12, 2024",
+  },
+  {
+    title: "Invited as a Judge for the Session on “RadioTherapy Finals”",
+    event: "50th Indian Cooperative Oncology Network (ICON) Conference, Hyderabad",
+    date: "March 15-17, 2024",
+  },
+  {
+    title: "Invited as a Guest Faculty for the Topic on “Lung Cancer: Signs & Symptoms, Risk Factors, Management and Patient Perspectives”",
+    event: "CME on Lung Cancer Awareness – Virtual meeting",
+    date: "February 16, 2024",
+  },
+  {
+    title: "Invited as a Guest Faculty for the Topic on “Chemotherapy and Radiotherapy in Orbital Disorders”",
+    event: "iFocus Oculoplasty module, Hyderabad – Virtual meeting",
+    date: "February 14, 2024",
+  },
+  {
+    title: "Invited as an Expert Panelist and Discussant for the Session on “Eyelid and Ocular Surface Tumors”",
+    event: "ISOO 2024 – Virtual Conference",
+    date: "January 6-7, 2024",
+  },
+  {
+    title: "Invited as a Moderator for the Session on “Upper GI”",
+    event: "3rd Indian Cancer Congress 2023, Mumbai",
+    date: "November 2-5, 2023",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Sarcoma 2 (ICC Keynote – 21)”",
+    event: "3rd Indian Cancer Congress 2023, Mumbai",
+    date: "November 2-5, 2023",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Radiotherapy, Chemotherapy and Target Therapy in Ocular Surface, Eyelid, Intraocular and Orbital Tumors”",
+    event: "33rd Annual Conference of the Oculoplastics Association of India (OPAI), Hyderabad",
+    date: "October 20-22, 2023",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “CNS”",
+    event: "Best of ASCO India 2023 Conference, Pune",
+    date: "June 23-25, 2023",
+  },
+  {
+    title: "Invited as an Abstract Presenter for the Abstract Topic on “Prostate Irradiation in men with de novo, low-volume, metastatic, castration, - sensitive prostate cancer (mCSPC)”",
+    event: "Best of ASCO India 2023 Conference, Pune",
+    date: "June 23-25, 2023",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Essentials of Radiotherapy and Chemotherapy for an Ophthalmologist”",
+    event: "iFocus Online Webinar, Hyderabad – Virtual meeting",
+    date: "June 2, 2023",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Therapeutic Wonders in Oncology”",
+    event: "CME in Apollo Knowledge Series, Hanumakonda",
+    date: "April 19, 2023",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Early Breast Cancer”",
+    event: "AROICON 2022 Conference, New Delhi",
+    date: "December 1-4, 2022",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Radiotherapy in Breast Cancer in 2022”",
+    event: "ONCOLOGY 2022, Kottayam",
+    date: "October 14-16, 2022",
+  },
+  {
+    title: "Invited as a Panelist for the Panel Discussion on “Optimizing the Treatment Sequencing in HER2-ve Early Breast Cancer”",
+    event: "Perspective, Evolution & Advances in HER2 Negative BRCA Mutated Breast Cancer Conference, New Delhi",
+    date: "June 10, 2022",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Orbital and Metastatic Retinoblastoma – Is there hope in 2022?”",
+    event: "AIOS Retinoblastoma International Symposium 2022 – Virtual meeting",
+    date: "May 7, 2022",
+  },
+  {
+    title: "Invited as a Chairperson for the topic on “Seed Implant in Carcinoma Prostate: Indian Scenario”",
+    event: "RADONC Conclave – Prostate Cancer (National meet) – Virtual meeting",
+    date: "February 26, 2022",
+  },
+  {
+    title: "Invited as a Chairperson for the Mylan Advisory Board meeting “Role of Bevacizumab in GBM (Glioblastoma Multiforme)”",
+    event: "Mylan Advisory Board Meeting",
+    date: "February 10, 2022",
+  },
+  {
+    title: "Invited as a Guest Faculty for the CME on “New Developments in the Field of Cancer”",
+    event: "CME on Apollo Knowledge Series – Virtual meeting",
+    date: "February 4, 2022",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “ISMPO ESMO Lung Symposium”",
+    event: "Indian Society of Medical and Pediatric Oncology (ISMPO) – Virtual meeting",
+    date: "January 28, 2022",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Radiation Therapy for Cancer Oropharynx”",
+    event: "National Webinar Series – MasterClass on Head and Neck Cancer – Virtual meeting",
+    date: "January 26, 2022",
+  },
+  {
+    title: "Invited as a Panelist for the Panel Discussion on “Update on Management of Medulloblastoma”",
+    event: "24th Annual Pediatric Hematology-Oncology Conference (PHOCON – 2021) – Virtual meeting",
+    date: "December 10-11, 2021",
+  },
+  {
+    title: "Invited as a Chairperson for the Session on “Expanding the Field of Precision Immune Oncology”",
+    event: "Virtual Conference",
+    date: "August 27-28, 2021",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Freedom from Cancer – Proton therapy, Tomotherapy & True Beam”",
+    event: "Apollo’s Facebook Live Session – Virtual meeting",
+    date: "August 20, 2021",
+  },
+  {
+    title: "Invited as a Chairperson for the Panel discussion on “Challenges in Management of mCSPC”",
+    event: "All India Connect – Virtual meeting",
+    date: "August 14, 2021",
+  },
+  {
+    title: "Invited as a Guest Faculty & Chairperson for the Session on “Ocular Oncology - What is New?” for the topic on “Cutting Edge Radiotherapy Techniques in Ocular Oncology”",
+    event: "Vision 2021 – 6th Annual meeting of the Telangana Ophthalmological Society – Virtual conference",
+    date: "August 7-8, 2021",
+  },
+  {
+    title: "Invited as a Panelist for the Panel discussion on “Case Based panel discussion on navigating treatment pathways in recurrent metastatic Head & Neck Cancer”",
+    event: "Multi-disciplinary Symposium on Head & Neck Cancer – Virtual meeting organized by Bengal Oncology Foundation",
+    date: "August 7-8, 2021",
+  },
+  {
+    title: "Invited as a Chairperson for the Panel discussion on “Case Based Discussion – Optimal Management of ES - SCLC”",
+    event: "AstraZeneca Session in 4th Masterclass in Lung Cancer – Virtual meeting",
+    date: "August 6, 2021",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Role of PSMA in Prostate Cancer - Imaging to Treatment”",
+    event: "RADONC Conclave – Prostate Cancer National meet – Virtual conference",
+    date: "July 30, 2021",
+  },
+  {
+    title: "Invited as a Medical Expert for the “Case discussion on Medico Legal Scenario”",
+    event: "Medico Legal Webinar Series organized by Cipla Oncology – Virtual Conference",
+    date: "June 11, 2021",
+  },
+  {
+    title: "Invited as a Panelist for the “Case based Panel Discussion”",
+    event: "LDRT Webinar Topic - Immunomodulatory Low Dose Lung Radiation for Patients with Covid 19 Pneumonia – Virtual meeting",
+    date: "May 22, 2021",
+  },
+  {
+    title: "Invited as a Chairperson for the topic on “Clinical Rationale, Evidence, Dosimetry & Potential of Proton Beam therapy”",
+    event: "1st Apollo Proton Practicum – Virtual Conference",
+    date: "May 15-16, 2021",
+  },
+  {
+    title: "Invited as a Panelist for a Member of Panel for 4 case Presentations",
+    event: "Retinoblastoma Today – A Global Perspective Conference – Virtual meeting, Hyderabad",
+    date: "May 2, 2021",
+  },
+  {
+    title: "Invited as a Chairperson for the topic on “Metastatic Prostate Cancer”",
+    event: "Apollo Prostate Cancer Update: High Risk and Low Volume Metastatic Disease – Virtual meeting",
+    date: "April 30, 2021",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “New Innovations in Radiation therapy for Lung Cancer”",
+    event: "2nd Mid-term ISCOCON – Virtual conference",
+    date: "April 3-4, 2021",
+  },
+  {
+    title: "Invited as a Guest Faculty for the topic on “Role of Optimal RT delivery in Stage III NSCLC”",
+    event: "Webinar on Lung Cancer Conclave – Virtual conference",
+    date: "March 27, 2021",
+  },
+  {
+    title: "Invited as a Panelist for the Pentagon Panel Discussion on “5 Pillars of MDT in early Lung Cancer”",
+    event: "ICON – Indian cooperative Oncology Network – Virtual meeting",
+    date: "March 13, 2021",
+  },
+
   {
     title:
       "Invited as a Panelist for the Panel Discussion on \"COVID Vaccine for Cancer Patients - Consensus of Indian Doctors\"",
@@ -1939,105 +2252,112 @@ const ProfessionalPresentationsPage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
-      <Header />
+    <>
+    <Header />
+ <div className="min-h-screen bg-white flex flex-col">
+  {/* Hero / Header Section */}
+  <section className="pt-20 md:pt-24 mt-12 md:mt-16 pb-8 bg-medical-blue/10 text-center px-4">
+    <FiMic className="mx-auto w-12 h-12 md:w-14 md:h-14 text-medical-blue mb-3" />
+    <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-medical-dark mb-2">
+      Professional Presentations & Panels
+    </h1>
+    <p className="max-w-3xl mx-auto text-gray-700 text-base sm:text-lg leading-relaxed">
+      A curated timeline of lectures, discussions, and expert panels showcasing
+      thought leadership and clinical expertise.
+    </p>
+  </section>
 
-      <section className="pt-24 mt-16 pb-6 bg-medical-blue/10 text-center">
-        <FiMic className="mx-auto w-14 h-14 text-medical-blue mb-3" />
-        <h1 className="text-4xl md:text-6xl font-extrabold text-medical-dark mb-1">
-          Professional Presentations & Panels
-        </h1>
-        <p className="max-w-3xl mx-auto text-gray-700 text-lg px-4">
-          A curated timeline of lectures, discussions, and expert panels showcasing thought leadership and clinical expertise.
-        </p>
-      </section>
+  {/* Main Content */}
+  <main className="w-full max-w-6xl mx-auto px-3 sm:px-4 pb-16 pt-6 flex flex-col">
+    {/* Search Bar */}
+    <div className="mb-6 flex flex-col sm:flex-row sm:justify-end">
+      <input
+        type="search"
+        aria-label="Search presentations"
+        placeholder="Search presentations..."
+        className="w-full sm:w-auto sm:max-w-md border border-gray-300 rounded shadow-sm px-4 py-2 text-sm sm:text-base focus:outline-medical-blue"
+        value={searchTerm}
+        onChange={(e) => {
+          setSearchTerm(e.target.value);
+          setPage(1);
+        }}
+      />
+    </div>
 
-      <main className="max-w-6xl mx-auto px-4 pb-20 pt-6 flex flex-col">
-        <div className="mb-6 flex justify-end">
-          <input
-            type="search"
-            aria-label="Search presentations"
-            placeholder="Search presentations..."
-            className="w-full max-w-md border border-gray-300 rounded shadow-sm px-4 py-2 focus:outline-medical-blue"
-            value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              setPage(1);
-            }}
-          />
-        </div>
+    {/* Timeline List */}
+    <ul className="space-y-6">
+      {paginated.map((item, idx) => (
+        <li
+          key={idx}
+          className="border-l-4 border-medical-blue pl-6 relative group"
+        >
+          <div className="absolute -left-3 top-1.5 flex items-center justify-center w-6 h-6 bg-medical-blue rounded-full shadow-md ring-4 ring-white group-hover:ring-medical-dark transition">
+            <FiMic className="text-white w-3.5 h-3.5 sm:w-4 sm:h-4" />
+          </div>
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-medical-dark mb-1">
+              {item.title}
+            </h3>
+            <p className="text-sm sm:text-base text-gray-700">{item.event}</p>
+            <time className="text-xs sm:text-sm text-medical-blue font-semibold mt-1 block">
+              {item.date}
+            </time>
+          </div>
+        </li>
+      ))}
 
-        <ul className="space-y-6">
-          {paginated.map((item, idx) => (
-            <li
-              key={idx}
-              className="border-l-4 border-medical-blue pl-6 relative group"
-            >
-              <div className="absolute -left-3 top-1.5 flex items-center justify-center w-6 h-6 bg-medical-blue rounded-full shadow-md ring-4 ring-white group-hover:ring-medical-dark transition">
-                <FiMic className="text-white w-4 h-4" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-medical-dark mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-gray-700">{item.event}</p>
-                <time className="text-sm text-medical-blue font-semibold mt-1 block">
-                  {item.date}
-                </time>
-              </div>
-            </li>
-          ))}
+      {paginated.length === 0 && (
+        <li className="text-center text-gray-500 py-12 text-sm sm:text-base">
+          No presentations found.
+        </li>
+      )}
+    </ul>
 
-          {paginated.length === 0 && (
-            <li className="text-center text-gray-500 py-12">
-              No presentations found.
-            </li>
-          )}
-        </ul>
+    {/* Pagination */}
+    {pageCount > 1 && (
+      <nav
+        className="mt-10 flex flex-wrap justify-center gap-2 sm:gap-3"
+        aria-label="Pagination Navigation"
+      >
+        <button
+          disabled={page === 1}
+          onClick={() => setPage((p) => Math.max(1, p - 1))}
+          className="px-3 py-1 text-sm sm:text-base rounded bg-medical-blue text-white disabled:bg-gray-300"
+          aria-label="Previous page"
+        >
+          Previous
+        </button>
 
-        {/* Pagination */}
-        {pageCount > 1 && (
-          <nav
-            className="mt-8 flex justify-center gap-3"
-            aria-label="Pagination Navigation"
+        {[...Array(pageCount)].map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setPage(i + 1)}
+            className={`px-3 sm:px-4 py-1 text-sm sm:text-base rounded ${
+              page === i + 1
+                ? "bg-medical-dark text-white font-bold"
+                : "bg-medical-blue text-white hover:bg-medical-dark"
+            }`}
+            aria-current={page === i + 1 ? "page" : undefined}
           >
-            <button
-              disabled={page === 1}
-              onClick={() => setPage((p) => Math.max(1, p - 1))}
-              className="px-3 py-1 rounded bg-medical-blue text-white disabled:bg-gray-300"
-              aria-label="Previous page"
-            >
-              Previous
-            </button>
+            {i + 1}
+          </button>
+        ))}
 
-            {[...Array(pageCount)].map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setPage(i + 1)}
-                className={`px-4 py-1 rounded ${
-                  page === i + 1
-                    ? "bg-medical-dark text-white font-bold"
-                    : "bg-medical-blue text-white hover:bg-medical-dark"
-                }`}
-                aria-current={page === i + 1 ? "page" : undefined}
-              >
-                {i + 1}
-              </button>
-            ))}
-            <button
-              disabled={page === pageCount}
-              onClick={() => setPage((p) => Math.min(pageCount, p + 1))}
-              className="px-3 py-1 rounded bg-medical-blue text-white disabled:bg-gray-300"
-              aria-label="Next page"
-            >
-              Next
-            </button>
-          </nav>
-        )}
-      </main>
+        <button
+          disabled={page === pageCount}
+          onClick={() => setPage((p) => Math.min(pageCount, p + 1))}
+          className="px-3 py-1 text-sm sm:text-base rounded bg-medical-blue text-white disabled:bg-gray-300"
+          aria-label="Next page"
+        >
+          Next
+        </button>
+      </nav>
+    )}
+  </main>
+</div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 

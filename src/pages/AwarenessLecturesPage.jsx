@@ -5,6 +5,26 @@ import { FiMic, FiCalendar } from "react-icons/fi";
 
 const lectures = [
   {
+  title: "Cancer Awareness",
+  venue: "Supergas Corporate, SHV Energy Private Limited, Hyderabad",
+  date: "February 13, 2025",
+},
+{
+  title: "Grow Food, Not Tobacco – Uniting Against Tobacco on World No Tobacco Day",
+  venue: "Cognizant, Hyderabad",
+  date: "May 31, 2023",
+},
+{
+  title: "Cancer Awareness Prevention & Early Detection",
+  venue: "In association with TSSP’s Battalions, Hyderabad",
+  date: "February 4, 2021",
+},
+{
+  title: "Breast Cancer Awareness",
+  venue: "Rotary Club of Hyderabad, Hyderabad",
+  date: "January 23, 2015",
+},
+  {
     title: "Paradigm Shift in Cancer Management",
     venue: "Southern Sector Conference cum CME, CH, CRPF, Hyderabad",
     date: "June 12, 2014",
