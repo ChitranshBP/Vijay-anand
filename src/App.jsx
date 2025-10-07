@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route , Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { services } from './pages/services';
 import { useParams } from 'react-router-dom';
 import ServiceListPage from './pages/ServiceListPage';
@@ -9,18 +9,18 @@ import JourneyPage from './pages/JourneyPage';
 import AchievementsPage from './pages/AchievementsPage';
 import AwardsPage from './pages/AwardsPage';
 import PublicationsList from './pages/PublicationsPage';
-import './App.css';
 import BooksPage from './pages/BooksPage';
 import FamilyPage from './pages/FamilyPage';
 import ContactUs from './pages/ContactPage';
 import TestimonialPage from './pages/TestimonialsPage';
 import AwarenessLecturesPage from './pages/AwarenessLecturesPage';
-import ProfessionalAssociationPage from './pages/ProfessionalAssociationPage'
+import ProfessionalAssociationPage from './pages/ProfessionalAssociationPage';
 import ProfessionalPresentationsPage from './pages/ProfessionalPresentationsPage';
 import GolfChampionshipPage from './pages/GolfChampionshipPage';
 import CureFoundationPage from './pages/CureFoundationPage';
 import VideoGallery from './pages/VideoGalleryPage';
 import PancreaticCancerPage from './pages/services/PancreaticCancerPage';
+import './App.css';
 
 // Wrapper to pass service data to ServiceDetailPage via URL param
 const ServiceDetailWrapper = () => {
@@ -30,6 +30,7 @@ const ServiceDetailWrapper = () => {
   if (!service) {
     return <div className="p-20 text-center">Service not found.</div>;
   }
+
   return <ServiceDetailPage service={service} />;
 };
 
@@ -38,30 +39,33 @@ function App() {
     <Router>
       <div className="font-inter">
         <Routes>
+          {/* Home route */}
           <Route path="/" element={<HomePage />} />
+
+          {/* Other pages */}
           <Route path="/journey" element={<JourneyPage />} />
           <Route path="/achievements" element={<AchievementsPage />} />
           <Route path="/awards" element={<AwardsPage />} />
-           <Route path="/publications" element={<PublicationsList/>} />
-           <Route path="/books" element={<BooksPage/>} />
-           <Route path="/family" element={<FamilyPage/>} />
-           <Route path="/contact" element={<ContactUs/>}/>
-           <Route path="/testimonials" element={<TestimonialPage/>}/>
-           <Route path="/awareness-lectures" element={<AwarenessLecturesPage/>}/>
-          <Route path="/professional-association" element={<ProfessionalAssociationPage/>}/>
-                     <Route path="/presentations" element={<ProfessionalPresentationsPage/>}/>
-                     <Route path="/ccgc-2" element={<GolfChampionshipPage/>}/>
-                     <Route path="/cure-2" element={<CureFoundationPage/>}/>
-                     <Route path="/video-gallery" element={<VideoGallery/>}/>
-   
-                     <Route path="/service/pancreatic-cancer/" element={<PancreaticCancerPage/>}/>
-                     {/* <Route path="/" element={<Navigate to="/services" replace />} /> */}
-        <Route path="/services" element={<ServiceListPage />} />
-        <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
+          <Route path="/publications" element={<PublicationsList />} />
+          <Route path="/books" element={<BooksPage />} />
+          <Route path="/family" element={<FamilyPage />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/testimonials" element={<TestimonialPage />} />
+          <Route path="/awareness-lectures" element={<AwarenessLecturesPage />} />
+          <Route path="/professional-association" element={<ProfessionalAssociationPage />} />
+          <Route path="/presentations" element={<ProfessionalPresentationsPage />} />
+          <Route path="/ccgc-2" element={<GolfChampionshipPage />} />
+          <Route path="/cure-2" element={<CureFoundationPage />} />
+          <Route path="/video-gallery" element={<VideoGallery />} />
+
+          {/* Services */}
+          <Route path="/service/pancreatic-cancer" element={<PancreaticCancerPage />} />
+          <Route path="/services" element={<ServiceListPage />} />
+          <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
         </Routes>
       </div>
-    </Router>);
-
+    </Router>
+  );
 }
 
 export default App;
