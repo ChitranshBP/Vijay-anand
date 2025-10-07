@@ -55,7 +55,7 @@ function App() {
                      <Route path="/video-gallery" element={<VideoGallery/>}/>
    
                      <Route path="/service/pancreatic-cancer/" element={<PancreaticCancerPage/>}/>
-                     <Route path="/" element={<Navigate to="/services" replace />} />
+                     {/* <Route path="/" element={<Navigate to="/services" replace />} /> */}
         <Route path="/services" element={<ServiceListPage />} />
         <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
         </Routes>
