@@ -1,5 +1,9 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route , Navigate } from 'react-router-dom';
+import { services } from './pages/services';
+import { useParams } from 'react-router-dom';
+import ServiceListPage from './pages/ServiceListPage';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 import HomePage from './pages/HomePage';
 import JourneyPage from './pages/JourneyPage';
 import AchievementsPage from './pages/AchievementsPage';
@@ -16,8 +20,18 @@ import ProfessionalPresentationsPage from './pages/ProfessionalPresentationsPage
 import GolfChampionshipPage from './pages/GolfChampionshipPage';
 import CureFoundationPage from './pages/CureFoundationPage';
 import VideoGallery from './pages/VideoGalleryPage';
+import PancreaticCancerPage from './pages/services/PancreaticCancerPage';
 
+// Wrapper to pass service data to ServiceDetailPage via URL param
+const ServiceDetailWrapper = () => {
+  const { serviceId } = useParams();
+  const service = services[serviceId];
 
+  if (!service) {
+    return <div className="p-20 text-center">Service not found.</div>;
+  }
+  return <ServiceDetailPage service={service} />;
+};
 
 function App() {
   return (
@@ -39,9 +53,11 @@ function App() {
                      <Route path="/ccgc-2" element={<GolfChampionshipPage/>}/>
                      <Route path="/cure-2" element={<CureFoundationPage/>}/>
                      <Route path="/video-gallery" element={<VideoGallery/>}/>
-
    
-      
+                     <Route path="/service/pancreatic-cancer/" element={<PancreaticCancerPage/>}/>
+                     <Route path="/" element={<Navigate to="/services" replace />} />
+        <Route path="/services" element={<ServiceListPage />} />
+        <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
         </Routes>
       </div>
     </Router>);
