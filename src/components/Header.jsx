@@ -63,7 +63,7 @@ const Header = () => {
   },
   {
     name: "Doctor's Awareness Talks",
-    href: '/awareness-lectures',
+    href: '/doctor-speaks',
   },
   {
     name: "Patient's Testimonials",
