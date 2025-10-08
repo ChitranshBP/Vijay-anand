@@ -2,7 +2,7 @@ export const services = {
   pancreaticCancer: {
     id: "pancreaticCancer",
     title: "Pancreatic Cancer",
-    bannerImage: "/pancreatic-cancer/banner.jpg",
+    bannerImage: "assets/services/Pancreatic-Cancer.jpg",
     intro: "Advanced Care & Compassionate Support, Hyderabad",
     summary: "Personalized treatments. Expert team. Unmatched experience.",
     contentSections: [
@@ -96,7 +96,7 @@ export const services = {
   adrenalCancer: {
     id: "adrenalCancer",
     title: "Adrenal Cancer",
-    bannerImage: "/adrenal-cancer/banner.jpg",  // Replace with actual path
+    bannerImage: "assets/services/Adrenal-Cancer.jpg",  // Replace with actual path
     intro: "Comprehensive Adrenal Cancer Care and Support in Hyderabad",
     summary: "Expert diagnosis and personalized treatment using latest medical advances.",
 
@@ -202,7 +202,7 @@ export const services = {
   protonTherapy: {
     id: "protonTherapy",
     title: "Proton Therapy in India",
-    bannerImage: "/proton-therapy/banner.jpg", // replace with actual image path
+    bannerImage: "assets/services/proton-therapy.jpeg", // replace with actual image path
     intro: "Advanced Precision Proton Therapy for Cancer Treatment",
     summary: "Effective targeted cancer treatment with minimized side effects, especially for tumors near vital organs.",
   
@@ -276,10 +276,10 @@ export const services = {
       { q: "Are there side effects?", a: "Side effects are generally milder compared to traditional radiation therapy." }
     ],
   
-    stats: [
-      { label: "Years of Experience", value: "10+" },
-      { label: "Treatments Performed", value: "1500+" },
-      { label: "Patient Satisfaction", value: "95%" }
+   stats: [
+      { label: "Years of Experience", value: "30+" },
+      { label: "Success in Surgery", value: "90%+" },
+      { label: "Patients Treated", value: "20,000+" }
     ],
   
     aboutDoctor: [
@@ -289,6 +289,217 @@ export const services = {
     ]
   },
   
+radiationOncology: {
+  id: "radiationOncology",
+  title: "Radiation Oncologist in Hyderabad",
+  bannerImage: "assets/services/radiation-vijay.jpg", // Replace with actual image path
+  intro: "Expert Radiation Oncology Care in Hyderabad",
+  summary: "Precise, technologically advanced cancer treatment with expert clinical support.",
+
+  contentSections: [
+    {
+      heading: "Understanding Radiation Oncology",
+      paragraphs: [
+        "Radiation oncology is a medical specialty that uses high-energy radiation to treat cancer. It can be used alone or in combination with surgery and chemotherapy.",
+        "The goal is to destroy cancer cells while minimizing damage to surrounding healthy tissue. Radiation therapy can be external, using a machine to direct radiation towards the cancer, or internal, where radioactive sources are placed inside the body near cancer cells.",
+        "This form of treatment is meticulously planned to ensure it targets only the cancerous area, preserving as much healthy tissue as possible.",
+        "Advances in technology have significantly improved the precision and outcomes of radiation therapy, making it a key component in cancer treatment."
+      ]
+    },
+    {
+      heading: "What is Radiation Oncology?",
+      paragraphs: [
+        "Radiation oncology is a field of medicine where doctors, known as radiation oncologists, use high-energy rays to treat cancer. It’s a common method that helps get rid of cancer cells or slow their growth.",
+        "The treatment can be from a machine outside your body or tiny radioactive seeds placed close to the cancer inside your body.",
+        "Radiation oncology is precise, aiming only at the cancer while trying to protect healthy cells.",
+        "Dr. Vijay Anand Reddy is the best radiation oncologist in Hyderabad and an expert in using this technology to help patients fight cancer, providing tailored treatments based on each person’s unique needs."
+      ]
+    }
+  ],
+
+  treatmentApproach: [
+    "Initial Consultation: Dr. Vijay Anand Reddy, recognized as the best radiation oncologist in Hyderabad, begins with a thorough evaluation of the patient’s medical history and diagnostic tests to understand the type and stage of cancer.",
+    "Personalized Treatment Plan: Based on the assessment, Dr. Reddy crafts a tailored treatment plan, focusing on targeting the cancer effectively while preserving healthy tissue.",
+    "Advanced Technology Utilization: Utilizing state-of-the-art technology, Dr. Reddy ensures precise delivery of radiation, employing techniques like IMRT (Intensity-Modulated Radiation Therapy) and IGRT (Image-Guided Radiation Therapy) for optimal outcomes.",
+    "Multidisciplinary Collaboration: Collaborating with a team of specialists, Dr. Reddy ensures a comprehensive approach to cancer care, integrating radiation therapy with other treatments like chemotherapy or surgery as needed.",
+    "Patient Support and Education: Dr. Reddy and his team provide extensive support and education to patients and their families, ensuring they understand the process, potential side effects, and the importance of follow-up care.",
+    "Ongoing Monitoring: Throughout the treatment, Dr. Reddy closely monitors the patient’s response to therapy, making adjustments as necessary to maximize effectiveness and minimize side effects.",
+    "Follow-Up Care: Post-treatment, Dr. Reddy continues to offer follow-up care, assessing long-term outcomes and addressing any late effects of the treatment to ensure the patient’s overall well-being."
+  ],
+
+   stats: [
+      { label: "Years of Experience", value: "30+" },
+      { label: "Success in Surgery", value: "90%+" },
+      { label: "Patients Treated", value: "20,000+" }
+    ],
+
+  aboutDoctor: [
+    "Dr. Vijay Anand Reddy stands out as the best radiation oncologist in Hyderabad for several compelling reasons, all rooted in his 30+ years of extensive experience in the field.",
+    "His deep understanding and expertise in radiation oncology have enabled him to provide cutting-edge treatments that are personalized for each patient, ensuring the highest levels of care and effectiveness.",
+    "Commitment to incorporating the latest technologies and treatment methodologies means that patients receive the most advanced care possible, tailored to their specific needs.",
+    "Dr. Reddy’s approach is not just about treating the disease but also about understanding and supporting the patient’s overall well-being, providing holistic care that addresses both physical and emotional health.",
+    "Continuous pursuit of knowledge and innovation, significant contributions to the development of radiation oncology practices globally.",
+    "Empathy and exceptional skill set make him a trusted and respected figure among both his patients and peers."
+  ],
+
+  preOpDetails: [
+    "Initial Consultation: Dr. Vijay Anand Reddy, the best radiation oncologist in Hyderabad, conducts a comprehensive review of the patient’s medical history and prior diagnostic imaging.",
+    "Treatment Planning: A detailed plan is created using advanced imaging techniques (CT, MRI) to pinpoint the exact location and size of the tumor.",
+    "Simulation: A simulation session is scheduled to map out the treatment area and position the patient accurately for treatment. This may involve marking the skin or creating custom immobilization devices.",
+    "Patient Education: Dr. Reddy and his team provide thorough education on the procedure, what to expect, and how to manage potential side effects."
+  ],
+
+  duringProcedure: [
+    "Positioning: The patient is carefully positioned according to the simulation plan to target the tumor accurately while sparing healthy tissue.",
+    "Radiation Delivery: High-energy radiation beams are precisely directed to the cancer cells. The patient does not feel anything during this process.",
+    "Monitoring: The patient is continuously monitored by Dr. Reddy’s team to ensure the correct positioning and comfort throughout the treatment.",
+    "Duration: Each session typically lasts a few minutes, with the total number of sessions varying based on the individual treatment plan."
+  ],
+
+  postProcedure: [
+    "Immediate Care: Post-treatment, the patient is observed for any immediate reactions. Most patients can return home the same day and resume normal activities with minimal downtime.",
+    "Side Effect Management: Dr. Reddy guides managing side effects, which may include skin irritation, fatigue, or specific symptoms related to the treatment area.",
+    "Follow-Up Appointments: Regular follow-up appointments are scheduled to monitor the patient’s response to the treatment and manage any long-term effects.",
+    "Recovery and Support: Dr. Reddy offers comprehensive support services, including nutritional advice, physical rehabilitation, and psychological support to aid in recovery."
+  ],
+
+  testimonials: [
+    "Dr. Reddy's expertise made my radiation therapy experience comfortable and reassuring.",
+    "The attention to detail and personalized care throughout my treatment was exceptional.",
+    "I am grateful for the compassion and support I received from the entire team."
+  ],
+
+  faqs: [
+    {
+      q: "What is radiation oncology and how is it used to treat cancer?",
+      a: "Radiation oncology uses high-energy radiation to kill cancer cells or shrink tumors. It can be used alone or combined with surgery and chemotherapy."
+    },
+    {
+      q: "Are there side effects from radiation therapy?",
+      a: "Potential side effects include skin irritation, fatigue, and symptoms related to the treatment area. Many can be managed with supportive care."
+    },
+    {
+      q: "Do I need to stay in hospital for radiation therapy?",
+      a: "Most sessions are outpatient, so patients can go home after each procedure."
+    },
+    {
+      q: "Can radiation therapy be combined with other treatments?",
+      a: "Yes, it is often used in conjunction with surgery, chemotherapy, or other therapies for best outcomes."
+    }
+  ]
+},
+throatCancer: {
+  id: "throatCancer",
+  title: "Throat Cancer",
+  bannerImage: "assets/services/throat-cancer.webp", // Replace with your actual image path
+  intro: "Personalized, Multi-Modal Care for Throat Cancer in Hyderabad",
+  summary: "Expert diagnosis, advanced surgery and radiation, plus holistic support for optimal outcomes and quality of life.",
+
+  contentSections: [
+    {
+      heading: "Understanding Throat Cancer",
+      paragraphs: [
+        "Throat cancer refers to cancerous tumors that develop in your throat (pharynx), voice box (larynx), or tonsils.",
+        "It’s characterized by abnormal cells multiplying uncontrollably in the throat tissues."
+      ]
+    },
+    {
+      heading: "What is Throat Cancer?",
+      paragraphs: [
+        "Throat cancer refers to malignant tumors that develop in the throat (pharynx), voice box (larynx), or tonsils.",
+        "DNA mutations cause throat cells to grow uncontrollably; these accumulating cells form tumors in the throat."
+      ]
+    },
+    {
+      heading: "Types of Throat Cancer",
+      listItems: [
+        "Laryngeal Cancer: Cancer that affects the larynx or voice box.",
+        "Pharyngeal Cancer: Several subtypes based on the pharynx area affected.",
+        "Nasopharyngeal Cancer: Begins in the nasopharynx, upper throat behind the nose.",
+        "Oropharyngeal Cancer: Middle throat, includes tonsils.",
+        "Hypopharyngeal Cancer: Lower part of the throat."
+      ]
+    },
+    {
+      heading: "Treatment Approach",
+      listItems: [
+        "Comprehensive Evaluation: Endoscopy, biopsy, and imaging studies (CT, MRI, PET) for staging.",
+        "Personalized Treatment: Tailored plans based on type, stage, and patient health (surgery, radiation, chemotherapy).",
+        "Advanced Surgical Techniques: Minimally invasive laser and robotic surgery for precise tumor removal with minimal impact on speech and swallowing.",
+        "Radiation Therapy: Targeted IMRT and brachytherapy for local control and protection of healthy tissue.",
+        "Chemotherapy: Modern protocols, provided alone or with other treatments for best results.",
+        "Supportive Care: Nutritional, speech, and rehab services to help patients maintain function and well-being.",
+        "Regular Follow-Up: Ongoing monitoring for recurrence and management of long-term effects."
+      ]
+    },
+    {
+      heading: "Why Choose Dr. Vijay Anand Reddy for Throat Cancer Treatment",
+      listItems: [
+        "Renowned Expertise: Leading throat cancer specialist in Hyderabad with years of experience and strong success rates.",
+        "Customized Care: Each patient receives a tailored, multidisciplinary treatment plan.",
+        "State-of-the-Art Facilities: Access to advanced technologies and treatments.",
+        "Multidisciplinary Approach: Collaborative team of specialists for holistic care.",
+        "Patient-Centric: Strong emphasis on comfort, communication, and emotional support.",
+        "Transparent Communication: Clarity about options, process, and costs in Hyderabad.",
+        "Post-Treatment Rehabilitation: Support for speech, swallowing, and diet to regain quality of life."
+      ]
+    }
+  ],
+
+  stats: [
+    { label: "Years of Experience", value: "30+" },
+    { label: "Success in Surgery", value: "90%+" },
+    { label: "Patients Treated", value: "20,000+" }
+  ],
+
+  aboutDoctor: [
+    "Dr. Vijay Anand Reddy is highly esteemed in Hyderabad for his specialization in throat cancer treatment, combining clinical excellence with compassionate care.",
+    "His approach focuses on utilizing the most effective, least invasive treatment methods to ensure optimal outcomes and preserve the patient’s quality of life.",
+    "Dr. Reddy’s commitment to ongoing education and research in oncology ensures his patients receive the most current and effective therapies available."
+  ],
+
+  preOpDetails: [
+    "Initial Consultation: Comprehensive discussion about medical history, symptoms, and any previous treatments.",
+    "Diagnostic Tests: Laryngoscopy, biopsy, CT, MRI, PET scans to determine exact extent of cancer.",
+    "Treatment Planning: Team collaboration for a personalized plan with surgery, radiation, and/or chemotherapy.",
+    "Health Optimization: Addressing underlying health issues to ensure optimal condition for treatment.",
+    "Nutritional Assessment: Consultation with dietician for proper nutrition.",
+    "Mental Health Support: Psychological counseling to manage the impact of diagnosis and upcoming treatment.",
+    "Pre-Op Instructions: Detailed guidelines regarding medications, fasting, and surgical prep."
+  ],
+
+  duringProcedure: [
+    "Anesthesia Administration: Ensuring patient comfort and safety through expert anesthesia care.",
+    "Surgical Procedure: Meticulous tumor removal with preservation of function if surgery is performed.",
+    "Intraoperative Monitoring: Continuous vital monitoring and immediate complication management.",
+    "Radiation Therapy: Precision delivery of radiation if indicated.",
+    "Chemotherapy: Administration of drugs when part of the plan.",
+    "Communication with Family: Updates to family throughout procedure."
+  ],
+
+  postProcedure: [
+    "Immediate Post-Op Care: Recovery room monitoring for stability and pain control.",
+    "Recovery Monitoring: Ongoing team assessments for healing and progress.",
+    "Speech & Swallowing Therapy: As needed, to restore or maximize function.",
+    "Follow-Up: Regular visits for monitoring recurrence and managing side effects.",
+    "Ongoing Support: Access to support groups and counseling.",
+    "Lifestyle & Dietary Guidance: Recommendations for recovery and health."
+  ],
+
+  testimonials: [
+    "Dr. Reddy provided the best possible treatment for my cancer. The level of care and support at his clinic is truly among the best in India.",
+    "The care I received for cancer at Dr. Reddy’s clinic was exceptional. The team’s expertise and compassion made a difficult time much easier.",
+    "Dr. Reddy’s expertise in treatment and the supportive staff made my journey through treatment in India smoother than I anticipated."
+  ],
+
+  faqs: [
+    { q: "What are the primary treatment options for throat cancer?", a: "Options include surgery, radiation therapy, chemotherapy, or a combination, personalized to cancer type, stage, and patient needs." },
+    { q: "How long does recovery take after throat cancer treatment?", a: "Recovery varies by procedure and individual health; full recovery with speech/swallowing rehabilitation may take weeks to months." },
+    { q: "Is throat cancer curable?", a: "Many early-stage cases are highly treatable and curable. Advanced cases require a combination of therapies aimed at both cure and quality of life." },
+    { q: "What are the side effects of throat cancer treatments?", a: "Possible side effects include hoarseness, difficulty swallowing, dry mouth, and fatigue. These are managed with supportive care and therapy." },
+    { q: "What is the cost of Throat Cancer treatment in Hyderabad?", a: "Cost depends on the complexity, stage, and treatments required. Transparent cost breakdown is provided after personalized treatment planning." }
+  ]
+},
 
 
 };
