@@ -22,92 +22,75 @@ const Header = () => {
   }, []);
 
   const navItems = [
-  // { name: 'Home', href: '#' },
   {
     name: 'Know the Doctor',
     href: '#',
     dropdown: [
-    { name: 'Journey', href: '/journey' },
-    { name: 'Achievements', href: '/achievements' },
-    { name: 'Awards', href: '/awards' },
-    { name: 'Awards', href: '#awards' },
-    { name: 'Professional Association', href: '#professional-association' },
-    {
-      name: 'Research',
-      href: '#research',
-      submenu: [
-      { name: 'Books', href: '#books' },
-      { name: 'Publications & Presentations', href: '#publications' }]
+      { name: 'Journey', href: '/journey' },
+      { name: 'Achievements', href: '/achievements' },
+      { name: 'Awards', href: '/awards' },
+      { name: 'Professional Association', href: '/professional-association' },
+      {
+        name: 'Research',
+        href: '#',
+        submenu: [
+          { name: 'Books', href: '/books' },
+          { name: 'Publications', href: '/publications' },
+         { name: 'Presentations', href: '/presentations' },
 
-    },
-    { name: 'Conferences Organized', href: '#conferences-organized' },
-    { name: 'Awareness Talks', href: '#awareness-talks' },
-    {
-      name: 'Conferences',
-      href: '#conferences',
-      submenu: [
-      { name: 'Cancer CI', href: '#cancer-ci' },
-     ]
-
-    },
-    {
-      name: 'CV',
-      href: '#cv',
-      submenu: [
-      { name: 'Short CV', href: '#short-cv' },
-      { name: 'Detailed CV', href: '#detailed-cv' }]
-
-    },
-    { name: 'Family', href: '#family' },
-    {
-      name: 'Hobbies',
-      href: '#hobbies',
-      submenu: [
-      { name: 'Golf', href: '#golf' }]
-
-    }]
-
+        ],
+      },
+      { name: 'Conferences Organized', href: '/conference' },
+      { name: 'Awareness Talks', href: '/awareness-lectures' },
+      { name: 'Family', href: '/family' },
+      {
+        name: 'Hobbies',
+        href: '#',
+        submenu: [
+          { name: 'Golf', href: '/ccgc-2' },
+        ],
+      },
+    ],
   },
   {
     name: 'Expertise',
     href: '#',
     dropdown: [
-    { name: 'Expertise', href: '#expertise' },
-    { name: 'Know About Cancer', href: '#know-about-cancer' },
-    { name: 'Instructions to Patients', href: '#instructions-to-patients' }]
-
+      { name: 'Our Services', href: '/services' },
+      { name: 'Know About Cancer', href: '/service/pancreatic-cancer' },
+      { name: 'Instructions to Patients', href: '/services/patient-instructions' },
+    ],
   },
   {
-    name: 'Doctor\'s Awareness Talks',
-    href: '#',
-
+    name: "Doctor's Awareness Talks",
+    href: '/awareness-lectures',
   },
   {
-    name: 'Patient\'s Testimonials',
-    href: '#',
-
-
+    name: "Patient's Testimonials",
+    href: '/testimonials',
   },
   {
     name: 'Community Services',
     href: '#',
     dropdown: [
-    { name: 'Awareness Programs (2025 to Previous)', href: '#awareness-programs' },
-    { name: 'I Am a Survivor', href: '#survivor-stories' },
-    { name: 'Cure Foundation', href: '#cure-foundation' },
-    { name: 'CCGC', href: '#ccgc' }]
-
+      { name: 'Awareness Programs', href: '/awareness-lectures' },
+      { name: 'I Am a Survivor', href: '/testimonials' },
+      { name: 'Cure Foundation', href: '/cure-2' },
+      { name: 'CCGC', href: '/ccgc-2' },
+    ],
   },
   {
     name: 'Media',
     href: '#',
     dropdown: [
-    { name: 'Blog & Newsletter', href: '#blog' },
-    { name: 'Print & Digital Gallery', href: '#print-gallery' },
-    { name: 'Video Gallery', href: '#video-gallery' }]
-
+      { name: 'Blog & Newsletter', href: '/blog' },
+      { name: 'Print & Digital Gallery', href: '/print-gallery' },
+      { name: 'Video Gallery', href: '/video-gallery' },
+    ],
   },
-  { name: 'Contact', href: '#contact' }];
+  { name: 'Contact', href: '/contact' },
+];
+
 
 
   const handleMouseEnter = (index) => {

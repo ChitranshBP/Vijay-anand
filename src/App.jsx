@@ -21,6 +21,7 @@ import CureFoundationPage from './pages/CureFoundationPage';
 import VideoGallery from './pages/VideoGalleryPage';
 import PancreaticCancerPage from './pages/services/PancreaticCancerPage';
 import './App.css';
+import Conferences from './pages/ConferencesPage';
 
 // Wrapper to pass service data to ServiceDetailPage via URL param
 const ServiceDetailWrapper = () => {
@@ -57,6 +58,7 @@ function App() {
           <Route path="/ccgc-2" element={<GolfChampionshipPage />} />
           <Route path="/cure-2" element={<CureFoundationPage />} />
           <Route path="/video-gallery" element={<VideoGallery />} />
+          <Route path="/conference" element={<Conferences />} />
 
           {/* Services */}
           <Route path="/service/pancreatic-cancer" element={<PancreaticCancerPage />} />

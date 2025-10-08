@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaFilePdf } from "react-icons/fa";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export const publications = [
   {
@@ -701,7 +703,9 @@ export default function PublicationsList() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto p-8 bg-gray-50 min-h-screen">
+    <>
+    <Header />
+       <div className="max-w-6xl mt-10 mx-auto p-8 bg-gray-50 min-h-screen">
       <h1
         className="text-4xl font-extrabold text-center mb-12 select-none"
         style={{ color: "#9B528F" }}
@@ -794,5 +798,8 @@ export default function PublicationsList() {
         </button>
       </nav>
     </div>
+    <Footer/>
+    </>
+ 
   );
 }
