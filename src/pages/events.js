@@ -10,16 +10,131 @@ export const eventCategories = [
 
 export const events = [
   {
+    id: 'i-am-a-survivor-hindi-version-book-launch',
+    category: 'cancer-survivor-day',
+    title: 'I AM A SURVIVOR - Hindi Version Book Launch',
+    date: '2025-10-14',
+    author: 'Dr. Vijay Anand Reddy',
+    banners: [
+      '/events/i-am-a-survivor-hindi-banner1.jpg',
+      '/events/i-am-a-survivor-hindi-banner2.jpg'
+    ],
+    description: `Honoured to launch the Hindi edition of I Am A Survivor in New Delhi with Union Minister Shri G. Kishan Reddy. Grateful to Sri Konda Vishweshwar Reddy for gracing the occasion.
+
+Deeply touched as my patients from Delhi & northern states shared their inspiring journeys. The book launch was truly fulfilling, with wonderful media coverage highlighting the stories of courage and hope from cancer survivors across the country.
+
+This Hindi edition aims to reach and inspire a wider audience, spreading the message that cancer survival is possible with early detection, proper treatment, and a positive mindset.`,
+    photos: [
+      '/events/i-am-a-survivor-hindi-1.jpg',
+      '/events/i-am-a-survivor-hindi-2.jpg',
+      '/events/i-am-a-survivor-hindi-3.jpg'
+    ]
+  },
+  {
+    id: 'sarcoma-awareness-month-2025',
+    category: 'awareness-programmes',
+    title: 'Sarcoma Awareness Month - Felicitation of Bone Cancer Survivors',
+    date: '2025-07-28',
+    author: 'Dr. Vijay Anand Reddy',
+    banners: [
+      '/events/sarcoma-awareness-2025-banner1.jpg',
+      '/events/sarcoma-awareness-2025-banner2.jpg'
+    ],
+    description: `On World Sarcoma Day, Apollo Cancer Centre, Hyderabad honoured brave bone cancer survivors for their strength and resilience at a special felicitation ceremony.
+
+Dr. P. Vijay Anand Reddy, Director, along with Dr. Rajeev Reddy, Ortho Oncologist, and other top oncologists participated in the event and highlighted the importance of early detection and advanced treatment in sarcoma care.
+
+Survivors shared their emotional journeys, inspiring hope and awareness among attendees. Eminent doctors and dignitaries joined in celebrating these warriors as symbols of courage and perseverance in the fight against cancer.`,
+    photos: [
+      '/events/sarcoma-awareness-2025-1.jpg',
+      '/events/sarcoma-awareness-2025-2.jpg',
+      '/events/sarcoma-awareness-2025-3.jpg'
+    ]
+  },
+  {
+    id: 'whitathon-2025',
+    category: 'children',
+    title: 'WHITATHON 2025 – Marathon for Eye Cancer Awareness',
+    date: '2025-05-18',
+    author: 'Dr. Vijay Anand Reddy',
+    banners: [
+      '/events/whitathon-2025-banner1.jpg',
+      '/events/whitathon-2025-banner2.jpg'
+    ],
+    description: `A momentous occasion at the Whitathon 2025! Sri Y. Nagi Reddy, IPS RR, Director General of Disaster Response & Fire Services, Telangana, officially flagged off the 10K run as part of our eye cancer awareness program.
+
+He was joined by esteemed guests Dr. Prashant Garg, Director of LVPEI, Dr. P Vijay Anand Reddy, Director of Apollo Cancer Center, and Dr. Swathi Kalki, Head of Ocular Oncology at LVPEI.
+
+The Whitathon 2025, organized by the L V Prasad Eye Institute (LVPEI), brought together around 2000 enthusiastic runners on Sunday, May 18, 2025, at T-Works, Raidurgam, Hyderabad, starting bright and early at 5:30 am.
+
+The Cure Foundation partnered with LVPEI in this crucial initiative, highlighting the urgent need for awareness and support for children facing Retinoblastoma. Together, we are committed to shining a light on this serious condition and promoting early detection and treatment to save vision, preserve eyes, and ultimately save lives.`,
+    photos: [
+      '/events/whitathon-2025-1.jpg',
+      '/events/whitathon-2025-2.jpg',
+      '/events/whitathon-2025-3.jpg',
+      '/events/whitathon-2025-4.jpg'
+    ]
+  },
+  {
+    id: 'hope-in-a-shot-2025',
+    category: 'world-cancer-day',
+    title: 'Hope in a Shot: Free Cervical Cancer Vaccinations 2025',
+    date: '2025-02-05',
+    author: 'Dr. Vijay Anand Reddy',
+    banners: [
+      '/events/hope-in-a-shot-2025-banner1.jpg',
+      '/events/hope-in-a-shot-2025-banner2.jpg'
+    ],
+    description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025.
+
+This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness.
+
+This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 2030. Together, let's continue to Protect. Prevent. Prevail.`,
+    photos: [
+      '/events/hope-in-a-shot-2025-1.jpg',
+      '/events/hope-in-a-shot-2025-2.jpg',
+      '/events/hope-in-a-shot-2025-3.jpg'
+    ]
+  },
+  {
+    id: 'ocular-oncology-workshop-2023',
+    category: 'awareness-programmes',
+    title: 'Ocular Oncology Workshop',
+    date: '2023-07-01',
+    author: 'Dr. Vijay Anand Reddy',
+    banners: [
+      '/events/ocular-oncology-2023-banner1.jpg',
+      '/events/ocular-oncology-2023-banner2.jpg'
+    ],
+    description: `Apollo Cancer Centre, Hyderabad and CURE Foundation hosted their first Ocular Oncology workshop on July 1st and 2nd, 2023 at Apollo Medical College auditorium.
+
+The aim of this workshop was to educate and empower Ophthalmologists and Oncologists from all over the country to be able to manage and treat tumours of the Eye and Orbit.
+
+The workshop was a grand success with close to 100 registrations. Attendees learned from lectures delivered by a team of esteemed Ocular Oncologists and participated in a live contouring workshop for Radiotherapy planning.
+
+Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr Raja Gopal and Dr Vijay Anand Reddy.`,
+    photos: [
+      '/events/ocular-oncology-2023-1.jpg',
+      '/events/ocular-oncology-2023-2.jpg',
+      '/events/ocular-oncology-2023-3.jpg'
+    ]
+  },
+  {
     id: 'women-1',
     category: 'women',
-    title: 'Women’s Health Camp',
+    title: "Women's Health Camp",
     banners: ['/events/women-1-banner1.jpg', '/events/women-1-banner2.jpg'],
     description: "A special event focusing on women's health awareness, wellness, and cancer prevention.",
     photos: [
       '/events/women-1-1.jpg',
       '/events/women-1-2.jpg',
       '/events/women-1-3.jpg'
-    ]
+    ],
+    // Example: gallery with tabs
+    // gallery: {
+    //   print: ['/events/women-1-print-1.jpg', '/events/women-1-print-2.jpg'],
+    //   digital: ['/events/women-1-digital-1.jpg', '/events/women-1-digital-2.jpg']
+    // }
   },
   {
     id: 'children-1',
@@ -49,6 +164,192 @@ export const events = [
     '/events/children-whitathon-2024-3.jpg'
   ]
 },
+
+// anti-tobacco
+ {
+    id: 'anti-tobacco-1',
+    category: 'anti-tobacco',
+    title: 'Tobacco: A Major Public Health Threat',
+    date: '2024-05-31',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-1-banner1.jpg',
+      '/events/anti-tobacco-1-banner2.jpg'
+    ],
+    description: `Hyderabad: Respiratory diseases are one of the main causes of death worldwide, with tobacco being the major risk factor. Tobacco kills one person every four seconds!  
+
+Key points:
+• Tobacco causes **8 million deaths globally** and **1 million due to second-hand smoke**.  
+• In India, **1.35 million deaths annually** are attributable to tobacco.  
+• Tobacco increases the risk of **lung cancer, COPD, heart disease, stroke, asthma, reproductive health issues, diabetes, eye diseases, and low birth-weight babies**.  
+• **Tips to quit smoking**:
+  1. Nicotine replacement therapy
+  2. Avoid triggers
+  3. Physical activity
+  4. Relaxation techniques (yoga, deep breathing, music)
+  5. Remind yourself of benefits of quitting
+• Quitting tobacco improves lung function in as little as **two weeks**, reduces chronic disease risk, and enhances quality of life.  
+This article is written by **Dr. P. Vijay Anand Reddy, Director & Senior Consultant Oncologist, Apollo Cancer Centre, Hyderabad**.`,
+    photos: [
+      '/events/anti-tobacco-1-1.jpg',
+      '/events/anti-tobacco-1-2.jpg'
+    ]
+  },
+  {
+    id: 'anti-tobacco-2',
+    category: 'anti-tobacco',
+    title: 'Apollo Cancer Hospital Launches “Smoke & Win” Campaign',
+    date: '2015-05-31',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-2-banner1.jpg',
+      '/events/anti-tobacco-2-banner2.jpg'
+    ],
+    description: `Launched on the eve of **World No Tobacco Day 2015**, “Smoke & Win” aimed to **educate youth about the dangers of smoking**.  
+
+Highlights:
+• Launch by **Padma Bhushan Sri Pullela Gopichand**, Ms. Pradnya Gadre, and Dr. Vijay Anand Reddy.  
+• Featured a **Wheel of Misery** highlighting diseases caused by smoking (throat cancer, lung cancer, heart disease, impotency, etc.).  
+• Smokers spinning the wheel were **educated by specialists** and offered free consultations.  
+• The campaign combined **fun and education** to engage IT employees and youth, emphasizing the long-term risks of smoking.`,
+    photos: [
+      '/events/anti-tobacco-2-1.jpg',
+      '/events/anti-tobacco-2-2.jpg'
+    ]
+  },
+  {
+    id: 'anti-tobacco-3',
+    category: 'anti-tobacco',
+    title: 'Release Of “Health Cost Study – A.P”',
+    date: '2014-07-19',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-3-banner1.jpg',
+      '/events/anti-tobacco-3-banner2.jpg'
+    ],
+    description: `CURE Foundation & APVHA-VHAI, with Dept. of Health & Family Welfare, released the **Health Cost Study – A.P**, detailing the economic burden of tobacco-related diseases.  
+
+Highlights:
+• Inaugurated by **Dr. Kamineni Srinivas**, Minister of Medical & Health, AP.  
+• India has **27.5 crore tobacco users**, including **10 million children under 15**.  
+• **Key message:** Increase taxes on tobacco to discourage youth consumption and reduce health burden.  
+• Emphasized the **economic and health rationale** for stronger tobacco control policies in Andhra Pradesh.`,
+    photos: [
+      '/events/anti-tobacco-3-1.jpg',
+      '/events/anti-tobacco-3-2.jpg'
+    ]
+  },
+  {
+    id: 'anti-tobacco-4',
+    category: 'anti-tobacco',
+    title: 'No-Tobacco Program – World No Tobacco Day 2013',
+    date: '2013-05-30',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-4-banner1.jpg',
+      '/events/anti-tobacco-4-banner2.jpg'
+    ],
+    description: `Apollo Cancer Hospitals organized a **Harley Davidson Motorbike Rally** on **30 May 2013** to educate the public on tobacco hazards.  
+
+Highlights:
+• Supported by **Harley Davidson Owners’ Group**, rally from People’s Plaza, Necklace Road to Apollo Cancer Hospital.  
+• **Ace shuttler Ms. Jwala Gutta** administered a pledge to quit smoking and become “Anti Tobacco Crusaders”.  
+• Dr. Vijay Anand Reddy emphasized **youth engagement**, early prevention, and lifestyle changes to reduce tobacco consumption.`,
+    photos: [
+      '/events/anti-tobacco-4-1.jpg',
+      '/events/anti-tobacco-4-2.jpg'
+    ]
+  },
+  {
+    id: 'anti-tobacco-5',
+    category: 'anti-tobacco',
+    title: 'Protest Against “Rebel” For COPTA Violation',
+    date: '2012-10-02',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-5-banner1.jpg',
+      '/events/anti-tobacco-5-banner2.jpg'
+    ],
+    description: `Led by Dr. Vijay Anand Reddy, a **silent protest** was held against the poster of the movie **Rebel** showing smoking.  
+
+Highlights:
+• Protesters submitted **petitions to the Chief Minister, Governor, and Health Minister**.  
+• Urged the film industry to **take social responsibility** seriously and avoid glamorizing tobacco.  
+• The protest led to the **Censor Board directives** for removal of smoking posters.`,
+    photos: [
+      '/events/anti-tobacco-5-1.jpg',
+      '/events/anti-tobacco-5-2.jpg'
+    ]
+  },
+  {
+    id: 'anti-tobacco-6',
+    category: 'anti-tobacco',
+    title: 'Let’s Make Tobacco–Free AP – VOTV',
+    date: '2012-08-22',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-6-banner1.jpg',
+      '/events/anti-tobacco-6-banner2.jpg'
+    ],
+    description: `A **campaign with Voice of Tobacco Victims (VOTV)** to ban tobacco products in Andhra Pradesh.  
+
+Highlights:
+• Appeals to state authorities based on **successes in Bihar, Chhattisgarh, Kerala, Maharashtra**.  
+• **Public Interest Litigation (PIL)** filed to enforce ban.  
+• Historic judgment on **10 Jan 2013** prohibited Gutka/Pan Masala containing tobacco or nicotine statewide.  
+• **Order No. 1508/F1/2012-13** issued by Commissioner of Food Safety to enforce ban.`,
+    photos: [
+      '/events/anti-tobacco-6-1.jpg',
+      '/events/anti-tobacco-6-2.jpg'
+    ]
+  },
+  {
+    id: 'anti-tobacco-7',
+    category: 'anti-tobacco',
+    title: 'Say No to Tobacco Campaign – World No Tobacco Day 2012',
+    date: '2012-05-31',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-7-banner1.jpg',
+      '/events/anti-tobacco-7-banner2.jpg'
+    ],
+    description: `Apollo Cancer Hospital launched a **month-long campaign** to make Andhra Pradesh tobacco-free.  
+
+Highlights:
+• Inauguration by **Anurag Sharma, IPS**, Tollywood actor Bharath Reddy, and Dr. Vijay Anand Reddy.  
+• Bharath Reddy administered an **oath** to participants to act as ambassadors for the campaign.  
+• **Tobacco victims** shared experiences to educate the audience.`,
+    photos: [
+      '/events/anti-tobacco-7-1.jpg',
+      '/events/anti-tobacco-7-2.jpg'
+    ]
+  },
+  {
+    id: 'anti-tobacco-8',
+    category: 'anti-tobacco',
+    title: 'Pledge For No Tobacco – Oral Cancer Awareness Program',
+    date: '2008-09-12',
+    author: 'Dr. P. Vijay Anand Reddy',
+    banners: [
+      '/events/anti-tobacco-8-banner1.jpg',
+      '/events/anti-tobacco-8-banner2.jpg'
+    ],
+    description: `**Oral Cancer Awareness Programme** at Apollo Cancer Institute, Hyderabad.  
+
+Highlights:
+• Participation by **voluntary organizations** and oncologists.  
+• **Patients shared experiences** and collectively pledged **never to chew or smoke tobacco**.  
+• **Cine Actor Mr. Manchu Vishnu Vardhan Babu** was the Chief Guest.  
+• Program emphasized spreading **tobacco-free lifestyle** messages across society.`,
+    photos: [
+      '/events/anti-tobacco-8-1.jpg',
+      '/events/anti-tobacco-8-2.jpg'
+    ]
+  },
+
+
+
+
 
 // cancer survivir day events
 

@@ -19,11 +19,11 @@ import ProfessionalPresentationsPage from './pages/ProfessionalPresentationsPage
 import GolfChampionshipPage from './pages/GolfChampionshipPage';
 import CureFoundationPage from './pages/CureFoundationPage';
 import VideoGallery from './pages/VideoGalleryPage';
+import PrintGalleryPage from './pages/PrintGalleryPage';
 import PancreaticCancerPage from './pages/services/PancreaticCancerPage';
 import './App.css';
 import Conferences from './pages/ConferencesPage';
 import DoctorAwarenessTalks from './pages/DoctorAwarenessPage';
-import EventCategoryPage from './pages/EventCategoryPage';
 import EventDetailPage from './pages/EventDetailPage';
 import EventsPage from './pages/EventPage';
 // Wrapper to pass service data to ServiceDetailPage via URL param
@@ -61,13 +61,13 @@ function App() {
           <Route path="/ccgc-2" element={<GolfChampionshipPage />} />
           <Route path="/cure-2" element={<CureFoundationPage />} />
           <Route path="/video-gallery" element={<VideoGallery />} />
+          <Route path="/print-gallery" element={<PrintGalleryPage />} />
           <Route path="/conference" element={<Conferences />} />
-                    <Route path="/doctor-speaks" element={< DoctorAwarenessTalks />} />
+          <Route path="/doctor-speaks" element={< DoctorAwarenessTalks />} />
 
 
 
 <Route path="/events" element={<EventsPage />} />
-  <Route path="/events/category/:categoryKey" element={<EventCategoryPage />} />
   <Route path="/events/:eventId" element={<EventDetailPage />} />
 
           {/* Services */}

@@ -8,6 +8,7 @@ const EventCategoryPage = () => {
   const navigate = useNavigate();
   const cat = eventCategories.find(c => c.key === categoryKey);
   if (!cat) return <div className="p-16 text-center text-medical-dark text-lg">Category not found.</div>;
+
   const filteredEvents = events.filter(e => e.category === categoryKey);
 
   return (
@@ -31,14 +32,17 @@ const EventCategoryPage = () => {
             {filteredEvents.map((e) => (
               <div
                 key={e.id}
-                className="bg-white rounded-xl shadow-lg hover:shadow-2xl cursor-pointer transition transform hover:-translate-y-1"
-                tabIndex={0}
-                role="button"
-                aria-label={e.title}
-                onClick={() => navigate(`/events/${e.id}`)}
-                onKeyDown={(evt) => (evt.key === 'Enter' || evt.key === ' ') && navigate(`/events/${e.id}`)}
+                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col"
               >
-                <div className="relative h-52 rounded-t-xl overflow-hidden">
+                {/* Event Image */}
+                <div
+                  className="relative h-56 rounded-t-xl overflow-hidden cursor-pointer"
+                  onClick={() => navigate(`/events/${e.id}`)}
+                  onKeyDown={(evt) => (evt.key === 'Enter' || evt.key === ' ') && navigate(`/events/${e.id}`)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={e.title}
+                >
                   <img
                     src={e.banners[0]}
                     alt={e.title}
@@ -46,9 +50,24 @@ const EventCategoryPage = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="p-6">
-                  <h2 className="text-xl font-semibold mb-3 text-medical-dark leading-tight">{e.title}</h2>
-                  <p className="text-gray-600 line-clamp-3">{e.description}</p>
+
+                {/* Event Content */}
+                <div className="p-6 flex flex-col flex-1">
+                  <h2 className="text-xl font-semibold mb-2 text-medical-dark">{e.title}</h2>
+
+                  <div className="text-sm text-gray-500 mb-3 flex flex-wrap gap-2">
+                    {e.date && <span>{e.date}</span>}
+                    {e.author && <span>| {e.author}</span>}
+                  </div>
+
+                  <p className="text-gray-600 line-clamp-4 mb-4 flex-1">{e.description}</p>
+
+                  <button
+                    onClick={() => navigate(`/events/${e.id}`)}
+                    className="mt-auto bg-medical-blue text-white font-medium px-4 py-2 rounded hover:bg-medical-dark transition"
+                  >
+                    Read More
+                  </button>
                 </div>
               </div>
             ))}

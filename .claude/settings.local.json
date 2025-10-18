@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run lint)",
+      "Bash(curl -s \"https://drvijayanandreddy.com/community-services/\")",
+      "Bash(curl -s \"https://drvijayanandreddy.com/i-am-a-survivor-hindi-version-book-launch/\")",
+      "Bash(node scrape_events.js)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
