@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { eventCategories, events } from './events';
 import { FiChevronRight } from 'react-icons/fi';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const EventCategoryPage = () => {
   const { categoryKey } = useParams();
@@ -13,8 +15,10 @@ const EventCategoryPage = () => {
 
   return (
     <>
+
+  <Header/>
       {/* Hero and Breadcrumb */}
-      <section className="bg-medical-blue/10 py-20 text-center">
+      <section className="mt-24 bg-medical-blue/10 py-20 text-center">
         <div className="container mx-auto max-w-4xl px-6">
           <nav className="flex justify-center items-center gap-2 text-medical-blue font-semibold text-lg mb-4">
             <Link to="/" className="hover:underline">Home</Link>
@@ -74,6 +78,8 @@ const EventCategoryPage = () => {
           </div>
         </div>
       </main>
+
+      <Footer/>
     </>
   );
 };
