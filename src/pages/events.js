@@ -529,6 +529,283 @@ Highlights:
       "/events/world-cancer-day-2024-victorybell/photo1.jpg",
       "/events/world-cancer-day-2024-victorybell/photo2.jpg"
     ]
-  }
+  },
   // Add events for anti-tobacco, world-cancer-day, cancer-survivor-day, etc.
+  
+  
+  //women
+  {
+  id: 'together-for-her-campaign-2024',
+  category: 'awareness-programmes',
+  title: 'TogetHER for Her Campaign - Raising Awareness on Women Cancer',
+  date: '2024-03-16',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/events/together-for-her-2024-banner1.jpg',
+    '/events/together-for-her-2024-banner2.jpg'
+  ],
+  description: `Apollo Cancer Centre, Hyderabad, has officially launched the “Together for Her” campaign, today at Hotel Taj Deccan, a movement dedicated to empowering women to take charge of their health. This initiative commenced by introducing India’s pioneering Purple Clip Champions Brigade.
+
+Speaking on this occasion Dr. P. Vijay Anand Reddy, Director, Apollo Cancer Centre said “As we honour the strength and resilience of women today, let us remember that self-care is not selfish; it is essential. Let us prioritize our health, both physical and mental, knowing that by nurturing ourselves, we empower ourselves and pave the way for a brighter, healthier future for all”.
+
+Dignitaries who participated in the discussion were Dr. Christina Z. Chongthu, IAS, Secretary to Government, Health, Medical & Family Welfare, Dr. Vijay Kumar, IPS, ADG (Operations) Greyhounds & OCTOPUS, Telangana Police, Ms. Ananda Shankar Jayant, Indian Classical Dancer, Choreographer & Padmashree Awardee and Apollo team of doctors.`,
+  photos: [
+    '/events/together-for-her-2024-1.jpg',
+    '/events/together-for-her-2024-2.jpg',
+    // '/events/together-for-her-2024-3.jpg',
+    // '/events/together-for-her-2024-4.jpg',
+    // '/events/together-for-her-2024-5.jpg',
+    // '/events/together-for-her-2024-6.jpg',
+    // '/events/together-for-her-2024-7.jpg',
+    // '/events/together-for-her-2024-8.jpg',
+    // '/events/together-for-her-2024-9.jpg',
+    // '/events/together-for-her-2024-10.jpg',
+    // '/events/together-for-her-2024-11.jpg',
+    // '/events/together-for-her-2024-12.jpg',
+    // '/events/together-for-her-2024-13.jpg',
+    // '/events/together-for-her-2024-14.jpg'
+  ]
+},
+{
+  id: 'artcan-breast-cancer-awareness-2022',
+  category: 'awareness-programmes',
+  title: 'Apollo Cancer Centre launches “ArtCan” to bring awareness about Breast Cancer',
+  date: '2022-11-29',
+  author: 'Anuraj',
+  banners: [
+    '/events/artcan-breast-cancer-awareness-2022-banner1.jpg',
+    '/events/artcan-breast-cancer-awareness-2022-banner2.jpg'
+  ],
+  description: `In keeping with our vision of being at the forefront of cancer research, we have launched the ‘ArtCan’ breast cancer awareness campaign.
+
+Hyderabad, October 31, 2022: The Apollo Cancer Centres (ACC), ranked among the world’s best cancer hospitals, launches – ArtCan, the Self-Breast Examination Steps via Kerala Mural Art. A unique initiative by Apollo Cancer Centres, (ArtCan) uses art as a medium to spread cancer awareness. Apollo Cancer Centres joined hands with mural artists and survivors to curate art that educates and empowers every woman about the importance of regular self-breast examination.
+
+Through Kerala Mural Art, 8 steps bring attention to the issue of breast cancer. Each frame reflects the story of a woman who discovered this condition while performing a self-breast examination, acted on time and defeated cancer. These eight steps have also been depicted in a book format called ‘Chitra Sutra’. It’s a popular belief that life imitates art and hence, art has the power to transcend languages and cultural barriers. Our initiative, ArtCan, will create a silent conversation and leave a deep impression on the audience. Breast cancer is the most diagnosed cancer globally and accounts for 25% of all cancer cases in women. So, early detection is the key to better outcomes. We believe Kerala mural art is a unique medium to create awareness about breast cancer and the importance of self-breast examination (SBE).
+
+The Mural Arts were unveiled today at Apollo Cancer Centres, Jubilee Hills. This unique initiative was inaugurated by eminent painter Padmashree Kalal Laxma Goud in presence of Dr. Sangita Reddy - Joint Managing Director of Apollo Hospitals Enterprise Ltd, breast cancer experts from ACC, Hyderabad, breast cancer winner and MeMeraki (artist).`,
+  photos: [
+    '/events/artcan-breast-cancer-awareness-2022-1.jpg',
+    '/events/artcan-breast-cancer-awareness-2022-2.jpg',
+    '/events/artcan-breast-cancer-awareness-2022-3.jpg',
+    '/events/artcan-breast-cancer-awareness-2022-4.jpg',
+    '/events/artcan-breast-cancer-awareness-2022-5.jpg',
+    '/events/artcan-breast-cancer-awareness-2022-6.jpg'
+  ]
+},
+
+{
+  id: 'prevention-detection-breast-cancer-2022',
+  category: 'awareness-programmes',
+  title: 'Prevention and detection of Breast Cancer – Let’s starts now!',
+  date: '2022-10-29',
+  author: 'Anuraj',
+  banners: [
+    '/events/prevention-detection-breast-cancer-2022-banner1.jpg',
+    '/events/prevention-detection-breast-cancer-2022-banner2.jpg'
+  ],
+  description: `Incidence of Breast Cancer is alarmingly increasing! It is the most common cancer in women in India and affecting one in every 8 women.
+
+In view of International Breast Cancer Awareness month October – 2022, an Awareness Programme targeting young women was organized to increase awareness on prevention and early detection of Breast Cancer. There is shift in the age group too—from 50 years and above to 30 years and above.
+
+Breast cancer accounts for nearly 30% of all cancers in women in India, with early detection and screening being critical. Pandemic-related hesitancy has led to late diagnoses with more advanced disease. Women are advised to be watchful of any signs like lumps, discharge, or discoloration and undergo regular screening and self-breast examinations.`,
+  photos: [
+    '/events/prevention-detection-breast-cancer-2022-1.jpg',
+    '/events/prevention-detection-breast-cancer-2022-2.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-3.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-4.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-5.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-6.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-7.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-8.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-9.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-10.jpg',
+    // '/events/prevention-detection-breast-cancer-2022-11.jpg'
+  ]
+},
+{
+  id: 'anaika-health-awareness-fashion-show-2019',
+  category: 'awareness-programmes',
+  title: 'ANAIKA – The Health Awareness Fashion Show On International Women’s Day March 8th, 2019',
+  date: '2019-03-08',
+  author: 'Anuraj',
+  banners: [
+    '/events/anaika-health-awareness-fashion-show-2019-banner1.jpg',
+    '/events/anaika-health-awareness-fashion-show-2019-banner2.jpg'
+  ],
+  description: `ANAIKA means “Complete” and “Powerful.” Models depicted woman as all powerful and invincible.
+
+Speaking on the occasion Dr. Vijay Anand Reddy said, women are the most important part of the family, society and the nation. They should not neglect their health. Be cautious of warning symptoms.
+
+Hyderabad, International Women’s Day, March 8th, 2019: Cure Foundation and Apollo Cancer Hospital hosted a fashion show – ‘ANAIKA’, to create awareness on Women health & empowerment at Taj Krishna, Hyderabad.
+
+The Fashion show had four sequences based on different themes to depict womanhood, their wellness and women empowerment.
+
+Conquerors & Avengers: The women Cancer Survivors and the Cancer Specialists walked on the ramp, hand in hand to convey the message that Cancer is curable.
+
+Wellness had models with placards spreading the word on Cancer Prevention, emphasizing exercise, avoiding Tobacco, healthy eating habits, lifestyle modifications, etc.
+
+Women Achievers had prominent women achievers who are role models and inspiration to women. Participants included Ms Ajita Reddy (Director, Hamstech), Ms Asmita Marwah (Fashion Designer), Ms Charulatha Acharya (w/o Maha Vir Chakra Major Padmapani Acharya), Ms Deepika Reddy (Classical Dancer), Ms Kiran Uniyal (Martial Arts, Guinness World Record Holder), Ms Meghana Reddy (Rhythmic Gymnast), Ms Rekha Reddy (Iqebana), Ms Samantha Reddy (Entrepreneur), Ms Sangita Reddy (Jt Managing Director, Apollo Hospitals Group), Dr Shashi Reddy (Principal, OMC), Ms Shilpa Reddy (Fashion Designer, Former Mrs. India), Ms Swati Lakra (IPS, SHE teams Chief), Ms Uma Chigurupati (Marathon runner & Entrepreneur) and Ms Yogita Rana (IAS).
+
+A fourteen-year-old brave Cancer survivor was crowned on the occasion for her indomitable spirit in combating the disease.
+
+Cancer in women is highly curable, and their survival from cancer is much higher than in men. Dr. Reddy emphasized adopting a healthy lifestyle and food habits, besides undergoing regular cancer screening.`,
+  photos: [
+    '/events/anaika-health-awareness-fashion-show-2019-1.jpg',
+    '/events/anaika-health-awareness-fashion-show-2019-2.jpg',
+    '/events/anaika-health-awareness-fashion-show-2019-3.jpg',
+    '/events/anaika-health-awareness-fashion-show-2019-4.jpg',
+    '/events/anaika-health-awareness-fashion-show-2019-5.jpg',
+    '/events/anaika-health-awareness-fashion-show-2019-6.jpg',
+    '/events/anaika-health-awareness-fashion-show-2019-7.jpg'
+  ]
+},
+
+{
+  id: 'pink-of-health-fight-cancer-breast-cancer-awareness-program-2014',
+  category: 'awareness-programmes',
+  title: 'Let’s be in Pink of Health- Fight Cancer -Breast Cancer Awareness Program 2014',
+  date: '2014-10-21',
+  author: 'Anuraj',
+  banners: [
+    '/events/pink-of-health-fight-cancer-breast-cancer-awareness-program-2014-banner1.jpg',
+    '/events/pink-of-health-fight-cancer-breast-cancer-awareness-program-2014-banner2.jpg'
+  ],
+  description: `Today more and more young women are being diagnosed with breast cancer according to most oncologists. This necessitates spreading awareness on prevention from a young age, on war footing.
+
+Apollo Cancer Hospital hosted a unique campaign “Let’s be in Pink of Health- fight Cancer” to spread awareness among the youth about the dreaded breast cancer and how simple it can be to nip this disease in the bud stage, on Tuesday at Apollo Hospitals, Jubilee Hills. Tollywood star actress Poonam Kaur, Asian Games 2014 Badminton medalists N. Siki Reddy and Pradnya Gadre, Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital, and a large number of students from St. Ann’s College for Women, Loyola Academy Degree and PG College and Wesley Degree College for Women took part, along with small kids dressed in pink, taking a pledge to follow simple tips meticulously for prevention of breast cancer, including healthy diet habits, regular exercise, and educating friends and relatives.
+
+College students expressed their views lucidly on breast cancer, causes for rampant incidence in India, ignorance among women, and simple steps to detect and prevent breast cancer at the elocution competition held on the occasion. The top 2 participants received prizes.
+
+Apollo Cancer Hospital has taken the initiative to organize the Breast Cancer Awareness Program to target younger women to stem the incidence in the community, as pointed out by Dr. Reddy.`,
+  photos: [
+    '/events/pink-of-health-2014-1.jpg',
+    '/events/pink-of-health-2014-2.jpg',
+    '/events/pink-of-health-2014-3.jpg',
+    '/events/pink-of-health-2014-4.jpg',
+    '/events/pink-of-health-2014-5.jpg',
+    '/events/pink-of-health-2014-6.jpg',
+    '/events/pink-of-health-2014-7.jpg'
+  ]
+},
+
+{
+id: 'breast-cancer-awareness-program-2013',
+category: 'awareness-programmes',
+title: 'Breast Cancer Awareness Program 2013',
+date: '2013-10-30',
+author: 'Anuraj',
+banners: [
+'/events/breast-cancer-awareness-program-2013-banner1.jpg',
+'/events/breast-cancer-awareness-program-2013-banner2.jpg'
+],
+description: `On the occasion of Breast cancer awareness month, Apollo Cancer Institute held a breast cancer awareness program at Apollo Cancer Hospital, Jubilee Hills, Hyderabad on 30th October 2013 to honor the breast cancer survivors and spread awareness on breast cancer.
+
+Speaking on the occasion, Dr. Vijay Anand Reddy briefed about cancer warning symptoms in women and various other cancers in women. He detailed early diagnostic techniques and treatment available today to treat and cure cancers. “Cancer is a lifestyle disease,” Dr. Reddy motivated the audience emphasizing physical exercise and proper dietary habits.
+
+Dr. Reddy's inspiring speech admired and supported cancer survivors and raised hope in patients fighting cancer. Encouraged and enchanted, cancer survivors joined Dr. Reddy at the dais and shared their experiences of fighting and surviving cancer. Ms. Bhramara shared how she regained all her health after chemotherapy cycles. Ms. Jyoti spoke about the moral support and treatment she received from Dr. Reddy and his team at Apollo Cancer Hospital.`,
+photos: [
+'/events/breast-cancer-awareness-program-2013-1.jpg',
+'/events/breast-cancer-awareness-program-2013-2.jpg',
+'/events/breast-cancer-awareness-program-2013-3.jpg',
+'/events/breast-cancer-awareness-program-2013-4.jpg'
+]
+},
+
+//digital---
+{
+id: 'breast-cancer-awareness-seminar-2011',
+category: 'awareness-programmes',
+title: 'Breast Cancer Awareness Seminar',
+date: '2011-10-22',
+author: 'Anuraj',
+banners: [
+'/events/breast-cancer-awareness-seminar-2011-banner1.jpg',
+'/events/breast-cancer-awareness-seminar-2011-banner2.jpg'
+],
+description: `"Breast Cancer Prevention starts at 5" was organized on 22nd October 2011 with the aim of increasing awareness among young women about the prevention and detection of cancer.
+
+Mrs. Banda Karthika Reddy, Mayor of Greater Hyderabad Municipal Corporation; Ms. Lakshmi Manchu, Cine Actress, Classical Dancer & Cancer Survivor; and Padma Shri Dr. Ananda Shankar Jayant were invited as Chief Guests for the program. Students from Villa Marie College for Women, St. Francis College for Women, and Badruka College actively participated.
+
+The seminar focused on educating young women about early prevention and detection strategies for breast cancer, emphasizing the importance of awareness from a young age.`,
+photos: [
+'/events/breast-cancer-awareness-seminar-2011-1.jpg',
+'/events/breast-cancer-awareness-seminar-2011-2.jpg',
+'/events/breast-cancer-awareness-seminar-2011-3.jpg'
+]
+},
+
+{
+id: 'breast-cancer-support-group-2011',
+category: 'support-groups',
+title: 'Breast Cancer Support Group',
+date: '2011-10-15',
+author: 'Anuraj',
+banners: [
+'/events/breast-cancer-support-group-2011-banner1.jpg',
+'/events/breast-cancer-support-group-2011-banner2.jpg'
+],
+description: `The Breast Cancer Support Group at Apollo Cancer Hospital conducts monthly meetings every 3rd Saturday, aimed at raising awareness about various aspects of breast cancer.
+
+This initiative addresses the stigma surrounding cancer in society, aiming to reduce it significantly. Over time, it helps women feel empowered and positive about themselves, enabling them to take the disease in their stride.
+
+The support group provides a compassionate environment for sharing knowledge, emotional support, and motivation for patients and survivors alike, facilitated by Dr. Vijay Anand Reddy and his team.`,
+photos: [
+'/events/breast-cancer-support-group-2011-1.jpg',
+'/events/breast-cancer-support-group-2011-2.jpg'
+]
+},
+
+//digital
+{
+id: 'breast-cancer-awareness-walk-2008',
+category: 'awareness-programmes',
+title: 'Breast Cancer Awareness Walk On The Eve Of World Cancer Day 2008',
+date: '2008-02-03',
+author: 'Anuraj',
+banners: [
+'/events/breast-cancer-awareness-walk-2008-banner1.jpg',
+'/events/breast-cancer-awareness-walk-2008-banner2.jpg'
+],
+description: `A Cancer Awareness Walk was conducted on 3rd February 2008 from K.B.R. Park Main gate to Apollo Cancer Institute Lawns. The event was organized by women’s organizations including the Breast Cancer Support Group and Cure Foundation of Apollo Cancer Institute, with support from various organizations such as Make a Wish Foundation, Astha, Aga Khan Health Service India, WIN, Deloitte, Accenture, Reddy’s Labs, Jubilee Club, and Roshini.
+
+Popular Cine Actress Mrs. Ramya Krishna was invited as the Chief Guest. During the event, 500 Free Cancer Check Cards were distributed to attendees.
+
+This walk aimed to increase awareness about breast cancer and promote early detection in the community.`,
+photos: [
+'/events/breast-cancer-awareness-walk-2008-1.jpg',
+'/events/breast-cancer-awareness-walk-2008-2.jpg',
+'/events/breast-cancer-awareness-walk-2008-3.jpg'
+]
+},
+
+{
+id: 'breast-cancer-awareness-programme-2005',
+category: 'awareness-programmes',
+title: 'Breast Cancer Awareness Programme 2005',
+date: '2005-10-27',
+author: 'Anuraj',
+banners: [
+'/events/breast-cancer-awareness-programme-2005-banner1.jpg',
+'/events/breast-cancer-awareness-programme-2005-banner2.jpg'
+],
+description: `Across the globe, October is observed as World Breast Cancer Day. In the city, renowned actress Jaya Sudha inaugurated the Breast Cancer Awareness Programme at Apollo Cancer Hospital, Hyderabad.
+
+Dr. Vijayanand Reddy made a presentation stressing the need for every woman to begin self-examination at the age of 20. After crossing 35 years, every woman should undergo comprehensive diagnosis to check the disease at an early stage.
+
+The program aimed to empower women by educating them about early detection and preventative measures for breast cancer.`,
+photos: [
+'/events/breast-cancer-awareness-programme-2005-1.jpg',
+'/events/breast-cancer-awareness-programme-2005-2.jpg',
+'/events/breast-cancer-awareness-programme-2005-3.jpg'
+]
+},
+
+//children
+
+
+
+
+
+
+
 ];
