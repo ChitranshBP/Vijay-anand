@@ -16,8 +16,7 @@ export const events = [
     date: '2025-10-14',
     author: 'Dr. Vijay Anand Reddy',
     banners: [
-      '/events/i-am-a-survivor-hindi-banner1.jpg',
-      '/events/i-am-a-survivor-hindi-banner2.jpg'
+      '/assets/Events/imseviour-hindi/banner.jpg',
     ],
     description: `Honoured to launch the Hindi edition of I Am A Survivor in New Delhi with Union Minister Shri G. Kishan Reddy. Grateful to Sri Konda Vishweshwar Reddy for gracing the occasion.
 
@@ -25,9 +24,18 @@ Deeply touched as my patients from Delhi & northern states shared their inspirin
 
 This Hindi edition aims to reach and inspire a wider audience, spreading the message that cancer survival is possible with early detection, proper treatment, and a positive mindset.`,
     photos: [
-      '/events/i-am-a-survivor-hindi-1.jpg',
-      '/events/i-am-a-survivor-hindi-2.jpg',
-      '/events/i-am-a-survivor-hindi-3.jpg'
+      '/assets/Events/imseviour-hindi/i1.jpeg',
+      '/assets/Events/imseviour-hindi/i2.jpeg',
+      '/assets/Events/imseviour-hindi/i3.jpeg',
+      '/assets/Events/imseviour-hindi/i4.jpeg',
+      '/assets/Events/imseviour-hindi/i5.jpeg',
+      '/assets/Events/imseviour-hindi/i6.jpeg',
+      '/assets/Events/imseviour-hindi/i7.jpeg',
+      
+    ],
+    gallery: [
+      '/assets/Events/imseviour-hindi/i1.jpeg',
+      '/assets/Events/imseviour-hindi/i2.jpeg',
     ]
   },
   {
@@ -37,8 +45,7 @@ This Hindi edition aims to reach and inspire a wider audience, spreading the mes
     date: '2025-07-28',
     author: 'Dr. Vijay Anand Reddy',
     banners: [
-      '/events/sarcoma-awareness-2025-banner1.jpg',
-      '/events/sarcoma-awareness-2025-banner2.jpg'
+      // '/assets/Events/sarcoma-awareness-28/main.jpg',
     ],
     description: `On World Sarcoma Day, Apollo Cancer Centre, Hyderabad honoured brave bone cancer survivors for their strength and resilience at a special felicitation ceremony.
 
@@ -46,9 +53,9 @@ Dr. P. Vijay Anand Reddy, Director, along with Dr. Rajeev Reddy, Ortho Oncologis
 
 Survivors shared their emotional journeys, inspiring hope and awareness among attendees. Eminent doctors and dignitaries joined in celebrating these warriors as symbols of courage and perseverance in the fight against cancer.`,
     photos: [
-      '/events/sarcoma-awareness-2025-1.jpg',
-      '/events/sarcoma-awareness-2025-2.jpg',
-      '/events/sarcoma-awareness-2025-3.jpg'
+      // '/assets/Events/sarcoma-awareness-28/s1.jpg',
+      // '/assets/Events/sarcoma-awareness-28/s2.jpg',
+
     ]
   },
   {
@@ -154,14 +161,14 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
   date: '2024-05-19',
   author: 'Dr. Vijay Anand Reddy',
   banners: [
-    '/events/children-whitathon-2024-banner1.jpg',
-    '/events/children-whitathon-2024-banner2.jpg'
+    '/assets/Events/children-2/main.jpeg',
+   
   ],
   description: `Whitathon is an annual flagship run conducted by LV Prasad Eye Institute to raise awareness about eye cancer in children (Retinoblastoma) and to raise funds for underprivileged children with Retinoblastoma. The 6th edition, conducted on May 19th, 2024, attracted 2200 runners from all age groups and walks of life.\n\nWe were fortunate to have Dr. Vineeth G, Deputy Commissioner of Police, Madhapur Zone, launch the 10K run along with Dr. Vijay Anand Reddy, Director of Apollo Cancer Hospital; Shri Dilip Kumar Mohanty, Director (Production and Personnel), NMDC Ltd; Dr. Prashant Garg, Executive Chair, L V Prasad Eye Institute; and Dr. Swathi Kaliki, Head Operation Eye Sight Universal, Institute for Eye Cancer, L V Prasad Eye Institute.\n\nTotal registrations were 2132 (756 runners in the 10K timed run, 414 in the 5K timed run, 310 in the 5K Fun Run, and 652 in the 3K Fun Run). Additionally, 100 volunteers supported the event, backed by the Synchrony and Hyderabad Runners teams, and 140 Army runners participated.\n\nWhitathon 2024 not only increased awareness about retinoblastoma, but it also served as a valuable community involvement and team-building activity. Retinoblastoma, a cancer of the retina, commonly occurs in children aged 0–4 years and is highly curable when detected early. Parents need to be aware of early symptoms: white spot in the center of the eye, redness, improper eye movement, and impaired vision.`,
   photos: [
-    '/events/children-whitathon-2024-1.jpg',
-    '/events/children-whitathon-2024-2.jpg',
-    '/events/children-whitathon-2024-3.jpg'
+    '/assets/Events/children-2/c1.jpeg',
+    '/assets/Events/children-2/c2.jpeg',
+    '/assets/Events/children-2/c3.jpeg',
   ]
 },
 
@@ -360,14 +367,12 @@ Highlights:
   date: '2025-07-23',
   author: 'Dr. Vijay Anand Reddy',
   banners: [
-    '/events/cancer-survivor-sarcoma-2025-banner1.jpg',
-    '/events/cancer-survivor-sarcoma-2025-banner2.jpg'
+    '/assets/Events/sarcoma-awareness-28/main.jpg',
   ],
   description: `On World Sarcoma Day, Apollo Cancer Centre, Hyderabad honoured brave bone cancer survivors for their strength and resilience at a special felicitation ceremony. Dr. P. Vijay Anand Reddy, Director, along with Dr. Rajeev Reddy, Ortho Oncologist, and other top oncologists, highlighted the importance of early detection and advanced treatment in sarcoma care. Survivors shared emotional journeys, inspiring hope and awareness. Eminent doctors and dignitaries joined in celebrating these warriors as symbols of courage.`,
   photos: [
-    '/events/cancer-survivor-sarcoma-2025-1.jpg',
-    '/events/cancer-survivor-sarcoma-2025-2.jpg',
-    '/events/cancer-survivor-sarcoma-2025-3.jpg'
+    '/assets/Events/sarcoma-awareness-28/s1.jpg',
+    '/assets/Events/sarcoma-awareness-28/s2.jpg',
   ]
 },
 
@@ -500,21 +505,36 @@ Highlights:
     ]
   },
   {
-    id: '1',
-    category: "world-cancer-day",
-    title: "Hope in a Shot: Free Cervical Cancer Vaccinations 2025",
-    date: "2025-02-05",
-    banners: [
-      "/events/world-cancer-day-2025/banner1.jpg",
-      "/events/world-cancer-day-2025/banner2.jpg"
-    ],
-    description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025. Graced by Ms. Meenakshi Choudary, this initiative marks a significant step in the fight against cervical cancer.\n\nDr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness, aligning with WHO’s goal of 90% HPV vaccination coverage by 2030.\n\nTogether, let’s continue to Protect. Prevent. Prevail.`,
-    photos: [
-      "/events/world-cancer-day-2025/photo1.jpg",
-      "/events/world-cancer-day-2025/photo2.jpg",
-      "/events/world-cancer-day-2025/photo3.jpg"
-    ]
-  },
+  id: '1',
+  category: "world-cancer-day",
+  title: "Hope in a Shot - A Step Towards a Cancer-Free Future!",
+  date: "2025-02-05",
+  banners: [
+    '/assets/Events/world-cancer-day-1/main.jpg',
+   
+  ],
+  description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025. This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness. This milestone aligns with the WHO’s goal of 90% HPV vaccination coverage by 2030. Together, let’s continue to Protect. Prevent. Prevail.`,
+    photos:[
+       '/assets/Events/world-cancer-day-1/c1.jpg',
+        '/assets/Events/world-cancer-day-1/c2.jpg',
+        '/assets/Events/world-cancer-day-1/c3.jpg',
+  ]
+},
+
+  // {
+  //   id: '1',
+  //   category: "world-cancer-day",
+  //   title: "Hope in a Shot - A Step Towards a Cancer-Free Future!",
+  //   date: "2025-02-05",
+  //   banners: [
+  //    '/assets/Events/world-cancer-day-1/main.jpg',
+  //   ],
+  //   description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025. This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness. This milestone aligns with the WHO’s goal of 90% HPV vaccination coverage by 2030. Together, let’s continue to Protect. Prevent. Prevail.`,
+  //     '/assets/Events/world-cancer-day-1/c1.jpg',
+  //     "/assets/Events/world-cancer-day-1/c2.jpg",
+  //     "/assets/Events/world-cancer-day-1/c3.jpg",
+  //   ]
+  // },
   {
     id: '0',
     category: "world-cancer-day",
@@ -541,8 +561,8 @@ Highlights:
   date: '2024-03-16',
   author: 'Dr. Vijay Anand Reddy',
   banners: [
-    '/events/together-for-her-2024-banner1.jpg',
-    '/events/together-for-her-2024-banner2.jpg'
+    '/assets/Events/together-for-her-campaign/Main-Picture.jpeg',
+    // '/events/together-for-her-2024-banner2.jpg'
   ],
   description: `Apollo Cancer Centre, Hyderabad, has officially launched the “Together for Her” campaign, today at Hotel Taj Deccan, a movement dedicated to empowering women to take charge of their health. This initiative commenced by introducing India’s pioneering Purple Clip Champions Brigade.
 
@@ -550,20 +570,23 @@ Speaking on this occasion Dr. P. Vijay Anand Reddy, Director, Apollo Cancer Cent
 
 Dignitaries who participated in the discussion were Dr. Christina Z. Chongthu, IAS, Secretary to Government, Health, Medical & Family Welfare, Dr. Vijay Kumar, IPS, ADG (Operations) Greyhounds & OCTOPUS, Telangana Police, Ms. Ananda Shankar Jayant, Indian Classical Dancer, Choreographer & Padmashree Awardee and Apollo team of doctors.`,
   photos: [
-    '/events/together-for-her-2024-1.jpg',
-    '/events/together-for-her-2024-2.jpg',
-    // '/events/together-for-her-2024-3.jpg',
-    // '/events/together-for-her-2024-4.jpg',
-    // '/events/together-for-her-2024-5.jpg',
-    // '/events/together-for-her-2024-6.jpg',
-    // '/events/together-for-her-2024-7.jpg',
-    // '/events/together-for-her-2024-8.jpg',
-    // '/events/together-for-her-2024-9.jpg',
-    // '/events/together-for-her-2024-10.jpg',
-    // '/events/together-for-her-2024-11.jpg',
-    // '/events/together-for-her-2024-12.jpg',
-    // '/events/together-for-her-2024-13.jpg',
-    // '/events/together-for-her-2024-14.jpg'
+   
+    '/assets/Events/together-for-her-campaign/h1.jpeg',
+    '/assets/Events/together-for-her-campaign/h2.jpeg',
+    '/assets/Events/together-for-her-campaign/h3.jpeg',
+    '/assets/Events/together-for-her-campaign/h4.jpeg',
+    '/assets/Events/together-for-her-campaign/h5.jpeg',
+    '/assets/Events/together-for-her-campaign/h6.jpeg',
+    '/assets/Events/together-for-her-campaign/h7.jpeg',
+    '/assets/Events/together-for-her-campaign/h8.jpeg',
+    '/assets/Events/together-for-her-campaign/h9.jpeg',
+    '/assets/Events/together-for-her-campaign/h10.jpeg',
+    '/assets/Events/together-for-her-campaign/h11.jpeg',
+    '/assets/Events/together-for-her-campaign/h12.jpeg',
+    '/assets/Events/together-for-her-campaign/h13.jpeg',
+    '/assets/Events/together-for-her-campaign/h14.jpeg',
+    
+
   ]
 },
 {
@@ -573,8 +596,7 @@ Dignitaries who participated in the discussion were Dr. Christina Z. Chongthu, I
   date: '2022-11-29',
   author: 'Anuraj',
   banners: [
-    '/events/artcan-breast-cancer-awareness-2022-banner1.jpg',
-    '/events/artcan-breast-cancer-awareness-2022-banner2.jpg'
+    '/assets/Events/artcan-breast-cancer-awareness/a11.jpg',
   ],
   description: `In keeping with our vision of being at the forefront of cancer research, we have launched the ‘ArtCan’ breast cancer awareness campaign.
 
@@ -584,12 +606,27 @@ Through Kerala Mural Art, 8 steps bring attention to the issue of breast cancer.
 
 The Mural Arts were unveiled today at Apollo Cancer Centres, Jubilee Hills. This unique initiative was inaugurated by eminent painter Padmashree Kalal Laxma Goud in presence of Dr. Sangita Reddy - Joint Managing Director of Apollo Hospitals Enterprise Ltd, breast cancer experts from ACC, Hyderabad, breast cancer winner and MeMeraki (artist).`,
   photos: [
-    '/events/artcan-breast-cancer-awareness-2022-1.jpg',
-    '/events/artcan-breast-cancer-awareness-2022-2.jpg',
-    '/events/artcan-breast-cancer-awareness-2022-3.jpg',
-    '/events/artcan-breast-cancer-awareness-2022-4.jpg',
-    '/events/artcan-breast-cancer-awareness-2022-5.jpg',
-    '/events/artcan-breast-cancer-awareness-2022-6.jpg'
+     '/assets/Events/artcan-breast-cancer-awareness/a1.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a2.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a3.jpg',
+      '/assets/Events/artcan-breast-cancer-awareness/a4.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a5.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a6.jpg',
+      '/assets/Events/artcan-breast-cancer-awareness/a7.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a8.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a9.jpg',
+      '/assets/Events/artcan-breast-cancer-awareness/a10.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a11.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a12.jpg',
+      '/assets/Events/artcan-breast-cancer-awareness/a13.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a14.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a15.jpg',
+      '/assets/Events/artcan-breast-cancer-awareness/a16.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a17.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a18.jpg',
+      '/assets/Events/artcan-breast-cancer-awareness/a19.jpg',
+     '/assets/Events/artcan-breast-cancer-awareness/a20.jpg',
+    
   ]
 },
 
