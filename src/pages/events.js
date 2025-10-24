@@ -796,7 +796,7 @@ photos: [
 {
 id: 'breast-cancer-awareness-walk-2008',
 category: 'awareness-programmes',
-title: 'Breast Cancer Awareness Walk On The Eve Of World Cancer Day 2008',
+title: 'Breast Cancer Awareness Walk On The Eve Of World Cancer Day',
 date: '2008-02-03',
 author: 'Anuraj',
 banners: [
@@ -818,7 +818,7 @@ photos: [
 {
 id: 'breast-cancer-awareness-programme-2005',
 category: 'awareness-programmes',
-title: 'Breast Cancer Awareness Programme 2005',
+title: 'Breast Cancer Awareness Programme',
 date: '2005-10-27',
 author: 'Anuraj',
 banners: [
@@ -838,6 +838,322 @@ photos: [
 },
 
 //children
+
+{
+id: 'whitathon-marathon-for-eye-cancer-awareness-2024',
+category: 'awareness-programmes',
+title: 'WHITATHON – Marathon for Eye Cancer Awareness',
+date: '2024-07-05',
+author: 'Dr. Vijay Anand Reddy',
+banners: [
+  '/assets/Events/whitathon-marathon-for-eye-cancer-child/main.jpeg',
+],
+description: `Whitathon is an annual flagship run conducted by LV Prasad Eye Institute to raise awareness about eye cancer in children, Retinoblastoma and also raise funds for underprivileged children with Retinoblastoma. The 6th edition of the run was conducted on May 19th 2024 which attracted 2200 runners from all age groups and all spheres of life.
+
+We were fortunate to have Dr. Vineeth G, Deputy Commissioner of Police, Madhapur Zone, attend the event and launch the 10K run along with Dr. Vijay Anand Reddy, Director of Apollo Cancer Hospital, Shri Dilip Kumar Mohanty, Director (Production and Personnel), NMDC Ltd, Dr. Prashant Garg, Executive Chair, L V Prasad Eye Institute and Dr. Swathi Kaliki, Head Operation Eye Sight Universal, Institute for Eye Cancer, L V Prasad Eye Institute.
+
+We had a total registration of 2132. (756 runners participated in the 10K timed run; 414 runners participated in a 5K timed run; 310 participants in the 5K Fun Run; 652 participants in the 3K Fun Run.) In addition, we had 100 volunteers on the field, backed by the Synchrony and Hyderabad Runners teams. We had 140 Army runners too.
+
+Speaking on the occasion Dr. P. Vijay Anand Reddy, Director, Apollo Cancer Hospital said Whitathon 2024 not only increased awareness about retinoblastoma, but it also served as a valuable community involvement and team-building activity.
+
+Retinoblastoma – a Cancer of the Retina (the so-called screen of the Eye) occurs commonly in children between the ages zero to 4 years. It is a highly curable cancer when detected early. The parents need to be aware of the early symptoms – white spot in the centre of eye, redness in the eye, improper movement of the eyeball, improper vision etc.`,
+photos: [
+  '/assets/Events/whitathon-marathon-for-eye-cancer-child/main.jpeg',
+  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m1.jpeg',
+  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m2.jpeg',
+  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m3.jpeg',
+  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m4.jpeg',
+  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m5.jpeg',
+]
+},
+
+{
+id: 'childrens-day-celebrations-with-our-heroes-2015',
+category: 'awareness-programmes',
+title: 'Children’s Day Celebrations With Our Heroes',
+date: '2015-11-23',
+author: 'Anuraj',
+banners: [
+      '/assets/Events/children-day/m1.jpg',
+      '/assets/Events/children-day/m2.jpg',
+      '/assets/Events/children-day/m3.jpg',
+      '/assets/Events/children-day/m4.jpg',
+],
+description: `On the eve of Children’s Day, Apollo Cancer Hospital hosted a colourful celebration with Child Cancer Survivors and actress Rakul Preet Singh. The survivor children in costumes of Chota Bheem look alike, presented a theme show, where they defeated the cancer demon. 
+
+The show sent the strong message of cancer being conquerable, to the audience mostly comprising of children afflicted of cancer and their parents. “These tiny cancer survivors are the real heroes. In the recent years cancer treatment has made enormous advances and the best doctors, technology and hospitals are all available to treat cancer. Therefore anyone with cancer patients and their relatives need not worry. Early detection can facilitate treatment of cancer with ease,” she added. 
+
+“I am really moved to hear and see little kids being inflicted of cancer, but there is great hope as childhood cancers are curable,” said Rakul. “Children cope with cancer treatment better than adults and recover much faster than adults. Most cancers in childhood are curable, in fact 80% of all childhood cancers are curable and in contrast only 65 percent of adult cancers are curable,” he added.
+
+Speaking on the occasion Dr. P. Vijay Anand Reddy, Director, Apollo Cancer Hospital pointed that in India, around 45,000 new cases of childhood cancers are diagnosed every year.`,
+photos: [
+      '/assets/Events/children-day/d1.jpg',
+      '/assets/Events/children-day/d2.jpg',
+      '/assets/Events/children-day/d3.jpg',
+      '/assets/Events/children-day/d4.jpg',
+      '/assets/Events/children-day/d5.jpg',
+      '/assets/Events/children-day/d9.jpg',
+      '/assets/Events/children-day/d7.jpg',
+      '/assets/Events/children-day/d8.jpg',
+      '/assets/Events/children-day/d.jpg',
+       '/assets/Events/children-day/m1.jpg',
+      '/assets/Events/children-day/m2.jpg',
+      '/assets/Events/children-day/m3.jpg',
+      '/assets/Events/children-day/m4.jpg',
+     
+]
+},
+
+//digital
+{
+id: 't2-cricket-match-sunrisers-hyd-vs-child-cancer-patients-2014',
+category: 'awareness-programmes',
+title: 'T-2 Cricket Match – SunRisers Hyd VS Child Cancer Patients',
+date: '2014-05-13',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/t2-cricket-match/b1.jpg',
+    '/assets/Events/t2-cricket-match/b2.jpg',
+    '/assets/Events/t2-cricket-match/b3.jpg'
+],
+description: `Beaming faces of young kids – Mubasir, Kishan Kumar, Kiran and Pallavi – said it all. It was a cricket match where runs and wickets did not matter at all, but gestures did. For, some of the lead players of Sunrisers Hyderabad including captain Shikhar Dhawan, Dale Steyn, Darren Sammy turned up for a “friendly” match against the juvenile cancer patients at the Apollo Cancer Hospital, Hyderabad to lift their morale.
+
+“A wonderful experience,” chortled Pallavi as the players spent more than 45 minutes with the juvenile patients. Much to the youngsters’ delight, Steyn and Darren Sammy made it a point to exchange pleasantries with them before the cricketing contest began. Captain Shikhar Dhawan wished the kids lead a more pleasant life ahead. “It’s always a touching experience to meet kids who show lot of courage, battling against all odds,” he said.
+
+Steyn hoped that these patients will hit cancer for a “huge six”. Dr. P. Vijay Anand Reddy, Director, Apollo Cancer Hospital, reminded that children cope with cancer treatment better than adults and recover much faster too! He added that in India, around 45,000 new cases of childhood cancers are diagnosed every year. Most cancers in childhood are curable, in fact 80% of all childhood cancers are curable and in contrast only 65 percent of adult cancers are curable.`,
+photos: [
+      '/assets/Events/t2-cricket-match/d1.jpg',
+      '/assets/Events/t2-cricket-match/d2.jpg',
+      '/assets/Events/t2-cricket-match/d3.jpg',
+      '/assets/Events/t2-cricket-match/d4.jpg',
+      '/assets/Events/t2-cricket-match/d5.jpg',
+      '/assets/Events/t2-cricket-match/d6.jpg',
+      '/assets/Events/t2-cricket-match/d7.jpg',
+      '/assets/Events/t2-cricket-match/d7.jpg', 
+      '/assets/Events/t2-cricket-match/p1.jpg',
+      '/assets/Events/t2-cricket-match/p2.jpg',
+      '/assets/Events/t2-cricket-match/p3.jpg',
+      '/assets/Events/t2-cricket-match/p4.jpg',
+      '/assets/Events/t2-cricket-match/p5.jpg',
+      '/assets/Events/t2-cricket-match/p6.jpg',
+]
+},
+
+{
+id: 'world-retinoblastoma-awareness-week-2014',
+category: 'awareness-programmes',
+title: 'World Retinoblastoma Awareness Week 2014',
+date: '2014-05-11',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/world-retinoblastoma/main.jpg',
+   
+],
+description: `Retinoblastoma is a cancer that affects the retina of an eyeball in children aged 0-5. Unfortunately, many parents fail to recognize the symptoms this cancer presents and thereby end up at the doctor’s office in the later stages of the tumor. As a part of an awareness programme, ophthalmologists at LVPEI observed World Retinoblastoma Awareness Week from 11 to 15th May 2014 across the state.
+
+According to the doctors, the symptoms of the disease can be observed if a child has crossed or squint eyes, constant swelling in the eye, continuous watering and also rapid loss of vision.
+
+In such cases parents must get an eye checkup with an ophthalmologist. Patients coming in at the last stage often have the cancer spread from the eye to the brain or grown too large in the eye. If detected early, it can be cured. “But we find patients complaining that they went to a health professional but were given drops and medicines and told that it would be fine,” says Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital.`,
+photos: [
+  '/assets/Events/world-retinoblastoma/m.jpg',
+  '/assets/Events/world-retinoblastoma/m1.jpg',
+  '/assets/Events/world-retinoblastoma/m2.jpg',
+  '/assets/Events/world-retinoblastoma/m3.jpg',
+  '/assets/Events/world-retinoblastoma/4.jpg',
+  '/assets/Events/world-retinoblastoma/5.jpg',
+]
+},
+
+{
+id: 'celebrating-childrens-day-2013-with-sania-mirza',
+category: 'awareness-programmes',
+title: 'Celebrating Children’s Day 2013 With Sania Mirza',
+date: '2013-11-13',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/sania-mirza/1.jpg',
+    '/assets/Events/sania-mirza/2.jpg',
+],
+description: `Speaking on the occasion guest of honor Ms. Sania Mirza shared her experience of going under the knife and complemented the young cancer fighters who fought cancer.
+
+The month of November being marked to honor children globally, Apollo Cancer Hospital under the able leadership of Dr. Vijay Anand Reddy celebrated Children’s Day on 13th November 2013 with a range of colorful and fun-filled activities. Ace Tennis star Sania Mirza graced the event with her presence to honor and felicitate the child cancer survivors.
+
+Parents of child cancer survivors interacted with child cancer patients and their parents. A parent of a child cancer patient acknowledged the support and care by Dr. Vijay Anand Reddy and his team of consultants. The children participated in painting, singing, and dancing on this occasion.
+
+Speaking on the occasion Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital, welcomed Ms. Sania Mirza with a warm speech and expressed his concern for children who are struck with cancer. Dr. Reddy said, “Cancer doesn’t even spare children; however, children cope with cancers better than adults.” He also pointed out that 80% of childhood cancers are curable, against 65% in adults. Dr. S.V.S.S. Prasad, Consultant Medical Oncology, also spoke on the early symptoms of cancers in children.`,
+photos: [
+    '/assets/Events/sania-mirza/1.jpg',
+    '/assets/Events/sania-mirza/d.jpg',
+    '/assets/Events/sania-mirza/d1.jpg',
+    '/assets/Events/sania-mirza/d2.jpg',
+    '/assets/Events/sania-mirza/d3.jpg',
+    '/assets/Events/sania-mirza/d4.jpg',
+    '/assets/Events/sania-mirza/d5.jpg',
+    '/assets/Events/sania-mirza/d6.jpg',
+    '/assets/Events/sania-mirza/d7.jpg',
+    '/assets/Events/sania-mirza/d8.jpg',
+
+    '/assets/Events/sania-mirza/p1.jpg',
+    '/assets/Events/sania-mirza/p2.jpg',
+    '/assets/Events/sania-mirza/p3.jpg',
+    '/assets/Events/sania-mirza/p4.jpg',
+    '/assets/Events/sania-mirza/p5.jpg',
+    '/assets/Events/sania-mirza/p6.jpg',
+    '/assets/Events/sania-mirza/p7.jpg',
+
+
+]
+},
+
+{
+id: 'impact-day-2012-with-delloite',
+category: 'awareness-programmes',
+title: 'Impact Day 2012 With Delloite',
+date: '2012-11-23',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/Delloite/1.jpg',
+    '/assets/Events/Delloite/d2.jpg',
+    '/assets/Events/Delloite/d3.jpg',
+],
+description: `Techies from Delloite took a day off to spread cheer and love among cancer-stricken children at Apollo Cancer Hospital, Hyderabad on Friday.
+
+Taking a break from their hectic schedules, the professionals along with popular Telugu actor Krishnudu and Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital, interacted and spent some quality time with the child patients and their caretakers. The children had a whirlwind time, dancing to the tunes of popular songs while being cheered on by the crowd.
+
+The event was a part of the company’s Community Development Initiative, and saw participation of around 100 employees.`,
+photos: [
+    '/assets/Events/Delloite/1.jpg',
+    '/assets/Events/Delloite/d2.jpg',
+    '/assets/Events/Delloite/d3.jpg',
+    '/assets/Events/Delloite/d1.jpg',
+    '/assets/Events/Delloite/d4.jpg',
+    '/assets/Events/Delloite/d5.jpg',
+    '/assets/Events/Delloite/d6.jpg',
+    '/assets/Events/Delloite/d7.jpg',
+    '/assets/Events/Delloite/d8.jpg',
+    '/assets/Events/Delloite/d9.jpg',
+    '/assets/Events/Delloite/d10.jpg',
+
+    '/assets/Events/Delloite/p1.jpg',
+    '/assets/Events/Delloite/p2.jpg',
+    '/assets/Events/Delloite/p3.jpg',
+    '/assets/Events/Delloite/p4.jpg',
+    '/assets/Events/Delloite/p5.jpg',
+    '/assets/Events/Delloite/p6.jpg',
+   
+]
+},
+
+{
+id: 'celebrate-with-the-stars-childrens-day-2011',
+category: 'awareness-programmes',
+title: '“Celebrate With The Stars” – Children’s Day 2011',
+date: '2011-11-14',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/childrens-day-2011/1.jpg',
+    '/assets/Events/childrens-day-2011/2.jpg',
+    '/assets/Events/childrens-day-2011/6.jpg',
+],
+description: `Keeping in mind the importance of Children’s Day, Apollo Cancer Institute celebrated “Children’s Day with the real Stars!” on 14th November, 2011.
+
+The fun filled event was attended by reel stars Madhu Shalini and Sreeram Chandra. Music, dance and a lot of positive energy boosted the spirits of the child cancer patients.
+
+The patients also interacted with cancer survivors, exchanging experiences and hope. This was mentally encouraging experience for the parents as well and they showed their faith in the ongoing treatment and in Dr. Vijay Anand Reddy.`,
+photos: [
+    '/assets/Events/childrens-day-2011/1.jpg',
+    '/assets/Events/childrens-day-2011/2.jpg',
+    '/assets/Events/childrens-day-2011/3.jpg',
+    '/assets/Events/childrens-day-2011/4.jpg',
+    '/assets/Events/childrens-day-2011/5.jpg',
+    '/assets/Events/childrens-day-2011/6.jpg',
+    '/assets/Events/childrens-day-2011/7.jpg',
+    '/assets/Events/childrens-day-2011/8.jpg',
+    '/assets/Events/childrens-day-2011/9.jpg',
+
+    '/assets/Events/childrens-day-2011/p1.jpg',
+    '/assets/Events/childrens-day-2011/p.jpg',
+    '/assets/Events/childrens-day-2011/p2.jpg',
+    '/assets/Events/childrens-day-2011/p3.jpg',
+    '/assets/Events/childrens-day-2011/p4.jpg',
+    '/assets/Events/childrens-day-2011/p5.jpg',
+]
+},
+
+{
+id: 'international-child-cancer-awareness-day-2010',
+category: 'awareness-programmes',
+title: 'International Child Cancer Awareness Day 2010',
+date: '2010-02-15',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/international-child-cancer/1.jpg',
+    '/assets/Events/international-child-cancer/2.jpg',
+    '/assets/Events/international-child-cancer/3.jpg',
+    '/assets/Events/international-child-cancer/4.jpg',
+    
+],
+description: `"Childhood Cancer Awareness Day" was held at Apollo Cancer Hospital, Hyderabad on February 15, 2010. The event included awareness talks by oncologists, followed by several patients sharing their experiences.
+
+Many patients shared how they once thought their life had come to a dead end, but with the right amount of encouragement and guidance, they could commence a new life with more confidence than before. Cine Actor Mr. Navdeep was invited as the Chief Guest for the program.`,
+photos: [
+   '/assets/Events/international-child-cancer/4.jpg',
+    '/assets/Events/international-child-cancer/5.jpg',
+    '/assets/Events/international-child-cancer/1.jpg',
+    '/assets/Events/international-child-cancer/2.jpg',
+    '/assets/Events/international-child-cancer/3.jpg',
+    '/assets/Events/international-child-cancer/6.jpg',
+    '/assets/Events/international-child-cancer/7.jpg',
+    '/assets/Events/international-child-cancer/8.jpg',
+
+     '/assets/Events/international-child-cancer/p1.jpg',
+    '/assets/Events/international-child-cancer/p2.jpg',
+    '/assets/Events/international-child-cancer/p3.jpg',
+    '/assets/Events/international-child-cancer/p4.jpg',
+    '/assets/Events/international-child-cancer/p5.jpg',
+   
+]
+},
+
+{
+id: 'children-s-day-2007-parvathi-melton',
+category: 'awareness-programmes',
+title: 'Children’s Day 2007 with Parvathi Melton',
+date: '2007-11-14',
+author: 'Anuraj',
+banners: [
+      '/assets/Events/Parvathi-Melton/1.jpg',
+      '/assets/Events/Parvathi-Melton/2.jpg',
+      '/assets/Events/Parvathi-Melton/3.jpg', 
+      '/assets/Events/Parvathi-Melton/4.jpg',
+     
+],
+description: `"Children’s day was celebrated on 14th November 2007 with Paediatric Cancer patients and those who were treated and are now leading a new, confident life.
+
+The program had more than seventy children of all age groups (from 1 year to 14 years) who actively participated in cultural programs, several games, and competitions, with prizes distributed to the winners. Ms. Parvathi Melton, a popular cine actress, was invited as the Chief Guest for the event.`,
+photos: [
+      '/assets/Events/Parvathi-Melton/1.jpg',
+      '/assets/Events/Parvathi-Melton/2.jpg',
+      '/assets/Events/Parvathi-Melton/3.jpg', 
+      '/assets/Events/Parvathi-Melton/4.jpg',
+      '/assets/Events/Parvathi-Melton/5.jpg',
+      '/assets/Events/Parvathi-Melton/6.jpg',
+      '/assets/Events/Parvathi-Melton/7.jpg',
+      '/assets/Events/Parvathi-Melton/8.jpg',
+      '/assets/Events/Parvathi-Melton/9.jpg',
+      '/assets/Events/Parvathi-Melton/10.jpg',
+
+      '/assets/Events/Parvathi-Melton/2-2.jpg',
+      '/assets/Events/Parvathi-Melton/1-3.jpg',
+      '/assets/Events/Parvathi-Melton/3-2.jpg',
+      '/assets/Events/Parvathi-Melton/4-1.jpg',
+      '/assets/Events/Parvathi-Melton/5-1.jpg',
+      '/assets/Events/Parvathi-Melton/6-1.jpg',
+      '/assets/Events/Parvathi-Melton/7-1.jpg',
+]
+},
+
+
 
 
 
