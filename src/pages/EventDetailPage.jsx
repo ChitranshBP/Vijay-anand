@@ -50,7 +50,7 @@ const EventDetailPage = () => {
   return (
     <>
       <Header />
-      <div className="bg-gradient-to-b  from-gray-50 to-white min-h-screen">
+      <div className="bg-gradient-to-b mt-28 from-gray-50 to-white min-h-screen">
         {/* Breadcrumb */}
         <div className="bg-white border-b border-gray-200 mt-20">
           <div className="max-w-7xl mx-auto px-6 py-4">
@@ -65,32 +65,39 @@ const EventDetailPage = () => {
         </div>
 
         {/* Hero Banner */}
-        <div className="relative w-full h-[70vh] overflow-hidden">
-          <div
-            style={{ backgroundImage: `url(${event.banners[0]})` }}
-            className="absolute inset-0 bg-cover  bg-center transform scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-          <div className="absolute inset-0 flex flex-col justify-end pb-16 px-6">
-            <div className="max-w-7xl mx-auto w-full">
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
-                {event.title}
-              </h1>
-              {event.date && (
-                <div className="flex items-center gap-2 text-white/90 text-lg">
-                  <FiCalendar className="w-5 h-5" />
-                  <span className="font-medium">
-                    {new Date(event.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </span>
-                </div>
-              )}
-            </div>
-          </div>
+<div className="relative w-full h-[70vh] overflow-hidden">
+  <div
+    style={{
+      backgroundImage: `url(${event.banners[0]})`,
+      backgroundPosition: 'center 20%', // moves image slightly down, crops only 20% from top
+    }}
+    className="absolute inset-0 bg-cover bg-no-repeat"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+  <div className="absolute inset-0 flex flex-col justify-end pb-16 px-6">
+    <div className="max-w-7xl mx-auto w-full">
+      <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
+        {event.title}
+      </h1>
+      {event.date && (
+        <div className="flex items-center gap-2 text-white/90 text-lg">
+          <FiCalendar className="w-5 h-5" />
+          <span className="font-medium">
+            {new Date(event.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </span>
         </div>
+      )}
+    </div>
+  </div>
+</div>
+
+
+
+
 
         {/* Event Description */}
         <section className="max-w-5xl mx-auto px-6 py-16">
