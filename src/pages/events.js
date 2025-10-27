@@ -38,26 +38,26 @@ This Hindi edition aims to reach and inspire a wider audience, spreading the mes
       '/assets/Events/imseviour-hindi/i2.jpeg',
     ]
   },
-  {
-    id: 'sarcoma-awareness-month-2025',
-    category: 'awareness-programmes',
-    title: 'Sarcoma Awareness Month - Felicitation of Bone Cancer Survivors',
-    date: '2025-07-28',
-    author: 'Dr. Vijay Anand Reddy',
-    banners: [
-      // '/assets/Events/sarcoma-awareness-28/main.jpg',
-    ],
-    description: `On World Sarcoma Day, Apollo Cancer Centre, Hyderabad honoured brave bone cancer survivors for their strength and resilience at a special felicitation ceremony.
+//   {
+//     id: 'sarcoma-awareness-month-2025',
+//     category: 'awareness-programmes',
+//     title: 'Sarcoma Awareness Month - Felicitation of Bone Cancer Survivors',
+//     date: '2025-07-28',
+//     author: 'Dr. Vijay Anand Reddy',
+//     banners: [
+//       // '/assets/Events/sarcoma-awareness-28/main.jpg',
+//     ],
+//     description: `On World Sarcoma Day, Apollo Cancer Centre, Hyderabad honoured brave bone cancer survivors for their strength and resilience at a special felicitation ceremony.
 
-Dr. P. Vijay Anand Reddy, Director, along with Dr. Rajeev Reddy, Ortho Oncologist, and other top oncologists participated in the event and highlighted the importance of early detection and advanced treatment in sarcoma care.
+// Dr. P. Vijay Anand Reddy, Director, along with Dr. Rajeev Reddy, Ortho Oncologist, and other top oncologists participated in the event and highlighted the importance of early detection and advanced treatment in sarcoma care.
 
-Survivors shared their emotional journeys, inspiring hope and awareness among attendees. Eminent doctors and dignitaries joined in celebrating these warriors as symbols of courage and perseverance in the fight against cancer.`,
-    photos: [
-      // '/assets/Events/sarcoma-awareness-28/s1.jpg',
-      // '/assets/Events/sarcoma-awareness-28/s2.jpg',
+// Survivors shared their emotional journeys, inspiring hope and awareness among attendees. Eminent doctors and dignitaries joined in celebrating these warriors as symbols of courage and perseverance in the fight against cancer.`,
+//     photos: [
+//       // '/assets/Events/sarcoma-awareness-28/s1.jpg',
+//       // '/assets/Events/sarcoma-awareness-28/s2.jpg',
 
-    ]
-  },
+//     ]
+//   },
   {
     id: 'whitathon-2025',
     category: 'children',
@@ -264,35 +264,49 @@ Highlights:
     ]
   },
   {
-    id: 'anti-tobacco-4',
+    id: 'No-Tobacco-Program',
     category: 'anti-tobacco',
     title: 'No-Tobacco Program – World No Tobacco Day 2013',
     date: '2013-05-30',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-4-banner1.jpg',
-      '/events/anti-tobacco-4-banner2.jpg'
+      '/assets/Events/No-Tobacco-Program/1.jpg',
+      '/assets/Events/No-Tobacco-Program/2.jpg',
+
     ],
-    description: `Apollo Cancer Hospitals organized a **Harley Davidson Motorbike Rally** on **30 May 2013** to educate the public on tobacco hazards.  
+    description: `Apollo Cancer Hospitals organized a Harley Davidson Motorbike Rally on 30 May 2013 to educate the public on tobacco hazards.  
 
 Highlights:
-• Supported by **Harley Davidson Owners’ Group**, rally from People’s Plaza, Necklace Road to Apollo Cancer Hospital.  
-• **Ace shuttler Ms. Jwala Gutta** administered a pledge to quit smoking and become “Anti Tobacco Crusaders”.  
-• Dr. Vijay Anand Reddy emphasized **youth engagement**, early prevention, and lifestyle changes to reduce tobacco consumption.`,
+• Supported by Harley Davidson Owners’ Group, rally from People’s Plaza, Necklace Road to Apollo Cancer Hospital.  
+• Ace shuttler Ms. Jwala Gutta administered a pledge to quit smoking and become “Anti Tobacco Crusaders”.  
+• Dr. Vijay Anand Reddy emphasized youth engagement, early prevention, and lifestyle changes to reduce tobacco consumption.`,
     photos: [
-      '/events/anti-tobacco-4-1.jpg',
-      '/events/anti-tobacco-4-2.jpg'
+      '/assets/Events/No-Tobacco-Program/1.jpg',
+      '/assets/Events/No-Tobacco-Program/2.jpg',
+      '/assets/Events/No-Tobacco-Program/3.jpg',
+      '/assets/Events/No-Tobacco-Program/4.jpg',
+      '/assets/Events/No-Tobacco-Program/5.jpg',
+      '/assets/Events/No-Tobacco-Program/6.jpg',
+      '/assets/Events/No-Tobacco-Program/7.jpg',
+      '/assets/Events/No-Tobacco-Program/8.jpg',
+      '/assets/Events/No-Tobacco-Program/9.jpg',
+      '/assets/Events/No-Tobacco-Program/10.jpg',
+      '/assets/Events/No-Tobacco-Program/11.jpg',
+      '/assets/Events/No-Tobacco-Program/12.jpg',
     ]
   },
+  //digital
   {
-    id: 'anti-tobacco-5',
+    id: 'Protest-Against',
     category: 'anti-tobacco',
     title: 'Protest Against “Rebel” For COPTA Violation',
     date: '2012-10-02',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-5-banner1.jpg',
-      '/events/anti-tobacco-5-banner2.jpg'
+      '/assets/Events/Protest-Against/1.jpg',
+      '/assets/Events/Protest-Against/2.jpg',
+      '/assets/Events/Protest-Against/3.jpg',
+      '/assets/Events/Protest-Against/4.jpg',
     ],
     description: `Led by Dr. Vijay Anand Reddy, a **silent protest** was held against the poster of the movie **Rebel** showing smoking.  
 
@@ -301,19 +315,30 @@ Highlights:
 • Urged the film industry to **take social responsibility** seriously and avoid glamorizing tobacco.  
 • The protest led to the **Censor Board directives** for removal of smoking posters.`,
     photos: [
-      '/events/anti-tobacco-5-1.jpg',
-      '/events/anti-tobacco-5-2.jpg'
+       '/assets/Events/Protest-Against/1.jpg',
+      '/assets/Events/Protest-Against/2.jpg',
+      '/assets/Events/Protest-Against/3.jpg',
+      '/assets/Events/Protest-Against/4.jpg',
+       '/assets/Events/Protest-Against/5.jpg',
+      '/assets/Events/Protest-Against/6.jpg',
+      '/assets/Events/Protest-Against/7.jpg',
+      '/assets/Events/Protest-Against/8.jpg',
+
     ]
   },
+
+  //Digital
   {
-    id: 'anti-tobacco-6',
+    id: 'Tobacco–Free-AP',
     category: 'anti-tobacco',
     title: 'Let’s Make Tobacco–Free AP – VOTV',
     date: '2012-08-22',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-6-banner1.jpg',
-      '/events/anti-tobacco-6-banner2.jpg'
+      '/assets/Events/Tobacco–Free-AP/1.jpg',
+      '/assets/Events/Tobacco–Free-AP/2.jpg',
+      '/assets/Events/Tobacco–Free-AP/3.jpg',
+      '/assets/Events/Tobacco–Free-AP/4.jpg',
     ],
     description: `A **campaign with Voice of Tobacco Victims (VOTV)** to ban tobacco products in Andhra Pradesh.  
 
@@ -323,29 +348,49 @@ Highlights:
 • Historic judgment on **10 Jan 2013** prohibited Gutka/Pan Masala containing tobacco or nicotine statewide.  
 • **Order No. 1508/F1/2012-13** issued by Commissioner of Food Safety to enforce ban.`,
     photos: [
-      '/events/anti-tobacco-6-1.jpg',
-      '/events/anti-tobacco-6-2.jpg'
+      '/assets/Events/Tobacco–Free-AP/1.jpg',
+      '/assets/Events/Tobacco–Free-AP/2.jpg',
+      '/assets/Events/Tobacco–Free-AP/3.jpg',
+      '/assets/Events/Tobacco–Free-AP/4.jpg',
+      '/assets/Events/Tobacco–Free-AP/5.jpg',
+      '/assets/Events/Tobacco–Free-AP/6.jpg',
+      '/assets/Events/Tobacco–Free-AP/7.jpg',
+      '/assets/Events/Tobacco–Free-AP/8.jpg',
+      '/assets/Events/Tobacco–Free-AP/9.jpg',
+      '/assets/Events/Tobacco–Free-AP/10.jpg',
+      '/assets/Events/Tobacco–Free-AP/11.jpg',
+      '/assets/Events/Tobacco–Free-AP/12.jpg',
     ]
   },
   {
-    id: 'anti-tobacco-7',
+    id: 'say-no-to-tobacco-2012',
     category: 'anti-tobacco',
     title: 'Say No to Tobacco Campaign – World No Tobacco Day 2012',
-    date: '2012-05-31',
+    date: '2012-05-30',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-7-banner1.jpg',
-      '/events/anti-tobacco-7-banner2.jpg'
+      '/assets/Events/No-Tobaco-2012/1.jpg',
+      '/assets/Events/No-Tobaco-2012/2.jpg',
+      '/assets/Events/No-Tobaco-2012/3.jpg',
+      '/assets/Events/No-Tobaco-2012/4.jpg',
+      
     ],
-    description: `Apollo Cancer Hospital launched a **month-long campaign** to make Andhra Pradesh tobacco-free.  
+    description: `Apollo Cancer Hospital launched a month-long campaign to make Andhra Pradesh tobacco-free.  
 
 Highlights:
-• Inauguration by **Anurag Sharma, IPS**, Tollywood actor Bharath Reddy, and Dr. Vijay Anand Reddy.  
-• Bharath Reddy administered an **oath** to participants to act as ambassadors for the campaign.  
-• **Tobacco victims** shared experiences to educate the audience.`,
+• Inauguration by Anurag Sharma, IPS, Tollywood actor Bharath Reddy, and Dr. Vijay Anand Reddy.  
+• Bharath Reddy administered an oath to participants to act as ambassadors for the campaign.  
+• Tobacco victims shared experiences to educate the audience.`,
     photos: [
-      '/events/anti-tobacco-7-1.jpg',
-      '/events/anti-tobacco-7-2.jpg'
+      '/assets/Events/No-Tobaco-2012/1.jpg',
+      '/assets/Events/No-Tobaco-2012/2.jpg',
+      '/assets/Events/No-Tobaco-2012/3.jpg',
+      '/assets/Events/No-Tobaco-2012/4.jpg',
+      '/assets/Events/No-Tobaco-2012/5.jpg',
+      '/assets/Events/No-Tobaco-2012/6.jpg',
+      '/assets/Events/No-Tobaco-2012/7.jpg',
+      '/assets/Events/No-Tobaco-2012/8.jpg',
+      '/assets/Events/No-Tobaco-2012/9.jpg',
     ]
   },
   {
