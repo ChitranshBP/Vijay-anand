@@ -174,14 +174,13 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
 
 // anti-tobacco
  {
-    id: 'anti-tobacco-1',
+    id: 'anti-tobacco',
     category: 'anti-tobacco',
     title: 'Tobacco: A Major Public Health Threat',
     date: '2024-05-31',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-1-banner1.jpg',
-      '/events/anti-tobacco-1-banner2.jpg'
+      '/assets/Events/anti-1.png',
     ],
     description: `Hyderabad: Respiratory diseases are one of the main causes of death worldwide, with tobacco being the major risk factor. Tobacco kills one person every four seconds!  
 
@@ -198,19 +197,19 @@ Key points:
 • Quitting tobacco improves lung function in as little as **two weeks**, reduces chronic disease risk, and enhances quality of life.  
 This article is written by **Dr. P. Vijay Anand Reddy, Director & Senior Consultant Oncologist, Apollo Cancer Centre, Hyderabad**.`,
     photos: [
-      '/events/anti-tobacco-1-1.jpg',
-      '/events/anti-tobacco-1-2.jpg'
+       '/assets/Events/anti-1.png',
     ]
   },
   {
-    id: 'anti-tobacco-2',
+    id: 'anti-tobacco-Smoke-Win',
     category: 'anti-tobacco',
     title: 'Apollo Cancer Hospital Launches “Smoke & Win” Campaign',
     date: '2015-05-31',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-2-banner1.jpg',
-      '/events/anti-tobacco-2-banner2.jpg'
+      '/assets/Events/Smoke-Win/1.jpg',
+       '/assets/Events/Smoke-Win/1.png',
+        '/assets/Events/Smoke-Win/2.jpg',
     ],
     description: `Launched on the eve of **World No Tobacco Day 2015**, “Smoke & Win” aimed to **educate youth about the dangers of smoking**.  
 
@@ -220,19 +219,30 @@ Highlights:
 • Smokers spinning the wheel were **educated by specialists** and offered free consultations.  
 • The campaign combined **fun and education** to engage IT employees and youth, emphasizing the long-term risks of smoking.`,
     photos: [
-      '/events/anti-tobacco-2-1.jpg',
-      '/events/anti-tobacco-2-2.jpg'
+      '/assets/Events/Smoke-Win/1.png',
+      '/assets/Events/Smoke-Win/2.png',
+       '/assets/Events/Smoke-Win/3.png',
+       '/assets/Events/Smoke-Win/4.png',
+       '/assets/Events/Smoke-Win/5.png',
+        '/assets/Events/Smoke-Win/6.png',
+         '/assets/Events/Smoke-Win/7.png',
+          '/assets/Events/Smoke-Win/8.png',
+           '/assets/Events/Smoke-Win/9.png',
+            '/assets/Events/Smoke-Win/10.png',
+
     ]
   },
   {
-    id: 'anti-tobacco-3',
+    id: 'anti-tobacco-health-cost-study-ap',
     category: 'anti-tobacco',
     title: 'Release Of “Health Cost Study – A.P”',
     date: '2014-07-19',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-3-banner1.jpg',
-      '/events/anti-tobacco-3-banner2.jpg'
+      '/assets/Events/health-cost/1-1.jpg',
+      '/assets/Events/health-cost/1.jpg',
+      '/assets/Events/health-cost/2.jpg',
+      '/assets/Events/health-cost/1-3.jpg',
     ],
     description: `CURE Foundation & APVHA-VHAI, with Dept. of Health & Family Welfare, released the **Health Cost Study – A.P**, detailing the economic burden of tobacco-related diseases.  
 
@@ -242,8 +252,15 @@ Highlights:
 • **Key message:** Increase taxes on tobacco to discourage youth consumption and reduce health burden.  
 • Emphasized the **economic and health rationale** for stronger tobacco control policies in Andhra Pradesh.`,
     photos: [
-      '/events/anti-tobacco-3-1.jpg',
-      '/events/anti-tobacco-3-2.jpg'
+      '/assets/Events/health-cost/1.jpg',
+      '/assets/Events/health-cost/1-1.jpg',
+      '/assets/Events/health-cost/1-3.jpg',
+      '/assets/Events/health-cost/2.jpg',
+     
+      '/assets/Events/health-cost/3.jpg',
+      '/assets/Events/health-cost/4.jpg',
+      '/assets/Events/health-cost/5.jpg',
+     
     ]
   },
   {
@@ -1153,6 +1170,101 @@ photos: [
 ]
 },
 
+{
+id: 'walt-disney-carnival-2006',
+category: 'awareness-programmes',
+title: 'Walt Disney Carnival',
+date: '2006-01-27',
+author: 'Anuraj',
+banners: [
+  '/assets/Events/Walt-Disney/1.jpg',
+
+],
+description: `"Walt Disney Programme for Cancer children was held on 27th January 2006. A joint programme was organized with the help of Walt Disney, USA to entertain children suffering from cancer.
+
+Several children from various cancer hospitals in twin cities participated in the programme. The aim of the programme was to encourage the children suffering from cancer to lead a fun-filled life regardless of the anomalies experienced in day-to-day life."`,
+photos: [
+    '/assets/Events/Walt-Disney/1.jpg',
+]
+},
+
+{
+id: 'early-screening-and-detection-2008',
+category: 'awareness-programmes',
+title: 'Early Screening And Detection – Laryngectomy Club',
+date: '2008-01-12',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/early-screening/1.jpg',
+    '/assets/Events/early-screening/2.jpg',
+],
+description: `"The larynx is an organ in the throat that forms your voice box. In case of laryngeal cancer, the larynx needs to be surgically removed, and this process is called Laryngectomy.
+
+Laryngectomy Club conducts monthly meetings every 2nd Saturday at Apollo Cancer Institute. The anniversary of Laryngectomy Club was conducted on 12th Jan’ 2008 with a large number of patients and relatives."`,
+photos: [
+ 
+    '/assets/Events/early-screening/3.jpg',
+    '/assets/Events/early-screening/1.jpg',
+    '/assets/Events/early-screening/2.jpg',
+]
+},
+
+{
+id: 'cancer-awareness-super-car-rally-world-cancer-survivors-day-2021',
+category: 'awareness-programmes',
+title: 'The Racers of the Cancer Awareness Super Car Rally – World Cancer Survivor’s Day 2021',
+date: '2021-02-08',
+author: 'Anuraj',
+banners: [
+    '/assets/Events/cancer-awareness-super-car/1.jpg',
+    '/assets/Events/cancer-awareness-super-car/2.jpg',
+    '/assets/Events/cancer-awareness-super-car/3.jpg',
+],
+description: `"Super Car owners’ donning T-shirts & cars sporting stickers of “I AM and I WILL” spread the message of early detection & prevention of Cancer.
+
+Cine actresses Ms Malvika Sharma & Catherine Tresa joined in the World Cancer Day celebrations at Apollo Cancer Institutes, Hyderabad. Tollywood Diva Malvika Sharma flagged off the Cancer Super Car Rally at Necklace Road. The celebrity owners of Hyderabad’s twenty-plus super cars took part in the drive for a noble cause to sensitize the public on cancer prevention and detection.
+
+They highlighted the message 'I AM and I WILL' throughout the stretch of the rally from Necklace Road (IMAX circle) to Apollo Cancer Institutes, Jubilee Hills; via Banjara Hills Road No.1, LVPEI Marg and KBR park.
+
+Later, Malvika Sharma joined Catherine Tresa; Dr Vijay Anand Reddy, Director, Apollo Cancer Institutes, Hyderabad; Dr Vijay Karan Reddy, Consultant Oncologist, Apollo Cancer Institutes and others to felicitate the racers who participated in the rally.
+
+'Cancer is preventable, detectable early and highly curable! If you follow – 1) No Smoking or Chewing Tobacco, 2) Healthy Diet, 3) 40 min. of physical exercise – you can prevent 70% of cancers. Regular health check-ups can detect early cancer. Do not ignore warning signs and symptoms of cancer,' says Dr Vijay Anand Reddy.
+
+The colorful vintage rally had super luxury cars like Mercedes e63, BMW m3, Ferrari 812SF, Ferrari 488, Lamborghini Huracan Performante, Audi r8, Porsche Carrera, Lamborghini Aventador, lined up to spread the message on Cancer loud and clear."`,
+photos: [
+    '/assets/Events/cancer-awareness-super-car/1.jpg',
+    '/assets/Events/cancer-awareness-super-car/2.jpg',
+    '/assets/Events/cancer-awareness-super-car/3.jpg',
+    '/assets/Events/cancer-awareness-super-car/4.jpg',
+    '/assets/Events/cancer-awareness-super-car/5.jpg',
+    '/assets/Events/cancer-awareness-super-car/6.jpg',
+    '/assets/Events/cancer-awareness-super-car/7.jpg',
+    '/assets/Events/cancer-awareness-super-car/8.jpg',
+    '/assets/Events/cancer-awareness-super-car/9.jpg',
+    '/assets/Events/cancer-awareness-super-car/10.jpg',
+    '/assets/Events/cancer-awareness-super-car/11.jpg',
+    '/assets/Events/cancer-awareness-super-car/12.jpg',
+    '/assets/Events/cancer-awareness-super-car/13.jpg',
+    '/assets/Events/cancer-awareness-super-car/14.jpg',
+    '/assets/Events/cancer-awareness-super-car/15.jpg',
+    '/assets/Events/cancer-awareness-super-car/16.jpg',
+    '/assets/Events/cancer-awareness-super-car/17.jpg',
+    '/assets/Events/cancer-awareness-super-car/18.jpg',
+    '/assets/Events/cancer-awareness-super-car/19.jpg',
+    '/assets/Events/cancer-awareness-super-car/20.jpg',
+    '/assets/Events/cancer-awareness-super-car/21.jpg',
+    '/assets/Events/cancer-awareness-super-car/22.jpg',
+    '/assets/Events/cancer-awareness-super-car/23.jpg',
+    '/assets/Events/cancer-awareness-super-car/24.jpg',
+    '/assets/Events/cancer-awareness-super-car/25.jpg',
+    '/assets/Events/cancer-awareness-super-car/26.jpg',
+    '/assets/Events/cancer-awareness-super-car/27.jpg',
+    '/assets/Events/cancer-awareness-super-car/28.jpg',
+    '/assets/Events/cancer-awareness-super-car/29.jpg',
+    '/assets/Events/cancer-awareness-super-car/30.jpg',
+    '/assets/Events/cancer-awareness-super-car/31.jpg',
+]
+},
 
 
 
