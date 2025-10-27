@@ -184,18 +184,18 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
     ],
     description: `Hyderabad: Respiratory diseases are one of the main causes of death worldwide, with tobacco being the major risk factor. Tobacco kills one person every four seconds!  
 
-Key points:
-• Tobacco causes **8 million deaths globally** and **1 million due to second-hand smoke**.  
-• In India, **1.35 million deaths annually** are attributable to tobacco.  
-• Tobacco increases the risk of **lung cancer, COPD, heart disease, stroke, asthma, reproductive health issues, diabetes, eye diseases, and low birth-weight babies**.  
-• **Tips to quit smoking**:
-  1. Nicotine replacement therapy
-  2. Avoid triggers
-  3. Physical activity
-  4. Relaxation techniques (yoga, deep breathing, music)
-  5. Remind yourself of benefits of quitting
-• Quitting tobacco improves lung function in as little as **two weeks**, reduces chronic disease risk, and enhances quality of life.  
-This article is written by **Dr. P. Vijay Anand Reddy, Director & Senior Consultant Oncologist, Apollo Cancer Centre, Hyderabad**.`,
+  Key points:
+    • Tobacco causes 8 million deaths globally and 1 million due to second-hand smoke.  
+    • In India, 1.35 million deaths annually are attributable to tobacco.  
+    • Tobacco increases the risk of lung cancer, COPD, heart disease, stroke, asthma, reproductive health issues, diabetes, eye diseases, and low birth-weight babies.  
+    • Tips to quit smoking:
+      1. Nicotine replacement therapy
+      2. Avoid triggers
+      3. Physical activity
+      4. Relaxation techniques (yoga, deep breathing, music)
+      5. Remind yourself of benefits of quitting
+    • Quitting tobacco improves lung function in as little as two weeks, reduces chronic disease risk, and enhances quality of life.  
+      This article is written by Dr. P. Vijay Anand Reddy, Director & Senior Consultant Oncologist, Apollo Cancer Centre, Hyderabad.`,
     photos: [
        '/assets/Events/anti-1.png',
     ]
