@@ -143,17 +143,17 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
     //   digital: ['/events/women-1-digital-1.jpg', '/events/women-1-digital-2.jpg']
     // }
   },
-  {
-    id: 'children-1',
-    category: 'children',
-    title: 'Pediatric Fun Day',
-    banners: ['/events/children-1-banner1.jpg', '/events/children-1-banner2.jpg'],
-    description: "An interactive day for children with educational sessions about cancer prevention.",
-    photos: [
-      '/events/children-1-1.jpg',
-      '/events/children-1-2.jpg'
-    ]
-  },
+  // {
+  //   id: 'children-1',
+  //   category: 'children',
+  //   title: 'Pediatric Fun Day',
+  //   banners: ['/events/children-1-banner1.jpg', '/events/children-1-banner2.jpg'],
+  //   description: "An interactive day for children with educational sessions about cancer prevention.",
+  //   photos: [
+  //     '/events/children-1-1.jpg',
+  //     '/events/children-1-2.jpg'
+  //   ]
+  // },
   {
   id: 'children-2',
   category: 'children',
@@ -428,7 +428,7 @@ Highlights:
 // cancer survivir day events
 
 {
-  id: 'cancer-survivor-1',
+  id: 'sarcoma-awareness-month-2025',
   category: 'cancer-survivor-day',
   title: 'Sarcoma Awareness Month – Felicitation of Bone Cancer Survivors',
   date: '2025-07-23',
@@ -447,45 +447,91 @@ Highlights:
 
 
    {
-    id: '10',
+    id: 'jaago-re-world-cancer-day-2009',
     category: "world-cancer-day",
     title: "World Cancer Day – Jaago Re Event",
     date: "2009-02-04",
     author: "Dr. Vijay Anand Reddy",
-    banners: ["/events/world-cancer-day-2009-jaago-re/banner.jpg"],
+    banners: [
+      "/assets/Events/Jaago-re/1-2.jpg",
+      "/assets/Events/Jaago-re/1.jpg",
+       "/assets/Events/Jaago-re/2.jpg",
+    ],
     description: `Popular Cine Actress Ms. Madhu Shalini was invited for the program as a Chief Guest. Free Cancer Check Cards were distributed on this occasion.\n\n“Jaago Re” Cancer Awareness Programme was conducted to encourage the prevention, early detection, and treatment of cancer by all the women organizations — Breast Cancer Support Group & Cure Foundation of Apollo Cancer Institute — with the support of various organizations like Make a Wish Foundation, Astha, Aga Khan Health Service India, WIN, Deloitte, Accenture, Reddy’s Labs, Jubilee Club, Inner Wheel Club, Roshini, etc., on 4th February 2009 at Apollo Cancer Institute Lawns.`,
     photos: [
-      "/events/world-cancer-day-2009-jaago-re/photo1.jpg",
-      "/events/world-cancer-day-2009-jaago-re/photo2.jpg",
-      "/events/world-cancer-day-2009-jaago-re/photo3.jpg"
+      "/assets/Events/Jaago-re/1-2.jpg",
+      "/assets/Events/Jaago-re/1.jpg",
+       "/assets/Events/Jaago-re/2.jpg",
+      "/assets/Events/Jaago-re/3.jpg",
+      "/assets/Events/Jaago-re/4.jpg",
+      "/assets/Events/Jaago-re/5.jpg",
+      "/assets/Events/Jaago-re/6.jpg",
+      "/assets/Events/Jaago-re/7.jpg",
+      "/assets/Events/Jaago-re/8.jpg",
+      "/assets/Events/Jaago-re/9.jpg",
+      "/assets/Events/Jaago-re/10.jpg",
+       "/assets/Events/Jaago-re/12.jpg",
+      "/assets/Events/Jaago-re/11.jpg",
+      "/assets/Events/Jaago-re/p1.jpg",
+      "/assets/Events/Jaago-re/p2.jpg",
+      "/assets/Events/Jaago-re/p3.jpg",
+      "/assets/Events/Jaago-re/p4.jpg",
+      "/assets/Events/Jaago-re/p5.jpg",
+
     ]
   },
   {
-    id: '9',
+    id: 'world-cancer-day-2011',
     category: "world-cancer-day",
     title: "World Cancer Day 2011",
     date: "2011-02-04",
     author: "Dr. Vijay Anand Reddy",
-    banners: ["/events/world-cancer-day-2011/banner.jpg"],
+    banners: [
+      "/assets/Events/world-cancer-day-2011/1.jpg",
+      "/assets/Events/world-cancer-day-2011/6.jpg",
+      "/assets/Events/world-cancer-day-2011/7.jpg",
+      "/assets/Events/world-cancer-day-2011/8.jpg",
+    ],
     description: `The Cancer Awareness Program held by Apollo Hospital was highly appreciated and extensively covered by the media.\n\nWhile addressing the media during the event, Dr. Vijay Reddy said, “I think we need to form committees with like-minded, dedicated members who can take these ideas forward on a long-term basis in coordination with existing National Bodies.”`,
     photos: [
-      "/events/world-cancer-day-2011/photo1.jpg",
-      "/events/world-cancer-day-2011/photo2.jpg",
-      "/events/world-cancer-day-2011/photo3.jpg"
+      "/assets/Events/world-cancer-day-2011/1.jpg",
+      "/assets/Events/world-cancer-day-2011/6.jpg",
+      "/assets/Events/world-cancer-day-2011/7.jpg",
+      "/assets/Events/world-cancer-day-2011/8.jpg",
+      "/assets/Events/world-cancer-day-2011/2.jpg",
+      "/assets/Events/world-cancer-day-2011/3.jpg",
+      "/assets/Events/world-cancer-day-2011/4.jpg",
+      "/assets/Events/world-cancer-day-2011/5.jpg",
+      "/assets/Events/world-cancer-day-2011/9.jpg",
+      "/assets/Events/world-cancer-day-2011/10.jpg",
+      "/assets/Events/world-cancer-day-2011/11.jpg",
+      
     ]
   },
   {
-    id: '8',
+    id: 'world-cancer-day-2012-smart-mob',
     category: "world-cancer-day",
     title: "Smart Mob – Cancer Awareness Flash Mob at Prasad’s",
     date: "2012-02-04",
     author: "Dr. Vijay Anand Reddy",
-    banners: ["/events/world-cancer-day-2012-smart-mob/banner.jpg"],
+    banners: [
+      "/assets/events/smart-mob/1.jpg",
+      "/assets/events/smart-mob/2.jpg",
+    ],
     description: `Apollo Cancer Hospital and CURE Foundation organised a ‘Smart Mob’ at Prasad’s IMAX Theatre to spread cancer awareness among youngsters on World Cancer Day, 4th February 2012.\n\nThe slogan “Cancer is preventable, detectable early and curable” was coined to encourage regular health checkups. Several doctors and nurses from Apollo Cancer Hospital participated in the impromptu dance session. Leading the mob were Shilpa Reddy, Dinaz Vevatwala, and Navdeep. Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital, Hyderabad, joined them as well. Bookmarks containing information about symptoms and prevention of cancer were distributed to the audience.`,
     photos: [
-      "/events/world-cancer-day-2012-smart-mob/photo1.jpg",
-      "/events/world-cancer-day-2012-smart-mob/photo2.jpg",
-      "/events/world-cancer-day-2012-smart-mob/photo3.jpg"
+     "/assets/events/smart-mob/1.jpg",
+      "/assets/events/smart-mob/2.jpg",
+      "/assets/events/smart-mob/3.jpg",
+      "/assets/events/smart-mob/4.jpg",
+      "/assets/events/smart-mob/5.jpg",
+      "/assets/events/smart-mob/6.jpg",
+      "/assets/events/smart-mob/7.jpg",
+      "/assets/events/smart-mob/8.jpg",
+      "/assets/events/smart-mob/9.jpg",
+      "/assets/events/smart-mob/10.jpg",
+      "/assets/events/smart-mob/11.jpg",
+      "/assets/events/smart-mob/12.jpg",
     ]
   },
   {
