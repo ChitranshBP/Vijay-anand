@@ -340,13 +340,13 @@ Highlights:
       '/assets/Events/Tobacco–Free-AP/3.jpg',
       '/assets/Events/Tobacco–Free-AP/4.jpg',
     ],
-    description: `A **campaign with Voice of Tobacco Victims (VOTV)** to ban tobacco products in Andhra Pradesh.  
+    description: `A campaign with Voice of Tobacco Victims (VOTV) to ban tobacco products in Andhra Pradesh.  
 
 Highlights:
-• Appeals to state authorities based on **successes in Bihar, Chhattisgarh, Kerala, Maharashtra**.  
-• **Public Interest Litigation (PIL)** filed to enforce ban.  
-• Historic judgment on **10 Jan 2013** prohibited Gutka/Pan Masala containing tobacco or nicotine statewide.  
-• **Order No. 1508/F1/2012-13** issued by Commissioner of Food Safety to enforce ban.`,
+• Appeals to state authorities based on successes in Bihar, Chhattisgarh, Kerala, Maharashtra.  
+• Public Interest Litigation (PIL) filed to enforce ban.  
+• Historic judgment on 10 Jan 2013 prohibited Gutka/Pan Masala containing tobacco or nicotine statewide.  
+• Order No. 1508/F1/2012-13 issued by Commissioner of Food Safety to enforce ban.`,
     photos: [
       '/assets/Events/Tobacco–Free-AP/1.jpg',
       '/assets/Events/Tobacco–Free-AP/2.jpg',
@@ -394,25 +394,30 @@ Highlights:
     ]
   },
   {
-    id: 'anti-tobacco-8',
+    id: 'pledge-for-no-tobacco',
     category: 'anti-tobacco',
     title: 'Pledge For No Tobacco – Oral Cancer Awareness Program',
     date: '2008-09-12',
     author: 'Dr. P. Vijay Anand Reddy',
     banners: [
-      '/events/anti-tobacco-8-banner1.jpg',
-      '/events/anti-tobacco-8-banner2.jpg'
+      '/assets/Events/pledge-for-no-tobacco/1.jpg',
+      '/assets/Events/pledge-for-no-tobacco/2.jpg',
+      '/assets/Events/pledge-for-no-tobacco/3.jpg',
+      '/assets/Events/pledge-for-no-tobacco/4.jpg',
     ],
-    description: `**Oral Cancer Awareness Programme** at Apollo Cancer Institute, Hyderabad.  
+    description: `Oral Cancer Awareness Programme at Apollo Cancer Institute, Hyderabad.  
 
 Highlights:
-• Participation by **voluntary organizations** and oncologists.  
-• **Patients shared experiences** and collectively pledged **never to chew or smoke tobacco**.  
-• **Cine Actor Mr. Manchu Vishnu Vardhan Babu** was the Chief Guest.  
-• Program emphasized spreading **tobacco-free lifestyle** messages across society.`,
+• Participation by voluntary organizations and oncologists.  
+• Patients shared experiences and collectively pledged never to chew or smoke tobacco.  
+• Cine Actor Mr. Manchu Vishnu Vardhan Babu was the Chief Guest.  
+• Program emphasized spreading tobacco-free lifestyle messages across society.`,
     photos: [
-      '/events/anti-tobacco-8-1.jpg',
-      '/events/anti-tobacco-8-2.jpg'
+      '/assets/Events/pledge-for-no-tobacco/1.jpg',
+      '/assets/Events/pledge-for-no-tobacco/2.jpg',
+      '/assets/Events/pledge-for-no-tobacco/3.jpg',
+      '/assets/Events/pledge-for-no-tobacco/4.jpg',
+      '/assets/Events/pledge-for-no-tobacco/5.jpg',
     ]
   },
 
