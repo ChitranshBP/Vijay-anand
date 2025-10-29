@@ -464,7 +464,7 @@ Highlights:
        "/assets/Events/Jaago-re/2.jpg",
       "/assets/Events/Jaago-re/3.jpg",
       "/assets/Events/Jaago-re/4.jpg",
-      "/assets/Events/Jaago-re/5.jpg",
+      "/assets/Events/Jaago-re/6.jpg",
       
       "/assets/Events/Jaago-re/7.jpg",
       "/assets/Events/Jaago-re/8.jpg",
