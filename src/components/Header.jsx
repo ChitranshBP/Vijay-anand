@@ -37,6 +37,8 @@ const Header = () => {
           { name: 'Books', href: '/books' },
           { name: 'Publications', href: '/publications' },
          { name: 'Presentations', href: '/presentations' },
+                  { name: 'Cancer Cl', href: '' },
+
 
         ],
       },
@@ -73,6 +75,7 @@ const Header = () => {
     name: 'Community Services',
     href: '#',
     dropdown: [
+      { name: 'Cancer Clinics', href: '/cancer-clinics' },
       { name: 'Awareness Programs', href: '/events' },
       { name: 'I Am a Survivor', href: '/testimonials' },
       { name: 'Cure Foundation', href: '/cure-2' },

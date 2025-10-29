@@ -64,10 +64,10 @@ This Hindi edition aims to reach and inspire a wider audience, spreading the mes
     title: 'WHITATHON 2025 – Marathon for Eye Cancer Awareness',
     date: '2025-05-18',
     author: 'Dr. Vijay Anand Reddy',
-    banners: [
-      '/events/whitathon-2025-banner1.jpg',
-      '/events/whitathon-2025-banner2.jpg'
-    ],
+    // banners: [
+    //   '/events/whitathon-2025-banner1.jpg',
+    //   '/events/whitathon-2025-banner2.jpg'
+    // ],
     description: `A momentous occasion at the Whitathon 2025! Sri Y. Nagi Reddy, IPS RR, Director General of Disaster Response & Fire Services, Telangana, officially flagged off the 10K run as part of our eye cancer awareness program.
 
 He was joined by esteemed guests Dr. Prashant Garg, Director of LVPEI, Dr. P Vijay Anand Reddy, Director of Apollo Cancer Center, and Dr. Swathi Kalki, Head of Ocular Oncology at LVPEI.
@@ -75,12 +75,12 @@ He was joined by esteemed guests Dr. Prashant Garg, Director of LVPEI, Dr. P Vij
 The Whitathon 2025, organized by the L V Prasad Eye Institute (LVPEI), brought together around 2000 enthusiastic runners on Sunday, May 18, 2025, at T-Works, Raidurgam, Hyderabad, starting bright and early at 5:30 am.
 
 The Cure Foundation partnered with LVPEI in this crucial initiative, highlighting the urgent need for awareness and support for children facing Retinoblastoma. Together, we are committed to shining a light on this serious condition and promoting early detection and treatment to save vision, preserve eyes, and ultimately save lives.`,
-    photos: [
-      '/events/whitathon-2025-1.jpg',
-      '/events/whitathon-2025-2.jpg',
-      '/events/whitathon-2025-3.jpg',
-      '/events/whitathon-2025-4.jpg'
-    ]
+    // photos: [
+    //   '/events/whitathon-2025-1.jpg',
+    //   '/events/whitathon-2025-2.jpg',
+    //   '/events/whitathon-2025-3.jpg',
+    //   '/events/whitathon-2025-4.jpg'
+    // ]
   },
   {
     id: 'hope-in-a-shot-2025',
@@ -88,20 +88,20 @@ The Cure Foundation partnered with LVPEI in this crucial initiative, highlightin
     title: 'Hope in a Shot: Free Cervical Cancer Vaccinations 2025',
     date: '2025-02-05',
     author: 'Dr. Vijay Anand Reddy',
-    banners: [
-      '/events/hope-in-a-shot-2025-banner1.jpg',
-      '/events/hope-in-a-shot-2025-banner2.jpg'
-    ],
+    // banners: [
+    //   '/events/hope-in-a-shot-2025-banner1.jpg',
+    //   '/events/hope-in-a-shot-2025-banner2.jpg'
+    // ],
     description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025.
 
 This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness.
 
 This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 2030. Together, let's continue to Protect. Prevent. Prevail.`,
-    photos: [
-      '/events/hope-in-a-shot-2025-1.jpg',
-      '/events/hope-in-a-shot-2025-2.jpg',
-      '/events/hope-in-a-shot-2025-3.jpg'
-    ]
+    // photos: [
+    //   '/events/hope-in-a-shot-2025-1.jpg',
+    //   '/events/hope-in-a-shot-2025-2.jpg',
+    //   '/events/hope-in-a-shot-2025-3.jpg'
+    // ]
   },
   {
     id: 'ocular-oncology-workshop-2023',
@@ -109,10 +109,10 @@ This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 203
     title: 'Ocular Oncology Workshop',
     date: '2023-07-01',
     author: 'Dr. Vijay Anand Reddy',
-    banners: [
-      '/events/ocular-oncology-2023-banner1.jpg',
-      '/events/ocular-oncology-2023-banner2.jpg'
-    ],
+    // banners: [
+    //   '/events/ocular-oncology-2023-banner1.jpg',
+    //   '/events/ocular-oncology-2023-banner2.jpg'
+    // ],
     description: `Apollo Cancer Centre, Hyderabad and CURE Foundation hosted their first Ocular Oncology workshop on July 1st and 2nd, 2023 at Apollo Medical College auditorium.
 
 The aim of this workshop was to educate and empower Ophthalmologists and Oncologists from all over the country to be able to manage and treat tumours of the Eye and Orbit.
@@ -120,11 +120,11 @@ The aim of this workshop was to educate and empower Ophthalmologists and Oncolog
 The workshop was a grand success with close to 100 registrations. Attendees learned from lectures delivered by a team of esteemed Ocular Oncologists and participated in a live contouring workshop for Radiotherapy planning.
 
 Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr Raja Gopal and Dr Vijay Anand Reddy.`,
-    photos: [
-      '/events/ocular-oncology-2023-1.jpg',
-      '/events/ocular-oncology-2023-2.jpg',
-      '/events/ocular-oncology-2023-3.jpg'
-    ]
+    // photos: [
+    //   '/events/ocular-oncology-2023-1.jpg',
+    //   '/events/ocular-oncology-2023-2.jpg',
+    //   '/events/ocular-oncology-2023-3.jpg'
+    // ]
   },
   {
     id: 'women-1',
@@ -209,15 +209,15 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
     banners: [
       '/assets/Events/Smoke-Win/1.jpg',
        '/assets/Events/Smoke-Win/1.png',
-        '/assets/Events/Smoke-Win/2.jpg',
+        // '/assets/Events/Smoke-Win/2.jpg',
     ],
-    description: `Launched on the eve of **World No Tobacco Day 2015**, “Smoke & Win” aimed to **educate youth about the dangers of smoking**.  
+    description: `Launched on the eve of World No Tobacco Day 2015, "Smoke & Win" aimed to educate youth about the dangers of smoking.
 
 Highlights:
-• Launch by **Padma Bhushan Sri Pullela Gopichand**, Ms. Pradnya Gadre, and Dr. Vijay Anand Reddy.  
-• Featured a **Wheel of Misery** highlighting diseases caused by smoking (throat cancer, lung cancer, heart disease, impotency, etc.).  
-• Smokers spinning the wheel were **educated by specialists** and offered free consultations.  
-• The campaign combined **fun and education** to engage IT employees and youth, emphasizing the long-term risks of smoking.`,
+• Launch by Padma Bhushan Sri Pullela Gopichand, Ms. Pradnya Gadre, and Dr. Vijay Anand Reddy.
+• Featured a Wheel of Misery highlighting diseases caused by smoking (throat cancer, lung cancer, heart disease, impotency, etc.).
+• Smokers spinning the wheel were educated by specialists and offered free consultations.
+• The campaign combined fun and education to engage IT employees and youth, emphasizing the long-term risks of smoking.`,
     photos: [
       '/assets/Events/Smoke-Win/1.png',
       '/assets/Events/Smoke-Win/2.png',
@@ -244,13 +244,13 @@ Highlights:
       '/assets/Events/health-cost/2.jpg',
       '/assets/Events/health-cost/1-3.jpg',
     ],
-    description: `CURE Foundation & APVHA-VHAI, with Dept. of Health & Family Welfare, released the **Health Cost Study – A.P**, detailing the economic burden of tobacco-related diseases.  
+    description: `CURE Foundation & APVHA-VHAI, with Dept. of Health & Family Welfare, released the Health Cost Study – A.P, detailing the economic burden of tobacco-related diseases.
 
 Highlights:
-• Inaugurated by **Dr. Kamineni Srinivas**, Minister of Medical & Health, AP.  
-• India has **27.5 crore tobacco users**, including **10 million children under 15**.  
-• **Key message:** Increase taxes on tobacco to discourage youth consumption and reduce health burden.  
-• Emphasized the **economic and health rationale** for stronger tobacco control policies in Andhra Pradesh.`,
+• Inaugurated by Dr. Kamineni Srinivas, Minister of Medical & Health, AP.
+• India has 27.5 crore tobacco users, including 10 million children under 15.
+• Key message: Increase taxes on tobacco to discourage youth consumption and reduce health burden.
+• Emphasized the economic and health rationale for stronger tobacco control policies in Andhra Pradesh.`,
     photos: [
       '/assets/Events/health-cost/1.jpg',
       '/assets/Events/health-cost/1-1.jpg',
@@ -308,12 +308,12 @@ Highlights:
       '/assets/Events/Protest-Against/3.jpg',
       '/assets/Events/Protest-Against/4.jpg',
     ],
-    description: `Led by Dr. Vijay Anand Reddy, a **silent protest** was held against the poster of the movie **Rebel** showing smoking.  
+    description: `Led by Dr. Vijay Anand Reddy, a silent protest was held against the poster of the movie Rebel showing smoking.
 
 Highlights:
-• Protesters submitted **petitions to the Chief Minister, Governor, and Health Minister**.  
-• Urged the film industry to **take social responsibility** seriously and avoid glamorizing tobacco.  
-• The protest led to the **Censor Board directives** for removal of smoking posters.`,
+• Protesters submitted petitions to the Chief Minister, Governor, and Health Minister.
+• Urged the film industry to take social responsibility seriously and avoid glamorizing tobacco.
+• The protest led to the Censor Board directives for removal of smoking posters.`,
     photos: [
        '/assets/Events/Protest-Against/1.jpg',
       '/assets/Events/Protest-Against/2.jpg',

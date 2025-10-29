@@ -26,6 +26,8 @@ import Conferences from './pages/ConferencesPage';
 import DoctorAwarenessTalks from './pages/DoctorAwarenessPage';
 import EventDetailPage from './pages/EventDetailPage';
 import EventsPage from './pages/EventPage';
+import CancerClinicsPage from './pages/CancerClinicsPage';
+import CancerClinicDetailPage from './pages/CancerClinicDetailPage';
 // Wrapper to pass service data to ServiceDetailPage via URL param
 const ServiceDetailWrapper = () => {
   const { serviceId } = useParams();
@@ -69,6 +71,10 @@ function App() {
 
 <Route path="/events" element={<EventsPage />} />
   <Route path="/events/:eventId" element={<EventDetailPage />} />
+
+          {/* Cancer Clinics */}
+          <Route path="/cancer-clinics" element={<CancerClinicsPage />} />
+          <Route path="/cancer-clinics/:clinicId" element={<CancerClinicDetailPage />} />
 
           {/* Services */}
           <Route path="/service/pancreatic-cancer" element={<PancreaticCancerPage />} />
