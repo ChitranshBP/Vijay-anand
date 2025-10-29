@@ -7,7 +7,14 @@
       "Bash(curl -s \"https://drvijayanandreddy.com/community-services/\")",
       "Bash(curl -s \"https://drvijayanandreddy.com/i-am-a-survivor-hindi-version-book-launch/\")",
       "Bash(node scrape_events.js)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(for dir in public/assets/Cancer-CI/*/)",
+      "Bash(ls:*)",
+      "Bash(done)",
+      "Bash(for dir in */)",
+      "Bash(do echo \"=== $dir ===\")"
     ],
     "deny": [],
     "ask": []

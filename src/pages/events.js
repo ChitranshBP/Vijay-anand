@@ -587,25 +587,63 @@ Highlights:
     title: "We Can. I Can – Cancer Awareness Flash Mob at Sujana Forum Mall",
     date: "2016-02-04",
     author: "Dr. Vijay Anand Reddy",
-    banners: ["/events/world-cancer-day-2016-flashmob/banner.jpg"],
+    banners: [
+      "/assets/Events/smart-mob/1.jpg",
+      "/assets/Events/smart-mob/2.jpg",
+      "/assets/Events/smart-mob/3.jpg"
+    ],
     description: `Aiming to raise awareness among people about cancer and ways to combat the disease, Apollo Cancer Hospital conducted a flash mob with the theme “We Can. I Can” on the observance of World Cancer Day – 2016.\n\nLed by Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital, and Bharath Reddy (Actor and Cardiologist), along with students of medicine at Sujana Forum Mall, participants took a pledge to work towards creating awareness about cancer prevention, early detection, and adopting a healthy lifestyle. The initiative emphasized early detection, access to treatment for all, and maximizing quality of life. Experts highlighted the need for a two-pronged approach to reduce the cancer burden, focusing on both prevention and treatment.`,
     photos: [
-      "/events/world-cancer-day-2016-flashmob/photo1.jpg",
-      "/events/world-cancer-day-2016-flashmob/photo2.jpg",
-      "/events/world-cancer-day-2016-flashmob/photo3.jpg"
+      "/assets/Events/smart-mob/4.jpg",
+      "/assets/Events/smart-mob/5.jpg",
+      "/assets/Events/smart-mob/6.jpg",
+      "/assets/Events/smart-mob/7.jpg",
+      "/assets/Events/smart-mob/8.jpg",
+      "/assets/Events/smart-mob/9.jpg",
+      "/assets/Events/smart-mob/10.jpg",
+      "/assets/Events/smart-mob/11.jpg",
+      "/assets/Events/smart-mob/12.jpg",
+      "/assets/Events/smart-mob/13.jpg",
+      "/assets/Events/smart-mob/14.jpg",
+      "/assets/Events/smart-mob/15.jpg",
+      "/assets/Events/smart-mob/16.jpg",
+      "/assets/Events/smart-mob/17.jpg"
     ]
   },
   {
     id: 'celebration-of-life-world-cancer-survivors-day-2016',
-    category: "World Cancer Survivor’s Day",
-    title: "Celebration of Life – World Cancer Survivor’s Day 2016",
+    category: "World Cancer Survivor's Day",
+    title: "Celebration of Life – World Cancer Survivor's Day 2016",
     date: "2016-06-04",
-    banners: ["/events/world-cancer-survivors-day-2016/banner.jpg"],
+    banners: [
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/1.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/2.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/3.jpg"
+    ],
     description: `Apollo Cancer Hospitals, Hyderabad and CURE Foundation organized ‘Celebration of Life’ on the eve of Cancer Survivors’ Day (June 5, 2016), on Saturday at Apollo Hospitals, Jubilee Hills. Chief Guest Ms. Regina Cassandra, Film Actress; Ms. Sangita Reddy, Jt. M.D., Apollo Hospitals; Dr. Hari Prasad, President, Apollo Hospitals; and Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital, joined cancer survivors and patients to appreciate the courage of brave cancer survivors and boost the morale of patients undergoing treatment. Survivors shared their experiences, responded to questions from patients, and celebrated the occasion by singing and dancing.\n\nOn this occasion, Ms. Regina Cassandra unveiled the ‘Symbol of Resilience’ – a plant symbolizing life, enduring strength, and the resilient will to survive.\n\nSpeaking to the gathering, she said, “Today is a positive day. Cancer Survivors’ Day is a big milestone in creating positive vibes among cancer patients. There are several people involved behind the scenes in conquering cancer — the doctors, nurses, and social workers. Cancer is not just a physical pain, but an emotional one too. I had family and friends with cancer, so I know the pain associated with it, and in such a scenario, the message of Cancer Survivors’ Day — that cancer can be cured — is a huge boost to patients. Therefore, we need to spread the message that cancer is curable, and I will do my bit.” She appreciated Apollo Cancer Hospitals for the amazing work they are doing. “We look at all our problems through a magnifying glass, but they are minute in comparison to the trauma cancer patients endure,” she added.\n\nDr. Vijay Anand Reddy advised, “Even if you are diagnosed with cancer, maintain a positive attitude and follow your doctor’s advice. Don’t worry about side effects of cancer treatment — they are temporary, and you will emerge a winner.” He encouraged survivors to proudly proclaim themselves as survivors, emphasizing that surviving cancer is no longer a stigma.`,
     photos: [
-      "/events/world-cancer-survivors-day-2016/photo1.jpg",
-      "/events/world-cancer-survivors-day-2016/photo2.jpg",
-      "/events/world-cancer-survivors-day-2016/photo3.jpg"
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/4.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/5.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/6.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/7.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/8.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/9.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/10.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/11.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/12.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/13.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/14.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/15.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/16.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/17.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/18.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/19.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/20.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/21.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/22.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/23.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/24.jpg",
+      "/assets/Events/celebration-of-life-world-cancer-survivors-day-2016/25.jpg"
     ]
   },
   {
@@ -613,12 +651,16 @@ Highlights:
     category: "world-cancer-day",
     title: "CANCER Is CONQUERABLE – A Debate on World Cancer Day 2017",
     date: "2017-02-04",
-    banners: ["/events/world-cancer-day-2017/banner.jpg"],
+    banners: [
+      "/assets/Events/cancer-is-conquerable/1.jpg",
+      "/assets/Events/cancer-is-conquerable/2.jpg",
+      "/assets/Events/cancer-is-conquerable/3.jpg"
+    ],
     description: `On World Cancer Day, on Saturday, while many chose to highlight the latest innovations and diagnostic techniques to treat the disease, some experts from the city decided to put focus on vaccines that can prevent cancers – Hepatitis B and human papillomavirus (HPV). While Hepatitis B viral infection can cause liver cancer and cirrhosis (abnormal liver condition), HPV is known to cause cervical cancer among women. Both these cancers are, however, preventable through vaccines. Yet, the cancer burden of the two diseases is huge, with Hepatitis B infection showing a prevalence rate of more than 3 per cent among people. Cervical cancer, meanwhile, contributes approximately 6–29 per cent of all cancers among women.`,
     photos: [
-      "/events/world-cancer-day-2017/photo1.jpg",
-      "/events/world-cancer-day-2017/photo2.jpg",
-      "/events/world-cancer-day-2017/photo3.jpg"
+      "/assets/Events/cancer-is-conquerable/4.jpg",
+      "/assets/Events/cancer-is-conquerable/5.jpg",
+      "/assets/Events/cancer-is-conquerable/6.jpg"
     ]
   },
 
@@ -626,30 +668,76 @@ Highlights:
   {
     id: 'pedal-to-battle-cyclothon-world-cancer-day-2023',
     category: "world-cancer-day",
-    title: "“Pedal to Battle” Cyclothon on World Cancer Day 2023",
+    title: "\"Pedal to Battle\" Cyclothon on World Cancer Day 2023",
     date: "2023-02-04",
     author: "Dr. Vijay Anand Reddy",
     banners: [
-      "/events/world-cancer-day-4-banner1.jpg"
+      "/assets/Events/Pedal-to-Battle/1.jpg",
+      "/assets/Events/Pedal-to-Battle/2.jpg",
+      "/assets/Events/Pedal-to-Battle/3.jpg"
     ],
     description: "It’s a plea for all of us to raise our voices against cancer with a united force and take things into our own hands.\n\nApollo Cancer Centres & Cure Foundation host ‘Pedal to Battle’ cyclothon on World Cancer Day 2023. ‘Unite our Voices and Take Action’ was the theme of the cyclothon.\n\nHyderabad, February 4th, 2023: Apollo Cancer Centres and Cure Foundation hosted the ‘Pedal to Battle’ cyclothon to commemorate World Cancer Day 2023, with the theme ‘Unite our Voices and Take Action,’ as part of the campaign by the Union for International Cancer Control (UICC), held at Apollo Cancer Centres, Jubilee Hills. The riders were felicitated by Dr. Sangita Reddy, Jt. Managing Director, Apollo Hospitals Group; Tollywood Diva Sreeleela; and Dr. Vijay Anand Reddy, Director, Apollo Cancer Centre, Hyderabad. The cyclothon was flagged off at Apollo Cancer Centres, Jubilee Hills, and the cyclists rode up to Whisper Valley before returning. Participants sensitized the public on cancer prevention and early detection. Dr. Vijay Karan Reddy, Consultant Oncologist, Apollo Cancer Centres, anchored the show.\n\nEvery year 4th Feb is dedicated to spreading cancer awareness and marked as World Cancer Day. The theme this year is to unite our voices and take action, part of a 3-year campaign started by UICC called Close the Care Gap.\n\nAwareness is the panacea to prevention and early detection of cancer. Though the rising incidence of cancer is alarming, cancer is curable. Minor lifestyle modifications — healthy diet, no smoking, waking up early, and regular exercise — can reduce the risk of cancer and other major diseases. Adults should get screened regularly, as early detection can cure 90–95% of cancers. Ms. Sreeleela emphasized awareness among youth and the importance of cervical and liver cancer vaccines. Dr. Vijay Karan Reddy highlighted the strength of collective action against cancer.",
     photos: [
-      "/events/world-cancer-day-2023/photo1.jpg",
-      "/events/world-cancer-day-2023/photo2.jpg"
+      "/assets/Events/Pedal-to-Battle/4.jpg",
+      "/assets/Events/Pedal-to-Battle/5.jpg",
+      "/assets/Events/Pedal-to-Battle/6.jpg",
+      "/assets/Events/Pedal-to-Battle/7.jpg",
+      "/assets/Events/Pedal-to-Battle/8.jpg",
+      "/assets/Events/Pedal-to-Battle/9.jpg",
+      "/assets/Events/Pedal-to-Battle/10.jpg",
+      "/assets/Events/Pedal-to-Battle/11.jpg",
+      "/assets/Events/Pedal-to-Battle/12.jpg",
+      "/assets/Events/Pedal-to-Battle/13.jpg",
+      "/assets/Events/Pedal-to-Battle/14.jpg",
+      "/assets/Events/Pedal-to-Battle/15.jpg",
+      "/assets/Events/Pedal-to-Battle/16.jpg",
+      "/assets/Events/Pedal-to-Battle/17.jpg",
+      "/assets/Events/Pedal-to-Battle/18.jpg",
+      "/assets/Events/Pedal-to-Battle/19.jpg",
+      "/assets/Events/Pedal-to-Battle/20.jpg",
+      "/assets/Events/Pedal-to-Battle/21.jpg"
     ]
   },
   {
     id: 'apollo-cancer-centres-launches-unmask-cancer-initiative-2024',
     category: "world-cancer-day",
-    title: "Apollo Cancer Centres Launches ‘Unmask Cancer’ Initiative 2024",
+    title: "Apollo Cancer Centres Launches 'Unmask Cancer' Initiative 2024",
     date: "2024-02-02",
     banners: [
-      "/events/world-cancer-day-2024-unmask/banner1.jpg"
+      "/assets/Events/cancer-awareness-super-car/1.jpg",
+      "/assets/Events/cancer-awareness-super-car/2.jpg",
+      "/assets/Events/cancer-awareness-super-car/3.jpg"
     ],
     description: `Hyderabad, India – February 2nd, 2024 – Apollo Cancer Centres proudly introduces ‘Unmask Cancer,’ a groundbreaking campaign aimed at unravelling the truth about cancer, dispelling myths, and fostering empathy within society. As World Cancer Day approaches, ACCs takes a bold step to address the discrimination faced by cancer winners.\n\n‘Unmask Cancer’ shares the journey of cancer winners who, despite exceptional skills, grapple with societal biases stemming from their cancer history. The campaign includes a thought-provoking social experiment video highlighting consequences of discrimination across societal, corporate, and appearance-related biases. Only a few brave survivors unmask themselves, supported by family and friends.\n\nACCs takes the initiative to the corporate sector and society at large, including Cancer Sensitization Sessions led by oncologists and survivors, both online and offline. These sessions foster awareness, empathy, and equality.\n\nDr. Vijay Anand Reddy said, “Our mission at ACC goes beyond providing world-class medical care. ‘Unmask Cancer’ is a testament to our dedication to creating a society that supports and uplifts cancer survivors.”`,
     photos: [
-      "/events/world-cancer-day-2024-unmask/photo1.jpg",
-      "/events/world-cancer-day-2024-unmask/photo2.jpg"
+      "/assets/Events/cancer-awareness-super-car/4.jpg",
+      "/assets/Events/cancer-awareness-super-car/5.jpg",
+      "/assets/Events/cancer-awareness-super-car/6.jpg",
+      "/assets/Events/cancer-awareness-super-car/7.jpg",
+      "/assets/Events/cancer-awareness-super-car/8.jpg",
+      "/assets/Events/cancer-awareness-super-car/9.jpg",
+      "/assets/Events/cancer-awareness-super-car/10.jpg",
+      "/assets/Events/cancer-awareness-super-car/11.jpg",
+      "/assets/Events/cancer-awareness-super-car/12.jpg",
+      "/assets/Events/cancer-awareness-super-car/13.jpg",
+      "/assets/Events/cancer-awareness-super-car/14.jpg",
+      "/assets/Events/cancer-awareness-super-car/15.jpg",
+      "/assets/Events/cancer-awareness-super-car/16.jpg",
+      "/assets/Events/cancer-awareness-super-car/17.jpg",
+      "/assets/Events/cancer-awareness-super-car/18.jpg",
+      "/assets/Events/cancer-awareness-super-car/19.jpg",
+      "/assets/Events/cancer-awareness-super-car/20.jpg",
+      "/assets/Events/cancer-awareness-super-car/21.jpg",
+      "/assets/Events/cancer-awareness-super-car/22.jpg",
+      "/assets/Events/cancer-awareness-super-car/23.jpg",
+      "/assets/Events/cancer-awareness-super-car/24.jpg",
+      "/assets/Events/cancer-awareness-super-car/25.jpg",
+      "/assets/Events/cancer-awareness-super-car/26.jpg",
+      "/assets/Events/cancer-awareness-super-car/27.jpg",
+      "/assets/Events/cancer-awareness-super-car/28.jpg",
+      "/assets/Events/cancer-awareness-super-car/29.jpg",
+      "/assets/Events/cancer-awareness-super-car/30.jpg",
+      "/assets/Events/cancer-awareness-super-car/31.jpg"
     ]
   },
   {
@@ -676,13 +764,21 @@ Highlights:
     title: "Victory Bell Launch – World Cancer Day 2024",
     date: "2024-02-03",
     banners: [
-      "/events/world-cancer-day-2024-victorybell/banner1.jpg",
-      "/events/world-cancer-day-2024-victorybell/banner2.jpg"
+      "/assets/Events/victory-bell-launch/1.jpg",
+      "/assets/Events/victory-bell-launch/2.jpeg",
+      "/assets/Events/victory-bell-launch/3.jpeg"
     ],
     description: `Hyderabad, February 3, 2024: Apollo Cancer Hospital in Hyderabad proudly installed a “Victory Bell” to commemorate World Cancer Day. Inaugurated by Shri. D. Sridhar Babu, Hon’ble Minister for Industries and IT, Telangana, the bell honors the strength and triumph of cancer survivors.\n\nThe Victory Bell symbolizes victories within the hospital’s oncology units and the spirit of perseverance defining every cancer patient’s journey. Patients completing treatment ring the bell, echoing their personal victory and inspiring others. The initiative reflects Apollo’s commitment to nurturing hope and celebrating milestones in the cancer journey, emphasizing a holistic approach to care.`,
     photos: [
-      "/events/world-cancer-day-2024-victorybell/photo1.jpg",
-      "/events/world-cancer-day-2024-victorybell/photo2.jpg"
+      "/assets/Events/victory-bell-launch/4.jpeg",
+      "/assets/Events/victory-bell-launch/5.jpeg",
+      "/assets/Events/victory-bell-launch/6.jpg",
+      "/assets/Events/victory-bell-launch/7.jpg",
+      "/assets/Events/victory-bell-launch/8.jpeg",
+      "/assets/Events/victory-bell-launch/9.jpeg",
+      "/assets/Events/victory-bell-launch/10.jpeg",
+      "/assets/Events/victory-bell-launch/11.jpeg",
+      "/assets/Events/victory-bell-launch/12.jpg"
     ]
   },
   // Add events for anti-tobacco, world-cancer-day, cancer-survivor-day, etc.
@@ -770,12 +866,13 @@ The Mural Arts were unveiled today at Apollo Cancer Centres, Jubilee Hills. This
 {
   id: 'prevention-detection-breast-cancer-2022',
   category: 'awareness-programmes',
-  title: 'Prevention and detection of Breast Cancer – Let’s starts now!',
+  title: 'Prevention and detection of Breast Cancer – Let\'s starts now!',
   date: '2022-10-29',
   author: 'Anuraj',
   banners: [
-    '/events/prevention-detection-breast-cancer-2022-banner1.jpg',
-    '/events/prevention-detection-breast-cancer-2022-banner2.jpg'
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/1.jpeg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/2.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/3.jpg'
   ],
   description: `Incidence of Breast Cancer is alarmingly increasing! It is the most common cancer in women in India and affecting one in every 8 women.
 
@@ -783,20 +880,28 @@ In view of International Breast Cancer Awareness month October – 2022, an Awar
 
 Breast cancer accounts for nearly 30% of all cancers in women in India, with early detection and screening being critical. Pandemic-related hesitancy has led to late diagnoses with more advanced disease. Women are advised to be watchful of any signs like lumps, discharge, or discoloration and undergo regular screening and self-breast examinations.`,
   photos: [
-    '/events/prevention-detection-breast-cancer-2022-1.jpg',
-    '/events/prevention-detection-breast-cancer-2022-2.jpg',
-    
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/4.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/5.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/6.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/7.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/8.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/9.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/10.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/11.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/12.jpg',
+    '/assets/Events/Prevention-and-detection-of-Breast-Cancer/13.jpg'
   ]
 },
 {
   id: 'anaika-health-awareness-fashion-show-2019',
   category: 'awareness-programmes',
-  title: 'ANAIKA – The Health Awareness Fashion Show On International Women’s Day March 8th, 2019',
+  title: 'ANAIKA – The Health Awareness Fashion Show On International Women\'s Day March 8th, 2019',
   date: '2019-03-08',
   author: 'Anuraj',
   banners: [
-    '/events/anaika-health-awareness-fashion-show-2019-banner1.jpg',
-    '/events/anaika-health-awareness-fashion-show-2019-banner2.jpg'
+    '/assets/Events/anaika-health-awareness/1.jpg',
+    '/assets/Events/anaika-health-awareness/2.jpg',
+    '/assets/Events/anaika-health-awareness/3.jpg'
   ],
   description: `ANAIKA means “Complete” and “Powerful.” Models depicted woman as all powerful and invincible.
 
@@ -816,20 +921,40 @@ A fourteen-year-old brave Cancer survivor was crowned on the occasion for her in
 
 Cancer in women is highly curable, and their survival from cancer is much higher than in men. Dr. Reddy emphasized adopting a healthy lifestyle and food habits, besides undergoing regular cancer screening.`,
   photos: [
-    '/events/anaika-health-awareness-fashion-show-2019-1.jpg',
-    
+    '/assets/Events/anaika-health-awareness/4.jpg',
+    '/assets/Events/anaika-health-awareness/5.jpg',
+    '/assets/Events/anaika-health-awareness/6.jpg',
+    '/assets/Events/anaika-health-awareness/7.jpg',
+    '/assets/Events/anaika-health-awareness/8.jpg',
+    '/assets/Events/anaika-health-awareness/9.jpg',
+    '/assets/Events/anaika-health-awareness/10.jpg',
+    '/assets/Events/anaika-health-awareness/11.jpg',
+    '/assets/Events/anaika-health-awareness/12.jpg',
+    '/assets/Events/anaika-health-awareness/13.jpg',
+    '/assets/Events/anaika-health-awareness/14.jpg',
+    '/assets/Events/anaika-health-awareness/15.jpg',
+    '/assets/Events/anaika-health-awareness/16.jpg',
+    '/assets/Events/anaika-health-awareness/17.jpg',
+    '/assets/Events/anaika-health-awareness/18.jpg',
+    '/assets/Events/anaika-health-awareness/19.jpg',
+    '/assets/Events/anaika-health-awareness/20.jpg',
+    '/assets/Events/anaika-health-awareness/21.jpg',
+    '/assets/Events/anaika-health-awareness/22.jpg',
+    '/assets/Events/anaika-health-awareness/23.jpg'
+
   ]
 },
 
 {
   id: 'pink-of-health-fight-cancer-breast-cancer-awareness-program-2014',
   category: 'awareness-programmes',
-  title: 'Let’s be in Pink of Health- Fight Cancer -Breast Cancer Awareness Program 2014',
+  title: 'Let\'s be in Pink of Health- Fight Cancer -Breast Cancer Awareness Program 2014',
   date: '2014-10-21',
   author: 'Anuraj',
   banners: [
-    '/events/pink-of-health-fight-cancer-breast-cancer-awareness-program-2014-banner1.jpg',
-    '/events/pink-of-health-fight-cancer-breast-cancer-awareness-program-2014-banner2.jpg'
+    '/assets/Events/pink-of-health/1.jpg',
+    '/assets/Events/pink-of-health/2.jpg',
+    '/assets/Events/pink-of-health/3.jpg'
   ],
   description: `Today more and more young women are being diagnosed with breast cancer according to most oncologists. This necessitates spreading awareness on prevention from a young age, on war footing.
 
@@ -839,13 +964,10 @@ College students expressed their views lucidly on breast cancer, causes for ramp
 
 Apollo Cancer Hospital has taken the initiative to organize the Breast Cancer Awareness Program to target younger women to stem the incidence in the community, as pointed out by Dr. Reddy.`,
   photos: [
-    '/events/pink-of-health-2014-1.jpg',
-    '/events/pink-of-health-2014-2.jpg',
-    '/events/pink-of-health-2014-3.jpg',
-    '/events/pink-of-health-2014-4.jpg',
-    '/events/pink-of-health-2014-5.jpg',
-    '/events/pink-of-health-2014-6.jpg',
-    '/events/pink-of-health-2014-7.jpg'
+    '/assets/Events/pink-of-health/4.jpg',
+    '/assets/Events/pink-of-health/5.jpg',
+    '/assets/Events/pink-of-health/6.jpg',
+    '/assets/Events/pink-of-health/7.jpg'
   ]
 },
 
@@ -856,8 +978,9 @@ title: 'Breast Cancer Awareness Program 2013',
 date: '2013-10-30',
 author: 'Anuraj',
 banners: [
-'/events/breast-cancer-awareness-program-2013-banner1.jpg',
-'/events/breast-cancer-awareness-program-2013-banner2.jpg'
+'/assets/Events/breast-cancer-13/1.jpg',
+'/assets/Events/breast-cancer-13/2.jpg',
+'/assets/Events/breast-cancer-13/3.jpg'
 ],
 description: `On the occasion of Breast cancer awareness month, Apollo Cancer Institute held a breast cancer awareness program at Apollo Cancer Hospital, Jubilee Hills, Hyderabad on 30th October 2013 to honor the breast cancer survivors and spread awareness on breast cancer.
 
@@ -865,10 +988,11 @@ Speaking on the occasion, Dr. Vijay Anand Reddy briefed about cancer warning sym
 
 Dr. Reddy's inspiring speech admired and supported cancer survivors and raised hope in patients fighting cancer. Encouraged and enchanted, cancer survivors joined Dr. Reddy at the dais and shared their experiences of fighting and surviving cancer. Ms. Bhramara shared how she regained all her health after chemotherapy cycles. Ms. Jyoti spoke about the moral support and treatment she received from Dr. Reddy and his team at Apollo Cancer Hospital.`,
 photos: [
-'/events/breast-cancer-awareness-program-2013-1.jpg',
-'/events/breast-cancer-awareness-program-2013-2.jpg',
-'/events/breast-cancer-awareness-program-2013-3.jpg',
-'/events/breast-cancer-awareness-program-2013-4.jpg'
+'/assets/Events/breast-cancer-13/4.jpg',
+'/assets/Events/breast-cancer-13/5.jpg',
+'/assets/Events/breast-cancer-13/6.jpg',
+'/assets/Events/breast-cancer-13/7.jpg',
+'/assets/Events/breast-cancer-13/8.jpg'
 ]
 },
 
@@ -880,8 +1004,9 @@ title: 'Breast Cancer Awareness Seminar',
 date: '2011-10-22',
 author: 'Anuraj',
 banners: [
-'/events/breast-cancer-awareness-seminar-2011-banner1.jpg',
-'/events/breast-cancer-awareness-seminar-2011-banner2.jpg'
+'/assets/Events/Breast-cancer-awareness-seminar-11/1.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/2.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/3.jpg'
 ],
 description: `"Breast Cancer Prevention starts at 5" was organized on 22nd October 2011 with the aim of increasing awareness among young women about the prevention and detection of cancer.
 
@@ -889,9 +1014,21 @@ Mrs. Banda Karthika Reddy, Mayor of Greater Hyderabad Municipal Corporation; Ms.
 
 The seminar focused on educating young women about early prevention and detection strategies for breast cancer, emphasizing the importance of awareness from a young age.`,
 photos: [
-'/events/breast-cancer-awareness-seminar-2011-1.jpg',
-'/events/breast-cancer-awareness-seminar-2011-2.jpg',
-'/events/breast-cancer-awareness-seminar-2011-3.jpg'
+'/assets/Events/Breast-cancer-awareness-seminar-11/4.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/5.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/6.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/7.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/8.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/9.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/10.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/11.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/12.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/13.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/14.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/15.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/16.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/17.jpg',
+'/assets/Events/Breast-cancer-awareness-seminar-11/18.jpg'
 ]
 },
 
@@ -902,8 +1039,9 @@ title: 'Breast Cancer Support Group',
 date: '2011-10-15',
 author: 'Anuraj',
 banners: [
-'/events/breast-cancer-support-group-2011-banner1.jpg',
-'/events/breast-cancer-support-group-2011-banner2.jpg'
+'/assets/Events/support-group/1.jpg',
+'/assets/Events/support-group/2.jpg',
+'/assets/Events/support-group/3.jpg'
 ],
 description: `The Breast Cancer Support Group at Apollo Cancer Hospital conducts monthly meetings every 3rd Saturday, aimed at raising awareness about various aspects of breast cancer.
 
@@ -911,8 +1049,11 @@ This initiative addresses the stigma surrounding cancer in society, aiming to re
 
 The support group provides a compassionate environment for sharing knowledge, emotional support, and motivation for patients and survivors alike, facilitated by Dr. Vijay Anand Reddy and his team.`,
 photos: [
-'/events/breast-cancer-support-group-2011-1.jpg',
-'/events/breast-cancer-support-group-2011-2.jpg'
+'/assets/Events/support-group/4.jpg',
+'/assets/Events/support-group/5.jpg',
+'/assets/Events/support-group/6.jpg',
+'/assets/Events/support-group/7.jpg',
+'/assets/Events/support-group/8.jpg'
 ]
 },
 
@@ -924,8 +1065,9 @@ title: 'Breast Cancer Awareness Walk On The Eve Of World Cancer Day',
 date: '2008-02-03',
 author: 'Anuraj',
 banners: [
-'/events/breast-cancer-awareness-walk-2008-banner1.jpg',
-'/events/breast-cancer-awareness-walk-2008-banner2.jpg'
+'/assets/Events/awareness-walk/1.jpg',
+'/assets/Events/awareness-walk/2.jpg',
+'/assets/Events/awareness-walk/3.jpg'
 ],
 description: `A Cancer Awareness Walk was conducted on 3rd February 2008 from K.B.R. Park Main gate to Apollo Cancer Institute Lawns. The event was organized by women’s organizations including the Breast Cancer Support Group and Cure Foundation of Apollo Cancer Institute, with support from various organizations such as Make a Wish Foundation, Astha, Aga Khan Health Service India, WIN, Deloitte, Accenture, Reddy’s Labs, Jubilee Club, and Roshini.
 
@@ -933,9 +1075,15 @@ Popular Cine Actress Mrs. Ramya Krishna was invited as the Chief Guest. During t
 
 This walk aimed to increase awareness about breast cancer and promote early detection in the community.`,
 photos: [
-'/events/breast-cancer-awareness-walk-2008-1.jpg',
-'/events/breast-cancer-awareness-walk-2008-2.jpg',
-'/events/breast-cancer-awareness-walk-2008-3.jpg'
+'/assets/Events/awareness-walk/4.jpg',
+'/assets/Events/awareness-walk/5.jpg',
+'/assets/Events/awareness-walk/6.jpg',
+'/assets/Events/awareness-walk/7.jpg',
+'/assets/Events/awareness-walk/8.jpg',
+'/assets/Events/awareness-walk/9.jpg',
+'/assets/Events/awareness-walk/10.jpg',
+'/assets/Events/awareness-walk/11.jpg',
+'/assets/Events/awareness-walk/12.jpg'
 ]
 },
 
@@ -946,19 +1094,16 @@ title: 'Breast Cancer Awareness Programme',
 date: '2005-10-27',
 author: 'Anuraj',
 banners: [
-'/events/breast-cancer-awareness-programme-2005-banner1.jpg',
-'/events/breast-cancer-awareness-programme-2005-banner2.jpg'
+'/assets/Events/breast-cancer-awareness-programme-2005/1.jpg',
+'/assets/Events/breast-cancer-awareness-programme-2005/2.jpg',
+'/assets/Events/breast-cancer-awareness-programme-2005/3.jpg'
 ],
 description: `Across the globe, October is observed as World Breast Cancer Day. In the city, renowned actress Jaya Sudha inaugurated the Breast Cancer Awareness Programme at Apollo Cancer Hospital, Hyderabad.
 
 Dr. Vijayanand Reddy made a presentation stressing the need for every woman to begin self-examination at the age of 20. After crossing 35 years, every woman should undergo comprehensive diagnosis to check the disease at an early stage.
 
 The program aimed to empower women by educating them about early detection and preventative measures for breast cancer.`,
-photos: [
-'/events/breast-cancer-awareness-programme-2005-1.jpg',
-'/events/breast-cancer-awareness-programme-2005-2.jpg',
-'/events/breast-cancer-awareness-programme-2005-3.jpg'
-]
+photos: []
 },
 
 //children
