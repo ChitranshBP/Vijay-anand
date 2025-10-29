@@ -5,31 +5,188 @@ export const clinicCategories = [
 ];
 
 export const cancerClinics = [
-  {
-    id: 'sample-clinic-1',
-    category: 'community',
-    title: 'Community Cancer Clinic - Sample Location',
-    date: '2024-01-15',
-    author: 'Dr. Vijay Anand Reddy',
-    banners: [
-      '/assets/Events/placeholder-banner1.jpg',
-      '/assets/Events/placeholder-banner2.jpg'
-    ],
-    description: `This is a sample cancer clinic event. Replace this with your actual clinic details.
+{
+  id: 'apollo-cancer-conclave-2020',
+  category: 'conference',
+  title: 'Apollo Cancer Conclave & CANCER CI – 2020',
+  date: '2020-02-16',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/apollo-cancer-conclave-2020/banner1.jpg',
+    '/assets/Events/apollo-cancer-conclave-2020/banner2.jpg'
+  ],
+  description: `Apollo Cancer Institutes and CURE Foundation organized the 5th Edition of Apollo Cancer Conclave and the 8th edition of the biennial Conference CANCER CI – 2020, held from 13th to 16th February 2020 at the Hyderabad International Convention Centre (HICC), Hyderabad.
 
-Add comprehensive information about the clinic, its objectives, services provided, and community impact.
+The conference focused on new developments, controversies, and evidence-based practice guidelines in Oncology.
 
-Include details about:
-• Location and accessibility
-• Services offered
-• Number of beneficiaries
-• Key medical team members
-• Follow-up programs`,
-    photos: [
-      '/assets/Events/placeholder-photo1.jpg',
-      '/assets/Events/placeholder-photo2.jpg',
-      '/assets/Events/placeholder-photo3.jpg',
-    ]
-  },
+Highly accomplished faculty from across the world participated in this knowledge-intensive and exciting event, offering an in-depth exchange of ideas and clinical insights for advancing cancer care.`,
+  photos: [
+    '/assets/Events/apollo-cancer-conclave-2020/photo1.jpg',
+    '/assets/Events/apollo-cancer-conclave-2020/photo2.jpg',
+    '/assets/Events/apollo-cancer-conclave-2020/photo3.jpg'
+  ]
+},
+{
+  id: 'apollo-cancer-conclave-2017',
+  category: 'conference',
+  title: 'Apollo Cancer Conclave & CANCER CI – 2017',
+  date: '2017-02-02',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/apollo-cancer-conclave-2017/banner1.jpg',
+    '/assets/Events/apollo-cancer-conclave-2017/banner2.jpg'
+  ],
+  description: `Apollo Hospitals hosted the 3rd Edition of the Apollo Cancer Conclave (ACC) and the 7th Edition of the biennial international conference CANCER CI – 2017, commencing on 2nd February 2017.
+
+The conference aimed to encourage a multi-modality approach towards raising the bar in cancer care and improving cancer management in India and abroad.
+
+Dr. P. Vijay Anand Reddy, Director of Apollo Cancer Hospital and Chairman of the Organising Committee, along with Dr. S. V. S. S. Prasad, Dr. Srinivas Chakravarthy, Dr. T. P. S. Bhandari, and Dr. Kaushik Bhattacharyya, addressed the media, highlighting the Conclave's goal to facilitate discussions, interactive sessions, and debates on advancing oncology practices.`,
+  photos: [
+    '/assets/Events/apollo-cancer-conclave-2017/photo1.jpg',
+    '/assets/Events/apollo-cancer-conclave-2017/photo2.jpg',
+    '/assets/Events/apollo-cancer-conclave-2017/photo3.jpg'
+  ]
+}
+,
+{
+  id: 'apollo-cancer-conclave-2015',
+  category: 'conference',
+  title: '6th CANCER CI & 2nd APOLLO CANCER CONCLAVE – 2015',
+  date: '2015-02-06',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/apollo-cancer-conclave-2015/banner1.jpg',
+    '/assets/Events/apollo-cancer-conclave-2015/banner2.jpg'
+  ],
+  description: `The 6th Cancer CI and 2nd Apollo Cancer Conclave were held from 6th to 8th February 2015 at HICC, Novotel, Hyderabad. The event was one of the largest cancer gatherings in India, bringing together over 2000 participants, 70 international faculty members, and 220 national faculty members.
+
+The conference began with pre-conference workshops on 5th February, including sessions on robotic surgery, bone marrow transplant, and hypofractionation for radiation oncologists. These workshops, held at Apollo Hospitals, Jubilee Hills, and HICC, received full attendance and high appreciation.
+
+The main conference opened on 6th February with a General Oncology session followed by eight symposiums on common cancers. Each session concluded with interactive case discussions and audience participation to reach clinical consensus on cancer management.
+
+Additional highlights included a poster session featuring 110 entries from postgraduate students across the country, with three students awarded for their outstanding work.
+
+The inaugural ceremony took place on the evening of 6th February, with Dr. P. C. Reddy and the Hon’ble Health Minister of Uganda as Chief Guests, underscoring the event’s significance. The banquet dinner, themed “Dance Like a Child,” was organized by the CURE Foundation and featured inspiring performances by childhood cancer survivors and a musical act by Dr. Mahesh Joshi.`,
+  photos: [
+    '/assets/Events/apollo-cancer-conclave-2015/photo1.jpg',
+    '/assets/Events/apollo-cancer-conclave-2015/photo2.jpg',
+    '/assets/Events/apollo-cancer-conclave-2015/photo3.jpg'
+  ]
+},
+{
+  id: 'cancer-ci-2013',
+  category: 'conference',
+  title: 'CANCER CI – 2013: Cancer Care, Education & Research Conference Internationale',
+  date: '2013-02-18',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/cancer-ci-2013/banner1.jpg',
+    '/assets/Events/cancer-ci-2013/banner2.jpg'
+  ],
+  description: `The Fifth Edition of the Biennial Conference CANCER CI – 2013: Cancer Care, Education & Research Conference Internationale was organized and hosted by Apollo Cancer Hospitals and CURE Foundation from 8th to 10th February 2013 at Hotel Taj Krishna, Hyderabad, India.
+
+The conference brought together a large gathering of over 2300 highly accomplished faculty members from across the world. It served as an important platform to deliberate on key topics in oncology, including Gynaecologic Cancer, Breast Cancer, Head & Neck Cancer, GI Cancer, and the latest advancements in Radiation Therapy techniques.
+
+The event reflected a strong commitment to advancing cancer care through collaboration, education, and innovation.`,
+  photos: [
+    '/assets/Events/cancer-ci-2013/photo1.jpg',
+    '/assets/Events/cancer-ci-2013/photo2.jpg',
+    '/assets/Events/cancer-ci-2013/photo3.jpg'
+  ]
+},
+{
+  id: 'cancer-ci-2011',
+  category: 'conference',
+  title: '4th Biennial CANCER CI – 2011: Cancer Care, Education & Research Conference Internationale',
+  date: '2011-02-25',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/cancer-ci-2011/banner1.jpg',
+    '/assets/Events/cancer-ci-2011/banner2.jpg'
+  ],
+  description: `The Fourth Biennial Cancer CI – 2011 was held from 25th to 27th February 2011 at Hotel Taj Krishna, Hyderabad. Hosted by Apollo Cancer Hospital and CURE Foundation, the conference brought together around 1500 delegates from India and abroad.
+
+The event focused on the management of various malignancies in the brain, head and neck, and gynecologic cancers. Special emphasis was placed on emerging technologies, including targeted molecular therapy for brain tumors, advanced radiotherapy techniques, and the role of HPV in cervical cancer development.
+
+The conference served as a valuable platform for sharing innovations, discussing treatment protocols, and fostering collaboration among oncology professionals worldwide.`,
+  photos: [
+    '/assets/Events/cancer-ci-2011/photo1.jpg',
+    '/assets/Events/cancer-ci-2011/photo2.jpg',
+    '/assets/Events/cancer-ci-2011/photo3.jpg'
+  ]
+},
+
+{
+  id: 'cancer-ci-2008',
+  category: 'conference',
+  title: '3rd CANCER CI – 2008: Cancer Care, Education & Research Conference Internationale',
+  date: '2008-02-09',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/cancer-ci-2008/banner1.jpg',
+    '/assets/Events/cancer-ci-2008/banner2.jpg'
+  ],
+  description: `The Third Edition of Cancer CI – 2008 was held on 9th and 10th February 2008 at Hotel Taj Krishna, Hyderabad. Organized by Apollo Cancer Hospital and CURE Foundation in association with The New York Medical College, the conference was inaugurated by Governor N. D. Tiwari. 
+
+During the inauguration, Union Minister of State for Women and Child Development, Smt. Renuka Chowdhary, launched the “National Apollo Cancer Care Network,” linking all Apollo Cancer Institutes across India.
+
+The two-day conference featured a team of U.S. experts who trained Indian doctors in Robotic Surgery for Ovarian and Cervical Cancers. The event witnessed participation from nearly 1000 delegates and provided an invaluable opportunity for knowledge sharing and skill advancement in oncologic care.`,
+  photos: [
+    '/assets/Events/cancer-ci-2008/photo1.jpg',
+    '/assets/Events/cancer-ci-2008/photo2.jpg',
+    '/assets/Events/cancer-ci-2008/photo3.jpg'
+  ]
+},
+
+{
+  id: 'cancer-ci-2006',
+  category: 'conference',
+  title: 'CANCER CI – 2006: Second Bi-Yearly International Conference',
+  date: '2006-02-11',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/cancer-ci-2006/banner1.jpg',
+    '/assets/Events/cancer-ci-2006/banner2.jpg'
+  ],
+  description: `The Second Bi-yearly International Conference, CANCER CI – 2006, was organized by Apollo Cancer Hospital and CURE Foundation on 11th and 12th February 2006 at Hotel Taj Krishna, Hyderabad. The event brought together 960 delegates from across the country.
+
+Conference highlights included discussions on Molecular and Functional Imaging (PET-CT Scan), Multimodality Management and Organ Preservation, Technological advancements in Radiation Oncology, and updates in Gynecologic, Breast, Head & Neck, and Urological Cancers.
+
+The event underscored Apollo’s ongoing commitment to advancing cancer care through education, innovation, and global collaboration.`,
+  photos: [
+    '/assets/Events/cancer-ci-2006/photo1.jpg',
+    '/assets/Events/cancer-ci-2006/photo2.jpg',
+    '/assets/Events/cancer-ci-2006/photo3.jpg'
+  ]
+},
+{
+  id: 'cancer-ci-2003',
+  category: 'conference',
+  title: 'CANCER CI – 2003: First Annual International Conference',
+  date: '2003-08-23',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/cancer-ci-2003/banner1.jpg',
+    '/assets/Events/cancer-ci-2003/banner2.jpg'
+  ],
+  description: `CANCER CI – 2003 marked the inaugural annual International Conference organized under the auspices of Apollo Cancer Hospital and CURE Foundation in August 2003.
+
+The event saw participation from over 600 delegates from across India. To encourage broader engagement and learning, the organizers offered free registrations to all conference delegates.
+
+The conference set the foundation for what would become a long-standing tradition of knowledge exchange and collaborative advancement in cancer care, education, and research.`,
+  photos: [
+    '/assets/Events/cancer-ci-2003/photo1.jpg',
+    '/assets/Events/cancer-ci-2003/photo2.jpg',
+    '/assets/Events/cancer-ci-2003/photo3.jpg'
+  ]
+},
+
+
+
+
+
+
+
+
   // Add more cancer clinic events here
 ];
