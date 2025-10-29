@@ -37,7 +37,7 @@ const Header = () => {
           { name: 'Books', href: '/books' },
           { name: 'Publications', href: '/publications' },
          { name: 'Presentations', href: '/presentations' },
-                  { name: 'Cancer Cl', href: '' },
+                  { name: 'Cancer Cl', href: '/cancer-clinics' },
 
 
         ],
