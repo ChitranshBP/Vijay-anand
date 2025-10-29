@@ -66,108 +66,104 @@ const EventDetailPage = () => {
         </div>
 
         {/* Hero Banner Carousel */}
-{event.banners && event.banners.length > 0 ? (
-<div className="relative w-full h-[70vh] overflow-hidden group">
-  {/* Banner Images */}
-  {event.banners.map((banner, idx) => (
-    <div
-      key={idx}
-      style={{
-        backgroundImage: `url(${banner})`,
-        backgroundPosition: 'center 20%',
-      }}
-      className={`absolute inset-0 bg-cover bg-no-repeat transition-opacity duration-700 ${
-        idx === currentBannerIdx ? 'opacity-100' : 'opacity-0'
-      }`}
-    />
-  ))}
+        {event.banners && event.banners.length > 0 ? (
+          <div className="relative w-full h-[70vh] overflow-hidden group">
+            {/* Banner Images */}
+            {event.banners.map((banner, idx) => (
+              <div
+                key={idx}
+                style={{
+                  backgroundImage: `url(${banner})`,
+                  backgroundPosition: 'center 20%',
+                }}
+                className={`absolute inset-0 bg-cover bg-no-repeat transition-opacity duration-700 ${
+                  idx === currentBannerIdx ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
 
-  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
-  {/* Content */}
-  <div className="absolute inset-0 flex flex-col justify-end pb-16 px-6">
-    <div className="max-w-7xl mx-auto w-full">
-      <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
-        {event.title}
-      </h1>
-      {event.date && (
-        <div className="flex items-center gap-2 text-white/90 text-lg">
-          <FiCalendar className="w-5 h-5" />
-          <span className="font-medium">
-            {new Date(event.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </span>
-        </div>
-      )}
-    </div>
-  </div>
+            {/* Content */}
+            <div className="absolute inset-0 flex flex-col justify-end pb-16 px-6">
+              <div className="max-w-7xl mx-auto w-full">
+                <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
+                  {event.title}
+                </h1>
+                {event.date && (
+                  <div className="flex items-center gap-2 text-white/90 text-lg">
+                    <FiCalendar className="w-5 h-5" />
+                    <span className="font-medium">
+                      {new Date(event.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </div>
 
-  {/* Navigation Buttons - Only show if multiple banners */}
-  {event.banners.length > 1 && (
-    <>
-      <button
-        onClick={() => setCurrentBannerIdx((currentBannerIdx - 1 + event.banners.length) % event.banners.length)}
-        aria-label="Previous banner"
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-4 transition-all duration-200 shadow-xl hover:scale-110 opacity-0 group-hover:opacity-100"
-      >
-        <FiChevronLeft className="text-medical-blue w-8 h-8" />
-      </button>
-      <button
-        onClick={() => setCurrentBannerIdx((currentBannerIdx + 1) % event.banners.length)}
-        aria-label="Next banner"
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-4 transition-all duration-200 shadow-xl hover:scale-110 opacity-0 group-hover:opacity-100"
-      >
-        <FiChevronRight className="text-medical-blue w-8 h-8" />
-      </button>
+            {/* Navigation Buttons - Only show if multiple banners */}
+            {event.banners.length > 1 && (
+              <>
+                <button
+                  onClick={() => setCurrentBannerIdx((currentBannerIdx - 1 + event.banners.length) % event.banners.length)}
+                  aria-label="Previous banner"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-4 transition-all duration-200 shadow-xl hover:scale-110 opacity-0 group-hover:opacity-100"
+                >
+                  <FiChevronLeft className="text-medical-blue w-8 h-8" />
+                </button>
+                <button
+                  onClick={() => setCurrentBannerIdx((currentBannerIdx + 1) % event.banners.length)}
+                  aria-label="Next banner"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-4 transition-all duration-200 shadow-xl hover:scale-110 opacity-0 group-hover:opacity-100"
+                >
+                  <FiChevronRight className="text-medical-blue w-8 h-8" />
+                </button>
 
-      {/* Dot Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
-        {event.banners.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentBannerIdx(idx)}
-            aria-label={`Go to banner ${idx + 1}`}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              idx === currentBannerIdx
-                ? 'bg-white w-8'
-                : 'bg-white/50 hover:bg-white/75'
-            }`}
-          />
-        ))}
-      </div>
-    </>
-  )}
-</div>
-) : (
-  <div className="relative w-full h-[40vh] bg-gradient-to-br from-medical-blue to-blue-700 overflow-hidden">
-    <div className="absolute inset-0 flex flex-col justify-center items-center px-6">
-      <div className="max-w-7xl mx-auto w-full text-center">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
-          {event.title}
-        </h1>
-        {event.date && (
-          <div className="flex items-center justify-center gap-2 text-white/90 text-lg">
-            <FiCalendar className="w-5 h-5" />
-            <span className="font-medium">
-              {new Date(event.date).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </span>
+                {/* Dot Indicators */}
+                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+                  {event.banners.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentBannerIdx(idx)}
+                      aria-label={`Go to banner ${idx + 1}`}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        idx === currentBannerIdx
+                          ? 'bg-white w-8'
+                          : 'bg-white/50 hover:bg-white/75'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        ) : (
+          <div className="relative w-full h-[40vh] bg-gradient-to-br from-medical-blue to-blue-700 overflow-hidden">
+            <div className="absolute inset-0 flex flex-col justify-center items-center px-6">
+              <div className="max-w-7xl mx-auto w-full text-center">
+                <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 leading-tight">
+                  {event.title}
+                </h1>
+                {event.date && (
+                  <div className="flex items-center justify-center gap-2 text-white/90 text-lg">
+                    <FiCalendar className="w-5 h-5" />
+                    <span className="font-medium">
+                      {new Date(event.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         )}
-      </div>
-    </div>
-  </div>
-)}
-
-
-
-
 
         {/* Event Description */}
         <section className="max-w-5xl mx-auto px-6 py-16">

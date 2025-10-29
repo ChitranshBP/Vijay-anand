@@ -43,12 +43,18 @@ const EventsPage = () => {
                 }
                 className="bg-white rounded-xl shadow-md hover:shadow-xl cursor-pointer transition transform hover:-translate-y-1 flex flex-col"
               >
-                <img
-                  src={e.banners[0]}
-                  alt={e.title}
-                  className="h-48 w-full object-cover rounded-t-xl"
-                  loading="lazy"
-                />
+                {e.banners && e.banners.length > 0 ? (
+                  <img
+                    src={e.banners[0]}
+                    alt={e.title}
+                    className="h-48 w-full object-cover rounded-t-xl"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="h-48 w-full bg-gradient-to-br from-medical-blue to-blue-700 rounded-t-xl flex items-center justify-center">
+                    <h3 className="text-white text-xl font-bold px-4 text-center">{e.title}</h3>
+                  </div>
+                )}
                 <div className="p-5 flex flex-col flex-1">
                   <h3 className="font-bold text-xl mb-2 text-medical-dark">{e.title}</h3>
 
