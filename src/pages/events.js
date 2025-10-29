@@ -82,27 +82,27 @@ Thank you for joining us in making a meaningful difference! 💙👁️✨`,
     '/assets/Events/children-2/c3.jpeg',
     ]
   },
-  {
-    id: 'hope-in-a-shot-2025',
-    category: 'world-cancer-day',
-    title: 'Hope in a Shot: Free Cervical Cancer Vaccinations 2025',
-    date: '2025-02-05',
-    author: 'Dr. Vijay Anand Reddy',
-    banners: [
-      '/events/hope-in-a-shot-2025-banner1.jpg',
-      '/events/hope-in-a-shot-2025-banner2.jpg'
-    ],
-    description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025.
+//   {
+//     id: 'hope-in-a-shot-2025',
+//     category: 'world-cancer-day',
+//     title: 'Hope in a Shot: Free Cervical Cancer Vaccinations 2025',
+//     date: '2025-02-05',
+//     author: 'Dr. Vijay Anand Reddy',
+//     banners: [
+//       '/events/hope-in-a-shot-2025-banner1.jpg',
+//       '/events/hope-in-a-shot-2025-banner2.jpg'
+//     ],
+//     description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025.
 
-This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness.
+// This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness.
 
-This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 2030. Together, let's continue to Protect. Prevent. Prevail.`,
-    photos: [
-      '/events/hope-in-a-shot-2025-1.jpg',
-      '/events/hope-in-a-shot-2025-2.jpg',
-      '/events/hope-in-a-shot-2025-3.jpg'
-    ]
-  },
+// This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 2030. Together, let's continue to Protect. Prevent. Prevail.`,
+//     photos: [
+//       '/events/hope-in-a-shot-2025-1.jpg',
+//       '/events/hope-in-a-shot-2025-2.jpg',
+//       '/events/hope-in-a-shot-2025-3.jpg'
+//     ]
+//   },
   {
     id: 'ocular-oncology-workshop-2023',
     category: 'awareness-programmes',
@@ -110,8 +110,10 @@ This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 203
     date: '2023-07-01',
     author: 'Dr. Vijay Anand Reddy',
     banners: [
-      '/events/ocular-oncology-2023-banner1.jpg',
-      '/events/ocular-oncology-2023-banner2.jpg'
+      '/assets/Events/ocular-oncology-workshop-2023/1.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/2.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/3.jpg',
+      
     ],
     description: `Apollo Cancer Centre, Hyderabad and CURE Foundation hosted their first Ocular Oncology workshop on July 1st and 2nd, 2023 at Apollo Medical College auditorium.
 
@@ -121,28 +123,34 @@ The workshop was a grand success with close to 100 registrations. Attendees lear
 
 Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr Raja Gopal and Dr Vijay Anand Reddy.`,
     photos: [
-      '/events/ocular-oncology-2023-1.jpg',
-      '/events/ocular-oncology-2023-2.jpg',
-      '/events/ocular-oncology-2023-3.jpg'
+     '/assets/Events/ocular-oncology-workshop-2023/banner.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/banner2.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/banner3.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/4.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/5.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/6.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/1.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/2.jpg',
+      '/assets/Events/ocular-oncology-workshop-2023/3.jpg',
     ]
   },
-  {
-    id: 'women-1',
-    category: 'women',
-    title: "Women's Health Camp",
-    banners: ['/events/women-1-banner1.jpg', '/events/women-1-banner2.jpg'],
-    description: "A special event focusing on women's health awareness, wellness, and cancer prevention.",
-    photos: [
-      '/events/women-1-1.jpg',
-      '/events/women-1-2.jpg',
-      '/events/women-1-3.jpg'
-    ],
+  // {
+  //   id: 'women-1',
+  //   category: 'women',
+  //   title: "Women's Health Camp",
+  //   banners: ['/events/women-1-banner1.jpg', '/events/women-1-banner2.jpg'],
+  //   description: "A special event focusing on women's health awareness, wellness, and cancer prevention.",
+  //   photos: [
+  //     '/events/women-1-1.jpg',
+  //     '/events/women-1-2.jpg',
+  //     '/events/women-1-3.jpg'
+  //   ],
     // Example: gallery with tabs
     // gallery: {
     //   print: ['/events/women-1-print-1.jpg', '/events/women-1-print-2.jpg'],
     //   digital: ['/events/women-1-digital-1.jpg', '/events/women-1-digital-2.jpg']
     // }
-  },
+  //},
   // {
   //   id: 'children-1',
   //   category: 'children',
@@ -222,7 +230,7 @@ Retinoblastoma – a cancer of the retina (the so-called screen of the eye) – 
        '/assets/Events/Smoke-Win/1.png',
         '/assets/Events/Smoke-Win/2.jpg',
     ],
-    description: `Launched on the eve of **World No Tobacco Day 2015**, “Smoke & Win” aimed to **educate youth about the dangers of smoking**.  
+    description: `Launched on the eve of **World No Tobacco Day 2015, “Smoke & Win” aimed to educate youth about the dangers of smoking.  
 
 Highlights:
 • Launch by Padma Bhushan Sri Pullela Gopichand, Ms. Pradnya Gadre, and Dr. Vijay Anand Reddy.  
@@ -546,7 +554,7 @@ Highlights:
     ]
   },
   {
-    id: '7',
+    id: 'cancer-awareness-fashion-show-2013',
     category: "world-cancer-day",
     title: "Cancer Awareness Fashion Show",
     date: "2013-02-04",
