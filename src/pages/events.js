@@ -169,7 +169,7 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
   date: '2024-05-19',
   author: 'Dr. Vijay Anand Reddy',
   banners: [
-    'assets/Events/whitathon-marathon-for-eye-cancer-child/main.jpeg',
+    '/assets/Events/whitathon-marathon-for-eye-cancer-child/main.jpeg',
    
   ],
 description: `Whitathon is an annual flagship run conducted by L V Prasad Eye Institute to raise awareness about eye cancer in children, Retinoblastoma, and also raise funds for underprivileged children with Retinoblastoma. The 6th edition of the run was conducted on May 19th, 2024, and attracted 2200 runners from all age groups and walks of life.
@@ -183,11 +183,11 @@ Whitathon 2024 not only increased awareness about Retinoblastoma but also served
 Retinoblastoma – a cancer of the retina (the so-called screen of the eye) – occurs commonly in children between the ages of 0 to 4 years. It is a highly curable cancer when detected early. Parents need to be aware of the early symptoms such as a white spot in the center of the eye, redness in the eye, improper movement of the eyeball, and improper vision.`,
 
   photos: [
-    'assets/Events/whitathon-marathon-for-eye-cancer-child/m1.jpeg',
-     'assets/Events/whitathon-marathon-for-eye-cancer-child/m2.jpeg',
-      'assets/Events/whitathon-marathon-for-eye-cancer-child/m3.jpeg',
-       'assets/Events/whitathon-marathon-for-eye-cancer-child/m4.jpeg',
-       'assets/Events/whitathon-marathon-for-eye-cancer-child/m5.jpeg',
+    '/assets/Events/whitathon-marathon-for-eye-cancer-child/m1.jpeg',
+     '/assets/Events/whitathon-marathon-for-eye-cancer-child/m2.jpeg',
+      '/assets/Events/whitathon-marathon-for-eye-cancer-child/m3.jpeg',
+       '/assets/Events/whitathon-marathon-for-eye-cancer-child/m4.jpeg',
+       '/assets/Events/whitathon-marathon-for-eye-cancer-child/m5.jpeg',
   ]
 },
 
