@@ -62,25 +62,25 @@ This Hindi edition aims to reach and inspire a wider audience, spreading the mes
     id: 'whitathon-2025',
     category: 'children',
     title: 'WHITATHON 2025 – Marathon for Eye Cancer Awareness',
-    date: '2025-05-18',
+    date: '2025-05-19',
     author: 'Dr. Vijay Anand Reddy',
-    // banners: [
-    //   '/events/whitathon-2025-banner1.jpg',
-    //   '/events/whitathon-2025-banner2.jpg'
-    // ],
+    banners: [
+      '/assets/Events/children-2/main.jpeg',
+    ],
     description: `A momentous occasion at the Whitathon 2025! Sri Y. Nagi Reddy, IPS RR, Director General of Disaster Response & Fire Services, Telangana, officially flagged off the 10K run as part of our eye cancer awareness program.
 
 He was joined by esteemed guests Dr. Prashant Garg, Director of LVPEI, Dr. P Vijay Anand Reddy, Director of Apollo Cancer Center, and Dr. Swathi Kalki, Head of Ocular Oncology at LVPEI.
 
 The Whitathon 2025, organized by the L V Prasad Eye Institute (LVPEI), brought together around 2000 enthusiastic runners on Sunday, May 18, 2025, at T-Works, Raidurgam, Hyderabad, starting bright and early at 5:30 am.
 
-The Cure Foundation partnered with LVPEI in this crucial initiative, highlighting the urgent need for awareness and support for children facing Retinoblastoma. Together, we are committed to shining a light on this serious condition and promoting early detection and treatment to save vision, preserve eyes, and ultimately save lives.`,
-    // photos: [
-    //   '/events/whitathon-2025-1.jpg',
-    //   '/events/whitathon-2025-2.jpg',
-    //   '/events/whitathon-2025-3.jpg',
-    //   '/events/whitathon-2025-4.jpg'
-    // ]
+We are excited to share that the Cure Foundation has partnered with LVPEI in this crucial initiative, highlighting the urgent need for awareness and support for children facing Retinoblastoma. Together, we are committed to shining a light on this serious condition and promoting early detection and treatment to save vision, preserve eyes, and ultimately save lives.
+
+Thank you for joining us in making a meaningful difference! 💙👁️✨`,
+  photos: [
+       '/assets/Events/children-2/c1.jpeg',
+    '/assets/Events/children-2/c2.jpeg',
+    '/assets/Events/children-2/c3.jpeg',
+    ]
   },
   {
     id: 'hope-in-a-shot-2025',
@@ -88,20 +88,20 @@ The Cure Foundation partnered with LVPEI in this crucial initiative, highlightin
     title: 'Hope in a Shot: Free Cervical Cancer Vaccinations 2025',
     date: '2025-02-05',
     author: 'Dr. Vijay Anand Reddy',
-    // banners: [
-    //   '/events/hope-in-a-shot-2025-banner1.jpg',
-    //   '/events/hope-in-a-shot-2025-banner2.jpg'
-    // ],
+    banners: [
+      '/events/hope-in-a-shot-2025-banner1.jpg',
+      '/events/hope-in-a-shot-2025-banner2.jpg'
+    ],
     description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025.
 
 This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness.
 
 This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 2030. Together, let's continue to Protect. Prevent. Prevail.`,
-    // photos: [
-    //   '/events/hope-in-a-shot-2025-1.jpg',
-    //   '/events/hope-in-a-shot-2025-2.jpg',
-    //   '/events/hope-in-a-shot-2025-3.jpg'
-    // ]
+    photos: [
+      '/events/hope-in-a-shot-2025-1.jpg',
+      '/events/hope-in-a-shot-2025-2.jpg',
+      '/events/hope-in-a-shot-2025-3.jpg'
+    ]
   },
   {
     id: 'ocular-oncology-workshop-2023',
@@ -109,10 +109,10 @@ This milestone aligns with the WHO's goal of 90% HPV vaccination coverage by 203
     title: 'Ocular Oncology Workshop',
     date: '2023-07-01',
     author: 'Dr. Vijay Anand Reddy',
-    // banners: [
-    //   '/events/ocular-oncology-2023-banner1.jpg',
-    //   '/events/ocular-oncology-2023-banner2.jpg'
-    // ],
+    banners: [
+      '/events/ocular-oncology-2023-banner1.jpg',
+      '/events/ocular-oncology-2023-banner2.jpg'
+    ],
     description: `Apollo Cancer Centre, Hyderabad and CURE Foundation hosted their first Ocular Oncology workshop on July 1st and 2nd, 2023 at Apollo Medical College auditorium.
 
 The aim of this workshop was to educate and empower Ophthalmologists and Oncologists from all over the country to be able to manage and treat tumours of the Eye and Orbit.
@@ -120,11 +120,11 @@ The aim of this workshop was to educate and empower Ophthalmologists and Oncolog
 The workshop was a grand success with close to 100 registrations. Attendees learned from lectures delivered by a team of esteemed Ocular Oncologists and participated in a live contouring workshop for Radiotherapy planning.
 
 Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr Raja Gopal and Dr Vijay Anand Reddy.`,
-    // photos: [
-    //   '/events/ocular-oncology-2023-1.jpg',
-    //   '/events/ocular-oncology-2023-2.jpg',
-    //   '/events/ocular-oncology-2023-3.jpg'
-    // ]
+    photos: [
+      '/events/ocular-oncology-2023-1.jpg',
+      '/events/ocular-oncology-2023-2.jpg',
+      '/events/ocular-oncology-2023-3.jpg'
+    ]
   },
   {
     id: 'women-1',
@@ -155,20 +155,31 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
   //   ]
   // },
   {
-  id: 'children-2',
+  id: 'whitathon-marathon-for-eye-cancer-child-24',
   category: 'children',
   title: 'WHITATHON – Marathon for Eye Cancer Awareness 2024',
   date: '2024-05-19',
   author: 'Dr. Vijay Anand Reddy',
   banners: [
-    '/assets/Events/children-2/main.jpeg',
+    'assets/Events/whitathon-marathon-for-eye-cancer-child/main.jpeg',
    
   ],
-  description: `Whitathon is an annual flagship run conducted by LV Prasad Eye Institute to raise awareness about eye cancer in children (Retinoblastoma) and to raise funds for underprivileged children with Retinoblastoma. The 6th edition, conducted on May 19th, 2024, attracted 2200 runners from all age groups and walks of life.\n\nWe were fortunate to have Dr. Vineeth G, Deputy Commissioner of Police, Madhapur Zone, launch the 10K run along with Dr. Vijay Anand Reddy, Director of Apollo Cancer Hospital; Shri Dilip Kumar Mohanty, Director (Production and Personnel), NMDC Ltd; Dr. Prashant Garg, Executive Chair, L V Prasad Eye Institute; and Dr. Swathi Kaliki, Head Operation Eye Sight Universal, Institute for Eye Cancer, L V Prasad Eye Institute.\n\nTotal registrations were 2132 (756 runners in the 10K timed run, 414 in the 5K timed run, 310 in the 5K Fun Run, and 652 in the 3K Fun Run). Additionally, 100 volunteers supported the event, backed by the Synchrony and Hyderabad Runners teams, and 140 Army runners participated.\n\nWhitathon 2024 not only increased awareness about retinoblastoma, but it also served as a valuable community involvement and team-building activity. Retinoblastoma, a cancer of the retina, commonly occurs in children aged 0–4 years and is highly curable when detected early. Parents need to be aware of early symptoms: white spot in the center of the eye, redness, improper eye movement, and impaired vision.`,
+description: `Whitathon is an annual flagship run conducted by L V Prasad Eye Institute to raise awareness about eye cancer in children, Retinoblastoma, and also raise funds for underprivileged children with Retinoblastoma. The 6th edition of the run was conducted on May 19th, 2024, and attracted 2200 runners from all age groups and walks of life.
+
+We were fortunate to have Dr. Vineeth G, Deputy Commissioner of Police, Madhapur Zone, attend the event and launch the 10K run along with Dr. Vijay Anand Reddy, Director of Apollo Cancer Hospital, Shri Dilip Kumar Mohanty, Director (Production and Personnel), NMDC Ltd, Dr. Prashant Garg, Executive Chair, L V Prasad Eye Institute, and Dr. Swathi Kaliki, Head, Operation Eye Sight Universal, Institute for Eye Cancer, L V Prasad Eye Institute.
+
+We had a total of 2132 registrations (756 runners participated in the 10K timed run, 414 runners in the 5K timed run, 310 participants in the 5K Fun Run, and 652 participants in the 3K Fun Run). In addition, we had 100 volunteers on the field, supported by the Synchrony and Hyderabad Runners teams, and 140 Army runners also joined the event.
+
+Whitathon 2024 not only increased awareness about Retinoblastoma but also served as a valuable community involvement and team-building activity.
+
+Retinoblastoma – a cancer of the retina (the so-called screen of the eye) – occurs commonly in children between the ages of 0 to 4 years. It is a highly curable cancer when detected early. Parents need to be aware of the early symptoms such as a white spot in the center of the eye, redness in the eye, improper movement of the eyeball, and improper vision.`,
+
   photos: [
-    '/assets/Events/children-2/c1.jpeg',
-    '/assets/Events/children-2/c2.jpeg',
-    '/assets/Events/children-2/c3.jpeg',
+    'assets/Events/whitathon-marathon-for-eye-cancer-child/m1.jpeg',
+     'assets/Events/whitathon-marathon-for-eye-cancer-child/m2.jpeg',
+      'assets/Events/whitathon-marathon-for-eye-cancer-child/m3.jpeg',
+       'assets/Events/whitathon-marathon-for-eye-cancer-child/m4.jpeg',
+       'assets/Events/whitathon-marathon-for-eye-cancer-child/m5.jpeg',
   ]
 },
 
@@ -209,14 +220,14 @@ Dr Prashant Garg, Chairman LVPEI, inaugurated the workshop in the presence of Dr
     banners: [
       '/assets/Events/Smoke-Win/1.jpg',
        '/assets/Events/Smoke-Win/1.png',
-        // '/assets/Events/Smoke-Win/2.jpg',
+        '/assets/Events/Smoke-Win/2.jpg',
     ],
-    description: `Launched on the eve of World No Tobacco Day 2015, "Smoke & Win" aimed to educate youth about the dangers of smoking.
+    description: `Launched on the eve of **World No Tobacco Day 2015**, “Smoke & Win” aimed to **educate youth about the dangers of smoking**.  
 
 Highlights:
-• Launch by Padma Bhushan Sri Pullela Gopichand, Ms. Pradnya Gadre, and Dr. Vijay Anand Reddy.
-• Featured a Wheel of Misery highlighting diseases caused by smoking (throat cancer, lung cancer, heart disease, impotency, etc.).
-• Smokers spinning the wheel were educated by specialists and offered free consultations.
+• Launch by Padma Bhushan Sri Pullela Gopichand, Ms. Pradnya Gadre, and Dr. Vijay Anand Reddy.  
+• Featured a Wheel of Misery highlighting diseases caused by smoking (throat cancer, lung cancer, heart disease, impotency, etc.).  
+• Smokers spinning the wheel were educated by specialists and offered free consultations.  
 • The campaign combined fun and education to engage IT employees and youth, emphasizing the long-term risks of smoking.`,
     photos: [
       '/assets/Events/Smoke-Win/1.png',
@@ -244,12 +255,12 @@ Highlights:
       '/assets/Events/health-cost/2.jpg',
       '/assets/Events/health-cost/1-3.jpg',
     ],
-    description: `CURE Foundation & APVHA-VHAI, with Dept. of Health & Family Welfare, released the Health Cost Study – A.P, detailing the economic burden of tobacco-related diseases.
+    description: `CURE Foundation & APVHA-VHAI, with Dept. of Health & Family Welfare, released the **Health Cost Study – A.P**, detailing the economic burden of tobacco-related diseases.  
 
 Highlights:
-• Inaugurated by Dr. Kamineni Srinivas, Minister of Medical & Health, AP.
-• India has 27.5 crore tobacco users, including 10 million children under 15.
-• Key message: Increase taxes on tobacco to discourage youth consumption and reduce health burden.
+• Inaugurated by Dr. Kamineni Srinivas, Minister of Medical & Health, AP.  
+• India has 27.5 crore tobacco users, including **10 million children under 15**.  
+• Key message: Increase taxes on tobacco to discourage youth consumption and reduce health burden.  
 • Emphasized the economic and health rationale for stronger tobacco control policies in Andhra Pradesh.`,
     photos: [
       '/assets/Events/health-cost/1.jpg',
@@ -308,12 +319,12 @@ Highlights:
       '/assets/Events/Protest-Against/3.jpg',
       '/assets/Events/Protest-Against/4.jpg',
     ],
-    description: `Led by Dr. Vijay Anand Reddy, a silent protest was held against the poster of the movie Rebel showing smoking.
+    description: `Led by Dr. Vijay Anand Reddy, a **silent protest** was held against the poster of the movie **Rebel** showing smoking.  
 
 Highlights:
-• Protesters submitted petitions to the Chief Minister, Governor, and Health Minister.
-• Urged the film industry to take social responsibility seriously and avoid glamorizing tobacco.
-• The protest led to the Censor Board directives for removal of smoking posters.`,
+• Protesters submitted **petitions to the Chief Minister, Governor, and Health Minister**.  
+• Urged the film industry to **take social responsibility** seriously and avoid glamorizing tobacco.  
+• The protest led to the **Censor Board directives** for removal of smoking posters.`,
     photos: [
        '/assets/Events/Protest-Against/1.jpg',
       '/assets/Events/Protest-Against/2.jpg',
@@ -515,23 +526,23 @@ Highlights:
     date: "2012-02-04",
     author: "Dr. Vijay Anand Reddy",
     banners: [
-      "/assets/events/smart-mob/1.jpg",
-      "/assets/events/smart-mob/2.jpg",
+     '/assets/Events/smart-mob/1.jpg',
+      "/assets/Events/smart-mob/2.jpg",
     ],
     description: `Apollo Cancer Hospital and CURE Foundation organised a ‘Smart Mob’ at Prasad’s IMAX Theatre to spread cancer awareness among youngsters on World Cancer Day, 4th February 2012.\n\nThe slogan “Cancer is preventable, detectable early and curable” was coined to encourage regular health checkups. Several doctors and nurses from Apollo Cancer Hospital participated in the impromptu dance session. Leading the mob were Shilpa Reddy, Dinaz Vevatwala, and Navdeep. Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital, Hyderabad, joined them as well. Bookmarks containing information about symptoms and prevention of cancer were distributed to the audience.`,
     photos: [
-     "/assets/events/smart-mob/1.jpg",
-      "/assets/events/smart-mob/2.jpg",
-      "/assets/events/smart-mob/3.jpg",
-      "/assets/events/smart-mob/4.jpg",
-      "/assets/events/smart-mob/5.jpg",
-      "/assets/events/smart-mob/6.jpg",
-      "/assets/events/smart-mob/7.jpg",
-      "/assets/events/smart-mob/8.jpg",
-      "/assets/events/smart-mob/9.jpg",
-      "/assets/events/smart-mob/10.jpg",
-      "/assets/events/smart-mob/11.jpg",
-      "/assets/events/smart-mob/12.jpg",
+     "/assets/Events/smart-mob/1.jpg",
+      "/assets/Events/smart-mob/2.jpg",
+      "/assets/Events/smart-mob/3.jpg",
+      "/assets/Events/smart-mob/4.jpg",
+      "/assets/Events/smart-mob/5.jpg",
+      "/assets/Events/smart-mob/6.jpg",
+      "/assets/Events/smart-mob/7.jpg",
+      "/assets/Events/smart-mob/8.jpg",
+      "/assets/Events/smart-mob/9.jpg",
+      "/assets/Events/smart-mob/10.jpg",
+      "/assets/Events/smart-mob/11.jpg",
+      "/assets/Events/smart-mob/12.jpg",
     ]
   },
   {
@@ -540,16 +551,38 @@ Highlights:
     title: "Cancer Awareness Fashion Show",
     date: "2013-02-04",
     author: "Dr. Vijay Anand Reddy",
-    banners: ["/events/world-cancer-day-2013-fashion-show/banner.jpg"],
+    banners: [
+      "/assets/Events/Fashion-Show/1.jpg",
+      "/assets/Events/Fashion-Show/2.jpg",
+      "/assets/Events/Fashion-Show/3.jpg",
+    ],
     description: `“Smoking Thrills – But it Kills” were well-coordinated with equally stimulating costumes. The energy-packed show kept the audiences engrossed. Eight-year-old cancer survivor Aleem entertained the audiences by dancing to a track from Gabbar Singh.\n\nOn the occasion of World Cancer Day, Apollo Cancer Hospital and CURE Foundation organized a “Cancer Awareness Fashion Show Program” on February 4, 2013, at Apollo Cancer Hospital, Jubilee Hills, Hyderabad. The dazzling show, with the theme of cancer prevention, included students from top fashion institutes in the city — National Institute of Fashion Design (NIFD), National Institute of Fashion Technology (NIFT), Hamstech Institute of Fashion & Interior Designing, Lakhotia Institute of Design, and Raffles Millennium International — vying to present the best design themes conveying the message of cancer prevention effectively.\n\nThe fashion show demonstrated cancer prevention through five creative themes: ‘No Smoking or Chewing Tobacco,’ ‘Moderation in Alcohol Consumption,’ ‘Enhancing Vegetables and Fruits Component in Diet,’ ‘Avoiding Fried and Non-Veg Foods,’ and ‘Making Adequate Exercise a Lifetime Affair.’ Models sashayed the ramp to raise awareness, and creative captions like “Don’t Drink Death” amplified the message.\n\nThe designs were judged by an eminent panel comprising Cine Actress Ms. Shriya Saran, Fashion Designer & Former Mrs. India Ms. Shilpa Reddy, Fashion Designer Ms. Asmita Marwah, and Dr. Vijay Anand Reddy, Director, Apollo Cancer Hospital.`,
     photos: [
-      "/events/world-cancer-day-2013-fashion-show/photo1.jpg",
-      "/events/world-cancer-day-2013-fashion-show/photo2.jpg",
-      "/events/world-cancer-day-2013-fashion-show/photo3.jpg"
+      "/assets/Events/Fashion-Show/1.jpg",
+      "/assets/Events/Fashion-Show/2.jpg",
+      "/assets/Events/Fashion-Show/3.jpg",
+      "/assets/Events/Fashion-Show/4.jpg",
+      "/assets/Events/Fashion-Show/5.jpg",
+      "/assets/Events/Fashion-Show/6.jpg",
+      "/assets/Events/Fashion-Show/7.jpg",
+      "/assets/Events/Fashion-Show/8.jpg",
+      "/assets/Events/Fashion-Show/9.jpg",
+      "/assets/Events/Fashion-Show/10.jpg",
+      "/assets/Events/Fashion-Show/11.jpg",
+      "/assets/Events/Fashion-Show/12.jpg",
+      "/assets/Events/Fashion-Show/13.jpg",
+      "/assets/Events/Fashion-Show/14.jpg",
+      "/assets/Events/Fashion-Show/15.jpg",
+      "/assets/Events/Fashion-Show/16.jpg",
+      "/assets/Events/Fashion-Show/17.jpg",
+      "/assets/Events/Fashion-Show/18.jpg",
+      "/assets/Events/Fashion-Show/19.jpg",
+      
+
     ]
   },
   {
-    id: '6',
+    id: 'we-can',
     category: "world-cancer-day",
     title: "We Can. I Can – Cancer Awareness Flash Mob at Sujana Forum Mall",
     date: "2016-02-04",
@@ -563,7 +596,7 @@ Highlights:
     ]
   },
   {
-    id: '5',
+    id: 'celebration-of-life-world-cancer-survivors-day-2016',
     category: "World Cancer Survivor’s Day",
     title: "Celebration of Life – World Cancer Survivor’s Day 2016",
     date: "2016-06-04",
@@ -576,7 +609,7 @@ Highlights:
     ]
   },
   {
-    id: '4',
+    id: 'cancer-is-conquerable-debate-world-cancer-day-2017',
     category: "world-cancer-day",
     title: "CANCER Is CONQUERABLE – A Debate on World Cancer Day 2017",
     date: "2017-02-04",
@@ -588,8 +621,10 @@ Highlights:
       "/events/world-cancer-day-2017/photo3.jpg"
     ]
   },
+
+  //digital- not added- to many photos
   {
-    id: '3',
+    id: 'pedal-to-battle-cyclothon-world-cancer-day-2023',
     category: "world-cancer-day",
     title: "“Pedal to Battle” Cyclothon on World Cancer Day 2023",
     date: "2023-02-04",
@@ -604,7 +639,7 @@ Highlights:
     ]
   },
   {
-    id: '2',
+    id: 'apollo-cancer-centres-launches-unmask-cancer-initiative-2024',
     category: "world-cancer-day",
     title: "Apollo Cancer Centres Launches ‘Unmask Cancer’ Initiative 2024",
     date: "2024-02-02",
@@ -618,7 +653,7 @@ Highlights:
     ]
   },
   {
-  id: '1',
+  id: 'hope-in-a-shot-world-cancer-day-2025',
   category: "world-cancer-day",
   title: "Hope in a Shot - A Step Towards a Cancer-Free Future!",
   date: "2025-02-05",
@@ -634,22 +669,9 @@ Highlights:
   ]
 },
 
-  // {
-  //   id: '1',
-  //   category: "world-cancer-day",
-  //   title: "Hope in a Shot - A Step Towards a Cancer-Free Future!",
-  //   date: "2025-02-05",
-  //   banners: [
-  //    '/assets/Events/world-cancer-day-1/main.jpg',
-  //   ],
-  //   description: `Apollo Cancer Hospitals, Jubilee Hills, in collaboration with Cure Foundation, successfully administered free cervical cancer vaccinations to 200 girl children on the eve of World Cancer Day 2025. This initiative, graced by Ms. Meenakshi Choudary, marks a significant step in the fight against cervical cancer. With the vision of eliminating cervical cancer as a public health issue, Dr. Vijay Anand Reddy, Director of Apollo Cancer Centres, Hyderabad, emphasized the importance of early vaccination and awareness. This milestone aligns with the WHO’s goal of 90% HPV vaccination coverage by 2030. Together, let’s continue to Protect. Prevent. Prevail.`,
-  //     '/assets/Events/world-cancer-day-1/c1.jpg',
-  //     "/assets/Events/world-cancer-day-1/c2.jpg",
-  //     "/assets/Events/world-cancer-day-1/c3.jpg",
-  //   ]
-  // },
+ 
   {
-    id: '0',
+    id: 'victory-bell-launch-world-cancer-day-2024',
     category: "world-cancer-day",
     title: "Victory Bell Launch – World Cancer Day 2024",
     date: "2024-02-03",
@@ -702,6 +724,8 @@ Dignitaries who participated in the discussion were Dr. Christina Z. Chongthu, I
 
   ]
 },
+
+//breast cancer awareness
 {
   id: 'artcan-breast-cancer-awareness-2022',
   category: 'awareness-programmes',
@@ -761,15 +785,7 @@ Breast cancer accounts for nearly 30% of all cancers in women in India, with ear
   photos: [
     '/events/prevention-detection-breast-cancer-2022-1.jpg',
     '/events/prevention-detection-breast-cancer-2022-2.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-3.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-4.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-5.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-6.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-7.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-8.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-9.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-10.jpg',
-    // '/events/prevention-detection-breast-cancer-2022-11.jpg'
+    
   ]
 },
 {
@@ -801,12 +817,7 @@ A fourteen-year-old brave Cancer survivor was crowned on the occasion for her in
 Cancer in women is highly curable, and their survival from cancer is much higher than in men. Dr. Reddy emphasized adopting a healthy lifestyle and food habits, besides undergoing regular cancer screening.`,
   photos: [
     '/events/anaika-health-awareness-fashion-show-2019-1.jpg',
-    '/events/anaika-health-awareness-fashion-show-2019-2.jpg',
-    '/events/anaika-health-awareness-fashion-show-2019-3.jpg',
-    '/events/anaika-health-awareness-fashion-show-2019-4.jpg',
-    '/events/anaika-health-awareness-fashion-show-2019-5.jpg',
-    '/events/anaika-health-awareness-fashion-show-2019-6.jpg',
-    '/events/anaika-health-awareness-fashion-show-2019-7.jpg'
+    
   ]
 },
 
@@ -951,35 +962,6 @@ photos: [
 },
 
 //children
-
-{
-id: 'whitathon-marathon-for-eye-cancer-awareness-2024',
-category: 'awareness-programmes',
-title: 'WHITATHON – Marathon for Eye Cancer Awareness',
-date: '2024-07-05',
-author: 'Dr. Vijay Anand Reddy',
-banners: [
-  '/assets/Events/whitathon-marathon-for-eye-cancer-child/main.jpeg',
-],
-description: `Whitathon is an annual flagship run conducted by LV Prasad Eye Institute to raise awareness about eye cancer in children, Retinoblastoma and also raise funds for underprivileged children with Retinoblastoma. The 6th edition of the run was conducted on May 19th 2024 which attracted 2200 runners from all age groups and all spheres of life.
-
-We were fortunate to have Dr. Vineeth G, Deputy Commissioner of Police, Madhapur Zone, attend the event and launch the 10K run along with Dr. Vijay Anand Reddy, Director of Apollo Cancer Hospital, Shri Dilip Kumar Mohanty, Director (Production and Personnel), NMDC Ltd, Dr. Prashant Garg, Executive Chair, L V Prasad Eye Institute and Dr. Swathi Kaliki, Head Operation Eye Sight Universal, Institute for Eye Cancer, L V Prasad Eye Institute.
-
-We had a total registration of 2132. (756 runners participated in the 10K timed run; 414 runners participated in a 5K timed run; 310 participants in the 5K Fun Run; 652 participants in the 3K Fun Run.) In addition, we had 100 volunteers on the field, backed by the Synchrony and Hyderabad Runners teams. We had 140 Army runners too.
-
-Speaking on the occasion Dr. P. Vijay Anand Reddy, Director, Apollo Cancer Hospital said Whitathon 2024 not only increased awareness about retinoblastoma, but it also served as a valuable community involvement and team-building activity.
-
-Retinoblastoma – a Cancer of the Retina (the so-called screen of the Eye) occurs commonly in children between the ages zero to 4 years. It is a highly curable cancer when detected early. The parents need to be aware of the early symptoms – white spot in the centre of eye, redness in the eye, improper movement of the eyeball, improper vision etc.`,
-photos: [
-  '/assets/Events/whitathon-marathon-for-eye-cancer-child/main.jpeg',
-  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m1.jpeg',
-  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m2.jpeg',
-  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m3.jpeg',
-  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m4.jpeg',
-  '/assets/Events/whitathon-marathon-for-eye-cancer-child/m5.jpeg',
-]
-},
-
 {
 id: 'childrens-day-celebrations-with-our-heroes-2015',
 category: 'awareness-programmes',
