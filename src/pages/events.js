@@ -230,7 +230,7 @@ Retinoblastoma – a cancer of the retina (the so-called screen of the eye) – 
        '/assets/Events/Smoke-Win/1.png',
         '/assets/Events/Smoke-Win/2.jpg',
     ],
-    description: `Launched on the eve of **World No Tobacco Day 2015, “Smoke & Win” aimed to educate youth about the dangers of smoking.  
+    description: `Launched on the eve of World No Tobacco Day 2015, “Smoke & Win” aimed to educate youth about the dangers of smoking.  
 
 Highlights:
 • Launch by Padma Bhushan Sri Pullela Gopichand, Ms. Pradnya Gadre, and Dr. Vijay Anand Reddy.  
