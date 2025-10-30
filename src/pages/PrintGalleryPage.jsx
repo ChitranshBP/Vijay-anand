@@ -94,7 +94,7 @@ const PrintGalleryPage = () => {
       {/* Hero Section */}
       <section className="relative min-h-[400px] pt-44  pb-16 overflow-hidden">
         {/* Background */}
-        <div className="absolute inset-0 medical-gradient"></div>
+        <div className="absolute inset-0 bg-medical-blue/10"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
