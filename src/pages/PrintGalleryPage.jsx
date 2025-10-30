@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
-// import { gallery } from "./gallery_urls_full";
-import {pageImages} from "./page_images_converted"
+import { FiChevronLeft, FiChevronRight, FiX, FiImage } from "react-icons/fi";
+import { pageImages } from "./page_images_converted";
+import { printGalleryImages } from "./print_gallery_images_converted";
 
-// Transform gallery data from gallery_urls_full.js
+// Transform gallery data
 // Images with size dimensions (e.g., -300x198) are thumbnails
 // Images without dimensions or with just the name are full images
 const transformGalleryData = (pageImages) => {
@@ -54,12 +54,16 @@ const transformGalleryData = (pageImages) => {
   });
 };
 
-const gallerySections = transformGalleryData(pageImages);
+const digitalGallerySections = transformGalleryData(pageImages);
+const printGallerySections = transformGalleryData(printGalleryImages);
 
 const PrintGalleryPage = () => {
+  const [activeTab, setActiveTab] = useState("print"); // "print" or "digital"
   const [modalOpen, setModalOpen] = useState(false);
   const [currentSection, setCurrentSection] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const gallerySections = activeTab === "print" ? printGallerySections : digitalGallerySections;
 
   const openModal = (sectionIdx, imgIdx) => {
     setCurrentSection(sectionIdx);
@@ -84,33 +88,87 @@ const PrintGalleryPage = () => {
   };
 
   return (
-    <div className="min-h-screen mt-12 bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col">
       <Header />
 
-      {gallerySections.map((section, sectionIdx) => (
-        <section key={sectionIdx} className="max-w-6xl mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold text-medical-dark mb-6 text-center">
-            {section.title}
-          </h2>
+      {/* Hero Section */}
+      <section className="relative min-h-[400px] pt-44  pb-16 overflow-hidden">
+        {/* Background */}
+        <div className="absolute inset-0 medical-gradient"></div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            {section.images.map((image, imgIdx) => (
-              <button
-                key={imgIdx}
-                className="overflow-hidden rounded-lg shadow-md cursor-pointer focus:outline-medical-blue"
-                onClick={() => openModal(sectionIdx, imgIdx)}
-              >
-                <img
-                  src={image.thumbnail}
-                  alt={`${section.title} - clipping ${imgIdx + 1}`}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </button>
-            ))}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-flex items-center bg-medical-blue/10 text-medical-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <FiImage className="w-4 h-4 mr-2" />
+              Media Coverage & Events
+            </div>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-medical-dark mb-6 leading-tight">
+              Gallery
+            </h1>
+
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Explore our collection of media coverage, events, and cancer awareness initiatives
+            </p>
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
+
+      {/* Tabs */}
+      <div className="sticky top-20 z-40 bg-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex border-b border-gray-200">
+            <button
+              onClick={() => setActiveTab("print")}
+              className={`px-6 py-4 text-lg font-semibold transition-all duration-200 border-b-2 ${
+                activeTab === "print"
+                  ? "border-medical-blue text-medical-blue"
+                  : "border-transparent text-gray-600 hover:text-medical-blue hover:border-gray-300"
+              }`}
+            >
+              Print Gallery
+            </button>
+            <button
+              onClick={() => setActiveTab("digital")}
+              className={`px-6 py-4 text-lg font-semibold transition-all duration-200 border-b-2 ${
+                activeTab === "digital"
+                  ? "border-medical-blue text-medical-blue"
+                  : "border-transparent text-gray-600 hover:text-medical-blue hover:border-gray-300"
+              }`}
+            >
+              Digital Gallery
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Gallery Content */}
+      <div className="flex-grow">
+        {gallerySections.map((section, sectionIdx) => (
+          <section key={sectionIdx} className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 py-12">
+            <h2 className="text-3xl font-bold text-medical-dark mb-8 text-center">
+              {section.title}
+            </h2>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+              {section.images.map((image, imgIdx) => (
+                <button
+                  key={imgIdx}
+                  className="overflow-hidden rounded-lg shadow-md cursor-pointer focus:outline-medical-blue hover:shadow-xl transition-shadow duration-300"
+                  onClick={() => openModal(sectionIdx, imgIdx)}
+                >
+                  <img
+                    src={image.thumbnail}
+                    alt={`${section.title} - clipping ${imgIdx + 1}`}
+                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
 
       {/* Modal */}
       {modalOpen && (
@@ -119,7 +177,7 @@ const PrintGalleryPage = () => {
           onClick={closeModal}
         >
           <button
-            className="absolute top-6 right-6 text-white text-4xl"
+            className="absolute top-6 right-6 text-white text-4xl hover:text-gray-300 transition-colors"
             onClick={(e) => {
               e.stopPropagation();
               closeModal();
@@ -128,7 +186,7 @@ const PrintGalleryPage = () => {
             <FiX />
           </button>
           <button
-            className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white text-4xl"
+            className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-gray-300 transition-colors"
             onClick={prevImage}
           >
             <FiChevronLeft />
@@ -142,7 +200,7 @@ const PrintGalleryPage = () => {
           />
 
           <button
-            className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white text-4xl"
+            className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-gray-300 transition-colors"
             onClick={nextImage}
           >
             <FiChevronRight />

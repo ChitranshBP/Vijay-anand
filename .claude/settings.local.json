@@ -20,7 +20,9 @@
       "Bash(then stat -c \"%s %n\" \"$file\")",
       "Bash(stat:*)",
       "Bash(echo:*)",
-      "Bash(fi)"
+      "Bash(fi)",
+      "Bash(node -e:*)",
+      "Bash(del used_images.txt unused_files.txt)"
     ],
     "deny": [],
     "ask": []
