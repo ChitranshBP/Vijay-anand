@@ -75,7 +75,7 @@ const Header = () => {
     name: 'Community Services',
     href: '#',
     dropdown: [
-      { name: 'Cancer Clinics', href: '/cancer-clinics' },
+      // { name: 'Cancer Clinics', href: '/cancer-clinics' },
       { name: 'Awareness Programs', href: '/events' },
       { name: 'I Am a Survivor', href: '/survivors' },
       { name: 'Cure Foundation', href: '/cure-2' },

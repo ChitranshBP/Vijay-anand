@@ -229,7 +229,7 @@ const Awards = () => {
   {/* View More Button */}
   <div className="mt-10 text-center">
     <a
-              href="/certifications"
+              href="/journey"
               className="inline-block px-6 py-2 border border-medical-blue text-medical-blue rounded-full font-semibold hover:bg-medical-blue hover:text-white transition-all duration-200">
 
       View More
@@ -278,7 +278,7 @@ const Awards = () => {
   {/* View More Button */}
   <div className="mt-10 text-center">
     <a
-              href="/memberships"
+              href="/professional-association"
               className="inline-block px-6 py-2 border border-medical-blue text-medical-blue rounded-full font-semibold hover:bg-medical-blue hover:text-white transition-all duration-200">
 
       View More
