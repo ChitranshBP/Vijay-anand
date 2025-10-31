@@ -136,9 +136,11 @@ const Services = () => {
             <p className="text-gray-600 mb-6">
               Get personalized treatment recommendations from Dr. Vijay Anand Reddy and his expert team.
             </p>
-            <button className="bg-medical-blue text-white px-8 py-4 rounded-lg  transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <a
+              href="#contact"
+              className="inline-block bg-medical-blue text-white px-8 py-4 rounded-lg transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center">
               Schedule Consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>

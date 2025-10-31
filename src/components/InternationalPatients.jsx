@@ -125,10 +125,12 @@ const InternationalPatients = () => {
               Experience world-class cancer care that has made Dr. Vijay Anand Reddy the trusted choice 
               for international patients seeking the best treatment outcomes.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold text-lg shadow-lg flex items-center space-x-2 mx-auto">
+            <a
+              href="#contact"
+              className="inline-flex items-center space-x-2 bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold text-lg shadow-lg mx-auto">
               <SafeIcon icon={FiGlobe} className="w-5 h-5" />
               <span>Contact International Patient Services</span>
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

@@ -56,13 +56,17 @@ const Hero = () => {
               transition={{ delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 mb-12">
 
-              <button className="bg-medical-blue text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <a
+                href="#contact"
+                className="inline-block bg-medical-blue text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center">
                 <SafeIcon icon={FiCalendar} className="inline w-5 h-5 mr-2" />
                 Book Consultation
-              </button>
-              <button className="border-2 border-medical-blue text-medical-blue px-8 py-4 rounded-lg hover:bg-medical-blue hover:text-white transition-all duration-200 font-semibold text-lg">
+              </a>
+              <a
+                href="#about"
+                className="inline-block border-2 border-medical-blue text-medical-blue px-8 py-4 rounded-lg hover:bg-medical-blue hover:text-white transition-all duration-200 font-semibold text-lg text-center">
                 Know More
-              </button>
+              </a>
             </div>
 
          
