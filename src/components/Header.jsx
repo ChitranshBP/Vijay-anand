@@ -86,7 +86,7 @@ const Header = () => {
     name: 'Media',
     href: '#',
     dropdown: [
-      { name: 'Blog & Newsletter', href: '/blog' },
+      { name: 'Blog & Newsletter', href: 'https://drvijayanandreddy.com/blog/' },
       { name: 'Print & Digital Gallery', href: '/print-gallery' },
       { name: 'Video Gallery', href: '/video-gallery' },
     ],
