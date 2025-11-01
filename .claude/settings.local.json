@@ -14,7 +14,15 @@
       "Bash(ls:*)",
       "Bash(done)",
       "Bash(for dir in */)",
-      "Bash(do echo \"=== $dir ===\")"
+      "Bash(do echo \"=== $dir ===\")",
+      "Bash(for file in \"public/assets/print-gallery/imgi_104\"* \"public/assets/print-gallery/imgi_714\"* \"public/assets/print-gallery/imgi_59\"* \"public/assets/print-gallery/imgi_3_Urdu\"*)",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(then stat -c \"%s %n\" \"$file\")",
+      "Bash(stat:*)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(node -e:*)",
+      "Bash(del used_images.txt unused_files.txt)"
     ],
     "deny": [],
     "ask": []

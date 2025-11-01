@@ -129,10 +129,12 @@ const Blog = () => {
                   <span>{blogPosts[0].readTime}</span>
                 </div>
               </div>
-              <button className="bg-white text-medical-blue px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold text-lg shadow-lg flex items-center space-x-2">
+              <a
+                href="#contact"
+                className="inline-flex items-center space-x-2 bg-white text-medical-blue px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold text-lg shadow-lg">
                 <span>Read Full Article</span>
                 <SafeIcon icon={FiArrowRight} className="w-5 h-5" />
-              </button>
+              </a>
             </div>
             <div className="relative">
               <img
@@ -184,10 +186,12 @@ const Blog = () => {
                     <span>{post.readTime}</span>
                   </div>
                 </div>
-                <button className="text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200 flex items-center space-x-2">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center space-x-2 text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200">
                   <span>Read More</span>
                   <SafeIcon icon={FiArrowRight} className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </motion.article>
           )}

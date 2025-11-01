@@ -309,9 +309,13 @@ const Contact = () => {
               </p>
             </div>
       
-            <button className="bg-medical-blue text-white px-6 py-3 rounded-lg hover:bg-primary-600 transition-all duration-200 font-semibold text-sm sm:text-base">
+            <a
+              href="https://www.google.com/maps?ll=17.414722,78.412148&z=12&t=m&hl=en-US&gl=US&mapclient=embed&cid=1736553121756056830"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-medical-blue text-white px-6 py-3 rounded-lg hover:bg-primary-600 transition-all duration-200 font-semibold text-sm sm:text-base text-center">
               Get Directions
-            </button>
+            </a>
           </div>
 
               <div className="w-full lg:col-span-2">

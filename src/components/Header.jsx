@@ -75,7 +75,7 @@ const Header = () => {
     name: 'Community Services',
     href: '#',
     dropdown: [
-      { name: 'Cancer Clinics', href: '/cancer-clinics' },
+      // { name: 'Cancer Clinics', href: '/cancer-clinics' },
       { name: 'Awareness Programs', href: '/events' },
       { name: 'I Am a Survivor', href: '/survivors' },
       { name: 'Cure Foundation', href: '/cure-2' },
@@ -86,7 +86,7 @@ const Header = () => {
     name: 'Media',
     href: '#',
     dropdown: [
-      { name: 'Blog & Newsletter', href: '/blog' },
+      { name: 'Blog & Newsletter', href: 'https://drvijayanandreddy.com/blog/' },
       { name: 'Print & Digital Gallery', href: '/print-gallery' },
       { name: 'Video Gallery', href: '/video-gallery' },
     ],
@@ -224,6 +224,7 @@ const Header = () => {
           <div className="flex justify-between items-center py-2 sm:py-3 lg:py-0 min-h-14 sm:min-h-16 gap-1">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
+<a href="/" className="cursor-pointer">
 <img
   src="/assets/Dr.vijay-anand-reddy-logo.png"
   alt="Dr. Palkonda Vijay Anand Reddy - MD Radiation Oncology, Director Apollo Cancer Centres"
@@ -240,6 +241,7 @@ const Header = () => {
     }
   }}
 />
+</a>
               {/* Fallback text logo (always ready as backup) */}
               <div className="flex items-center space-x-2 flex-shrink-0" style={{ display: 'none' }}>
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-medical-blue flex items-center justify-center text-white font-bold text-xs sm:text-sm">

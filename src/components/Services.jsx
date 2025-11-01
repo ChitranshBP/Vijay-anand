@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
 const { FiZap, FiTarget, FiShield, FiHeart, FiActivity, FiBrain, FiEye, FiSun } = FiIcons;
 
 const Services = () => {
+  const navigate = useNavigate();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -14,77 +16,44 @@ const Services = () => {
 
   const services = [
   {
-    icon: FiZap,
-    title: "Radiation Therapy",
-    description: "Advanced IMRT, IGRT, and stereotactic radiosurgery for precise tumor targeting",
-    image: "assets/homepage/Radiation-Therapy.jpg",
-    features: ["3D Conformal Radiation", "IMRT/VMAT", "Stereotactic Radiosurgery", "Brachytherapy"]
-  },
-
-  {
+    id: "pancreaticCancer",
     icon: FiActivity,
-    title: "Medical Oncology",
-    description: "Comprehensive chemotherapy and systemic treatment protocols",
-    image: "assets/homepage/Medical-Oncology.jpg",
-    features: ["Chemotherapy", "Hormone Therapy", "Biological Therapy", "Clinical Trials"]
+    title: "Pancreatic Cancer",
+    description: "Personalized treatments with expert team and unmatched experience for advanced pancreatic cancer care",
+    image: "assets/services/Pancreatic-Cancer.jpg",
+    features: ["Whipple Procedure", "Chemotherapy Protocols", "Precision Radiation", "Palliative Care"]
   },
   {
+    id: "adrenalCancer",
+    icon: FiShield,
+    title: "Adrenal Cancer",
+    description: "Expert diagnosis and personalized treatment using latest medical advances for adrenal tumors",
+    image: "assets/services/Adrenal-Cancer.jpg",
+    features: ["Advanced Imaging", "Surgical Treatment", "Targeted Therapies", "Hormone Management"]
+  },
+  {
+    id: "protonTherapy",
+    icon: FiZap,
+    title: "Proton Therapy",
+    description: "Effective targeted cancer treatment with minimized side effects, especially for tumors near vital organs",
+    image: "assets/services/proton-therapy.jpeg",
+    features: ["High Precision Radiation", "Minimal Side Effects", "Pediatric Cancer Care", "Organ Preservation"]
+  },
+  {
+    id: "radiationOncology",
     icon: FiTarget,
-    title: "Precision Oncology",
-    description: "Personalized treatment plans based on genetic profiling and molecular diagnostics",
-    image: "assets/homepage/Precision-Oncology.jpg",
-    features: ["Genomic Testing", "Targeted Therapy", "Immunotherapy", "Personalized Medicine"]
+    title: "Radiation Oncology",
+    description: "Precise, technologically advanced cancer treatment with expert clinical support in Hyderabad",
+    image: "assets/services/radiation-vijay.jpg",
+    features: ["IMRT/IGRT", "External Beam Therapy", "Brachytherapy", "Stereotactic Radiosurgery"]
   },
   {
-    icon: FiShield,
-    title: "Cervical Cancer Care",
-    description: "Specialized screening, vaccination, and early detection for cervical cancer prevention",
-    image: "assets/homepage/Cervical-Cancer-Care.jpg",
-    features: [
-    "Pap Smear Test",
-    "HPV Vaccination",
-    "Colposcopy",
-    "Early Detection Programs"]
-
-  },
-  // {
-  //   icon: FiShield,
-  //   title: "Proton Therapy",
-  //   description: "Advanced, precise radiation treatment minimizing damage to healthy tissues",
-  //   image: "assets/homepage/Proton-Therapy.jpg",
-  //   features: [
-  //     "High Precision Radiation",
-  //     "Minimal Side Effects",
-  //     "Ideal for Pediatric & Complex Tumors",
-  //     "Outpatient Treatment Options"
-  //   ]
-  // },
-
-  {
+    id: "throatCancer",
     icon: FiBrain,
-    title: "Neuro-Oncology",
-    description: "Specialized treatment for brain and central nervous system cancers",
-    image: "assets/homepage/Neuro-Oncology.jpg",
-    features: ["Brain Tumors", "Spinal Tumors", "Gamma Knife", "Stereotactic Surgery"]
-  },
-  // {
-  //   icon: FiEye,
-  //   title: "Head & Neck Cancer",
-  //   description: "Expert treatment for cancers of the head, neck, and thyroid regions",
-  //   image: "assets/homepage/Head-&-Neck-Cancer.jpg",
-  //   features: ["Throat Cancer", "Thyroid Cancer", "Oral Cancer", "Reconstructive Surgery"]
-  // },
-  {
-    icon: FiShield,
-    title: "Lung Cancer Treatment",
-    description: "Comprehensive and personalized care for all stages of lung cancer",
-    image: "assets/homepage/Lung-Cancer-Treatment.jpg",
-    features: [
-    "Advanced Imaging & Biopsy",
-    "Targeted Therapy",
-    "Immunotherapy",
-    "Minimally Invasive Surgery"]
-
+    title: "Throat Cancer",
+    description: "Expert diagnosis, advanced surgery and radiation, plus holistic support for optimal outcomes",
+    image: "assets/services/throat-cancer.webp",
+    features: ["Minimally Invasive Surgery", "Targeted Radiation", "Speech Rehabilitation", "Swallowing Therapy"]
   }];
 
 
@@ -143,7 +112,9 @@ const Services = () => {
                 )}
                 </ul>
 
-                <button className="text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200">
+                <button
+                  onClick={() => navigate(`/services/${service.id}`)}
+                  className="text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200">
                   Learn More →
                 </button>
               </div>
@@ -165,9 +136,11 @@ const Services = () => {
             <p className="text-gray-600 mb-6">
               Get personalized treatment recommendations from Dr. Vijay Anand Reddy and his expert team.
             </p>
-            <button className="bg-medical-blue text-white px-8 py-4 rounded-lg  transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <a
+              href="#contact"
+              className="inline-block bg-medical-blue text-white px-8 py-4 rounded-lg transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center">
               Schedule Consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>
