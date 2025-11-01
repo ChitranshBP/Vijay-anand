@@ -16,7 +16,7 @@ export const survivors = [
   banners: [
     '/assets/Events/imseviour-hindi/banner.jpg',
   ],
-  description: `Honoured to launch the Hindi edition of *I Am A Survivor* in New Delhi alongside Union Minister Shri G. Kishan Reddy. Grateful to Sri Konda Vishweshwar Reddy for gracing the occasion.
+  description: `Honoured to launch the Hindi edition of I Am A Survivor in New Delhi alongside Union Minister Shri G. Kishan Reddy. Grateful to Sri Konda Vishweshwar Reddy for gracing the occasion.
 
 The event was a deeply emotional and fulfilling experience as patients from Delhi and northern states shared their inspiring journeys of courage and recovery. The book launch received wonderful media coverage, celebrating stories of hope, strength, and survival.
 
@@ -43,7 +43,7 @@ The event was a deeply emotional and fulfilling experience as patients from Delh
     '/assets/survivors/Telugu-version-Book-Launch/3.jpg',
     
   ],
-  description: `Dr. Vijay Anand Reddy launched the Telugu edition of *I Am A Survivor*, a powerful collection of 108 inspiring stories of cancer survivors drawn from his 25 years of experience as an oncologist.
+  description: `Dr. Vijay Anand Reddy launched the Telugu edition of I Am A Survivor, a powerful collection of 108 inspiring stories of cancer survivors drawn from his 25 years of experience as an oncologist.
 
 Each story highlights the courage, resilience, and determination of individuals who fought cancer and emerged stronger, offering hope and motivation to countless others.
 
@@ -119,8 +119,11 @@ The event also featured emotional testimonies from survivors, who expressed grat
     '/assets/survivors/SURVIVOR-Book-Launch/6.jpg',
     '/assets/survivors/SURVIVOR-Book-Launch/7.jpg',
     '/assets/survivors/SURVIVOR-Book-Launch/8.jpg',
-    '/assets/survivors/SURVIVOR-Book-Launch/9.jpg',
-    // '/assets/survivors/SURVIVOR-Book-Launch/10.jpg',
+   '/assets/survivors/SURVIVOR-Book-Launch/9.jpg',
+    
+   '/assets/survivors/SURVIVOR-Book-Launch/10.jpg',
+
+   
     '/assets/survivors/SURVIVOR-Book-Launch/11.jpg',
     '/assets/survivors/SURVIVOR-Book-Launch/12.jpg',
     '/assets/survivors/SURVIVOR-Book-Launch/13.jpg',
