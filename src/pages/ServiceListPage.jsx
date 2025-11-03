@@ -1,12 +1,10 @@
 import React from "react";
 import { services } from "./services";
-import { useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const ServiceListPage = () => {
-  const navigate = useNavigate();
 
   return (
     <>
@@ -33,15 +31,12 @@ const ServiceListPage = () => {
       {/* Responsive Card Grid */}
       <div className="container mt-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
         {Object.values(services).map(({ id, title, bannerImage, summary }) => (
-          <div
+          <a
             key={id}
-            onClick={() => navigate(`/services/${id}`)}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") navigate(`/services/${id}`);
-            }}
-            className="group relative bg-white border border-blue-100 rounded-2xl shadow hover:shadow-lg hover:-translate-y-1 transition-all cursor-pointer overflow-hidden focus:outline-medical-blue"
+            href={`/services/${id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-white border border-blue-100 rounded-2xl shadow hover:shadow-lg hover:-translate-y-1 transition-all cursor-pointer overflow-hidden focus:outline-medical-blue block"
             aria-label={`View details about ${title}`}
           >
             <div className="h-48 w-full overflow-hidden">
@@ -61,7 +56,7 @@ const ServiceListPage = () => {
                 Learn More <FiArrowRight className="w-4 h-4" />
               </span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
