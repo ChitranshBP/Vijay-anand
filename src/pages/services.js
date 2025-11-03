@@ -1,6 +1,6 @@
 export const services = {
   pancreaticCancer: {
-    id: "pancreaticCancer",
+    id: "pancreatic-cancer",
     title: "Pancreatic Cancer",
     bannerImage: "assets/services/Pancreatic-Cancer.jpg",
     intro: "Advanced Care & Compassionate Support, Hyderabad",
@@ -94,7 +94,7 @@ export const services = {
   },
 
   adrenalCancer: {
-    id: "adrenalCancer",
+    id: "adrenal-cancer",
     title: "Adrenal Cancer",
     bannerImage: "assets/services/Adrenal-Cancer.jpg",  // Replace with actual path
     intro: "Comprehensive Adrenal Cancer Care and Support in Hyderabad",
@@ -200,7 +200,7 @@ export const services = {
   },
 
   protonTherapy: {
-    id: "protonTherapy",
+    id: "proton-therapy",
     title: "Proton Therapy in India",
     bannerImage: "assets/services/proton-therapy.jpeg", // replace with actual image path
     intro: "Advanced Precision Proton Therapy for Cancer Treatment",
@@ -290,7 +290,7 @@ export const services = {
   },
   
 radiationOncology: {
-  id: "radiationOncology",
+  id: "radiation-oncology",
   title: "Radiation Oncologist in Hyderabad",
   bannerImage: "assets/services/radiation-vijay.jpg", // Replace with actual image path
   intro: "Expert Radiation Oncology Care in Hyderabad",
@@ -389,7 +389,7 @@ radiationOncology: {
   ]
 },
 throatCancer: {
-  id: "throatCancer",
+  id: "throat-cancer",
   title: "Throat Cancer",
   bannerImage: "assets/services/throat-cancer.webp", // Replace with your actual image path
   intro: "Personalized, Multi-Modal Care for Throat Cancer in Hyderabad",
@@ -498,6 +498,118 @@ throatCancer: {
     { q: "Is throat cancer curable?", a: "Many early-stage cases are highly treatable and curable. Advanced cases require a combination of therapies aimed at both cure and quality of life." },
     { q: "What are the side effects of throat cancer treatments?", a: "Possible side effects include hoarseness, difficulty swallowing, dry mouth, and fatigue. These are managed with supportive care and therapy." },
     { q: "What is the cost of Throat Cancer treatment in Hyderabad?", a: "Cost depends on the complexity, stage, and treatments required. Transparent cost breakdown is provided after personalized treatment planning." }
+  ]
+},
+eyeCancer: {
+  id: "eye-cancer",
+  title: "Eye Cancer Treatment in India",
+  bannerImage: "assets/services/Eye-Cancer.png", // Replace with actual image path
+  intro: "Advanced, Vision-Preserving Eye Cancer Treatment in India",
+  summary: "Comprehensive diagnosis, precise surgical and medical care, and holistic support for patients with eye cancer.",
+
+  contentSections: [
+    {
+      heading: "Understanding Eye Cancer Treatment",
+      paragraphs: [
+        "Eye cancer, though relatively rare, can be a sight-threatening condition. Fortunately, India has made significant strides in recent years in providing advanced and effective treatment options for eye cancer patients."
+      ]
+    },
+    {
+      heading: "What is Eye Cancer?",
+      paragraphs: [
+        "Eye cancer is a rare group of cancers that can start in any part of the eye, including the eyeball, eyelid, and tear ducts. It occurs when cells in these areas begin to multiply uncontrollably, forming a tumor.",
+        "There are several different types of eye cancer, each with its own cause, symptoms, and treatment options. The most common types include:"
+      ]
+    },
+    {
+      heading: "Types of Eye Cancer",
+      listItems: [
+        "Uveal Melanoma: The most common type of eye cancer in adults, starting in the uvea, the colored layer of the eye.",
+        "Retinoblastoma: A rare cancer that occurs in the retina, typically affecting young children.",
+        "Eyelid Cancer: Cancer that starts on the skin of the eyelid or in the glands and tissues inside the eyelid."
+      ]
+    },
+    {
+      heading: "Treatment Approach",
+      listItems: [
+        "Comprehensive Diagnosis: Utilizing advanced imaging and biopsy techniques to accurately diagnose and stage eye cancer.",
+        "Customized Treatment Plans: Tailored treatments based on individual patient conditions, including the type and stage of eye cancer.",
+        "Advanced Surgical Techniques: Expertise in performing precise eye cancer surgeries with a focus on preserving vision and reducing complications.",
+        "Radiation Therapy: Utilizing the latest radiation technologies to target eye tumors effectively while minimizing damage to surrounding healthy tissues.",
+        "Chemotherapy Options: Offering systemic and localized chemotherapy treatments as part of a comprehensive cancer care plan.",
+        "Targeted Therapy and Immunotherapy: Modern targeted and immune-based therapies used to treat specific types of eye cancer effectively.",
+        "Follow-Up Care and Surveillance: Regular monitoring post-treatment to detect any recurrence early and manage long-term effects.",
+        "Supportive Care: Providing patient education, counseling, and support throughout the treatment journey."
+      ]
+    },
+    {
+      heading: "Why Choose Dr. Vijay Anand Reddy for Eye Cancer Treatment",
+      listItems: [
+        "Renowned Expertise: Recognized as one of the leading oncologists for eye cancer treatment in India.",
+        "Advanced Treatment Methods: Access to the latest in cancer treatment technologies and methodologies.",
+        "Personalized Care: Each patient receives a treatment plan tailored to their specific condition and needs.",
+        "Holistic Approach: Focus on treating both the cancer and the patient’s overall quality of life.",
+        "Patient-Centric Approach: Ensuring patients are fully informed and comfortable with their treatment plan.",
+        "High Success Rates: Demonstrated history of successful outcomes in eye cancer treatments.",
+        "Dedication to Research and Innovation: Committed to staying at the forefront of oncological advances and research."
+      ]
+    }
+  ],
+
+  stats: [
+    { label: "Years of Experience", value: "30+" },
+    { label: "Success in Surgery", value: "90%+" },
+    { label: "Patients Treated", value: "20,000+" }
+  ],
+
+  aboutDoctor: [
+    "Dr. Vijay Anand Reddy is a distinguished oncologist specializing in eye cancer treatment.",
+    "With over three decades of experience, he has been instrumental in advancing cancer care in India.",
+    "His expertise lies in employing the latest treatment technologies, ensuring the best possible outcomes for his patients.",
+    "Dr. Reddy’s approach to eye cancer treatment is comprehensive, integrating advanced medical treatments with supportive care.",
+    "His commitment to his patients extends beyond treatment, focusing on improving their overall well-being and quality of life."
+  ],
+
+  preOpDetails: [
+    "Initial Consultation: Thorough discussion about the diagnosis, treatment options, and what to expect.",
+    "Health Assessment: Comprehensive check-up to assess overall health and fitness for the procedure.",
+    "Diagnostic Imaging: Advanced imaging tests like MRI or CT scans to determine the extent of the cancer.",
+    "Treatment Planning: Formulating a precise treatment plan, including the type of surgery or therapy needed.",
+    "Pre-Operative Instructions: Guidelines on medication, fasting, and other necessary preparations before the surgery.",
+    "Emotional Support: Offering counseling sessions to help patients and families cope with the diagnosis and upcoming treatment."
+  ],
+
+  duringProcedure: [
+    "Anesthesia Application: Administering appropriate anesthesia to ensure patient comfort during the procedure.",
+    "Surgical Precision: Employing meticulous surgical techniques to remove the tumor while preserving eye function.",
+    "Real-Time Monitoring: Continuous monitoring of vital signs and patient status throughout the procedure.",
+    "Collaborative Approach: Working with a team of oncologists, surgeons, and nurses for comprehensive care.",
+    "Ensuring Safety: Adhering to strict safety protocols to minimize any risk of complications.",
+    "Family Communication: Keeping the patient’s family informed about the progress of the surgery."
+  ],
+
+  postProcedure: [
+    "Post-Operative Care: Providing care and monitoring immediately after the surgery to ensure patient safety.",
+    "Pain Management: Administering medication to manage any post-operative discomfort.",
+    "Wound Care and Healing: Guidance on caring for the surgical site and managing recovery.",
+    "Rehabilitation Services: Assistance with physical and visual rehabilitation as needed.",
+    "Follow-Up Appointments: Scheduling regular check-ups to monitor recovery and detect any recurrence.",
+    "Long-Term Care Plan: Discussing further treatment if necessary, including radiation or chemotherapy.",
+    "Lifestyle Adjustments: Guidance on lifestyle changes or adaptations required post-treatment."
+  ],
+
+  testimonials: [
+    "Dr. Reddy and his team provided exceptional treatment and support throughout my cancer journey. Truly among the top cancer specialists in India.",
+    "The cancer treatment at Dr. Vijay Anand Reddy's clinic was life-changing. The care and precision during the entire process were unparalleled.",
+    "Dr. Reddy’s expertise in cancer treatment and the supportive staff made my journey through treatment in India smoother than I anticipated."
+  ],
+
+  faqs: [
+    { q: "What are the treatment options for eye cancer at Dr. Reddy's clinic?", a: "Treatment options include surgery, radiation therapy, chemotherapy, targeted therapy, and immunotherapy, depending on the type and stage of eye cancer." },
+    { q: "What is the cost of eye cancer treatment in India at your clinic?", a: "The cost depends on the type of treatment, stage, and individual patient needs. A detailed cost estimate is provided after consultation and treatment planning." },
+    { q: "Is the treatment for eye cancer painful?", a: "Most treatments are performed under anesthesia or pain management protocols, minimizing discomfort. Post-treatment pain is well controlled with medication and care." },
+    { q: "How long is the recovery period after eye cancer surgery?", a: "Recovery time varies depending on the procedure, typically ranging from a few weeks to a few months with regular follow-up care." },
+    { q: "Are there any risks associated with eye cancer treatment?", a: "As with any major treatment, risks include infection, bleeding, or temporary vision changes. Dr. Reddy’s team follows strict protocols to minimize these risks." }
   ]
 },
 

@@ -6,28 +6,28 @@ const { FiPhone, FiMail, FiMapPin, FiClock, FiFacebook, FiTwitter, FiInstagram, 
 
 const Footer = () => {
   const quickLinks = [
-  { name: 'Know the Doctor', href: '#' },
-  { name: 'Expertise', href: '#' },
-  { name: 'Doctor’s Awareness Talks', href: '#' },
-  { name: 'Patients Testimonials', href: '#' },
-  { name: 'Community Services', href: '#' },
-  { name: 'Contact Us', href: '#' }];
+  { name: 'Know the Doctor', href: '/journey' },
+  { name: 'Expertise', href: '/services' },
+  { name: "Doctor's Awareness Talks", href: '/doctor-speaks' },
+  { name: 'Patients Testimonials', href: '/testimonials' },
+  { name: 'Community Services', href: '/cure-2' },
+  { name: 'Contact Us', href: '/contact' }];
 
 
   const services = [
-  { name: 'Radiation Therapy', href: '#' },
-  { name: 'Medical Oncology', href: '#' },
-  { name: 'Surgical Oncology', href: '#' },
-  { name: 'Immunotherapy', href: '#' },
-  { name: 'Palliative Care', href: '#' },
-  { name: 'Cancer Screening', href: '#' }];
+  { name: 'Pancreatic Cancer', href: '/services/pancreaticCancer' },
+  { name: 'Adrenal Cancer', href: '/services/adrenalCancer' },
+  { name: 'Proton Therapy', href: '/services/protonTherapy' },
+  { name: 'Radiation Oncology', href: '/services/radiationOncology' },
+  { name: 'Throat Cancer', href: '/services/throatCancer' },
+  { name: 'Eye Cancer', href: '/services/eyeCancer' }];
 
 
   const legalLinks = [
-  { name: 'Privacy Policy', href: '#' },
-  { name: 'Terms of Service', href: '/' },
-  { name: 'Medical Disclaimer', href: '/' },
-  { name: 'Cookie Policy', href: '/' }];
+  { name: 'Privacy Policy', href: '/privacy-policy' },
+  { name: 'Terms of Service', href: '/terms-and-conditions' },
+  { name: 'Medical Disclaimer', href: '/medical-disclaimer' },
+  { name: 'Cookie Policy', href: '/cookie-policy' }];
 
 
   const socialLinks = [
@@ -200,7 +200,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2023 Dr. Palkonda Vijay Anand Reddy. All rights reserved. | Built with care for cancer patients.
+              © 2025 Dr. Palkonda Vijay Anand Reddy. All rights reserved. | Built with care for cancer patients.
             </div>
             <div className="flex flex-wrap gap-6">
               {legalLinks.map((link, index) =>

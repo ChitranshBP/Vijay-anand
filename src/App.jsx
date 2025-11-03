@@ -31,6 +31,9 @@ import CancerClinicDetailPage from './pages/CancerClinicDetailPage';
 import SurvivorsPage from './pages/SurvivorsPage';
 import SurvivorDetailPage from './pages/SurvivorDetailPage';
 import TermsAndConditionsPage from './pages/terms-and-conditions';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import MedicalDisclaimerPage from './pages/MedicalDisclaimerPage';
+import CookiePolicyPage from './pages/CookiePolicyPage';
 
 
 
@@ -76,7 +79,9 @@ function App() {
           <Route path="/doctor-speaks" element={< DoctorAwarenessTalks />} />
 
           <Route path="/terms-and-conditions" element={< TermsAndConditionsPage />} />
-
+          <Route path="/privacy-policy" element={< PrivacyPolicyPage />} />
+          <Route path="/medical-disclaimer" element={< MedicalDisclaimerPage />} />
+          <Route path="/cookie-policy" element={< CookiePolicyPage />} />
 
 <Route path="/events" element={<EventsPage />} />
   <Route path="/events/:eventId" element={<EventDetailPage />} />
@@ -90,7 +95,7 @@ function App() {
           <Route path="/survivors/:survivorId" element={<SurvivorDetailPage />} />
 
           {/* Services */}
-          <Route path="/service/pancreatic-cancer" element={<PancreaticCancerPage />} />
+          {/* <Route path="/service/pancreatic-cancer" element={<PancreaticCancerPage />} /> */}
           <Route path="/services" element={<ServiceListPage />} />
           <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
         </Routes>

@@ -54,6 +54,14 @@ const Services = () => {
     description: "Expert diagnosis, advanced surgery and radiation, plus holistic support for optimal outcomes",
     image: "assets/services/throat-cancer.webp",
     features: ["Minimally Invasive Surgery", "Targeted Radiation", "Speech Rehabilitation", "Swallowing Therapy"]
+  },
+  {
+    id: "eyeCancer",
+    icon: FiEye,
+    title: "Eye Cancer",
+    description: "Comprehensive diagnosis, precise surgical and medical care, and holistic support for eye cancer patients",
+    image: "assets/services/Eye-Cancer.png",
+    features: ["Advanced Imaging", "Vision-Preserving Surgery", "Targeted Therapy", "Immunotherapy"]
   }];
 
 
