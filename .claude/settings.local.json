@@ -22,7 +22,8 @@
       "Bash(echo:*)",
       "Bash(fi)",
       "Bash(node -e:*)",
-      "Bash(del used_images.txt unused_files.txt)"
+      "Bash(del used_images.txt unused_files.txt)",
+      "Bash(nul)"
     ],
     "deny": [],
     "ask": []

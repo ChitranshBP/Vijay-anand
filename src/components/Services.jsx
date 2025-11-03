@@ -120,11 +120,13 @@ const Services = () => {
                 )}
                 </ul>
 
-                <button
-                  onClick={() => navigate(`/services/${service.id}`)}
-                  className="text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200">
+                <a
+                  href={`/services/${service.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200 inline-block">
                   Learn More →
-                </button>
+                </a>
               </div>
             </div>
           )}

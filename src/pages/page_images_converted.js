@@ -1,5 +1,27 @@
 export const pageImages = [
   {
+    "title": "Breast Cancer Awareness - Flash Mob Event 31-10-2025",
+    "images": [
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Andhra Jyothi on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Sakshi on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Pragaathi Press  on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Vijay Kranthi on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in The Pioneer on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Surya  on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Metro India on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Nava Teleangana on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awareness Month News Coverage in TV5 News Channel  on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Munsif  on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Deccan Vision  on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Andhra Prabha on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Capital Information on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awareness Month News Coverage in Hyderabad Headlines on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Eenadu on 1st November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Hindi Milap on 3rd November 2025.webp",
+      "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awareness Month News Coverage in Health Buzz  on 1st November 2025.webp"
+    ]
+  },
+  {
     "title": "Sarcoma Awareness Month July 23rd, 2024",
     "images": [
       "/assets/uploads/uploads/2025/07/ABN-Andhra-Jyothi.jpg",

@@ -1111,7 +1111,15 @@ description: `Across the globe, October is observed as World Breast Cancer Day. 
 Dr. Vijayanand Reddy made a presentation stressing the need for every woman to begin self-examination at the age of 20. After crossing 35 years, every woman should undergo comprehensive diagnosis to check the disease at an early stage.
 
 The program aimed to empower women by educating them about early detection and preventative measures for breast cancer.`,
-photos: []
+photos: [
+'/assets/breast-awareness/Photo-4.webp',
+'/assets/breast-awareness/Photo-5.webp',
+'/assets/breast-awareness/Photo-13.webp',
+'/assets/breast-awareness/Photo-16.webp',
+'/assets/breast-awareness/Photo-18.webp',
+'/assets/breast-awareness/Photo-21.webp',
+'/assets/breast-awareness/Photo-32.webp'
+]
 },
 
 //children
