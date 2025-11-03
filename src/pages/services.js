@@ -1,5 +1,5 @@
 export const services = {
-  pancreaticCancer: {
+  "pancreatic-cancer": {
     id: "pancreatic-cancer",
     title: "Pancreatic Cancer",
     bannerImage: "assets/services/Pancreatic-Cancer.jpg",
@@ -93,7 +93,7 @@ export const services = {
     ]
   },
 
-  adrenalCancer: {
+  "adrenal-cancer": {
     id: "adrenal-cancer",
     title: "Adrenal Cancer",
     bannerImage: "assets/services/Adrenal-Cancer.jpg",  // Replace with actual path
@@ -199,7 +199,7 @@ export const services = {
     ]
   },
 
-  protonTherapy: {
+  "proton-therapy": {
     id: "proton-therapy",
     title: "Proton Therapy in India",
     bannerImage: "assets/services/proton-therapy.jpeg", // replace with actual image path
@@ -289,7 +289,7 @@ export const services = {
     ]
   },
   
-radiationOncology: {
+"radiation-oncology": {
   id: "radiation-oncology",
   title: "Radiation Oncologist in Hyderabad",
   bannerImage: "assets/services/radiation-vijay.jpg", // Replace with actual image path
@@ -388,7 +388,7 @@ radiationOncology: {
     }
   ]
 },
-throatCancer: {
+"throat-cancer": {
   id: "throat-cancer",
   title: "Throat Cancer",
   bannerImage: "assets/services/throat-cancer.webp", // Replace with your actual image path
@@ -500,7 +500,7 @@ throatCancer: {
     { q: "What is the cost of Throat Cancer treatment in Hyderabad?", a: "Cost depends on the complexity, stage, and treatments required. Transparent cost breakdown is provided after personalized treatment planning." }
   ]
 },
-eyeCancer: {
+"eye-cancer": {
   id: "eye-cancer",
   title: "Eye Cancer Treatment in India",
   bannerImage: "assets/services/Eye-Cancer.png", // Replace with actual image path

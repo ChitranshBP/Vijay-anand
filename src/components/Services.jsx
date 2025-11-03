@@ -16,7 +16,7 @@ const Services = () => {
 
   const services = [
   {
-    id: "pancreaticCancer",
+    id: "pancreatic-cancer",
     icon: FiActivity,
     title: "Pancreatic Cancer",
     description: "Personalized treatments with expert team and unmatched experience for advanced pancreatic cancer care",
@@ -24,7 +24,7 @@ const Services = () => {
     features: ["Whipple Procedure", "Chemotherapy Protocols", "Precision Radiation", "Palliative Care"]
   },
   {
-    id: "adrenalCancer",
+    id: "adrenal-cancer",
     icon: FiShield,
     title: "Adrenal Cancer",
     description: "Expert diagnosis and personalized treatment using latest medical advances for adrenal tumors",
@@ -32,7 +32,7 @@ const Services = () => {
     features: ["Advanced Imaging", "Surgical Treatment", "Targeted Therapies", "Hormone Management"]
   },
   {
-    id: "protonTherapy",
+    id: "proton-therapy",
     icon: FiZap,
     title: "Proton Therapy",
     description: "Effective targeted cancer treatment with minimized side effects, especially for tumors near vital organs",
@@ -40,7 +40,7 @@ const Services = () => {
     features: ["High Precision Radiation", "Minimal Side Effects", "Pediatric Cancer Care", "Organ Preservation"]
   },
   {
-    id: "radiationOncology",
+    id: "radiation-oncology",
     icon: FiTarget,
     title: "Radiation Oncology",
     description: "Precise, technologically advanced cancer treatment with expert clinical support in Hyderabad",
@@ -48,7 +48,7 @@ const Services = () => {
     features: ["IMRT/IGRT", "External Beam Therapy", "Brachytherapy", "Stereotactic Radiosurgery"]
   },
   {
-    id: "throatCancer",
+    id: "throat-cancer",
     icon: FiBrain,
     title: "Throat Cancer",
     description: "Expert diagnosis, advanced surgery and radiation, plus holistic support for optimal outcomes",
@@ -56,7 +56,7 @@ const Services = () => {
     features: ["Minimally Invasive Surgery", "Targeted Radiation", "Speech Rehabilitation", "Swallowing Therapy"]
   },
   {
-    id: "eyeCancer",
+    id: "eye-cancer",
     icon: FiEye,
     title: "Eye Cancer",
     description: "Comprehensive diagnosis, precise surgical and medical care, and holistic support for eye cancer patients",
