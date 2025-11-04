@@ -198,7 +198,7 @@ const ServiceDetailPage = ({ service }) => {
         </section>
 
         {/* Sticky Form */}
-        <aside className="hidden lg:block lg:w-96 sticky top-32 self-start h-fit p-6 bg-white rounded-xl shadow-lg border border-blue-100 max-h-[calc(100vh-88px)]">
+        <aside className="hidden lg:block lg:w-96 sticky top-44 self-start h-fit p-6 bg-white rounded-xl shadow-lg border border-blue-100 max-h-[calc(100vh-88px)]">
           <h3 className="text-2xl font-bold mb-6 text-medical-dark">Request a Consultation</h3>
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
             <label className="flex flex-col text-gray-700 font-semibold">
