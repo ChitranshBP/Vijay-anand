@@ -34,6 +34,7 @@ import TermsAndConditionsPage from './pages/terms-and-conditions';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import MedicalDisclaimerPage from './pages/MedicalDisclaimerPage';
 import CookiePolicyPage from './pages/CookiePolicyPage';
+import FAQPage from './pages/FaqPage';
 
 
 
@@ -77,7 +78,7 @@ function App() {
           <Route path="/print-gallery" element={<PrintGalleryPage />} />
           <Route path="/conference" element={<Conferences />} />
           <Route path="/doctor-speaks" element={< DoctorAwarenessTalks />} />
-
+          <Route path="/faq" element={< FAQPage />} />
           <Route path="/terms-and-conditions" element={< TermsAndConditionsPage />} />
           <Route path="/privacy-policy" element={< PrivacyPolicyPage />} />
           <Route path="/medical-disclaimer" element={< MedicalDisclaimerPage />} />
