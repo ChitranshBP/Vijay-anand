@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -112,45 +113,114 @@ const FAQPage = () => {
   const [openIdx, setOpenIdx] = useState(null);
 
   return (
-
     <>
-    <Header/>
+      <Header />
       <div className="min-h-screen mt-16 bg-gray-50 pb-24">
-      {/* Hero Section */}
-      <div className="w-full pt-28 pb-10 bg-medical-blue/10 text-center shadow-sm mb-12">
-        <h1 className="text-5xl font-extrabold text-medical-dark mb-4">Frequently Asked Questions</h1>
-        <p className="text-medical-blue text-lg font-medium max-w-xl mx-auto">
-          Answers to common questions related to our website, services, and policies.
-        </p>
-      </div>
+        {/* Hero Section */}
+        <div className="w-full pt-28 pb-10 bg-medical-blue/10 text-center shadow-sm mb-12">
+          <h1 className="text-5xl font-extrabold text-medical-dark mb-4">Frequently Asked Questions</h1>
+          <p className="text-medical-blue text-lg font-medium max-w-xl mx-auto">
+            Answers to common questions related to our website, services, and policies.
+          </p>
+        </div>
 
-      {/* FAQ Accordion List */}
-      <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg px-4 sm:px-8 py-8">
-        {faqData.map((faq, idx) => (
-          <div key={faq.question} className="border-b border-blue-50">
-            <button
-              onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-              className="w-full flex justify-between items-center py-6 px-2 text-left focus:outline-none"
-              aria-expanded={openIdx === idx}
-              aria-controls={`faq-${idx}`}
-            >
-              <span className="font-semibold text-medical-blue text-lg">{faq.question}</span>
-              <FiChevronDown
-                className={`w-6 h-6 transition-transform ${openIdx === idx ? "rotate-180" : ""}`}
-              />
-            </button>
-            {openIdx === idx && (
-              <div id={`faq-${idx}`} className="pb-6 px-2 text-gray-700">
-                {faq.answer}
+        {/* FAQ Accordion List */}
+        <div className="max-w-5xl mx-auto px-4 -mt-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-white rounded-2xl shadow-2xl overflow-hidden"
+          >
+            <div className="divide-y divide-gray-100">
+              {faqData.map((faq, idx) => (
+                  <motion.div
+                    key={faq.question}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3, delay: idx * 0.05 }}
+                    className="group hover:bg-blue-50/50 transition-colors duration-200"
+                  >
+                    <button
+                      onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
+                      className="w-full flex justify-between items-start gap-4 py-6 px-6 md:px-8 text-left focus:outline-none"
+                      aria-expanded={openIdx === idx}
+                      aria-controls={`faq-${idx}`}
+                    >
+                      <div className="flex items-start gap-4 flex-1">
+                        <div className="flex-shrink-0 mt-1">
+                          <div className="w-8 h-8 rounded-lg bg-medical-blue/10 flex items-center justify-center group-hover:bg-medical-blue/20 transition-colors duration-200">
+                            <span className="text-medical-blue font-bold text-sm">
+                              {idx + 1}
+                            </span>
+                          </div>
+                        </div>
+                        <span className="font-semibold text-gray-800 text-lg leading-relaxed">
+                          {faq.question}
+                        </span>
+                      </div>
+                      <motion.div
+                        animate={{ rotate: openIdx === idx ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="flex-shrink-0"
+                      >
+                        <div className="w-10 h-10 rounded-lg bg-medical-blue/10 flex items-center justify-center group-hover:bg-medical-blue group-hover:text-white transition-all duration-200">
+                          <FiChevronDown className="w-5 h-5 text-medical-blue group-hover:text-white" />
+                        </div>
+                      </motion.div>
+                    </button>
+
+                    <AnimatePresence>
+                      {openIdx === idx && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="overflow-hidden"
+                        >
+                          <div
+                            id={`faq-${idx}`}
+                            className="pb-6 px-6 md:px-8 pl-20 text-gray-700 leading-relaxed bg-gradient-to-br from-blue-50/50 to-transparent"
+                          >
+                            <div className="p-4 bg-white/80 rounded-xl border-l-4 border-medical-blue shadow-sm">
+                              {faq.answer}
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
+                ))}
               </div>
-            )}
-          </div>
-        ))}
+          </motion.div>
+
+          {/* Contact CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mt-12 text-center"
+          >
+            <div className="bg-gradient-to-br from-medical-blue to-blue-600 rounded-2xl p-8 md:p-12 shadow-2xl">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                Still Have Questions?
+              </h2>
+              <p className="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
+                Our team is here to help. Feel free to reach out for personalized assistance with your cancer care inquiries.
+              </p>
+              <a
+                href="/contact"
+                className="inline-block px-8 py-4 bg-white text-medical-blue font-semibold rounded-xl hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                Contact Us
+              </a>
+            </div>
+          </motion.div>
+        </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </>
-  
   );
 };
 
