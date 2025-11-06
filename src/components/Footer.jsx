@@ -30,13 +30,10 @@ const Footer = () => {
 
   const services = [
     { name: 'Pancreatic Cancer', href: '/services/pancreatic-cancer' },
+    { name: 'Adrenal Cancer', href: '/services/adrenal-cancer' },
     { name: 'Proton Therapy', href: '/services/proton-therapy' },
     { name: 'Radiation Oncology', href: '/services/radiation-oncology' },
-    { name: 'Brachytherapy', href: '/services/brachytherapy' },
-    { name: 'Tomotherapy', href: '/services/tomotherapy' },
     { name: 'Throat Cancer', href: '/services/throat-cancer' },
-    { name: 'Lung Cancer', href: '/services/lung-cancer' },
-    { name: 'Liver Cancer', href: '/services/liver-cancer' },
     { name: 'Eye Cancer', href: '/services/eye-cancer' },
     { name: 'View All Services', href: '/services' }
   ];
