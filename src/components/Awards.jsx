@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
-const { FiAward, FiStar, FiTrophy, FiGlobe, FiBookOpen, FiUsers } = FiIcons;
+const { FiStar, FiUsers } = FiIcons;
 
 const Awards = () => {
   const [ref, inView] = useInView({
@@ -14,85 +14,85 @@ const Awards = () => {
 
   const awards = [
   {
-    icon: FiAward,
-    title: "AOS Achievement Award",
-    year: "2018",
-    description: "Awarded by American Academy of Ophthalmology Society, CA, USA for outstanding contributions.",
+    image: "assets/awards/ISOO-2024-Oration.png",
+    title: "Clinical Pioneer Award",
+    year: "2025",
+    description: "Awarded on Apollo Founder's Day for outstanding patient care and dedication to Apollo mission.",
+    category: "Clinical Excellence"
+  },
+  {
+    image: "assets/awards/aerocon-2024.png",
+    title: "Gold Medal – Best Scientific Paper",
+    year: "2024",
+    description: "AROICON 2024 for prospective study on patient-reported toxicities & QOL in SBRT Prostate.",
+    category: "Research Excellence"
+  },
+  {
+    image: "assets/awards/AROICON-2024-Gold-Medal – Best-Scientific-Paper.png",
+    title: "ISOO 2024 Oration",
+    year: "2024",
+    description: "International Society of Ocular Oncology, Goa for contributions to ocular oncology.",
     category: "Ophthalmology"
   },
   {
-    icon: FiStar,
-    title: "Achievement Award",
-    year: "2013",
-    description: "Presented by American Academy of Ophthalmology for many years of distinguished service.",
-    category: "Ophthalmology"
+    image: "assets/awards/aerocon-2022.png",
+    title: "Gold Medal – Best Scientific Paper",
+    year: "2022",
+    description: "AROICON 2022 for feasibility study on extreme hypofractionation in post-operative breast cancer.",
+    category: "Research Excellence"
   },
   {
-    icon: FiGlobe,
-    title: "International Cancer Research Technology Transfer Award",
-    year: "1998",
-    description: "Awarded by UICC, Geneva, Switzerland for advancements in cancer research technology.",
-    category: "International Research"
+    image: "assets/awards/dr-b.d-gupta.png",
+    title: "Dr. B. D. Gupta Memorial Oration Award",
+    year: "2019",
+    description: "41st AROICON, Ahmedabad for outstanding contribution in Radiation Oncology.",
+    category: "Oncology Excellence"
   },
   {
-    icon: FiBookOpen,
-    title: "Young Scientist Award",
-    year: "1996",
-    description: "Awarded by Indo-American Cancer Congress, New York, USA for promising cancer research.",
-    category: "Research & Innovation"
-  },
-  {
-    icon: FiUsers,
-    title: "Nargis Dutt Memorial Foundation Award",
-    year: "1995",
-    description: "Awarded by Nargis Dutt Memorial Foundation, Flushing, New York, USA.",
+    image: "assets/awards/Lions-Club-International-Excellence-Award.png",
+    title: "Excellence Award",
+    year: "2019",
+    description: "Lions Club International in association with Apollo Hospitals for extraordinary service in Oncology.",
     category: "Medical Excellence"
-  },
-  {
-    icon: FiTrophy,
-    title: "International Cancer Research Technology Transfer Award",
-    year: "1992",
-    description: "Awarded by UICC, Geneva, Switzerland for global contributions to cancer research.",
-    category: "International Research"
   }];
 
 
   const certifications = [
   {
-    name: "International Union Against Cancer Fellowship",
-    year: "1992",
-    location: "Meyerstein Institute of Oncology, The Middlesex Hospital, London",
-    code: "UICC"
-  },
-  {
-    name: "Leeds Fellowship – Visiting Research Fellowship",
-    year: "1993",
-    location: "University of Leeds, Cookridge Hospital, Leeds, U.K.",
-    code: "LEEDS"
-  },
-  {
-    name: "Nargis Dutt Memorial Foundation Fellowship",
-    year: "1995",
-    location: "The New York Hospital, Queens & Memorial Sloan Kettering Hospital, New York, USA",
-    code: "NDMF"
-  },
-  {
-    name: "Head & Neck and Gynaec Oncology Fellowship",
-    year: "1998",
-    location: "Peter MacCallum Cancer Institute, Melbourne, Australia",
-    code: "HNGO"
+    name: "Stereotactic Radiosurgery Fellowship",
+    year: "2010",
+    location: "Klinikum Frankfurt (Oder) GmbH, Frankfurt, Germany",
+    image: "assets/journey/Stereotactic-Radiosurgery.png"
   },
   {
     name: "Ocular Oncology Fellowship",
     year: "2003",
-    location: "The Children's Hospital of Philadelphia, Philadelphia, USA",
-    code: "OOF"
+    location: "Will's Eye Hospital, Philadelphia, USA",
+    image: "assets/journey/Ocular-Oncology.png"
   },
   {
-    name: "Stereotactic Radiosurgery Fellowship",
-    year: "2010",
-    location: "Klinikum Frankfurt (Oder) GmbH, Frankfurt, Germany",
-    code: "SRSF"
+    name: "Pediatric Oncology Fellowship",
+    year: "2003",
+    location: "Children's Hospital of Philadelphia, USA",
+    image: "assets/journey/Pediatric-Oncology.png"
+  },
+  {
+    name: "Head & Neck Oncology Fellowship",
+    year: "1998",
+    location: "Peter McCallum Cancer Institute, Melbourne, Australia",
+    image: "assets/journey/Head & Neck-Oncology.png"
+  },
+  {
+    name: "Nargis Dutt Memorial Cancer Foundation Fellowship",
+    year: "1995",
+    location: "New York Hospital, Medical Centre of Queens, NY, USA",
+    image: "assets/journey/The-Nargis-Dutt-Memorial.png"
+  },
+  {
+    name: "Clinical Oncology Fellowship",
+    year: "1992",
+    location: "Meyerstein Institute of Clinical Oncology, Middlesex Hospital, London",
+    image: "assets/journey/The-Clinical-Oncology.png"
   }];
 
 
@@ -153,26 +153,34 @@ const Awards = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-white p-8 rounded-2xl shadow-lg card-hover group">
+            className="bg-white rounded-2xl shadow-lg card-hover group overflow-hidden">
 
-      <div className="flex items-start justify-between mb-6">
-        <div className="w-16 h-16 bg-medical-blue/10 rounded-2xl flex items-center justify-center group-hover:bg-medical-blue transition-all duration-300">
-          <SafeIcon icon={award.icon} className="w-8 h-8 text-medical-blue group-hover:text-white" />
-        </div>
-        <span className="bg-medical-purple/10 text-medical-purple px-3 py-1 rounded-full text-sm font-semibold">
-          {award.year}
-        </span>
+      <div className="h-56 bg-gray-200 overflow-hidden">
+        <img
+          src={award.image}
+          alt={award.title}
+          className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+        />
       </div>
-      
-      <h3 className="text-xl font-bold text-medical-dark mb-3">{award.title}</h3>
-      <p className="text-gray-600 mb-4 leading-relaxed">{award.description}</p>
-      
-      <div className="flex items-center justify-between">
-        <span className="text-sm text-medical-blue font-medium">{award.category}</span>
-        <div className="flex text-yellow-400">
-          {[...Array(5)].map((_, i) =>
-                <SafeIcon key={i} icon={FiStar} className="w-4 h-4 fill-current" />
-                )}
+
+      <div className="p-6">
+        <div className="flex items-center justify-between mb-3">
+          <span className="bg-medical-purple/10 text-medical-purple px-3 py-1 rounded-full text-sm font-semibold">
+            {award.year}
+          </span>
+          <div className="flex text-yellow-400">
+            {[...Array(5)].map((_, i) =>
+              <SafeIcon key={i} icon={FiStar} className="w-4 h-4 fill-current" />
+            )}
+          </div>
+        </div>
+
+        <h3 className="text-xl font-bold text-medical-dark mb-3">{award.title}</h3>
+        <p className="text-gray-600 mb-4 leading-relaxed text-sm">{award.description}</p>
+
+        <div className="pt-4 border-t border-gray-100">
+          <span className="text-sm text-medical-blue font-medium">{award.category}</span>
         </div>
       </div>
     </div>
@@ -212,15 +220,20 @@ const Awards = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-              className="flex items-start space-x-4 p-4 bg-medical-light rounded-xl hover:bg-medical-blue/5 transition-all duration-200">
+              className="bg-gray-50 border rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-200 group">
 
-        <div className="w-12 h-12 bg-medical-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
-          <SafeIcon icon={FiGlobe} className="w-6 h-6 text-medical-blue" />
+        <div className="h-40 bg-gray-200 overflow-hidden">
+          <img
+            src={cert.image}
+            alt={cert.name}
+            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+          />
         </div>
-        <div>
-          <div className="font-semibold text-medical-dark text-sm mb-1">{cert.name}</div>
-          <div className="text-gray-600 text-xs mb-1">{cert.location}</div>
-          <div className="text-medical-blue font-bold text-xs">{cert.year} · {cert.code}</div>
+        <div className="p-4">
+          <div className="text-medical-blue font-bold text-xs mb-2">{cert.year}</div>
+          <div className="font-semibold text-medical-dark text-sm mb-2">{cert.name}</div>
+          <div className="text-gray-600 text-xs">{cert.location}</div>
         </div>
       </div>
             )}
