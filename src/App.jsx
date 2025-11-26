@@ -21,6 +21,9 @@ import CureFoundationPage from './pages/CureFoundationPage';
 import VideoGallery from './pages/VideoGalleryPage';
 import PrintGalleryPage from './pages/PrintGalleryPage';
 import PancreaticCancerPage from './pages/services/PancreaticCancerPage';
+import PancreaticCancerIndiaPage from './pages/services/PancreaticCancerIndiaPage';
+import AdrenalCancerIndiaPage from './pages/services/AdrenalCancerIndiaPage';
+import ProtonTherapyIndiaPage from './pages/services/ProtonTherapyIndiaPage';
 import './App.css';
 import Conferences from './pages/ConferencesPage';
 import DoctorAwarenessTalks from './pages/DoctorAwarenessPage';
@@ -84,8 +87,8 @@ function App() {
           <Route path="/medical-disclaimer" element={< MedicalDisclaimerPage />} />
           <Route path="/cookie-policy" element={< CookiePolicyPage />} />
 
-<Route path="/events" element={<EventsPage />} />
-  <Route path="/events/:eventId" element={<EventDetailPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/events/:eventId" element={<EventDetailPage />} />
 
           {/* Cancer Clinics */}
           <Route path="/cancer-clinics" element={<CancerClinicsPage />} />
@@ -96,7 +99,10 @@ function App() {
           <Route path="/survivors/:survivorId" element={<SurvivorDetailPage />} />
 
           {/* Services */}
-          {/* <Route path="/service/pancreatic-cancer" element={<PancreaticCancerPage />} /> */}
+          <Route path="/pancreatic-cancer-treatment-in-secunderabad" element={<PancreaticCancerPage />} />
+          <Route path="/pancreatic-cancer-treatment-in-india" element={<PancreaticCancerIndiaPage />} />
+          <Route path="/adrenal-cancer-treatment-in-india" element={<AdrenalCancerIndiaPage />} />
+          <Route path="/proton-therapy-treatment-in-india" element={<ProtonTherapyIndiaPage />} />
           <Route path="/services" element={<ServiceListPage />} />
           <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
         </Routes>
