@@ -88,9 +88,12 @@ const ProtonTherapyIndiaPage = () => {
     ];
 
     const videos = [
-        { id: 1, title: "Proton Therapy Success Story", videoId: "o_k5Km80vuk", thumbnail: "https://img.youtube.com/vi/o_k5Km80vuk/hqdefault.jpg" },
-        { id: 2, title: "Advanced Treatment Options", videoId: "ghGhuNyegh8", thumbnail: "https://img.youtube.com/vi/ghGhuNyegh8/hqdefault.jpg" },
-        { id: 3, title: "Patient Testimonial", videoId: "LNkQZGJ61ZI", thumbnail: "https://img.youtube.com/vi/LNkQZGJ61ZI/hqdefault.jpg" },
+        { id: 1, title: "Talk by a cancer survivor | Happy Patient", videoId: "ugvDtjZrXxE", thumbnail: "https://img.youtube.com/vi/ugvDtjZrXxE/hqdefault.jpg" },
+        { id: 2, title: "What do my patients think about my treatment?", videoId: "hefT59hk4Tk", thumbnail: "https://img.youtube.com/vi/hefT59hk4Tk/hqdefault.jpg" },
+        { id: 3, title: "Stage 3 Breast Cancer - Patient Testimonial", videoId: "_fQ1-kAPh64", thumbnail: "https://img.youtube.com/vi/_fQ1-kAPh64/hqdefault.jpg" },
+        { id: 4, title: "Cervical Cancer Treatment Success", videoId: "MaWOvdr6RDw", thumbnail: "https://img.youtube.com/vi/MaWOvdr6RDw/hqdefault.jpg" },
+        { id: 5, title: "Vocal Cord Radiation Treatment", videoId: "532AAKNrSb4", thumbnail: "https://img.youtube.com/vi/532AAKNrSb4/hqdefault.jpg" },
+        { id: 6, title: "I am a survivor - Patient Story", videoId: "C_qQ8O6LnS0", thumbnail: "https://img.youtube.com/vi/C_qQ8O6LnS0/hqdefault.jpg" },
     ];
 
     const galleryImages = [
@@ -98,6 +101,18 @@ const ProtonTherapyIndiaPage = () => {
         "/assets/uploads/uploads/2022/11/2-2.png",
         "/assets/uploads/uploads/2022/11/3-2.png",
         "/assets/uploads/uploads/2022/11/4-2.png",
+        "assets/testimonials/test-new-1.jpg",
+        "assets/testimonials/test-new-2.jpg",
+        "assets/testimonials/IMG_0638.webp",
+        "assets/testimonials/IMG_0639.webp",
+        "assets/testimonials/IMG_0640.webp",
+        "assets/testimonials/IMG_0641.webp",
+        "assets/testimonials/IMG_0642.webp",
+        "assets/testimonials/IMG_0643.webp",
+        "assets/testimonials/IMG_0644.webp",
+        "assets/testimonials/IMG_1818.webp",
+        "assets/testimonials/IMG_2093.webp",
+        "assets/testimonials/IMG_2096.webp",
     ];
 
     return (
@@ -105,7 +120,7 @@ const ProtonTherapyIndiaPage = () => {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-gradient-to-br from-medical-light to-white">
+            <section className="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-medical-light">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row items-center gap-12">
                         <motion.div
@@ -160,11 +175,11 @@ const ProtonTherapyIndiaPage = () => {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                <a href="#book-appointment" className="px-8 py-4 bg-medical-blue text-white rounded-full font-semibold hover:bg-medical-purple transition shadow-lg flex items-center justify-center gap-2">
+                                <a href="#book-appointment" className="px-8 py-4 bg-medical-blue text-white rounded-lg font-semibold hover:bg-medical-dark transition shadow-lg flex items-center justify-center gap-2" aria-label="Book Proton Therapy Appointment">
                                     <FiCalendar /> Book Appointment
                                 </a>
-                                <a href="tel:+919876543210" className="px-8 py-4 bg-white text-medical-blue border border-medical-blue/30 rounded-full font-semibold hover:bg-medical-light transition shadow-sm flex items-center justify-center gap-2">
-                                    <FiPhone /> Call Now
+                                <a href="tel:+919676720002" className="px-8 py-4 bg-white text-medical-blue border border-medical-blue/30 rounded-lg font-semibold hover:bg-medical-light transition shadow-sm flex items-center justify-center gap-2" aria-label="Call for Proton Therapy">
+                                    <FiPhone /> Call +91-9676720002
                                 </a>
                             </div>
                         </motion.div>
@@ -252,8 +267,8 @@ const ProtonTherapyIndiaPage = () => {
                 </div>
             </section>
 
-            {/* Stats Section */}
-            <section className="py-10 bg-gradient-to-r from-medical-blue to-medical-purple text-white">
+            {/* Stats Section - Dr. Vijay Anand Reddy's Proton Therapy Achievements */}
+            <section className="py-10 bg-medical-blue text-white">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {stats.map((stat, index) => (
@@ -278,9 +293,9 @@ const ProtonTherapyIndiaPage = () => {
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Advanced Proton Therapy Treatment</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Advanced Proton Therapy Cancer Treatment in India</h2>
                         <p className="text-gray-600 text-lg">
-                            Precision radiation therapy that targets cancer cells while protecting healthy tissue.
+                            Experience cutting-edge precision radiation therapy that targets cancer cells with pinpoint accuracy while protecting healthy tissue. Dr. Vijay Anand Reddy offers the most advanced Proton Therapy treatment in India.
                         </p>
                     </div>
 
@@ -347,6 +362,24 @@ const ProtonTherapyIndiaPage = () => {
                             />
                         </div>
                     </div>
+
+                    {/* CTA Section - Schedule Proton Therapy Consultation */}
+                    <div className="mt-12 bg-medical-blue p-8 rounded-2xl shadow-xl text-center border-2 border-medical-blue">
+                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                            Schedule Your Proton Therapy Consultation with Dr. Vijay Anand Reddy
+                        </h3>
+                        <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
+                            Get expert guidance on advanced Proton Therapy treatment in India. Book a personalized consultation to discuss your cancer treatment options and customized care plan.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="#book-appointment" className="px-8 py-4 bg-white text-medical-blue rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2" aria-label="Book Proton Therapy Consultation">
+                                <FiCalendar /> Book Consultation Now
+                            </a>
+                            <a href="tel:+919676720002" className="px-8 py-4 bg-medical-dark text-white border-2 border-white rounded-lg font-semibold hover:bg-medical-purple transition flex items-center justify-center gap-2" aria-label="Call for Proton Therapy Information">
+                                <FiPhone /> Call +91-9676720002
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -396,6 +429,26 @@ const ProtonTherapyIndiaPage = () => {
                                     </li>
                                 ))}
                             </ul>
+                        </div>
+                    </div>
+
+                    {/* CTA - Ask Questions About Proton Therapy */}
+                    <div className="mt-12 text-center">
+                        <div className="bg-white p-8 rounded-2xl shadow-lg border border-medical-blue/20 max-w-3xl mx-auto">
+                            <h3 className="text-2xl font-bold text-medical-dark mb-4">
+                                Have Questions About Proton Therapy Treatment in India?
+                            </h3>
+                            <p className="text-gray-600 mb-6">
+                                Our expert team led by Dr. Vijay Anand Reddy is here to answer all your questions about Proton Therapy and help you understand if this advanced radiation treatment is right for your cancer care.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="#book-appointment" className="px-8 py-3 bg-medical-blue text-white rounded-lg font-semibold hover:bg-medical-dark transition shadow-lg flex items-center justify-center gap-2" aria-label="Get Free Proton Therapy Consultation">
+                                    <FiMessageSquare /> Get Free Consultation
+                                </a>
+                                <a href="mailto:cancercare@drvijayanandreddy.com" className="px-8 py-3 bg-white text-medical-blue border border-medical-blue rounded-lg font-semibold hover:bg-medical-light transition flex items-center justify-center gap-2" aria-label="Email for Proton Therapy Information">
+                                    <FiMail /> Email Us
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -471,12 +524,14 @@ const ProtonTherapyIndiaPage = () => {
                 </div>
             </section>
 
-            {/* Treatment Process */}
-            <section className="py-14 bg-gradient-to-br from-medical-light via-blue-50 to-purple-50">
+            {/* Treatment Process - Proton Therapy Steps */}
+            <section className="py-14 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Our Treatment Process</h2>
-                        <p className="text-gray-600">A systematic, patient-centric approach to proton therapy.</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Our Proton Therapy Treatment Process</h2>
+                        <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                            A systematic, patient-centric approach to Proton Therapy treatment. Dr. Vijay Anand Reddy and his team follow a comprehensive 4-step process for optimal cancer treatment outcomes.
+                        </p>
                     </div>
 
                     <div className="grid md:grid-cols-4 gap-8">
@@ -498,6 +553,26 @@ const ProtonTherapyIndiaPage = () => {
                             </div>
                         ))}
                     </div>
+
+                    {/* CTA - Start Treatment */}
+                    <div className="mt-12 text-center">
+                        <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-medical-blue max-w-4xl mx-auto">
+                            <h3 className="text-2xl md:text-3xl font-bold text-medical-dark mb-4">
+                                Begin Your Proton Therapy Treatment Journey Today
+                            </h3>
+                            <p className="text-gray-600 mb-6 text-lg">
+                                Don't wait to start your journey to recovery. Dr. Vijay Anand Reddy and our expert team are ready to provide you with the best Proton Therapy cancer treatment in India with world-class care and advanced technology.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="#book-appointment" className="px-8 py-4 bg-medical-blue text-white rounded-lg font-semibold hover:bg-medical-dark transition shadow-lg flex items-center justify-center gap-2" aria-label="Schedule Proton Therapy Appointment">
+                                    <FiCalendar /> Schedule Appointment
+                                </a>
+                                <a href="tel:+919676720002" className="px-8 py-4 bg-white text-medical-blue border-2 border-medical-blue rounded-lg font-semibold hover:bg-medical-light transition flex items-center justify-center gap-2" aria-label="Call for Proton Therapy Consultation">
+                                    <FiPhone /> Call +91-9676720002
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -505,9 +580,9 @@ const ProtonTherapyIndiaPage = () => {
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Proton Therapy at Apollo Cancer Centres</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Proton Therapy at Apollo Cancer Centres India</h2>
                         <p className="text-gray-600 text-lg">
-                            State-of-the-art Proton Therapy infrastructure with world-class technology and expert care.
+                            State-of-the-art Proton Therapy infrastructure with world-class technology, expert care, and the best Proton Therapy doctor in India - Dr. Vijay Anand Reddy. Experience advanced cancer treatment with cutting-edge equipment and personalized care.
                         </p>
                     </div>
 
@@ -623,7 +698,7 @@ const ProtonTherapyIndiaPage = () => {
                     </div>
 
                     {/* Treatment Approach */}
-                    <div className="mt-12 bg-gradient-to-br from-medical-light to-blue-50 p-8 rounded-2xl">
+                    <div className="mt-12 bg-medical-light p-8 rounded-2xl border border-medical-blue/20">
                         <h3 className="text-2xl font-bold text-medical-dark mb-6 text-center">Our Comprehensive Treatment Approach</h3>
                         <div className="grid md:grid-cols-2 gap-8">
                             <div>
@@ -690,33 +765,51 @@ const ProtonTherapyIndiaPage = () => {
                             </ul>
                         </div>
                         <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-                            <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition">
+                            <div className="bg-blue-100 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-blue-200">
                                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiClock size={28} /></div>
                                 <div className="text-3xl font-bold text-medical-blue mb-1">30+</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Years Experience</h4>
                             </div>
-                            <div className="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition">
+                            <div className="bg-green-100 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-green-200">
                                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-green-600 text-2xl font-bold shadow-md"><FiActivity size={28} /></div>
                                 <div className="text-3xl font-bold text-green-600 mb-1">5k+</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Treatments Done</h4>
                             </div>
-                            <div className="bg-gradient-to-br from-purple-100 to-purple-50 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition">
+                            <div className="bg-purple-100 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-purple-200">
                                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-purple-600 text-2xl font-bold shadow-md"><FiHeart size={28} /></div>
                                 <div className="text-3xl font-bold text-purple-600 mb-1">24/7</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Support</h4>
                             </div>
-                            <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition">
+                            <div className="bg-orange-100 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-orange-200">
                                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-orange-600 text-2xl font-bold shadow-md"><FiUsers size={28} /></div>
                                 <div className="text-3xl font-bold text-orange-600 mb-1">100%</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Care</h4>
                             </div>
                         </div>
                     </div>
+
+                    {/* CTA - Expert Care */}
+                    <div className="mt-12 bg-medical-blue p-8 rounded-2xl shadow-xl text-center border-2 border-medical-blue">
+                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                            Experience World-Class Proton Therapy Treatment in India
+                        </h3>
+                        <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
+                            Join thousands of patients who have trusted Dr. Vijay Anand Reddy, the best Proton Therapy doctor in India, for advanced cancer treatment with proven results and compassionate care.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <a href="#book-appointment" className="px-8 py-4 bg-white text-medical-blue rounded-lg font-bold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2 text-lg" aria-label="Book Proton Therapy Consultation">
+                                <FiCalendar /> Book Your Consultation
+                            </a>
+                            <a href="https://www.google.com/maps?ll=17.414722,78.412148&z=12&t=m&hl=en-US&gl=US&mapclient=embed&cid=1736553121756056830" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-medical-blue border-2 border-white rounded-lg font-semibold hover:bg-medical-light transition flex items-center justify-center gap-2" aria-label="Visit Apollo Cancer Centre">
+                                <FiMapPin /> Visit Our Center
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             {/* Most Reviewed & Highest Rated Oncologist Section */}
-            <section className="py-16 bg-gradient-to-br from-medical-light via-purple-50 to-white">
+            <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-4xl mx-auto mb-12">
                         <motion.div
@@ -729,10 +822,10 @@ const ProtonTherapyIndiaPage = () => {
                                 ⭐ Patient Reviews & Ratings
                             </span>
                             <h2 className="text-3xl md:text-5xl font-bold text-medical-dark mb-4">
-                                Most Reviewed & Highest Rated <span className="text-medical-blue">Oncologist in India</span>
+                                Most Reviewed & Highest Rated <span className="text-medical-blue">Proton Therapy Doctor in India</span>
                             </h2>
                             <p className="text-gray-600 text-lg">
-                                Dr. Vijay Anand Reddy has earned the trust of thousands of patients through exceptional care, advanced treatments, and outstanding clinical outcomes.
+                                Dr. Vijay Anand Reddy has earned the trust of thousands of cancer patients through exceptional care, advanced Proton Therapy treatments, and outstanding clinical outcomes. As the best Proton Therapy doctor in India, he consistently delivers world-class radiation oncology care.
                             </p>
                         </motion.div>
                     </div>
@@ -889,25 +982,58 @@ const ProtonTherapyIndiaPage = () => {
             {/* Happy Patient Gallery */}
             <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center text-medical-dark mb-10">Happy Patient Gallery</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="text-center mb-12"
+                    >
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Happy Proton Therapy Patient Gallery</h2>
+                        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                            Moments of hope, healing, and happiness with our patients who have successfully overcome cancer through advanced Proton Therapy treatment with Dr. Vijay Anand Reddy, India's leading radiation oncologist.
+                        </p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                         {galleryImages.map((img, idx) => (
-                            <div
+                            <motion.div
                                 key={idx}
-                                className="aspect-square rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 cursor-pointer"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.05, duration: 0.3 }}
+                                className="aspect-square rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 cursor-pointer relative group"
                                 onClick={() => openImageModal(img, idx)}
                             >
-                                <img src={img} alt={`Happy Patient ${idx + 1}`} className="w-full h-full object-cover" />
-                            </div>
+                                <img src={img} alt={`Proton Therapy Patient Success Story ${idx + 1}`} className="w-full h-full object-cover" />
+                                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                                    <span className="text-white text-sm font-semibold">View Photo</span>
+                                </div>
+                            </motion.div>
                         ))}
+                    </div>
+
+                    <div className="text-center mt-10">
+                        <a
+                            href="/testimonials"
+                            className="inline-block bg-medical-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-medical-purple transition-colors duration-200 shadow-lg hover:shadow-xl"
+                        >
+                            View All Patient Photos
+                        </a>
                     </div>
                 </div>
             </section>
 
-            {/* Video Testimonials */}
+            {/* Video Testimonials - Proton Therapy Success Stories */}
             <section className="py-14 bg-white">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center text-medical-dark mb-10">Patient Testimonials</h2>
+                    <div className="text-center mb-10">
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Proton Therapy Patient Video Testimonials</h2>
+                        <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                            Watch real patient success stories and experiences with Dr. Vijay Anand Reddy's Proton Therapy treatment. Hear directly from cancer survivors about their journey to recovery.
+                        </p>
+                    </div>
                     <div className="grid md:grid-cols-3 gap-8">
                         {videos.map((video) => (
                             <div
@@ -932,13 +1058,16 @@ const ProtonTherapyIndiaPage = () => {
                 </div>
             </section>
 
-            {/* FAQ and Form Section */}
-            <section id="book-appointment" className="py-14 bg-gradient-to-br from-medical-light to-blue-50">
+            {/* FAQ and Form Section - Proton Therapy Information */}
+            <section id="book-appointment" className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-12">
                         {/* Left Side: FAQs */}
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8">Frequently Asked Questions</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8">Frequently Asked Questions About Proton Therapy</h2>
+                            <p className="text-gray-600 mb-6">
+                                Get answers to common questions about Proton Therapy treatment, costs, eligibility, and what to expect from India's best Proton Therapy doctor, Dr. Vijay Anand Reddy.
+                            </p>
                             <div className="space-y-4">
                                 {faqs.map((faq, index) => (
                                     <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
