@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 
-const { FiMenu, FiX, FiPhone, FiMail, FiMapPin, FiChevronDown, FiChevronRight } = FiIcons;
+const { FiMenu, FiX, FiPhone, FiMail, FiMapPin, FiChevronDown, FiChevronRight, FiAlertCircle, FiActivity, FiAward, FiArrowRight } = FiIcons;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -375,57 +375,102 @@ const Header = () => {
                           initial="hidden"
                           animate="visible"
                           exit="exit"
-                          className="fixed top-[120px] left-1/4 -translate-x-1/2 w-[90vw] max-w-5xl bg-white rounded-lg shadow-xl border border-gray-200 py-6 px-8 z-[100]"
+                          className="fixed top-[120px] left-[20%] -translate-x-1/2 w-[92vw] max-w-5xl bg-white rounded-xl shadow-2xl border border-gray-100 py-8 px-10 z-[100] backdrop-blur-sm"
                           style={{
-                            boxShadow: '0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
+                            boxShadow: '0 20px 60px -15px rgba(0, 0, 0, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.08)'
                           }}>
 
-                          <div className="grid grid-cols-3 gap-10">
+                          <div className="grid grid-cols-3 gap-12">
                             {/* Column 1: Conditions */}
-                            <div>
-                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Conditions</h3>
-                              <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
-                                {item.dropdown.find(d => d.name === 'Conditions')?.submenu?.map((subItem) => (
+                            <div className="group">
+                              <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-medical-blue/20">
+                                <div className="w-8 h-8 bg-medical-blue/10 rounded-lg flex items-center justify-center">
+                                  <SafeIcon icon={FiAlertCircle} className="w-4 h-4 text-medical-blue" />
+                                </div>
+                                <h3 className="text-base font-bold text-medical-dark tracking-wide">Conditions</h3>
+                              </div>
+                              <div className="space-y-0.5 max-h-[420px] overflow-y-auto pr-3 custom-scrollbar">
+                                {item.dropdown.find(d => d.name === 'Conditions')?.submenu?.map((subItem, idx) => (
                                   <a
                                     key={subItem.name}
                                     href={subItem.href}
-                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
-                                    {subItem.name}
+                                    className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 rounded-lg transition-all duration-200 text-sm font-medium hover:translate-x-1 hover:shadow-sm"
+                                    style={{ animationDelay: `${idx * 20}ms` }}>
+                                    <span className="flex items-center gap-2">
+                                      <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60" />
+                                      {subItem.name}
+                                    </span>
                                   </a>
                                 ))}
                               </div>
                             </div>
 
                             {/* Column 2: Treatment */}
-                            <div>
-                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Treatment</h3>
-                              <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
-                                {item.dropdown.find(d => d.name === 'Treatment')?.submenu?.map((subItem) => (
+                            <div className="group">
+                              <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-medical-blue/20">
+                                <div className="w-8 h-8 bg-medical-blue/10 rounded-lg flex items-center justify-center">
+                                  <SafeIcon icon={FiActivity} className="w-4 h-4 text-medical-blue" />
+                                </div>
+                                <h3 className="text-base font-bold text-medical-dark tracking-wide">Treatment</h3>
+                              </div>
+                              <div className="space-y-0.5 max-h-[420px] overflow-y-auto pr-3 custom-scrollbar">
+                                {item.dropdown.find(d => d.name === 'Treatment')?.submenu?.map((subItem, idx) => (
                                   <a
                                     key={subItem.name}
                                     href={subItem.href}
-                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
-                                    {subItem.name}
+                                    className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 rounded-lg transition-all duration-200 text-sm font-medium hover:translate-x-1 hover:shadow-sm"
+                                    style={{ animationDelay: `${idx * 20}ms` }}>
+                                    <span className="flex items-center gap-2">
+                                      <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60" />
+                                      {subItem.name}
+                                    </span>
                                   </a>
                                 ))}
                               </div>
                             </div>
 
                             {/* Column 3: Specialties */}
-                            <div>
-                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Specialties</h3>
-                              <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
-                                {item.dropdown.find(d => d.name === 'Specialties')?.submenu?.map((subItem) => (
+                            <div className="group">
+                              <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-medical-blue/20">
+                                <div className="w-8 h-8 bg-medical-blue/10 rounded-lg flex items-center justify-center">
+                                  <SafeIcon icon={FiAward} className="w-4 h-4 text-medical-blue" />
+                                </div>
+                                <h3 className="text-base font-bold text-medical-dark tracking-wide">Specialties</h3>
+                              </div>
+                              <div className="space-y-0.5 max-h-[420px] overflow-y-auto pr-3 custom-scrollbar">
+                                {item.dropdown.find(d => d.name === 'Specialties')?.submenu?.map((subItem, idx) => (
                                   <a
                                     key={subItem.name}
                                     href={subItem.href}
-                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
-                                    {subItem.name}
+                                    className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 rounded-lg transition-all duration-200 text-sm font-medium hover:translate-x-1 hover:shadow-sm"
+                                    style={{ animationDelay: `${idx * 20}ms` }}>
+                                    <span className="flex items-center gap-2">
+                                      <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60" />
+                                      {subItem.name}
+                                    </span>
                                   </a>
                                 ))}
                               </div>
                             </div>
                           </div>
+
+                          {/* Custom Scrollbar Styles */}
+                          <style jsx>{`
+                            .custom-scrollbar::-webkit-scrollbar {
+                              width: 6px;
+                            }
+                            .custom-scrollbar::-webkit-scrollbar-track {
+                              background: #e5e7eb;
+                              border-radius: 10px;
+                            }
+                            .custom-scrollbar::-webkit-scrollbar-thumb {
+                              background: #9ca3af;
+                              border-radius: 10px;
+                            }
+                            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                              background: #6b7280;
+                            }
+                          `}</style>
                         </motion.div>
                       ) : (
                         // Standard Dropdown for other nav items
