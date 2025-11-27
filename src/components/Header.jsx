@@ -61,6 +61,95 @@ const Header = () => {
       { name: 'Our Services', href: '/services' },
       { name: 'Know About Cancer', href: '/service/pancreatic-cancer' },
       { name: 'Instructions to Patients', href: '/services/patient-instructions' },
+      {
+        name: 'Conditions',
+        href: '/conditions',
+        submenu: [
+          { name: 'Breast Cancer', href: '/conditions/breast-cancer' },
+          { name: 'Lung Cancer', href: '/conditions/lung-cancer' },
+          { name: 'Prostate Cancer', href: '/conditions/prostate-cancer' },
+          { name: 'Cervical Cancer', href: '/conditions/cervical-cancer' },
+          { name: 'Ovarian Cancer', href: '/conditions/ovarian-cancer' },
+          { name: 'Colorectal Cancer', href: '/conditions/colorectal-cancer' },
+          { name: 'Liver Cancer', href: '/conditions/liver-cancer' },
+          { name: 'Kidney Cancer', href: '/conditions/kidney-cancer' },
+          { name: 'Pancreatic Cancer', href: '/conditions/pancreatic-cancer' },
+          { name: 'Thyroid Cancer', href: '/conditions/thyroid-cancer' },
+          { name: 'Brain Tumors', href: '/conditions/brain-tumors' },
+          { name: 'Bone Cancer', href: '/conditions/bone-cancer' },
+          { name: 'Skin Cancer (Melanoma & Non-Melanoma)', href: '/conditions/skin-cancer' },
+          { name: 'Esophageal Cancer', href: '/conditions/esophageal-cancer' },
+          { name: 'Stomach Cancer', href: '/conditions/stomach-cancer' },
+          { name: 'Leukemia', href: '/conditions/leukemia' },
+          { name: 'Lymphoma', href: '/conditions/lymphoma' },
+          { name: 'Multiple Myeloma', href: '/conditions/multiple-myeloma' },
+          { name: 'Testicular Cancer', href: '/conditions/testicular-cancer' },
+          { name: 'Penile Cancer', href: '/conditions/penile-cancer' },
+          { name: 'Uterine / Endometrial Cancer', href: '/conditions/uterine-cancer' },
+          { name: 'Vaginal Cancer', href: '/conditions/vaginal-cancer' },
+          { name: 'Vulvar Cancer', href: '/conditions/vulvar-cancer' },
+          { name: 'Pediatric Leukemia', href: '/conditions/pediatric-leukemia' },
+          { name: 'Pediatric Brain Tumors', href: '/conditions/pediatric-brain-tumors' },
+          { name: 'Sarcomas', href: '/conditions/sarcomas' },
+        ],
+      },
+      {
+        name: 'Treatment',
+        href: '/treatment',
+        submenu: [
+          { name: 'Chemotherapy', href: '/treatment/chemotherapy' },
+          { name: 'Immunotherapy', href: '/treatment/immunotherapy' },
+          { name: 'Targeted Therapy', href: '/treatment/targeted-therapy' },
+          { name: 'Hormone Therapy', href: '/treatment/hormone-therapy' },
+          { name: 'Biological Therapy', href: '/treatment/biological-therapy' },
+          { name: 'Precision Oncology (Genomic Testing)', href: '/treatment/precision-oncology' },
+          { name: 'External Beam Radiation Therapy', href: '/treatment/external-beam-radiation' },
+          { name: 'IMRT (Intensity-Modulated Radiation Therapy)', href: '/treatment/imrt' },
+          { name: 'IGRT (Image-Guided Radiation Therapy)', href: '/treatment/igrt' },
+          { name: 'Tomotherapy', href: '/treatment/tomotherapy' },
+          { name: 'SRS / SBRT', href: '/treatment/srs-sbrt' },
+          { name: 'Proton Therapy', href: '/treatment/proton-therapy' },
+          { name: 'Brachytherapy', href: '/treatment/brachytherapy' },
+          { name: '3D Conformal Radiotherapy', href: '/treatment/3d-conformal-radiotherapy' },
+          { name: 'Minimally Invasive Cancer Surgery', href: '/treatment/minimally-invasive-surgery' },
+          { name: 'Robotic Cancer Surgery', href: '/treatment/robotic-surgery' },
+          { name: 'Tumor Resection Surgery', href: '/treatment/tumor-resection' },
+          { name: 'Breast-Conserving Surgery', href: '/treatment/breast-conserving-surgery' },
+          { name: 'Mastectomy', href: '/treatment/mastectomy' },
+          { name: 'Head & Neck Cancer Surgery', href: '/treatment/head-neck-surgery' },
+          { name: 'Gynecologic Cancer Surgery', href: '/treatment/gynecologic-surgery' },
+          { name: 'GI Cancer Surgery', href: '/treatment/gi-surgery' },
+          { name: 'Thoracic Cancer Surgery', href: '/treatment/thoracic-surgery' },
+          { name: 'Bone Marrow Transplant', href: '/treatment/bone-marrow-transplant' },
+          { name: 'CAR-T Cell Therapy', href: '/treatment/car-t-therapy' },
+          { name: 'Pain & Palliative Care', href: '/treatment/palliative-care' },
+          { name: 'Survivorship Care', href: '/treatment/survivorship-care' },
+          { name: 'Rehabilitation & Physiotherapy', href: '/treatment/rehabilitation' },
+          { name: 'Nutrition Support', href: '/treatment/nutrition-support' },
+          { name: 'Psycho-Oncology Support', href: '/treatment/psycho-oncology' },
+        ],
+      },
+      {
+        name: 'Specialties',
+        href: '/specialty',
+        submenu: [
+          { name: 'Radiation Oncology', href: '/specialty/radiation-oncology' },
+          { name: 'Medical Oncology', href: '/specialty/medical-oncology' },
+          { name: 'Surgical Oncology', href: '/specialty/surgical-oncology' },
+          { name: 'Hemato-Oncology', href: '/specialty/hemato-oncology' },
+          { name: 'Breast Oncology', href: '/specialty/breast-oncology' },
+          { name: 'Head & Neck Oncology', href: '/specialty/head-neck-oncology' },
+          { name: 'Thoracic Oncology', href: '/specialty/thoracic-oncology' },
+          { name: 'Gastrointestinal Oncology', href: '/specialty/gastrointestinal-oncology' },
+          { name: 'Gynecologic Oncology', href: '/specialty/gynecologic-oncology' },
+          { name: 'Uro-Oncology', href: '/specialty/uro-oncology' },
+          { name: 'Neuro-Oncology', href: '/specialty/neuro-oncology' },
+          { name: 'Orthopedic Oncology', href: '/specialty/orthopedic-oncology' },
+          { name: 'Pediatric Oncology', href: '/specialty/pediatric-oncology' },
+          { name: 'Preventive Oncology', href: '/specialty/preventive-oncology' },
+          { name: 'Palliative Care & Survivorship', href: '/specialty/palliative-care' },
+        ],
+      },
     ],
   },
   {
@@ -276,65 +365,142 @@ const Header = () => {
                     }
                   </a>
 
-                  {/* Dropdown Menu */}
+                  {/* Dropdown Menu / Mega Menu */}
                   <AnimatePresence>
-                    {item.dropdown && activeDropdown === index &&
-                    <motion.div
-                      variants={dropdownVariants}
-                      initial="hidden"
-                      animate="visible"
-                      exit="exit"
-                      className="absolute left-0 top-full mt-1 w-64 xl:w-72 2xl:w-80 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-[100]"
-                      style={{
-                        boxShadow: '0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
-                      }}>
+                    {item.dropdown && activeDropdown === index && (
+                      item.name === 'Expertise' ? (
+                        // Mega Menu for Expertise
+                        <motion.div
+                          variants={dropdownVariants}
+                          initial="hidden"
+                          animate="visible"
+                          exit="exit"
+                          className="fixed top-[120px] left-1/4 -translate-x-1/3 w-[95vw] max-w-6xl bg-white rounded-lg shadow-xl border border-gray-200 py-6 px-8 z-[100]"
+                          style={{
+                            boxShadow: '0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
+                          }}>
 
-                        {item.dropdown.map((dropdownItem, dropdownIndex) =>
-                      <div
-                        key={dropdownItem.name}
-                        className="relative"
-                        onMouseEnter={() => dropdownItem.submenu && handleSubMouseEnter(dropdownIndex)}
-                        onMouseLeave={handleSubMouseLeave}>
+                          <div className="grid grid-cols-4 gap-8">
+                            {/* Column 1: Services & Info */}
+                            <div>
+                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Services & Info</h3>
+                              <div className="space-y-1">
+                                {item.dropdown.filter(d => !d.submenu).map((dropdownItem) => (
+                                  <a
+                                    key={dropdownItem.name}
+                                    href={dropdownItem.href}
+                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
+                                    {dropdownItem.name}
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
 
-                            <a
-                          href={dropdownItem.href}
-                          className="flex items-center justify-between px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-gray-50 transition-colors duration-150 text-sm">
+                            {/* Column 2: Conditions */}
+                            <div>
+                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Conditions</h3>
+                              <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
+                                {item.dropdown.find(d => d.name === 'Conditions')?.submenu?.map((subItem) => (
+                                  <a
+                                    key={subItem.name}
+                                    href={subItem.href}
+                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
+                                    {subItem.name}
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
 
-                              <span className="truncate pr-2 leading-tight">{dropdownItem.name}</span>
-                              {dropdownItem.submenu &&
-                          <SafeIcon icon={FiChevronRight} className="w-4 h-4 flex-shrink-0 text-gray-400" />
-                          }
-                            </a>
+                            {/* Column 3: Treatment */}
+                            <div>
+                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Treatment</h3>
+                              <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
+                                {item.dropdown.find(d => d.name === 'Treatment')?.submenu?.map((subItem) => (
+                                  <a
+                                    key={subItem.name}
+                                    href={subItem.href}
+                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
+                                    {subItem.name}
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
 
-                            {/* Submenu (Sub-submenu) */}
-                            <AnimatePresence>
-                              {dropdownItem.submenu && activeSubDropdown === dropdownIndex &&
-                          <motion.div
-                            variants={submenuVariants}
-                            initial="hidden"
-                            animate="visible"
-                            exit="exit"
-                            className="absolute left-full top-0 ml-1 w-52 xl:w-60 2xl:w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-[120]"
-                            style={{
-                              boxShadow: '0 15px 35px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -3px rgba(0, 0, 0, 0.1)'
-                            }}>
-
-                                  {dropdownItem.submenu.map((subItem) =>
-                            <a
-                              key={subItem.name}
-                              href={subItem.href}
-                              className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-gray-50 transition-colors duration-150 text-sm leading-tight">
-
-                                      {subItem.name}
-                                    </a>
-                            )}
-                                </motion.div>
-                          }
-                            </AnimatePresence>
+                            {/* Column 4: Specialties */}
+                            <div>
+                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Specialties</h3>
+                              <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
+                                {item.dropdown.find(d => d.name === 'Specialties')?.submenu?.map((subItem) => (
+                                  <a
+                                    key={subItem.name}
+                                    href={subItem.href}
+                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
+                                    {subItem.name}
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
                           </div>
-                      )}
-                      </motion.div>
-                    }
+                        </motion.div>
+                      ) : (
+                        // Standard Dropdown for other nav items
+                        <motion.div
+                          variants={dropdownVariants}
+                          initial="hidden"
+                          animate="visible"
+                          exit="exit"
+                          className="absolute left-0 top-full mt-1 w-64 xl:w-72 2xl:w-80 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-[100]"
+                          style={{
+                            boxShadow: '0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
+                          }}>
+
+                          {item.dropdown.map((dropdownItem, dropdownIndex) =>
+                            <div
+                              key={dropdownItem.name}
+                              className="relative"
+                              onMouseEnter={() => dropdownItem.submenu && handleSubMouseEnter(dropdownIndex)}
+                              onMouseLeave={handleSubMouseLeave}>
+
+                              <a
+                                href={dropdownItem.href}
+                                className="flex items-center justify-between px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-gray-50 transition-colors duration-150 text-sm">
+
+                                <span className="truncate pr-2 leading-tight">{dropdownItem.name}</span>
+                                {dropdownItem.submenu &&
+                                  <SafeIcon icon={FiChevronRight} className="w-4 h-4 flex-shrink-0 text-gray-400" />
+                                }
+                              </a>
+
+                              {/* Submenu (Sub-submenu) */}
+                              <AnimatePresence>
+                                {dropdownItem.submenu && activeSubDropdown === dropdownIndex &&
+                                  <motion.div
+                                    variants={submenuVariants}
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="exit"
+                                    className="absolute left-full top-0 ml-1 w-52 xl:w-60 2xl:w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-[120]"
+                                    style={{
+                                      boxShadow: '0 15px 35px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -3px rgba(0, 0, 0, 0.1)'
+                                    }}>
+
+                                    {dropdownItem.submenu.map((subItem) =>
+                                      <a
+                                        key={subItem.name}
+                                        href={subItem.href}
+                                        className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-gray-50 transition-colors duration-150 text-sm leading-tight">
+
+                                        {subItem.name}
+                                      </a>
+                                    )}
+                                  </motion.div>
+                                }
+                              </AnimatePresence>
+                            </div>
+                          )}
+                        </motion.div>
+                      )
+                    )}
                   </AnimatePresence>
                 </div>
                 )}

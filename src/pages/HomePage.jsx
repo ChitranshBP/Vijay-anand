@@ -14,6 +14,8 @@ import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
 import Test from '../components/Test';
 import FinalTest from '../components/FinalTest';
+import VideoTestimonials from '../components/VideoTestimonials';
+import PhotoTestimonials from '../components/PhotoTestimonials';
 
 
 const HomePage = () => {
@@ -31,6 +33,8 @@ const HomePage = () => {
       {/* <Test /> */}
       {/* <Testimonials/> */}
         <FinalTest/>
+      <PhotoTestimonials />
+      <VideoTestimonials />
       <Blog />
       <Contact />
       <Footer />
