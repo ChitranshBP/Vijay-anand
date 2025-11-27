@@ -375,28 +375,13 @@ const Header = () => {
                           initial="hidden"
                           animate="visible"
                           exit="exit"
-                          className="fixed top-[120px] left-1/4 -translate-x-1/3 w-[95vw] max-w-6xl bg-white rounded-lg shadow-xl border border-gray-200 py-6 px-8 z-[100]"
+                          className="fixed top-[120px] left-1/4 -translate-x-1/2 w-[90vw] max-w-5xl bg-white rounded-lg shadow-xl border border-gray-200 py-6 px-8 z-[100]"
                           style={{
                             boxShadow: '0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)'
                           }}>
 
-                          <div className="grid grid-cols-4 gap-8">
-                            {/* Column 1: Services & Info */}
-                            <div>
-                              <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Services & Info</h3>
-                              <div className="space-y-1">
-                                {item.dropdown.filter(d => !d.submenu).map((dropdownItem) => (
-                                  <a
-                                    key={dropdownItem.name}
-                                    href={dropdownItem.href}
-                                    className="block px-3 py-2 text-gray-700 hover:text-medical-blue hover:bg-gray-50 rounded transition-colors duration-150 text-sm">
-                                    {dropdownItem.name}
-                                  </a>
-                                ))}
-                              </div>
-                            </div>
-
-                            {/* Column 2: Conditions */}
+                          <div className="grid grid-cols-3 gap-10">
+                            {/* Column 1: Conditions */}
                             <div>
                               <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Conditions</h3>
                               <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
@@ -411,7 +396,7 @@ const Header = () => {
                               </div>
                             </div>
 
-                            {/* Column 3: Treatment */}
+                            {/* Column 2: Treatment */}
                             <div>
                               <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Treatment</h3>
                               <div className="space-y-1 max-h-96 overflow-y-auto pr-2">
@@ -426,7 +411,7 @@ const Header = () => {
                               </div>
                             </div>
 
-                            {/* Column 4: Specialties */}
+                            {/* Column 3: Specialties */}
                             <div>
                               <h3 className="text-sm font-bold text-medical-blue mb-3 uppercase tracking-wide">Specialties</h3>
                               <div className="space-y-1 max-h-96 overflow-y-auto pr-2">

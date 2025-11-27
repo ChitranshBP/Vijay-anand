@@ -4,6 +4,7 @@ import { FiCheckCircle, FiActivity, FiUserCheck, FiClock, FiAward, FiPlay, FiChe
 import { FaUserMd, FaHospital, FaProcedures, FaHandHoldingHeart, FaStethoscope, FaNotesMedical, FaMicroscope, FaXRay, FaSyringe, FaHeartbeat, FaLungs, FaDna, FaFlask, FaPills } from 'react-icons/fa';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Test from '../../components/Test';
 
 const ProtonTherapyIndiaPage = () => {
     const [openFaq, setOpenFaq] = useState(null);
@@ -765,24 +766,24 @@ const ProtonTherapyIndiaPage = () => {
                             </ul>
                         </div>
                         <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-                            <div className="bg-blue-100 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-blue-200">
+                            <div className="bg-medical-blue/10 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-medical-blue/20">
                                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiClock size={28} /></div>
                                 <div className="text-3xl font-bold text-medical-blue mb-1">30+</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Years Experience</h4>
                             </div>
-                            <div className="bg-green-100 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-green-200">
-                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-green-600 text-2xl font-bold shadow-md"><FiActivity size={28} /></div>
-                                <div className="text-3xl font-bold text-green-600 mb-1">5k+</div>
+                            <div className="bg-medical-blue/15 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-medical-blue/30">
+                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiActivity size={28} /></div>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">5k+</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Treatments Done</h4>
                             </div>
-                            <div className="bg-purple-100 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-purple-200">
-                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-purple-600 text-2xl font-bold shadow-md"><FiHeart size={28} /></div>
-                                <div className="text-3xl font-bold text-purple-600 mb-1">24/7</div>
+                            <div className="bg-medical-blue/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-medical-blue/40">
+                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiHeart size={28} /></div>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">24/7</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Support</h4>
                             </div>
-                            <div className="bg-orange-100 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-orange-200">
-                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-orange-600 text-2xl font-bold shadow-md"><FiUsers size={28} /></div>
-                                <div className="text-3xl font-bold text-orange-600 mb-1">100%</div>
+                            <div className="bg-medical-blue/25 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-medical-blue/50">
+                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiUsers size={28} /></div>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">100%</div>
                                 <h4 className="font-bold text-medical-dark text-sm">Care</h4>
                             </div>
                         </div>
@@ -809,7 +810,7 @@ const ProtonTherapyIndiaPage = () => {
             </section>
 
             {/* Most Reviewed & Highest Rated Oncologist Section */}
-            <section className="py-16 bg-white">
+            <section className="py-18 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-4xl mx-auto mb-12">
                         <motion.div
@@ -886,7 +887,7 @@ const ProtonTherapyIndiaPage = () => {
                     </div>
 
                     {/* Written Testimonials */}
-                    <div className="mb-12">
+                    {/* <div className="mb-12">
                         <h3 className="text-2xl md:text-3xl font-bold text-medical-dark text-center mb-8">
                             What Our Patients Say
                         </h3>
@@ -974,8 +975,8 @@ const ProtonTherapyIndiaPage = () => {
                                 </motion.div>
                             ))}
                         </div>
-                    </div>
-
+                    </div> */}
+                   <Test/>
                 </div>
             </section>
 
