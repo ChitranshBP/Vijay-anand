@@ -88,9 +88,9 @@ const ProtonTherapyIndiaPage = () => {
     ];
 
     const videos = [
-        { id: 1, title: "Proton Therapy Success Story", videoId: "dQw4w9WgXcQ", thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" },
-        { id: 2, title: "Advanced Treatment Options", videoId: "dQw4w9WgXcQ", thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" },
-        { id: 3, title: "Patient Testimonial", videoId: "dQw4w9WgXcQ", thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" },
+        { id: 1, title: "Proton Therapy Success Story", videoId: "o_k5Km80vuk", thumbnail: "https://img.youtube.com/vi/o_k5Km80vuk/hqdefault.jpg" },
+        { id: 2, title: "Advanced Treatment Options", videoId: "ghGhuNyegh8", thumbnail: "https://img.youtube.com/vi/ghGhuNyegh8/hqdefault.jpg" },
+        { id: 3, title: "Patient Testimonial", videoId: "LNkQZGJ61ZI", thumbnail: "https://img.youtube.com/vi/LNkQZGJ61ZI/hqdefault.jpg" },
     ];
 
     const galleryImages = [
