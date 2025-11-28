@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiCheckCircle, FiActivity, FiUserCheck, FiClock, FiAward, FiPlay, FiChevronDown, FiChevronUp, FiPhone, FiCalendar, FiUser, FiMail, FiMessageSquare, FiSend, FiMapPin, FiAlertCircle, FiInfo, FiXCircle, FiHeart, FiShield, FiTarget, FiTrendingUp, FiUsers, FiZap, FiX } from 'react-icons/fi';
 import { FaUserMd, FaHospital, FaProcedures, FaHandHoldingHeart, FaStethoscope, FaNotesMedical, FaMicroscope, FaXRay, FaSyringe, FaHeartbeat, FaLungs, FaDna, FaFlask, FaPills } from 'react-icons/fa';
@@ -49,6 +49,37 @@ const ProtonTherapyIndiaPage = () => {
     const closeImageModal = () => {
         setSelectedImage(null);
     };
+
+    // Load WhatsApp widget script
+    useEffect(() => {
+        // Check if script already exists
+        const existingScript = document.querySelector('script[src*="wacrs.com"]');
+        if (existingScript) {
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.src = 'https://app.wacrs.com/install-widget/bundle.js?key=484b0ca7-463d-4440-80be-d5486f4218a8';
+        script.defer = true;
+        script.id = 'wacrs-widget-script';
+        script.setAttribute('data-active', '');
+        script.setAttribute('data-widget-type', 'group');
+        script.setAttribute('data-person', '87189a5a-e9a7-41af-b814-23d00163f7b8');
+        document.body.appendChild(script);
+
+        return () => {
+            // Cleanup: remove script when component unmounts
+            const scriptToRemove = document.getElementById('wacrs-widget-script');
+            if (scriptToRemove && document.body.contains(scriptToRemove)) {
+                document.body.removeChild(scriptToRemove);
+            }
+            // Also clear the container to prevent duplicates on re-mount
+            const container = document.getElementById('whatapp-people-widget-87189a5a-e9a7-41af-b814-23d00163f7b8');
+            if (container) {
+                container.innerHTML = '';
+            }
+        };
+    }, []);
 
     const stats = [
         { label: "Years of Experience", value: "30+", icon: <FiClock /> },
@@ -123,7 +154,7 @@ const ProtonTherapyIndiaPage = () => {
             {/* Hero Section */}
             <section className="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-medical-light">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-12">
+                    <div className="flex flex-col lg:flex-row items-center mt-10 gap-12">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -175,7 +206,7 @@ const ProtonTherapyIndiaPage = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" >
                                 <a href="#book-appointment" className="px-8 py-4 bg-medical-blue text-white rounded-lg font-semibold hover:bg-medical-dark transition shadow-lg flex items-center justify-center gap-2" aria-label="Book Proton Therapy Appointment">
                                     <FiCalendar /> Book Appointment
                                 </a>
@@ -190,78 +221,16 @@ const ProtonTherapyIndiaPage = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="lg:w-1/2"
                         >
-                            <div className="bg-white p-8 rounded-2xl shadow-2xl border border-gray-100">
-                                <div className="flex items-center gap-3 mb-6">
-                                    <div className="bg-medical-blue/10 p-3 rounded-lg">
-                                        <FiCalendar className="text-medical-blue text-2xl" />
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-medical-dark">Book an Appointment</h3>
+                            <div id="book-appointment">
+                                <style dangerouslySetInnerHTML={{
+                                    __html: `
+                                    #whatapp-people-widget-87189a5a-e9a7-41af-b814-23d00163f7b8 > div:nth-child(n+2) {
+                                        display: none !important;
+                                    }
+                                `}} />
+                                <div className="min-h-[400px]">
+                                    <div data-active id="whatapp-people-widget-87189a5a-e9a7-41af-b814-23d00163f7b8"></div>
                                 </div>
-                                <form onSubmit={handleSubmit} className="space-y-5">
-                                    <div>
-                                        <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
-                                        <div className="relative">
-                                            <FiUser className="absolute left-3 top-3.5 text-gray-400" />
-                                            <input
-                                                type="text"
-                                                name="name"
-                                                value={formData.name}
-                                                onChange={handleInputChange}
-                                                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                                placeholder="Enter your name"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
-                                        <div className="relative">
-                                            <FiMail className="absolute left-3 top-3.5 text-gray-400" />
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                value={formData.email}
-                                                onChange={handleInputChange}
-                                                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                                placeholder="Enter your email"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
-                                        <div className="relative">
-                                            <FiPhone className="absolute left-3 top-3.5 text-gray-400" />
-                                            <input
-                                                type="tel"
-                                                name="phone"
-                                                value={formData.phone}
-                                                onChange={handleInputChange}
-                                                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                                placeholder="Enter your phone number"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                                        <div className="relative">
-                                            <FiMessageSquare className="absolute left-3 top-3.5 text-gray-400" />
-                                            <textarea
-                                                name="message"
-                                                value={formData.message}
-                                                onChange={handleInputChange}
-                                                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                                placeholder="Tell us about your condition..."
-                                                rows="4"
-                                                required
-                                            ></textarea>
-                                        </div>
-                                    </div>
-                                    <button type="submit" className="w-full bg-medical-blue text-white py-3 rounded-lg font-bold hover:bg-medical-purple transition flex items-center justify-center gap-2 shadow-lg">
-                                        <FiSend /> Request Consultation
-                                    </button>
-                                </form>
                             </div>
                         </motion.div>
                     </div>
@@ -976,7 +945,7 @@ const ProtonTherapyIndiaPage = () => {
                             ))}
                         </div>
                     </div> */}
-                   <Test/>
+                    <Test />
                 </div>
             </section>
 
@@ -1060,108 +1029,30 @@ const ProtonTherapyIndiaPage = () => {
             </section>
 
             {/* FAQ and Form Section - Proton Therapy Information */}
-            <section id="book-appointment" className="py-14 bg-medical-light">
+            <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
-                    <div className="grid lg:grid-cols-2 gap-12">
-                        {/* Left Side: FAQs */}
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8">Frequently Asked Questions About Proton Therapy</h2>
-                            <p className="text-gray-600 mb-6">
-                                Get answers to common questions about Proton Therapy treatment, costs, eligibility, and what to expect from India's best Proton Therapy doctor, Dr. Vijay Anand Reddy.
-                            </p>
-                            <div className="space-y-4">
-                                {faqs.map((faq, index) => (
-                                    <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
-                                        <button
-                                            onClick={() => toggleFaq(index)}
-                                            className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition"
-                                        >
-                                            <span className="font-bold text-gray-800">{faq.question}</span>
-                                            {openFaq === index ? <FiChevronUp className="text-medical-blue" /> : <FiChevronDown className="text-gray-400" />}
-                                        </button>
-                                        {openFaq === index && (
-                                            <div className="px-6 pb-6 text-gray-600 animate-fadeIn">
-                                                {faq.answer}
-                                            </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Right Side: Form */}
-                        <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 h-fit sticky top-24">
-                            <div className="flex items-center gap-3 mb-6">
-                                <div className="bg-medical-blue/10 p-3 rounded-lg">
-                                    <FiCalendar className="text-medical-blue text-2xl" />
+                    <div className="max-w-4xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions About Proton Therapy</h2>
+                        <p className="text-gray-600 mb-6 text-center">
+                            Get answers to common questions about Proton Therapy treatment, costs, eligibility, and what to expect from India's best Proton Therapy doctor, Dr. Vijay Anand Reddy.
+                        </p>
+                        <div className="space-y-4">
+                            {faqs.map((faq, index) => (
+                                <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
+                                    <button
+                                        onClick={() => toggleFaq(index)}
+                                        className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition"
+                                    >
+                                        <span className="font-bold text-gray-800">{faq.question}</span>
+                                        {openFaq === index ? <FiChevronUp className="text-medical-blue" /> : <FiChevronDown className="text-gray-400" />}
+                                    </button>
+                                    {openFaq === index && (
+                                        <div className="px-6 pb-6 text-gray-600 animate-fadeIn">
+                                            {faq.answer}
+                                        </div>
+                                    )}
                                 </div>
-                                <h3 className="text-2xl font-bold text-medical-dark">Book an Appointment</h3>
-                            </div>
-                            <form onSubmit={handleSubmit} className="space-y-5">
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
-                                    <div className="relative">
-                                        <FiUser className="absolute left-3 top-3.5 text-gray-400" />
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            value={formData.name}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                            placeholder="Enter your name"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
-                                    <div className="relative">
-                                        <FiMail className="absolute left-3 top-3.5 text-gray-400" />
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            value={formData.email}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                            placeholder="Enter your email"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
-                                    <div className="relative">
-                                        <FiPhone className="absolute left-3 top-3.5 text-gray-400" />
-                                        <input
-                                            type="tel"
-                                            name="phone"
-                                            value={formData.phone}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                            placeholder="Enter your phone number"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                                    <div className="relative">
-                                        <FiMessageSquare className="absolute left-3 top-3.5 text-gray-400" />
-                                        <textarea
-                                            name="message"
-                                            value={formData.message}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-blue focus:border-transparent outline-none"
-                                            placeholder="Tell us about your condition..."
-                                            rows="4"
-                                            required
-                                        ></textarea>
-                                    </div>
-                                </div>
-                                <button type="submit" className="w-full bg-medical-blue text-white py-3 rounded-lg font-bold hover:bg-medical-purple transition flex items-center justify-center gap-2 shadow-lg">
-                                    <FiSend /> Request Consultation
-                                </button>
-                            </form>
+                            ))}
                         </div>
                     </div>
                 </div>
