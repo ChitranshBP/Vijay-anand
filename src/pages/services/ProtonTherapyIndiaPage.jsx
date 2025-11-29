@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiCheckCircle, FiActivity, FiUserCheck, FiClock, FiAward, FiPlay, FiChevronDown, FiChevronUp, FiPhone, FiCalendar, FiUser, FiMail, FiMessageSquare, FiSend, FiMapPin, FiAlertCircle, FiInfo, FiXCircle, FiHeart, FiShield, FiTarget, FiTrendingUp, FiUsers, FiZap, FiX } from 'react-icons/fi';
+import { FiCheckCircle, FiActivity, FiUserCheck, FiClock, FiAward, FiPlay, FiChevronDown, FiChevronUp, FiPhone, FiCalendar, FiUser, FiMail, FiMessageSquare, FiSend, FiMapPin, FiAlertCircle, FiInfo, FiXCircle, FiHeart, FiShield, FiTarget, FiTrendingUp, FiUsers, FiZap, FiX, FiArrowRight, FiBookOpen } from 'react-icons/fi';
 import { FaUserMd, FaHospital, FaProcedures, FaHandHoldingHeart, FaStethoscope, FaNotesMedical, FaMicroscope, FaXRay, FaSyringe, FaHeartbeat, FaLungs, FaDna, FaFlask, FaPills } from 'react-icons/fa';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -333,6 +333,76 @@ const ProtonTherapyIndiaPage = () => {
                         </div>
                     </div>
 
+                    {/* Time, Dos and Donts */}
+                    <section className="py-14 bg-white">
+                        <div className="container mx-auto px-4">
+                            <div className="grid lg:grid-cols-3 gap-8">
+                                {/* Treatment Duration */}
+                                <div className="lg:col-span-1 bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                                    <h3 className="text-xl font-bold text-medical-dark mb-4 flex items-center gap-2">
+                                        <FiClock className="text-blue-600" /> Treatment Duration
+                                    </h3>
+                                    <div className="space-y-4">
+                                        <div>
+                                            <h4 className="font-semibold text-gray-900">Session Length</h4>
+                                            <p className="text-sm text-gray-600">15-30 minutes per session.</p>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-gray-900">Treatment Course</h4>
+                                            <p className="text-sm text-gray-600">Daily sessions for 4-8 weeks.</p>
+                                        </div>
+                                        <div>
+                                            <h4 className="font-semibold text-gray-900">Planning Phase</h4>
+                                            <p className="text-sm text-gray-600">1-2 weeks for simulation and planning.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Dos */}
+                                <div className="lg:col-span-1 bg-green-50 p-8 rounded-2xl border border-green-100">
+                                    <h3 className="text-xl font-bold text-medical-dark mb-4 flex items-center gap-2">
+                                        <FiCheckCircle className="text-green-600" /> Do's
+                                    </h3>
+                                    <ul className="space-y-2">
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Maintain good hydration and nutrition.
+                                        </li>
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Get adequate rest and sleep.
+                                        </li>
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Follow skin care instructions carefully.
+                                        </li>
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Attend all scheduled appointments.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                {/* Donts */}
+                                <div className="lg:col-span-1 bg-red-50 p-8 rounded-2xl border border-red-100">
+                                    <h3 className="text-xl font-bold text-medical-dark mb-4 flex items-center gap-2">
+                                        <FiXCircle className="text-red-600" /> Don'ts
+                                    </h3>
+                                    <ul className="space-y-2">
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Expose treated area to direct sunlight.
+                                        </li>
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Use harsh soaps or lotions on skin.
+                                        </li>
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Skip meals or become dehydrated.
+                                        </li>
+                                        <li className="flex items-start gap-2 text-gray-700 text-sm">
+                                            <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Ignore side effects or symptoms.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     {/* CTA Section - Schedule Proton Therapy Consultation */}
                     <div className="mt-12 bg-medical-blue p-8 rounded-2xl shadow-xl text-center border-2 border-medical-blue">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -356,49 +426,57 @@ const ProtonTherapyIndiaPage = () => {
             {/* Indications and Benefits */}
             <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-2 gap-12">
-                        {/* Indications */}
-                        <div className="bg-white p-8 rounded-2xl shadow-md">
-                            <h3 className="text-2xl font-bold text-medical-dark mb-6 flex items-center gap-2">
-                                <FiAlertCircle className="text-medical-blue" /> Cancer Types Treated
-                            </h3>
-                            <ul className="space-y-3">
-                                {[
-                                    "Brain and spinal cord tumors",
-                                    "Pediatric cancers (all types)",
-                                    "Prostate cancer",
-                                    "Lung cancer (early stage)",
-                                    "Head and neck cancers",
-                                    "Liver and pancreatic tumors"
-                                ].map((item, idx) => (
-                                    <li key={idx} className="flex items-start gap-3 text-gray-700">
-                                        <span className="w-2 h-2 bg-medical-blue rounded-full mt-2 flex-shrink-0"></span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                    <div className="text-center max-w-3xl mx-auto mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Cancer Types Treated with Proton Therapy</h2>
+                        <p className="text-gray-600 text-lg">
+                            Proton Therapy is highly effective for various types of cancers, especially those located near critical organs.
+                        </p>
+                    </div>
 
-                        {/* Benefits */}
-                        <div className="bg-white p-8 rounded-2xl shadow-md">
-                            <h3 className="text-2xl font-bold text-medical-dark mb-6 flex items-center gap-2">
-                                <FaStethoscope className="text-green-600" /> Key Benefits
-                            </h3>
-                            <ul className="space-y-3">
-                                {[
-                                    "Minimal damage to healthy tissue",
-                                    "Reduced risk of secondary cancers",
-                                    "Better quality of life during treatment",
-                                    "Suitable for tumors near vital organs",
-                                    "Lower radiation dose to surrounding areas",
-                                    "Outpatient treatment with quick recovery"
-                                ].map((item, idx) => (
-                                    <li key={idx} className="flex items-start gap-3 text-gray-700">
-                                        <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                        {[
+                            { name: "Brain and Spinal Cord Tumors", image: "/assets/services/proton-therapy.jpeg" },
+                            { name: "Pediatric Cancers (All Types)", image: "https://i.ibb.co/rG5BJqfb/wmremove-transformed.jpg" },
+                            { name: "Prostate Cancer", image: "https://i.ibb.co/JRLXpjc2/78e6cfc8-940f-4dfa-b984-88bc46a51a47.png" },
+                            { name: "Lung Cancer (Early Stage)", image: "https://i.ibb.co/23dx8bYJ/lung-cancer.webp" },
+                            { name: "Head and Neck Cancers", image: "/assets/services/throat-cancer.webp" },
+                            { name: "Liver and Pancreatic Tumors", image: "/assets/services/Pancreatic-Cancer.jpg" }
+                        ].map((item, idx) => (
+                            <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition group">
+                                <div className="h-48 overflow-hidden">
+                                    <img
+                                        src={item.image}
+                                        alt={item.name}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                                    />
+                                </div>
+                                <div className="p-6">
+                                    <h4 className="text-xl font-bold text-medical-dark mb-2">{item.name}</h4>
+                                    <div className="w-12 h-1 bg-medical-blue rounded-full"></div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Benefits Section */}
+                    <div className="bg-white p-8 rounded-2xl shadow-md max-w-4xl mx-auto">
+                        <h3 className="text-2xl font-bold text-medical-dark mb-6 flex items-center gap-2 justify-center">
+                            <FaStethoscope className="text-green-600" /> Key Benefits of Proton Therapy
+                        </h3>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "Minimal damage to healthy tissue",
+                                "Reduced risk of secondary cancers",
+                                "Better quality of life during treatment",
+                                "Suitable for tumors near vital organs",
+                                "Lower radiation dose to surrounding areas",
+                                "Outpatient treatment with quick recovery"
+                            ].map((item, idx) => (
+                                <div key={idx} className="flex items-start gap-3 text-gray-700 bg-gray-50 p-3 rounded-lg">
+                                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    {item}
+                                </div>
+                            ))}
                         </div>
                     </div>
 
@@ -424,78 +502,100 @@ const ProtonTherapyIndiaPage = () => {
                 </div>
             </section>
 
-            {/* Time, Dos and Donts */}
-            <section className="py-14 bg-white">
+            {/* About Doctor Section */}
+            <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="grid lg:grid-cols-3 gap-8">
-                        {/* Treatment Duration */}
-                        <div className="lg:col-span-1 bg-blue-50 p-8 rounded-2xl border border-blue-100">
-                            <h3 className="text-xl font-bold text-medical-dark mb-4 flex items-center gap-2">
-                                <FiClock className="text-blue-600" /> Treatment Duration
-                            </h3>
-                            <div className="space-y-4">
-                                <div>
-                                    <h4 className="font-semibold text-gray-900">Session Length</h4>
-                                    <p className="text-sm text-gray-600">15-30 minutes per session.</p>
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold text-gray-900">Treatment Course</h4>
-                                    <p className="text-sm text-gray-600">Daily sessions for 4-8 weeks.</p>
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold text-gray-900">Planning Phase</h4>
-                                    <p className="text-sm text-gray-600">1-2 weeks for simulation and planning.</p>
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="relative"
+                        >
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                                <img
+                                    src="/assets/vijay-anand-about.jpg"
+                                    alt="Dr. Vijay Anand Reddy"
+                                    className="w-full h-full object-cover"
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                                    <h3 className="text-2xl font-bold">Dr. Vijay Anand Reddy</h3>
+                                    <p className="opacity-90">Director, Apollo Cancer Centres</p>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        {/* Dos */}
-                        <div className="lg:col-span-1 bg-green-50 p-8 rounded-2xl border border-green-100">
-                            <h3 className="text-xl font-bold text-medical-dark mb-4 flex items-center gap-2">
-                                <FiCheckCircle className="text-green-600" /> Do's
-                            </h3>
-                            <ul className="space-y-2">
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Maintain good hydration and nutrition.
-                                </li>
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Get adequate rest and sleep.
-                                </li>
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Follow skin care instructions carefully.
-                                </li>
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" /> Attend all scheduled appointments.
-                                </li>
-                            </ul>
-                        </div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <span className="inline-block py-1 px-3 rounded-full bg-medical-blue/10 text-medical-blue text-sm font-semibold mb-4">
+                                Meet the Expert
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-6">
+                                About Dr. Vijay Anand Reddy
+                            </h2>
+                            <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                                Dr. Vijay Anand Reddy is a distinguished oncologist with over three decades of experience, dedicated to providing world-class cancer care. As the Director of Apollo Cancer Centres, Hyderabad, he has been at the forefront of introducing advanced radiation therapy techniques in India.
+                            </p>
+                            <p className="text-gray-600 mb-8 leading-relaxed">
+                                He is renowned for his expertise in Proton Therapy and has treated thousands of patients with compassion and precision. His commitment to patient care and clinical excellence has earned him numerous accolades and the trust of patients worldwide.
+                            </p>
 
-                        {/* Donts */}
-                        <div className="lg:col-span-1 bg-red-50 p-8 rounded-2xl border border-red-100">
-                            <h3 className="text-xl font-bold text-medical-dark mb-4 flex items-center gap-2">
-                                <FiXCircle className="text-red-600" /> Don'ts
-                            </h3>
-                            <ul className="space-y-2">
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Expose treated area to direct sunlight.
-                                </li>
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Use harsh soaps or lotions on skin.
-                                </li>
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Skip meals or become dehydrated.
-                                </li>
-                                <li className="flex items-start gap-2 text-gray-700 text-sm">
-                                    <FiXCircle className="text-red-500 mt-1 flex-shrink-0" /> Ignore side effects or symptoms.
-                                </li>
-                            </ul>
-                        </div>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-full bg-medical-blue/10 flex items-center justify-center text-medical-blue">
+                                        <FiAward size={20} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-medical-dark">Global Recognition</h4>
+                                        <p className="text-xs text-gray-500">International Awards</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-full bg-medical-blue/10 flex items-center justify-center text-medical-blue">
+                                        <FiBookOpen size={20} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-medical-dark">Author</h4>
+                                        <p className="text-xs text-gray-500">"I Am A Survivor"</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-full bg-medical-blue/10 flex items-center justify-center text-medical-blue">
+                                        <FiUsers size={20} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-medical-dark">Patient Focus</h4>
+                                        <p className="text-xs text-gray-500">Compassionate Care</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-full bg-medical-blue/10 flex items-center justify-center text-medical-blue">
+                                        <FiTrendingUp size={20} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-medical-dark">Pioneer</h4>
+                                        <p className="text-xs text-gray-500">Advanced Techniques</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="/achievements" className="inline-flex items-center gap-2 text-medical-blue font-semibold hover:gap-3 transition-all">
+                                Read Full Profile <FiArrowRight />
+                            </a>
+                        </motion.div>
                     </div>
                 </div>
             </section>
 
+
+
             {/* Treatment Process - Proton Therapy Steps */}
-            <section className="py-14 bg-white">
+            <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Our Proton Therapy Treatment Process</h2>
@@ -709,7 +809,7 @@ const ProtonTherapyIndiaPage = () => {
             </section>
 
             {/* Why Choose Section */}
-            <section className="py-14 bg-white">
+            <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
@@ -779,7 +879,7 @@ const ProtonTherapyIndiaPage = () => {
             </section>
 
             {/* Most Reviewed & Highest Rated Oncologist Section */}
-            <section className="py-18 bg-white">
+            <section className="py-18 mt-10 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-4xl mx-auto mb-12">
                         <motion.div
@@ -950,7 +1050,7 @@ const ProtonTherapyIndiaPage = () => {
             </section>
 
             {/* Happy Patient Gallery */}
-            <section className="py-14 bg-medical-light">
+            {/* <section className="py-14 bg-medical-light d-none">
                 <div className="container mx-auto px-4">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -993,10 +1093,10 @@ const ProtonTherapyIndiaPage = () => {
                         </a>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Video Testimonials - Proton Therapy Success Stories */}
-            <section className="py-14 bg-white">
+            <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-10">
                         <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Proton Therapy Patient Video Testimonials</h2>
@@ -1029,7 +1129,7 @@ const ProtonTherapyIndiaPage = () => {
             </section>
 
             {/* FAQ and Form Section - Proton Therapy Information */}
-            <section className="py-14 bg-medical-light">
+            <section className="py-14">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions About Proton Therapy</h2>
@@ -1038,7 +1138,7 @@ const ProtonTherapyIndiaPage = () => {
                         </p>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
-                                <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
+                                <div key={index} className="bg-medical-light rounded-xl shadow-sm overflow-hidden">
                                     <button
                                         onClick={() => toggleFaq(index)}
                                         className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition"
