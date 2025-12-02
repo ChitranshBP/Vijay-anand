@@ -1,5 +1,11 @@
 export const printGalleryImages = [
   {
+    "title": "",
+    "images": [
+      "assets/print-gallery/article-image-var.webp"
+    ]
+  },
+  {
     "title": "Breast Cancer Awareness - Flash Mob Event 31-10-2025",
     "images": [
       "/assets/Events/breast-awareness-2025/Apollo Cancer Center Flash Mob Show on Breast Cancer Awarness Month News Coverage in Andhra Jyothi on 1st November 2025.webp",
