@@ -180,7 +180,6 @@ const Header = () => {
       { name: 'Video Gallery', href: '/video-gallery' },
     ],
   },
-  { name: 'Contact', href: '/contact' },
 ];
 
 
@@ -534,9 +533,11 @@ const Header = () => {
                   </AnimatePresence>
                 </div>
                 )}
-              <button className="bg-medical-blue text-white px-2.5 xl:px-3 2xl:px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors duration-200 font-medium ml-1 xl:ml-2 2xl:ml-3 text-xs xl:text-sm 2xl:text-base whitespace-nowrap flex-shrink-0">
+              <a
+                href="/contact"
+                className="bg-medical-blue text-white px-2.5 xl:px-3 2xl:px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors duration-200 font-medium ml-1 xl:ml-2 2xl:ml-3 text-xs xl:text-sm 2xl:text-base whitespace-nowrap flex-shrink-0">
                 Book Appointment
-              </button>
+              </a>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -644,12 +645,13 @@ const Header = () => {
                     </AnimatePresence>
                   </div>
               )}
-                <button
-                className="w-full bg-medical-blue text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors duration-200 font-medium mt-4"
+                <a
+                href="/contact"
+                className="block w-full bg-medical-blue text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors duration-200 font-medium mt-4 text-center"
                 onClick={() => setIsMenuOpen(false)}>
 
                   Book Appointment
-                </button>
+                </a>
               </div>
             </motion.div>
           }
