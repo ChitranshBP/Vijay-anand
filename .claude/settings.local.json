@@ -23,7 +23,11 @@
       "Bash(fi)",
       "Bash(node -e:*)",
       "Bash(del used_images.txt unused_files.txt)",
-      "Bash(nul)"
+      "Bash(nul)",
+      "Bash(for file in SRSPage.jsx SBRTPage.jsx BrachytherapyPage.jsx TomotherapyPage.jsx ProtonTherapyPage.jsx CombinedModalityTherapyPage.jsx SupportiveOncologyCarePage.jsx)",
+      "Bash(do echo \"Creating $file\")",
+      "Bash(python:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []

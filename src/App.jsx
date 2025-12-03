@@ -24,6 +24,23 @@ import PancreaticCancerPage from './pages/services/PancreaticCancerPage';
 import PancreaticCancerIndiaPage from './pages/services/PancreaticCancerIndiaPage';
 import AdrenalCancerIndiaPage from './pages/services/AdrenalCancerIndiaPage';
 import ProtonTherapyIndiaPage from './pages/services/ProtonTherapyIndiaPage';
+import BreastCancerPage from './pages/conditions/BreastCancerPage';
+import ChemotherapyPage from './pages/treatment/ChemotherapyPage';
+import ImmunotherapyPage from './pages/treatment/ImmunotherapyPage';
+import TargetedTherapyPage from './pages/treatment/TargetedTherapyPage';
+import HormoneTherapyPage from './pages/treatment/HormoneTherapyPage';
+import BiologicalTherapyPage from './pages/treatment/BiologicalTherapyPage';
+import PrecisionOncologyPage from './pages/treatment/PrecisionOncologyPage';
+import ExternalBeamRadiationPage from './pages/treatment/ExternalBeamRadiationPage';
+import IMRTPage from './pages/treatment/IMRTPage';
+import IGRTPage from './pages/treatment/IGRTPage';
+import SRSPage from './pages/treatment/SRSPage';
+import SBRTPage from './pages/treatment/SBRTPage';
+import BrachytherapyPage from './pages/treatment/BrachytherapyPage';
+import TomotherapyPage from './pages/treatment/TomotherapyPage';
+import ProtonTherapyPage from './pages/treatment/ProtonTherapyPage';
+import CombinedModalityTherapyPage from './pages/treatment/CombinedModalityTherapyPage';
+import SupportiveOncologyCarePage from './pages/treatment/SupportiveOncologyCarePage';
 import './App.css';
 import Conferences from './pages/ConferencesPage';
 import DoctorAwarenessTalks from './pages/DoctorAwarenessPage';
@@ -105,6 +122,27 @@ function App() {
           <Route path="/proton-therapy-treatment-in-india" element={<ProtonTherapyIndiaPage />} />
           <Route path="/services" element={<ServiceListPage />} />
           <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
+
+          {/* Conditions */}
+          <Route path="/conditions/breast-cancer" element={<BreastCancerPage />} />
+
+          {/* Treatment */}
+          <Route path="/treatment/chemotherapy" element={<ChemotherapyPage />} />
+          <Route path="/treatment/immunotherapy" element={<ImmunotherapyPage />} />
+          <Route path="/treatment/targeted-therapy" element={<TargetedTherapyPage />} />
+          <Route path="/treatment/hormone-therapy" element={<HormoneTherapyPage />} />
+          <Route path="/treatment/biological-therapy" element={<BiologicalTherapyPage />} />
+          <Route path="/treatment/precision-oncology" element={<PrecisionOncologyPage />} />
+          <Route path="/treatment/external-beam-radiation" element={<ExternalBeamRadiationPage />} />
+          <Route path="/treatment/imrt" element={<IMRTPage />} />
+          <Route path="/treatment/igrt" element={<IGRTPage />} />
+          <Route path="/treatment/srs" element={<SRSPage />} />
+          <Route path="/treatment/sbrt" element={<SBRTPage />} />
+          <Route path="/treatment/brachytherapy" element={<BrachytherapyPage />} />
+          <Route path="/treatment/tomotherapy" element={<TomotherapyPage />} />
+          <Route path="/treatment/proton-therapy" element={<ProtonTherapyPage />} />
+          <Route path="/treatment/combined-modality-therapy" element={<CombinedModalityTherapyPage />} />
+          <Route path="/treatment/supportive-oncology-care" element={<SupportiveOncologyCarePage />} />
         </Routes>
       </div>
     </Router>
