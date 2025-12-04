@@ -27,7 +27,8 @@
       "Bash(for file in SRSPage.jsx SBRTPage.jsx BrachytherapyPage.jsx TomotherapyPage.jsx ProtonTherapyPage.jsx CombinedModalityTherapyPage.jsx SupportiveOncologyCarePage.jsx)",
       "Bash(do echo \"Creating $file\")",
       "Bash(python:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(for file in ChemotherapyPage.jsx ImmunotherapyPage.jsx TargetedTherapyPage.jsx HormoneTherapyPage.jsx BiologicalTherapyPage.jsx PrecisionOncologyPage.jsx ExternalBeamRadiationPage.jsx IMRTPage.jsx IGRTPage.jsx SRSPage.jsx SBRTPage.jsx BrachytherapyPage.jsx TomotherapyPage.jsx ProtonTherapyPage.jsx CombinedModalityTherapyPage.jsx SupportiveOncologyCarePage.jsx)"
     ],
     "deny": [],
     "ask": []

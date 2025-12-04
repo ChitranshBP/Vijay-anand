@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiCheckCircle, FiActivity, FiUserCheck, FiClock, FiAward, FiPlay, FiChevronDown, FiChevronUp, FiPhone, FiCalendar, FiUser, FiMail, FiMessageSquare, FiSend, FiMapPin, FiAlertCircle, FiInfo, FiXCircle, FiHeart, FiShield, FiTarget, FiTrendingUp, FiUsers, FiZap, FiX, FiArrowRight, FiBookOpen, FiChevronLeft, FiChevronRight, FiFileText, FiHome, FiGlobe } from 'react-icons/fi';
-import { FaUserMd, FaHospital, FaProcedures,FaUsers , FaHandHoldingHeart, FaStethoscope, FaNotesMedical, FaMicroscope, FaXRay, FaSyringe, FaHeartbeat, FaLungs, FaDna, FaFlask, FaPills } from 'react-icons/fa';
+import { FaUserMd, FaHospital, FaProcedures, FaHandHoldingHeart, FaStethoscope, FaNotesMedical, FaMicroscope, FaXRay, FaSyringe, FaHeartbeat, FaLungs, FaDna, FaFlask, FaPills } from 'react-icons/fa';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Test from '../../components/Test';
 
-const SupportiveOncologyCarePage = () => {
+const ImmunotherapyPage = () => {
     const videos = [
         { id: 1, title: "Talk by a cancer survivor | Happy Patient", videoId: "ugvDtjZrXxE", thumbnail: "https://img.youtube.com/vi/ugvDtjZrXxE/hqdefault.jpg" },
         { id: 2, title: "What do my patients think about my treatment?", videoId: "hefT59hk4Tk", thumbnail: "https://img.youtube.com/vi/hefT59hk4Tk/hqdefault.jpg" },
@@ -78,32 +78,32 @@ const SupportiveOncologyCarePage = () => {
 
     const faqs = [
         {
-            question: "What is the Supportive Oncology Care cost in India?",
-            answer: "Supportive Oncology Care cost in India is significantly more affordable than Western countries, typically ranging from ₹1-5 lakhs per cycle depending on the drug type and cancer stage. The total Supportive Oncology Care cost in India can vary from ₹5-30 lakhs for a complete treatment course. Dr. Vijay Anand Reddy provides transparent pricing and works with insurance providers to make treatment accessible."
+            question: "What is the immunotherapy cost in India?",
+            answer: "Immunotherapy cost in India is significantly more affordable than Western countries, typically ranging from ₹1-5 lakhs per cycle depending on the drug type and cancer stage. The total immunotherapy cost in India can vary from ₹5-30 lakhs for a complete treatment course. Dr. Vijay Anand Reddy provides transparent pricing and works with insurance providers to make treatment accessible."
         },
         {
-            question: "How effective is supportive oncology care for cancer treatment?",
-            answer: "Supportive Oncology Care has shown remarkable success rates, particularly for melanoma, lung cancer, kidney cancer, and lymphoma. Success rates vary by cancer type but can reach 40-60% for certain cancers. Dr. Vijay Anand Reddy uses the latest supportive oncology care protocols to maximize treatment outcomes."
+            question: "How effective is immunotherapy for cancer treatment?",
+            answer: "Immunotherapy has shown remarkable success rates, particularly for melanoma, lung cancer, kidney cancer, and lymphoma. Success rates vary by cancer type but can reach 40-60% for certain cancers. Dr. Vijay Anand Reddy uses the latest immunotherapy protocols to maximize treatment outcomes."
         },
         {
-            question: "What are the side effects of supportive oncology care?",
-            answer: "Supportive Oncology Care typically causes fewer side effects than chemotherapy. Common side effects include fatigue, skin reactions, flu-like symptoms, and immune-related inflammation. Dr. Reddy's team provides comprehensive management of side effects with supportive care medicines."
+            question: "What are the side effects of immunotherapy?",
+            answer: "Immunotherapy typically causes fewer side effects than chemotherapy. Common side effects include fatigue, skin reactions, flu-like symptoms, and immune-related inflammation. Dr. Reddy's team provides comprehensive management of side effects with supportive care medicines."
         },
         {
-            question: "Which cancers can be treated with supportive oncology care in India?",
-            answer: "Supportive Oncology Care is effective for melanoma, non-small cell lung cancer, kidney cancer, bladder cancer, head and neck cancers, Hodgkin lymphoma, and certain types of breast and colon cancer. Dr. Vijay Anand Reddy evaluates each patient's biomarkers to determine supportive oncology care eligibility."
+            question: "Which cancers can be treated with immunotherapy in India?",
+            answer: "Immunotherapy is effective for melanoma, non-small cell lung cancer, kidney cancer, bladder cancer, head and neck cancers, Hodgkin lymphoma, and certain types of breast and colon cancer. Dr. Vijay Anand Reddy evaluates each patient's biomarkers to determine immunotherapy eligibility."
         },
         {
-            question: "How long does supportive oncology care treatment take?",
-            answer: "Supportive Oncology Care is typically administered every 2-6 weeks for 6 months to 2 years, depending on cancer type and response. Each infusion takes 30 minutes to a few hours. Dr. Reddy creates personalized treatment schedules based on individual patient needs and cancer characteristics."
+            question: "How long does immunotherapy treatment take?",
+            answer: "Immunotherapy is typically administered every 2-6 weeks for 6 months to 2 years, depending on cancer type and response. Each infusion takes 30 minutes to a few hours. Dr. Reddy creates personalized treatment schedules based on individual patient needs and cancer characteristics."
         },
         {
-            question: "Who is the best supportive oncology care doctor in India?",
-            answer: "Dr. Vijay Anand Reddy is recognized as one of the best supportive oncology care doctors in India, with over 30 years of experience in medical oncology. His expertise in checkpoint inhibitors, CAR-T cell therapy, and personalized supportive oncology care protocols makes him the preferred choice for cancer supportive oncology care treatment."
+            question: "Who is the best immunotherapy doctor in India?",
+            answer: "Dr. Vijay Anand Reddy is recognized as one of the best immunotherapy doctors in India, with over 30 years of experience in medical oncology. His expertise in checkpoint inhibitors, CAR-T cell therapy, and personalized immunotherapy protocols makes him the preferred choice for cancer immunotherapy treatment."
         },
         {
-            question: "Can supportive oncology care cure cancer?",
-            answer: "Supportive Oncology Care can lead to long-term remission and even cure in some patients, especially with melanoma and certain blood cancers. Response rates vary by cancer type. Dr. Vijay Anand Reddy evaluates each patient's cancer characteristics and biomarkers to determine the likelihood of successful supportive oncology care response."
+            question: "Can immunotherapy cure cancer?",
+            answer: "Immunotherapy can lead to long-term remission and even cure in some patients, especially with melanoma and certain blood cancers. Response rates vary by cancer type. Dr. Vijay Anand Reddy evaluates each patient's cancer characteristics and biomarkers to determine the likelihood of successful immunotherapy response."
         }
     ];
 
@@ -130,13 +130,13 @@ const SupportiveOncologyCarePage = () => {
                             className="lg:w-1/2 text-center lg:text-left"
                         >
                             <span className="inline-block py-1 px-3 rounded-full bg-medical-blue/10 text-medical-blue text-sm font-semibold mb-4">
-                                Advanced Cancer Supportive Oncology Care
+                                Advanced Cancer Immunotherapy
                             </span>
                             <h1 className="text-4xl lg:text-6xl font-bold text-medical-dark leading-tight mb-6">
-                                Best <span className="text-medical-blue">Supportive Oncology Care Cost</span> in India
+                                Best <span className="text-medical-blue">Immunotherapy Cost</span> in India
                             </h1>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                Seeking affordable <strong>Supportive Oncology Care cost in India</strong>? Dr. Vijay Anand Reddy offers cutting-edge supportive oncology care treatment with the latest symptom management and palliative care at Apollo Cancer Centres Hyderabad. Get world-class cancer care at 60-70% lower cost than Western countries.
+                                Seeking affordable <strong>immunotherapy cost in India</strong>? Dr. Vijay Anand Reddy offers cutting-edge immunotherapy treatment with the latest checkpoint inhibitors and CAR-T cell therapy at Apollo Cancer Centres Hyderabad. Get world-class cancer care at 60-70% lower cost than Western countries.
                             </p>
 
                             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -207,9 +207,9 @@ const SupportiveOncologyCarePage = () => {
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Advanced Supportive Oncology Care Cancer Treatment in India</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Advanced Immunotherapy Cancer Treatment in India</h2>
                         <p className="text-gray-600 text-lg">
-                            Experience cutting-edge supportive oncology care with the latest checkpoint inhibitors, CAR-T cell therapy, and personalized protocols. Dr. Vijay Anand Reddy offers the best Supportive Oncology Care cost in India with proven outcomes.
+                            Experience cutting-edge immunotherapy with the latest checkpoint inhibitors, CAR-T cell therapy, and personalized protocols. Dr. Vijay Anand Reddy offers the best immunotherapy cost in India with proven outcomes.
                         </p>
                     </div>
 
@@ -219,7 +219,7 @@ const SupportiveOncologyCarePage = () => {
                                 <FaUsers className="text-medical-blue" /> Overview
                             </h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Supportive Oncology Care harnesses your body's quality of life and symptom relief. Dr. Vijay Anand Reddy, a leading <strong>supportive oncology care specialist in India</strong>, offers advanced checkpoint inhibitors (anti-PD-1, anti-PD-L1, anti-CTLA-4), CAR-T cell therapy, and cancer vaccines tailored to each patient's unique cancer type and biomarker profile.
+                                Immunotherapy harnesses your body's immune system to fight cancer. Dr. Vijay Anand Reddy, a leading <strong>immunotherapy specialist in India</strong>, offers advanced checkpoint inhibitors (anti-PD-1, anti-PD-L1, anti-CTLA-4), CAR-T cell therapy, and cancer vaccines tailored to each patient's unique cancer type and biomarker profile.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
@@ -271,7 +271,7 @@ const SupportiveOncologyCarePage = () => {
                         <div className="relative h-full min-h-[400px]">
                             <img
                                 src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2079&auto=format&fit=crop"
-                                alt="Supportive Oncology Care Treatment in India"
+                                alt="Immunotherapy Treatment in India"
                                 className="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
                         </div>
@@ -279,7 +279,7 @@ const SupportiveOncologyCarePage = () => {
 
                     {/* Cost Breakdown Section */}
                     <div className="mt-12 bg-medical-light p-8 rounded-2xl border border-medical-blue/20">
-                        <h3 className="text-2xl font-bold text-medical-dark mb-6 text-center">Supportive Oncology Care Cost in India - Transparent Pricing</h3>
+                        <h3 className="text-2xl font-bold text-medical-dark mb-6 text-center">Immunotherapy Cost in India - Transparent Pricing</h3>
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-white p-6 rounded-xl shadow-sm">
                                 <h4 className="font-bold text-medical-dark mb-3">Per Cycle Cost</h4>
@@ -298,17 +298,17 @@ const SupportiveOncologyCarePage = () => {
                             </div>
                         </div>
                         <p className="text-center text-gray-600 mt-6">
-                            <strong>Note:</strong> Exact Supportive Oncology Care cost in India depends on cancer type, drug selection, biomarker status, and treatment duration. Contact us for personalized cost estimate.
+                            <strong>Note:</strong> Exact immunotherapy cost in India depends on cancer type, drug selection, biomarker status, and treatment duration. Contact us for personalized cost estimate.
                         </p>
                     </div>
 
                     {/* CTA Section */}
                     <div className="mt-12 bg-medical-blue p-8 rounded-2xl shadow-xl text-center border-2 border-medical-blue">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                            Schedule Your Supportive Oncology Care Consultation with Dr. Vijay Anand Reddy
+                            Schedule Your Immunotherapy Consultation with Dr. Vijay Anand Reddy
                         </h3>
                         <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
-                            Get expert guidance on advanced supportive oncology care treatment in India. Book a personalized consultation to discuss your cancer treatment options and customized care plan.
+                            Get expert guidance on advanced immunotherapy treatment in India. Book a personalized consultation to discuss your cancer treatment options and customized care plan.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a href="#book-appointment" className="px-8 py-4 bg-white text-medical-blue rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2">
@@ -336,7 +336,7 @@ const SupportiveOncologyCarePage = () => {
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <img
                                     src="/assets/vijay-anand-about.jpg"
-                                    alt="Dr. Vijay Anand Reddy - Best Supportive Oncology Care Doctor in India"
+                                    alt="Dr. Vijay Anand Reddy - Best Immunotherapy Doctor in India"
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
@@ -359,10 +359,10 @@ const SupportiveOncologyCarePage = () => {
                                 About Dr. Vijay Anand Reddy
                             </h2>
                             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                                Dr. Vijay Anand Reddy is a distinguished oncologist with over 30 years of experience in providing world-class cancer care. As the Director of Apollo Cancer Centres, Hyderabad, he has pioneered advanced supportive oncology care protocols and personalized cancer treatment approaches in India.
+                                Dr. Vijay Anand Reddy is a distinguished oncologist with over 30 years of experience in providing world-class cancer care. As the Director of Apollo Cancer Centres, Hyderabad, he has pioneered advanced immunotherapy protocols and personalized cancer treatment approaches in India.
                             </p>
                             <p className="text-gray-600 mb-8 leading-relaxed">
-                                He is renowned for his expertise in supportive oncology care, checkpoint inhibitors, and CAR-T cell therapy. His commitment to personalized patient care, use of latest supportive oncology care drugs, and evidence-based medicine has earned him recognition as one of India's leading supportive oncology care specialists.
+                                He is renowned for his expertise in immunotherapy, checkpoint inhibitors, and CAR-T cell therapy. His commitment to personalized patient care, use of latest immunotherapy drugs, and evidence-based medicine has earned him recognition as one of India's leading immunotherapy specialists.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -416,16 +416,16 @@ const SupportiveOncologyCarePage = () => {
             <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Our Supportive Oncology Care Treatment Process</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Our Immunotherapy Treatment Process</h2>
                         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-                            A systematic, patient-centric approach to supportive oncology care treatment. Dr. Vijay Anand Reddy and his team follow a comprehensive 4-step process for optimal cancer treatment outcomes.
+                            A systematic, patient-centric approach to immunotherapy treatment. Dr. Vijay Anand Reddy and his team follow a comprehensive 4-step process for optimal cancer treatment outcomes.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-4 gap-8">
                         {[
                             { step: "01", title: "Biomarker Testing", desc: "Comprehensive PD-L1, TMB, MSI testing.", image: "https://img.freepik.com/free-photo/doctor-patient-discussing-medical-report_1421-66.jpg" },
-                            { step: "02", title: "Treatment Planning", desc: "Personalized supportive oncology care protocol.", image: "https://img.freepik.com/free-photo/doctor-analyzing-x-ray-scan_1421-67.jpg" },
+                            { step: "02", title: "Treatment Planning", desc: "Personalized immunotherapy protocol.", image: "https://img.freepik.com/free-photo/doctor-analyzing-x-ray-scan_1421-67.jpg" },
                             { step: "03", title: "Infusion & Monitoring", desc: "Safe drug delivery with monitoring.", image: "https://img.freepik.com/free-photo/medical-team-meeting_1421-68.jpg" },
                             { step: "04", title: "Follow-up Care", desc: "Regular monitoring and response assessment.", image: "https://img.freepik.com/free-photo/surgeons-operating-room_1421-69.jpg" }
                         ].map((item, idx) => (
@@ -446,10 +446,10 @@ const SupportiveOncologyCarePage = () => {
                     <div className="mt-12 text-center">
                         <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-medical-blue max-w-4xl mx-auto">
                             <h3 className="text-2xl md:text-3xl font-bold text-medical-dark mb-4">
-                                Begin Your Supportive Oncology Care Treatment Journey Today
+                                Begin Your Immunotherapy Treatment Journey Today
                             </h3>
                             <p className="text-gray-600 mb-6 text-lg">
-                                Don't wait to start your journey to recovery. Dr. Vijay Anand Reddy and our expert team are ready to provide you with the best supportive oncology care cancer treatment in India with world-class care.
+                                Don't wait to start your journey to recovery. Dr. Vijay Anand Reddy and our expert team are ready to provide you with the best immunotherapy cancer treatment in India with world-class care.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="#book-appointment" className="px-8 py-4 bg-medical-blue text-white rounded-lg font-semibold hover:bg-medical-dark transition shadow-lg flex items-center justify-center gap-2">
@@ -464,26 +464,26 @@ const SupportiveOncologyCarePage = () => {
                 </div>
             </section>
 
-            {/* Apollo Hospital Supportive Oncology Care Section */}
+            {/* Apollo Hospital Immunotherapy Section */}
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Supportive Oncology Care at Apollo Cancer Centres India</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Immunotherapy at Apollo Cancer Centres India</h2>
                         <p className="text-gray-600 text-lg">
-                            State-of-the-art supportive oncology care infrastructure with world-class facilities, latest drugs, expert care, and the best supportive oncology care doctor in India - Dr. Vijay Anand Reddy.
+                            State-of-the-art immunotherapy infrastructure with world-class facilities, latest drugs, expert care, and the best immunotherapy doctor in India - Dr. Vijay Anand Reddy.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 mb-12">
                         <div>
                             <h3 className="text-2xl font-bold text-medical-dark mb-6 flex items-center gap-3">
-                                <FaHospital className="text-medical-blue" /> About Apollo Supportive Oncology Care Center
+                                <FaHospital className="text-medical-blue" /> About Apollo Immunotherapy Center
                             </h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Apollo Cancer Centres is equipped with India's most advanced supportive oncology care facilities, offering comprehensive cancer treatment with the latest checkpoint inhibitors, CAR-T cell therapy, and cancer vaccines. Under the leadership of Dr. Vijay Anand Reddy, our center provides world-class supportive oncology care care.
+                                Apollo Cancer Centres is equipped with India's most advanced immunotherapy facilities, offering comprehensive cancer treatment with the latest checkpoint inhibitors, CAR-T cell therapy, and cancer vaccines. Under the leadership of Dr. Vijay Anand Reddy, our center provides world-class immunotherapy care.
                             </p>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Our supportive oncology care program combines evidence-based medicine with a multidisciplinary team approach, ensuring each patient receives personalized treatment plans tailored to their specific biomarker profile and cancer type.
+                                Our immunotherapy program combines evidence-based medicine with a multidisciplinary team approach, ensuring each patient receives personalized treatment plans tailored to their specific biomarker profile and cancer type.
                             </p>
                             <div className="bg-medical-light p-6 rounded-xl border border-medical-blue/20">
                                 <h4 className="font-bold text-medical-dark mb-3 flex items-center gap-2">
@@ -492,7 +492,7 @@ const SupportiveOncologyCarePage = () => {
                                 <ul className="space-y-2">
                                     <li className="flex items-start gap-2 text-gray-700 text-sm">
                                         <span className="w-1.5 h-1.5 bg-medical-blue rounded-full mt-2 flex-shrink-0"></span>
-                                        Latest supportive oncology care drugs (Pembrolizumab, Nivolumab, Atezolizumab)
+                                        Latest immunotherapy drugs (Pembrolizumab, Nivolumab, Atezolizumab)
                                     </li>
                                     <li className="flex items-start gap-2 text-gray-700 text-sm">
                                         <span className="w-1.5 h-1.5 bg-medical-blue rounded-full mt-2 flex-shrink-0"></span>
@@ -513,7 +513,7 @@ const SupportiveOncologyCarePage = () => {
                         <div className="relative h-full min-h-[400px]">
                             <img
                                 src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
-                                alt="Apollo Cancer Centre Supportive Oncology Care Facility"
+                                alt="Apollo Cancer Centre Immunotherapy Facility"
                                 className="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
                         </div>
@@ -521,13 +521,13 @@ const SupportiveOncologyCarePage = () => {
 
                     {/* Advanced Facilities Section */}
                     <div className="mt-12">
-                        <h3 className="text-2xl font-bold text-medical-dark mb-8 text-center">Advanced Supportive Oncology Care Facilities & Equipment</h3>
+                        <h3 className="text-2xl font-bold text-medical-dark mb-8 text-center">Advanced Immunotherapy Facilities & Equipment</h3>
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-medical-light p-6 rounded-xl border border-medical-blue/20 hover:shadow-lg transition">
                                 <div className="bg-medical-blue/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
                                     <FaPills className="text-medical-blue text-2xl" />
                                 </div>
-                                <h4 className="font-bold text-medical-dark mb-3">Latest Supportive Oncology Care Drugs</h4>
+                                <h4 className="font-bold text-medical-dark mb-3">Latest Immunotherapy Drugs</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
                                     Access to newest checkpoint inhibitors including Pembrolizumab (Keytruda), Nivolumab (Opdivo), Atezolizumab (Tecentriq), and CAR-T cell therapies approved internationally.
                                 </p>
@@ -549,7 +549,7 @@ const SupportiveOncologyCarePage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Infusion Centers</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    Dedicated supportive oncology care infusion centers with comfortable recliners, trained nurses, and strict safety protocols for drug administration.
+                                    Dedicated immunotherapy infusion centers with comfortable recliners, trained nurses, and strict safety protocols for drug administration.
                                 </p>
                             </div>
 
@@ -569,7 +569,7 @@ const SupportiveOncologyCarePage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Patient Monitoring Systems</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    Real-time monitoring during supportive oncology care infusions with immediate intervention capabilities for any immune-related reactions.
+                                    Real-time monitoring during immunotherapy infusions with immediate intervention capabilities for any immune-related reactions.
                                 </p>
                             </div>
 
@@ -579,7 +579,7 @@ const SupportiveOncologyCarePage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Precision Medicine Lab</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    Next-generation sequencing and liquid biopsy facilities to identify optimal supportive oncology care candidates and monitor treatment response.
+                                    Next-generation sequencing and liquid biopsy facilities to identify optimal immunotherapy candidates and monitor treatment response.
                                 </p>
                             </div>
                         </div>
@@ -594,7 +594,7 @@ const SupportiveOncologyCarePage = () => {
                                     <FiTarget className="text-medical-blue" /> Biomarker-Driven Selection
                                 </h4>
                                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                                    Every supportive oncology care plan is based on comprehensive biomarker testing including PD-L1 expression, TMB, MSI status, and tumor-infiltrating lymphocytes to identify best responders.
+                                    Every immunotherapy plan is based on comprehensive biomarker testing including PD-L1 expression, TMB, MSI status, and tumor-infiltrating lymphocytes to identify best responders.
                                 </p>
                             </div>
                             <div>
@@ -602,7 +602,7 @@ const SupportiveOncologyCarePage = () => {
                                     <FiUsers className="text-medical-blue" /> Multidisciplinary Team
                                 </h4>
                                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                                    Our tumor board includes medical oncologists, immunologists, pathologists, radiologists, and support staff who collaborate for comprehensive supportive oncology care care.
+                                    Our tumor board includes medical oncologists, immunologists, pathologists, radiologists, and support staff who collaborate for comprehensive immunotherapy care.
                                 </p>
                             </div>
                             <div>
@@ -635,16 +635,16 @@ const SupportiveOncologyCarePage = () => {
                                 Why Choose Dr. Vijay Anand Reddy?
                             </h2>
                             <p className="text-gray-600 mb-8 text-lg">
-                                As a pioneer in supportive oncology care in India, Dr. Vijay Anand Reddy brings world-class expertise in symptom management and palliative care. His dedication to evidence-based medicine and patient outcomes makes him the preferred choice for supportive oncology care treatment.
+                                As a pioneer in immunotherapy in India, Dr. Vijay Anand Reddy brings world-class expertise in checkpoint inhibitors and CAR-T cell therapy. His dedication to evidence-based medicine and patient outcomes makes him the preferred choice for immunotherapy treatment.
                             </p>
                             <ul className="space-y-4">
                                 {[
-                                    "Best supportive oncology care doctor in India with 30+ years experience",
+                                    "Best immunotherapy doctor in India with 30+ years experience",
                                     "Expertise in latest checkpoint inhibitors and CAR-T therapy",
                                     "Access to cutting-edge biomarker testing technologies",
                                     "Multidisciplinary team for comprehensive care",
                                     "Proven track record with high success rates",
-                                    "Affordable supportive oncology care treatment costs in India"
+                                    "Affordable immunotherapy treatment costs in India"
                                 ].map((reason, idx) => (
                                     <li key={idx} className="flex items-center gap-3 text-gray-700 font-medium">
                                         <FiCheckCircle className="text-medical-blue flex-shrink-0" size={20} />
@@ -680,10 +680,10 @@ const SupportiveOncologyCarePage = () => {
                     {/* CTA - Expert Care */}
                     <div className="mt-12 bg-medical-blue p-8 rounded-2xl shadow-xl text-center border-2 border-medical-blue">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                            Experience World-Class Supportive Oncology Care Treatment in India
+                            Experience World-Class Immunotherapy Treatment in India
                         </h3>
                         <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
-                            Join thousands of patients who have trusted Dr. Vijay Anand Reddy, the best supportive oncology care doctor in India, for advanced cancer treatment with proven results and compassionate care.
+                            Join thousands of patients who have trusted Dr. Vijay Anand Reddy, the best immunotherapy doctor in India, for advanced cancer treatment with proven results and compassionate care.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a href="#book-appointment" className="px-8 py-4 bg-white text-medical-blue rounded-lg font-bold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2 text-lg">
@@ -708,7 +708,7 @@ const SupportiveOncologyCarePage = () => {
                             International Patient Services
                         </h2>
                         <p className="text-gray-600 text-lg">
-                            We provide comprehensive support for international patients seeking affordable and high-quality supportive oncology care treatment in India.
+                            We provide comprehensive support for international patients seeking affordable and high-quality immunotherapy treatment in India.
                         </p>
                     </div>
 
@@ -717,7 +717,7 @@ const SupportiveOncologyCarePage = () => {
                             {
                                 icon: <FiMessageSquare size={32} />,
                                 title: "Online Consultation",
-                                desc: "Initial video consultation to discuss supportive oncology care options before travel."
+                                desc: "Initial video consultation to discuss immunotherapy options before travel."
                             },
                             {
                                 icon: <FiFileText size={32} />,
@@ -753,7 +753,7 @@ const SupportiveOncologyCarePage = () => {
                             <div className="text-white max-w-xl">
                                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Plan Your Treatment Journey</h3>
                                 <p className="text-blue-100 text-lg mb-6">
-                                    Our dedicated International Patient Care team is available 24/7 to assist with treatment planning, cost estimates, and travel arrangements for supportive oncology care in India.
+                                    Our dedicated International Patient Care team is available 24/7 to assist with treatment planning, cost estimates, and travel arrangements for immunotherapy in India.
                                 </p>
                                 <div className="flex flex-wrap gap-4">
                                     <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-lg backdrop-blur-sm">
@@ -791,10 +791,10 @@ const SupportiveOncologyCarePage = () => {
                                 ⭐ Patient Reviews & Ratings
                             </span>
                             <h2 className="text-3xl md:text-5xl font-bold text-medical-dark mb-4">
-                                Most Reviewed & Highest Rated <span className="text-medical-blue">Supportive Oncology Care Doctor in India</span>
+                                Most Reviewed & Highest Rated <span className="text-medical-blue">Immunotherapy Doctor in India</span>
                             </h2>
                             <p className="text-gray-600 text-lg">
-                                Dr. Vijay Anand Reddy has earned the trust of thousands of cancer patients through exceptional care, advanced supportive oncology care treatments, and outstanding clinical outcomes.
+                                Dr. Vijay Anand Reddy has earned the trust of thousands of cancer patients through exceptional care, advanced immunotherapy treatments, and outstanding clinical outcomes.
                             </p>
                         </motion.div>
                     </div>
@@ -846,7 +846,7 @@ const SupportiveOncologyCarePage = () => {
                         >
                             <div className="text-4xl font-bold text-medical-purple mb-2">#1</div>
                             <p className="text-gray-600 font-semibold">Ranked in India</p>
-                            <p className="text-xs text-gray-500 mt-1">For Supportive Oncology Care</p>
+                            <p className="text-xs text-gray-500 mt-1">For Immunotherapy</p>
                         </motion.div>
                     </div>
 
@@ -862,7 +862,7 @@ const SupportiveOncologyCarePage = () => {
                             Patient Stories
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">
-                            Supportive Oncology Care Patient Video Testimonials
+                            Immunotherapy Patient Video Testimonials
                         </h2>
                         <p className="text-gray-600 text-lg">
                             Hear from our patients about their successful treatment journey with Dr. Vijay Anand Reddy.
@@ -950,9 +950,9 @@ const SupportiveOncologyCarePage = () => {
             <section className="py-14">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions About Supportive Oncology Care</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions About Immunotherapy</h2>
                         <p className="text-gray-600 mb-6 text-center">
-                            Get answers to common questions about supportive oncology care treatment, costs, side effects, and what to expect from India's best supportive oncology care doctor, Dr. Vijay Anand Reddy.
+                            Get answers to common questions about immunotherapy treatment, costs, side effects, and what to expect from India's best immunotherapy doctor, Dr. Vijay Anand Reddy.
                         </p>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
@@ -1016,4 +1016,4 @@ const SupportiveOncologyCarePage = () => {
     );
 };
 
-export default SupportiveOncologyCarePage;
+export default ImmunotherapyPage;
