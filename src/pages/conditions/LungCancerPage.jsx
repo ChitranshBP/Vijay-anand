@@ -6,7 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Test from '../../components/Test';
 
-const BreastCancerPage = () => {
+const LungCancerPage = () => {
     const videos = [
         { id: 1, title: "Talk by a cancer survivor | Happy Patient", videoId: "ugvDtjZrXxE", thumbnail: "https://img.youtube.com/vi/ugvDtjZrXxE/hqdefault.jpg" },
         { id: 2, title: "What do my patients think about my treatment?", videoId: "hefT59hk4Tk", thumbnail: "https://img.youtube.com/vi/hefT59hk4Tk/hqdefault.jpg" },
@@ -78,32 +78,32 @@ const BreastCancerPage = () => {
 
     const faqs = [
         {
-            question: "What is breast cancer treatment in India?",
-            answer: "Breast cancer treatment in India encompasses comprehensive care including surgery, chemotherapy, radiation therapy, hormone therapy, and targeted therapy. Dr. Vijay Anand Reddy provides world-class breast cancer treatment in India with advanced technologies and personalized care plans at Apollo Cancer Centres, Hyderabad."
+            question: "What is the lung cancer treatment cost in India?",
+            answer: "Lung cancer treatment cost in India ranges from ₹3-15 lakhs depending on the stage, type, and treatment modality. This is 60-70% cheaper than Western countries while maintaining the same quality standards. Dr. Vijay Anand Reddy offers affordable lung cancer treatment cost in India with transparent pricing and comprehensive care packages at Apollo Cancer Centres, Hyderabad."
         },
         {
-            question: "What are the early signs of breast cancer?",
-            answer: "Early signs include a lump in the breast or underarm, changes in breast size or shape, skin dimpling, nipple discharge, or changes in nipple appearance. Regular self-examination and mammograms are crucial for early detection. If you notice any of these signs, consult Dr. Vijay Anand Reddy for the best breast cancer treatment in India."
+            question: "What are the early signs of lung cancer?",
+            answer: "Early signs include persistent cough lasting more than 3 weeks, chest pain, shortness of breath, coughing up blood (hemoptysis), unexplained weight loss, fatigue, and recurrent respiratory infections. If you experience any of these symptoms, consult Dr. Vijay Anand Reddy for expert evaluation and the most cost-effective lung cancer treatment cost in India."
         },
         {
-            question: "What types of breast cancer treatment are available in India?",
-            answer: "India offers comprehensive breast cancer treatment options including lumpectomy, mastectomy, chemotherapy, radiation therapy (IMRT, IGRT), hormone therapy, targeted therapy, and immunotherapy. Dr. Vijay Anand Reddy specializes in advanced radiation oncology techniques for breast cancer treatment in India."
+            question: "What types of lung cancer treatment are available in India?",
+            answer: "India offers comprehensive lung cancer treatment including surgery (lobectomy, pneumonectomy), advanced radiation therapy (IMRT, IGRT, SBRT), chemotherapy, targeted therapy (EGFR, ALK inhibitors), and immunotherapy. Dr. Vijay Anand Reddy specializes in precision radiation oncology techniques that offer excellent outcomes at affordable lung cancer treatment cost in India."
         },
         {
-            question: "Why choose Dr. Vijay Anand Reddy for breast cancer treatment in India?",
-            answer: "With over 30 years of experience in radiation oncology, Dr. Vijay Anand Reddy offers world-class breast cancer treatment in India. He utilizes cutting-edge technology, personalized treatment plans, and a multidisciplinary approach to ensure the best outcomes for breast cancer patients. His expertise in IMRT, IGRT, and breast-conserving therapies makes him one of India's leading oncologists."
+            question: "Why is lung cancer treatment cost in India so affordable?",
+            answer: "Lung cancer treatment cost in India is 60-70% lower than Western countries due to lower operational costs, favorable currency exchange rates, and government support for healthcare infrastructure. Despite the lower costs, India offers world-class facilities, internationally trained doctors like Dr. Vijay Anand Reddy, and the latest treatment technologies."
         },
         {
-            question: "What is the cost of breast cancer treatment in India?",
-            answer: "Breast cancer treatment in India is significantly more affordable compared to Western countries, typically 60-70% lower, without compromising on quality. The exact cost depends on the stage of cancer, treatment modality, and duration. Dr. Reddy's clinic offers transparent pricing and treatment packages for breast cancer treatment in India."
+            question: "What is included in the lung cancer treatment cost in India?",
+            answer: "The lung cancer treatment cost in India typically includes consultations, diagnostic tests (CT scans, PET scans, biopsies), treatment procedures (surgery, radiation, chemotherapy), hospitalization, medications, and follow-up care. Dr. Reddy's clinic provides detailed cost breakdowns and transparent pricing with no hidden charges for lung cancer treatment cost in India."
         },
         {
-            question: "How long does breast cancer treatment take in India?",
-            answer: "The duration of breast cancer treatment in India varies based on the stage and type. Surgery may take a few hours, while radiation therapy typically spans 5-7 weeks. Chemotherapy cycles can last 3-6 months. Dr. Vijay Anand Reddy creates customized treatment timelines for each breast cancer patient."
+            question: "How long does lung cancer treatment take in India?",
+            answer: "Treatment duration varies by stage and type. Surgery may take 3-6 hours with 5-10 days hospitalization. Radiation therapy typically spans 4-7 weeks. Chemotherapy cycles last 3-6 months. The comprehensive and affordable lung cancer treatment cost in India includes all these phases. Dr. Vijay Anand Reddy creates customized treatment timelines for optimal outcomes."
         },
         {
-            question: "What is the success rate of breast cancer treatment in India?",
-            answer: "Breast cancer treatment in India has excellent success rates, with early-stage breast cancer having a 90%+ survival rate. Dr. Vijay Anand Reddy has successfully treated over 10,000 breast cancer patients with advanced radiation oncology techniques and personalized care, achieving outstanding outcomes comparable to global standards."
+            question: "What is the success rate of lung cancer treatment cost in India?",
+            answer: "Lung cancer treatment in India has excellent success rates, with early-stage lung cancer having 60-80% survival rates. Dr. Vijay Anand Reddy has successfully treated thousands of lung cancer patients using advanced radiation oncology techniques, achieving outstanding outcomes comparable to global standards at the most competitive lung cancer treatment cost in India."
         }
     ];
 
@@ -130,19 +130,19 @@ const BreastCancerPage = () => {
                             className="lg:w-1/2 text-center lg:text-left"
                         >
                             <span className="inline-block py-1 px-3 rounded-full bg-medical-blue/10 text-medical-blue text-sm font-semibold mb-4">
-                                Advanced Breast Cancer Care
+                                Advanced Lung Cancer Care
                             </span>
                             <h1 className="text-4xl lg:text-6xl font-bold text-medical-dark leading-tight mb-6">
-                                Best <span className="text-medical-blue">Breast Cancer Treatment</span> in India
+                                Best <span className="text-medical-blue">Lung Cancer Treatment Cost</span> in India
                             </h1>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                Seeking world-class <strong>breast cancer treatment in India</strong>? Dr. Vijay Anand Reddy offers advanced radiation oncology, precision surgery, and comprehensive cancer care at Apollo Cancer Centres Hyderabad. Get expert treatment with the latest IMRT, IGRT, and breast-conserving techniques.
+                                Seeking affordable <strong>lung cancer treatment cost in India</strong>? Dr. Vijay Anand Reddy offers world-class lung cancer care at ₹3-15 lakhs (60-70% cheaper than Western countries) with advanced radiation oncology, precision surgery, and comprehensive cancer treatment at Apollo Cancer Centres Hyderabad.
                             </p>
 
                             <div className="grid grid-cols-2 gap-4 mb-8">
                                 <div className="bg-white p-4 rounded-lg border border-medical-blue/20 shadow-sm">
-                                    <div className="text-3xl font-bold text-medical-blue mb-1">90%+</div>
-                                    <p className="text-xs text-gray-600">Early Detection Success</p>
+                                    <div className="text-3xl font-bold text-medical-blue mb-1">60-70%</div>
+                                    <p className="text-xs text-gray-600">Lower Cost Than Abroad</p>
                                 </div>
                                 <div className="bg-white p-4 rounded-lg border border-medical-blue/20 shadow-sm">
                                     <div className="text-3xl font-bold text-medical-blue mb-1">30+</div>
@@ -248,7 +248,7 @@ const BreastCancerPage = () => {
                                     <FiCheckCircle className="text-green-500" size={24} />
                                     <span className="text-2xl font-bold">Most Trusted</span>
                                 </div>
-                                <p className="text-gray-600 text-sm font-medium">Breast Cancer Doctor in India</p>
+                                <p className="text-gray-600 text-sm font-medium">Lung Cancer Doctor in India</p>
                             </motion.div>
 
                             {/* CTA Button */}
@@ -296,19 +296,19 @@ const BreastCancerPage = () => {
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Comprehensive Breast Cancer Treatment in India</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Comprehensive Lung Cancer Treatment Cost in India</h2>
                         <p className="text-gray-600 text-lg">
-                            Experience cutting-edge breast cancer treatment in India with advanced radiation oncology, precision surgery, and personalized care. Dr. Vijay Anand Reddy offers the best outcomes with proven success rates.
+                            Experience affordable yet cutting-edge lung cancer treatment cost in India with advanced radiation oncology, precision surgery, and personalized care. Dr. Vijay Anand Reddy offers the best outcomes at 60-70% lower costs than Western countries.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 items-start">
                         <div>
                             <h3 className="text-2xl font-bold text-medical-dark mb-6 flex items-center gap-3">
-                                <FaUsers className="text-medical-blue" /> Overview
+                                <FaLungs className="text-medical-blue" /> Overview
                             </h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Breast cancer begins when cells in the breast grow out of control. Dr. Vijay Anand Reddy, a leading specialist in <strong>breast cancer treatment in India</strong>, offers comprehensive care including advanced diagnostics, minimally invasive surgery, precision radiation therapy (IMRT, IGRT), chemotherapy, hormone therapy, and targeted therapy tailored to each patient's unique cancer type and stage.
+                                Lung cancer begins when cells in the lungs grow out of control. Dr. Vijay Anand Reddy, a leading specialist in affordable <strong>lung cancer treatment cost in India</strong>, offers comprehensive care including advanced diagnostics, minimally invasive surgery, precision radiation therapy (IMRT, IGRT, SBRT), chemotherapy, targeted therapy, and immunotherapy at ₹3-15 lakhs—significantly cheaper than international options.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
@@ -316,35 +316,35 @@ const BreastCancerPage = () => {
                                     <div className="bg-medical-blue/10 p-3 rounded-lg text-medical-blue mt-1"><FaMicroscope size={24} /></div>
                                     <div>
                                         <h4 className="font-bold text-medical-dark">Advanced Diagnostics</h4>
-                                        <p className="text-sm text-gray-500">3D mammography & MRI</p>
+                                        <p className="text-sm text-gray-500">CT, PET scans & biopsies</p>
                                     </div>
                                 </div>
                                 <div className="bg-medical-light p-4 rounded-lg border border-medical-blue/20 flex items-start gap-3 shadow-sm hover:shadow-lg transition">
                                     <div className="bg-medical-blue/10 p-3 rounded-lg text-medical-blue mt-1"><FaProcedures size={24} /></div>
                                     <div>
                                         <h4 className="font-bold text-medical-dark">Minimally Invasive</h4>
-                                        <p className="text-sm text-gray-500">Breast-conserving surgery</p>
+                                        <p className="text-sm text-gray-500">VATS & robotic surgery</p>
                                     </div>
                                 </div>
                                 <div className="bg-medical-light p-4 rounded-lg border border-medical-blue/20 flex items-start gap-3 shadow-sm hover:shadow-lg transition">
                                     <div className="bg-medical-blue/10 p-3 rounded-lg text-medical-blue mt-1"><FiTarget size={24} /></div>
                                     <div>
                                         <h4 className="font-bold text-medical-dark">Precision Radiation</h4>
-                                        <p className="text-sm text-gray-500">IMRT & IGRT therapy</p>
+                                        <p className="text-sm text-gray-500">IMRT, IGRT & SBRT</p>
                                     </div>
                                 </div>
                                 <div className="bg-medical-light p-4 rounded-lg border border-medical-blue/20 flex items-start gap-3 shadow-sm hover:shadow-lg transition">
                                     <div className="bg-medical-blue/10 p-3 rounded-lg text-medical-blue mt-1"><FaDna size={24} /></div>
                                     <div>
                                         <h4 className="font-bold text-medical-dark">Targeted Therapy</h4>
-                                        <p className="text-sm text-gray-500">Personalized treatment</p>
+                                        <p className="text-sm text-gray-500">EGFR & ALK inhibitors</p>
                                     </div>
                                 </div>
                                 <div className="bg-medical-light p-4 rounded-lg border border-medical-blue/20 flex items-start gap-3 shadow-sm hover:shadow-lg transition">
                                     <div className="bg-medical-blue/10 p-3 rounded-lg text-medical-blue mt-1"><FiShield size={24} /></div>
                                     <div>
-                                        <h4 className="font-bold text-medical-dark">Fewer Side Effects</h4>
-                                        <p className="text-sm text-gray-500">Better tolerance</p>
+                                        <h4 className="font-bold text-medical-dark">Affordable Costs</h4>
+                                        <p className="text-sm text-gray-500">60-70% cheaper</p>
                                     </div>
                                 </div>
                                 <div className="bg-medical-light p-4 rounded-lg border border-medical-blue/20 flex items-start gap-3 shadow-sm hover:shadow-lg transition">
@@ -360,7 +360,7 @@ const BreastCancerPage = () => {
                         <div className="relative h-full min-h-[400px]">
                             <img
                                 src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2079&auto=format&fit=crop"
-                                alt="Breast Cancer Treatment in India"
+                                alt="Lung Cancer Treatment Cost in India"
                                 className="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
                         </div>
@@ -369,10 +369,10 @@ const BreastCancerPage = () => {
                     {/* CTA Section */}
                     <div className="mt-12 bg-medical-blue p-8 rounded-2xl shadow-xl text-center border-2 border-medical-blue">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                            Schedule Your Breast Cancer Consultation with Dr. Vijay Anand Reddy
+                            Get Affordable Lung Cancer Treatment Cost Quote from Dr. Vijay Anand Reddy
                         </h3>
                         <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
-                            Get expert guidance on the best breast cancer treatment in India. Book a personalized consultation to discuss your treatment options and customized care plan.
+                            Get expert guidance on the best lung cancer treatment cost in India. Book a personalized consultation to discuss your treatment options and customized care plan at 60-70% lower costs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a href="#book-appointment" className="px-8 py-4 bg-white text-medical-blue rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2">
@@ -400,7 +400,7 @@ const BreastCancerPage = () => {
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <img
                                     src="/assets/vijay-anand-about.jpg"
-                                    alt="Dr. Vijay Anand Reddy - Best Breast Cancer Treatment Doctor in India"
+                                    alt="Dr. Vijay Anand Reddy - Best Lung Cancer Treatment Doctor in India"
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
@@ -423,10 +423,10 @@ const BreastCancerPage = () => {
                                 About Dr. Vijay Anand Reddy
                             </h2>
                             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                                Dr. Vijay Anand Reddy is a distinguished radiation oncologist with over 30 years of experience providing world-class <strong>breast cancer treatment in India</strong>. As the Director of Apollo Cancer Centres, Hyderabad, he has pioneered advanced radiation oncology techniques and personalized treatment approaches for breast cancer patients.
+                                Dr. Vijay Anand Reddy is a distinguished radiation oncologist with over 30 years of experience providing affordable world-class <strong>lung cancer treatment cost in India</strong>. As the Director of Apollo Cancer Centres, Hyderabad, he has pioneered advanced radiation oncology techniques and personalized treatment approaches for lung cancer patients at costs 60-70% lower than Western countries.
                             </p>
                             <p className="text-gray-600 mb-8 leading-relaxed">
-                                He is renowned for his expertise in IMRT, IGRT, and breast-conserving therapies. His commitment to personalized patient care, use of cutting-edge technology, and evidence-based medicine has earned him recognition as one of India's leading breast cancer specialists.
+                                He is renowned for his expertise in IMRT, IGRT, SBRT, and stereotactic body radiation therapy for lung cancer. His commitment to personalized patient care, use of cutting-edge technology, and evidence-based medicine has earned him recognition as one of India's leading lung cancer specialists offering the most affordable treatment options.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -480,16 +480,16 @@ const BreastCancerPage = () => {
             <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Our Breast Cancer Treatment Process</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Our Lung Cancer Treatment Process</h2>
                         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-                            A systematic, patient-centric approach to breast cancer treatment in India. Dr. Vijay Anand Reddy and his team follow a comprehensive 4-step process for optimal treatment outcomes.
+                            A systematic, patient-centric approach to affordable lung cancer treatment cost in India. Dr. Vijay Anand Reddy and his team follow a comprehensive 4-step process for optimal treatment outcomes at the most competitive costs.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-4 gap-8">
                         {[
-                            { step: "01", title: "Consultation & Diagnosis", desc: "Comprehensive evaluation and advanced diagnostic imaging.", image: "https://img.freepik.com/free-photo/doctor-patient-discussing-medical-report_1421-66.jpg" },
-                            { step: "02", title: "Treatment Planning", desc: "Multidisciplinary team creates personalized plan.", image: "https://img.freepik.com/free-photo/doctor-analyzing-x-ray-scan_1421-67.jpg" },
+                            { step: "01", title: "Consultation & Diagnosis", desc: "Comprehensive evaluation with CT, PET scans, and biopsy.", image: "https://img.freepik.com/free-photo/doctor-patient-discussing-medical-report_1421-66.jpg" },
+                            { step: "02", title: "Treatment Planning", desc: "Multidisciplinary team creates personalized affordable plan.", image: "https://img.freepik.com/free-photo/doctor-analyzing-x-ray-scan_1421-67.jpg" },
                             { step: "03", title: "Treatment Delivery", desc: "Surgery, radiation, or chemotherapy with precision.", image: "https://img.freepik.com/free-photo/medical-team-meeting_1421-68.jpg" },
                             { step: "04", title: "Follow-up Care", desc: "Regular monitoring and survivorship support.", image: "https://img.freepik.com/free-photo/surgeons-operating-room_1421-69.jpg" }
                         ].map((item, idx) => (
@@ -510,10 +510,10 @@ const BreastCancerPage = () => {
                     <div className="mt-12 text-center">
                         <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-medical-blue max-w-4xl mx-auto">
                             <h3 className="text-2xl md:text-3xl font-bold text-medical-dark mb-4">
-                                Begin Your Breast Cancer Treatment Journey Today
+                                Begin Your Affordable Lung Cancer Treatment Journey Today
                             </h3>
                             <p className="text-gray-600 mb-6 text-lg">
-                                Don't wait to start your journey to recovery. Dr. Vijay Anand Reddy and our expert team are ready to provide you with the best breast cancer treatment in India with world-class care.
+                                Don't wait to start your journey to recovery. Dr. Vijay Anand Reddy and our expert team are ready to provide you with the best lung cancer treatment cost in India with world-class care at 60-70% lower costs.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="#book-appointment" className="px-8 py-4 bg-medical-blue text-white rounded-lg font-semibold hover:bg-medical-dark transition shadow-lg flex items-center justify-center gap-2">
@@ -528,26 +528,26 @@ const BreastCancerPage = () => {
                 </div>
             </section>
 
-            {/* Apollo Hospital Breast Cancer Section */}
+            {/* Apollo Hospital Lung Cancer Section */}
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Breast Cancer Treatment at Apollo Cancer Centres India</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">Affordable Lung Cancer Treatment Cost at Apollo Cancer Centres India</h2>
                         <p className="text-gray-600 text-lg">
-                            State-of-the-art breast cancer treatment infrastructure with world-class facilities, latest technology, expert care, and the best breast cancer doctor in India - Dr. Vijay Anand Reddy.
+                            State-of-the-art lung cancer treatment infrastructure with world-class facilities, latest technology, expert care, and the best affordable lung cancer treatment cost in India with Dr. Vijay Anand Reddy.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 mb-12">
                         <div>
                             <h3 className="text-2xl font-bold text-medical-dark mb-6 flex items-center gap-3">
-                                <FaHospital className="text-medical-blue" /> About Apollo Breast Cancer Center
+                                <FaHospital className="text-medical-blue" /> About Apollo Lung Cancer Center
                             </h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Apollo Cancer Centres is equipped with India's most advanced breast cancer treatment facilities, offering comprehensive cancer care with the latest diagnostic tools, minimally invasive surgery, precision radiation therapy, and targeted treatments. Under the leadership of Dr. Vijay Anand Reddy, our center provides world-class <strong>breast cancer treatment in India</strong>.
+                                Apollo Cancer Centres is equipped with India's most advanced lung cancer treatment facilities at competitive costs (₹3-15 lakhs), offering comprehensive cancer care with the latest diagnostic tools, minimally invasive surgery, precision radiation therapy, and targeted treatments. Under the leadership of Dr. Vijay Anand Reddy, our center provides world-class <strong>lung cancer treatment cost in India</strong> at 60-70% lower than international standards.
                             </p>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Our breast cancer program combines evidence-based medicine with a multidisciplinary team approach, ensuring each patient receives personalized treatment plans tailored to their specific cancer stage, type, and biomarker profile.
+                                Our lung cancer program combines evidence-based medicine with a multidisciplinary team approach, ensuring each patient receives personalized treatment plans tailored to their specific cancer stage, type, and molecular profile—all at the most affordable lung cancer treatment cost in India.
                             </p>
                             <div className="bg-medical-light p-6 rounded-xl border border-medical-blue/20">
                                 <h4 className="font-bold text-medical-dark mb-3 flex items-center gap-2">
@@ -556,11 +556,11 @@ const BreastCancerPage = () => {
                                 <ul className="space-y-2">
                                     <li className="flex items-start gap-2 text-gray-700 text-sm">
                                         <span className="w-1.5 h-1.5 bg-medical-blue rounded-full mt-2 flex-shrink-0"></span>
-                                        3D mammography and advanced breast MRI
+                                        Low-dose CT screening and advanced chest imaging
                                     </li>
                                     <li className="flex items-start gap-2 text-gray-700 text-sm">
                                         <span className="w-1.5 h-1.5 bg-medical-blue rounded-full mt-2 flex-shrink-0"></span>
-                                        Breast-conserving surgery with oncoplastic techniques
+                                        VATS and robotic-assisted thoracic surgery
                                     </li>
                                     <li className="flex items-start gap-2 text-gray-700 text-sm">
                                         <span className="w-1.5 h-1.5 bg-medical-blue rounded-full mt-2 flex-shrink-0"></span>
@@ -568,7 +568,7 @@ const BreastCancerPage = () => {
                                     </li>
                                     <li className="flex items-start gap-2 text-gray-700 text-sm">
                                         <span className="w-1.5 h-1.5 bg-medical-blue rounded-full mt-2 flex-shrink-0"></span>
-                                        24/7 comprehensive patient support and care
+                                        Most affordable lung cancer treatment cost—60-70% cheaper
                                     </li>
                                 </ul>
                             </div>
@@ -577,7 +577,7 @@ const BreastCancerPage = () => {
                         <div className="relative h-full min-h-[400px]">
                             <img
                                 src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop"
-                                alt="Apollo Cancer Centre Breast Cancer Treatment Facility"
+                                alt="Apollo Cancer Centre Lung Cancer Treatment Facility"
                                 className="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
                         </div>
@@ -585,7 +585,7 @@ const BreastCancerPage = () => {
 
                     {/* Advanced Facilities Section */}
                     <div className="mt-12">
-                        <h3 className="text-2xl font-bold text-medical-dark mb-8 text-center">Advanced Breast Cancer Treatment Facilities & Equipment</h3>
+                        <h3 className="text-2xl font-bold text-medical-dark mb-8 text-center">Advanced Lung Cancer Treatment Facilities & Equipment</h3>
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-medical-light p-6 rounded-xl border border-medical-blue/20 hover:shadow-lg transition">
                                 <div className="bg-medical-blue/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
@@ -593,7 +593,7 @@ const BreastCancerPage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Advanced Diagnostics</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    3D digital mammography, breast MRI, molecular imaging, and comprehensive biomarker testing for accurate diagnosis and treatment planning.
+                                    Low-dose CT screening, PET-CT, bronchoscopy, EBUS, and comprehensive molecular profiling for accurate diagnosis at competitive costs.
                                 </p>
                             </div>
 
@@ -603,7 +603,7 @@ const BreastCancerPage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Minimally Invasive Surgery</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    Breast-conserving lumpectomy, sentinel lymph node biopsy, oncoplastic surgery, and advanced reconstruction techniques.
+                                    VATS lobectomy, robotic-assisted surgery, and advanced thoracic surgical techniques at affordable lung cancer treatment cost in India.
                                 </p>
                             </div>
 
@@ -613,7 +613,7 @@ const BreastCancerPage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Precision Radiation Therapy</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    IMRT, IGRT, SBRT, and accelerated partial breast irradiation with real-time imaging for maximum precision and minimal side effects.
+                                    IMRT, IGRT, SBRT/SABR for early-stage lung cancer with real-time imaging for maximum precision at lower costs.
                                 </p>
                             </div>
 
@@ -623,7 +623,7 @@ const BreastCancerPage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Targeted Therapy</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    HER2-targeted therapies, hormone therapy, CDK4/6 inhibitors, and immunotherapy for specific breast cancer subtypes.
+                                    EGFR, ALK, ROS1, and PD-L1 targeted therapies and immunotherapy for specific lung cancer mutations at affordable costs.
                                 </p>
                             </div>
 
@@ -631,9 +631,9 @@ const BreastCancerPage = () => {
                                 <div className="bg-medical-blue/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
                                     <FaDna className="text-medical-blue text-2xl" />
                                 </div>
-                                <h4 className="font-bold text-medical-dark mb-3">Genetic Testing</h4>
+                                <h4 className="font-bold text-medical-dark mb-3">Molecular Testing</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    BRCA1/2 testing, comprehensive genomic profiling, and personalized treatment selection based on genetic markers.
+                                    Comprehensive genomic profiling and biomarker testing for personalized treatment selection at competitive lung cancer treatment cost in India.
                                 </p>
                             </div>
 
@@ -643,7 +643,7 @@ const BreastCancerPage = () => {
                                 </div>
                                 <h4 className="font-bold text-medical-dark mb-3">Supportive Care</h4>
                                 <p className="text-gray-600 text-sm leading-relaxed">
-                                    Counseling, nutrition support, physiotherapy, lymphedema management, and survivorship programs for complete well-being.
+                                    Pulmonary rehabilitation, pain management, counseling, and survivorship programs for complete well-being.
                                 </p>
                             </div>
                         </div>
@@ -657,19 +657,19 @@ const BreastCancerPage = () => {
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
                             <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-6">
-                                Why Choose Dr. Vijay Anand Reddy for Breast Cancer Treatment?
+                                Why Choose Dr. Vijay Anand Reddy for Lung Cancer Treatment?
                             </h2>
                             <p className="text-gray-600 mb-8 text-lg">
-                                As a pioneer in breast cancer treatment in India, Dr. Vijay Anand Reddy brings world-class expertise in radiation oncology and comprehensive cancer care. His dedication to evidence-based medicine and patient outcomes makes him the preferred choice for breast cancer treatment.
+                                As a pioneer in affordable lung cancer treatment cost in India, Dr. Vijay Anand Reddy brings world-class expertise in radiation oncology and comprehensive cancer care at 60-70% lower costs. His dedication to evidence-based medicine and patient outcomes makes him the preferred choice for lung cancer treatment.
                             </p>
                             <ul className="space-y-4">
                                 {[
-                                    "Best breast cancer treatment doctor in India with 30+ years experience",
+                                    "Best lung cancer treatment doctor in India with 30+ years experience",
                                     "Expertise in advanced radiation therapy (IMRT, IGRT, SBRT)",
-                                    "Personalized treatment plans for every patient",
+                                    "Most affordable lung cancer treatment cost—60-70% cheaper than abroad",
                                     "Multidisciplinary team for comprehensive care",
-                                    "Proven track record with 90%+ early detection success",
-                                    "Affordable breast cancer treatment in India"
+                                    "Proven track record with thousands of successful cases",
+                                    "Transparent pricing with no hidden charges"
                                 ].map((reason, idx) => (
                                     <li key={idx} className="flex items-center gap-3 text-gray-700 font-medium">
                                         <FiCheckCircle className="text-medical-blue flex-shrink-0" size={20} />
@@ -691,8 +691,8 @@ const BreastCancerPage = () => {
                             </div>
                             <div className="bg-medical-blue/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-medical-blue/40">
                                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiHeart size={28} /></div>
-                                <div className="text-3xl font-bold text-medical-blue mb-1">24/7</div>
-                                <h4 className="font-bold text-medical-dark text-sm">Support</h4>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">60-70%</div>
+                                <h4 className="font-bold text-medical-dark text-sm">Cost Savings</h4>
                             </div>
                             <div className="bg-medical-blue/25 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-medical-blue/50">
                                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiUsers size={28} /></div>
@@ -705,10 +705,10 @@ const BreastCancerPage = () => {
                     {/* CTA - Expert Care */}
                     <div className="mt-12 bg-medical-blue p-8 rounded-2xl shadow-xl text-center border-2 border-medical-blue">
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                            Experience World-Class Breast Cancer Treatment in India
+                            Experience Affordable World-Class Lung Cancer Treatment Cost in India
                         </h3>
                         <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
-                            Join thousands of patients who have trusted Dr. Vijay Anand Reddy, the best breast cancer treatment doctor in India, for advanced cancer treatment with proven results and compassionate care.
+                            Join thousands of patients who have trusted Dr. Vijay Anand Reddy, the best lung cancer treatment doctor in India, for advanced cancer treatment at 60-70% lower costs with proven results and compassionate care.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a href="#book-appointment" className="px-8 py-4 bg-white text-medical-blue rounded-lg font-bold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2 text-lg">
@@ -733,7 +733,7 @@ const BreastCancerPage = () => {
                             International Patient Services
                         </h2>
                         <p className="text-gray-600 text-lg">
-                            We provide comprehensive support for international patients seeking affordable and high-quality breast cancer treatment in India.
+                            We provide comprehensive support for international patients seeking affordable and high-quality lung cancer treatment cost in India at 60-70% lower prices.
                         </p>
                     </div>
 
@@ -742,7 +742,7 @@ const BreastCancerPage = () => {
                             {
                                 icon: <FiMessageSquare size={32} />,
                                 title: "Online Consultation",
-                                desc: "Initial video consultation to discuss treatment options before travel."
+                                desc: "Initial video consultation to discuss treatment options and costs before travel."
                             },
                             {
                                 icon: <FiFileText size={32} />,
@@ -778,7 +778,7 @@ const BreastCancerPage = () => {
                             <div className="text-white max-w-xl">
                                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Plan Your Treatment Journey</h3>
                                 <p className="text-blue-100 text-lg mb-6">
-                                    Our dedicated International Patient Care team is available 24/7 to assist with treatment planning, cost estimates, and travel arrangements for breast cancer treatment in India.
+                                    Our dedicated International Patient Care team is available 24/7 to assist with treatment planning, cost estimates, and travel arrangements for affordable lung cancer treatment cost in India.
                                 </p>
                                 <div className="flex flex-wrap gap-4">
                                     <div className="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-lg backdrop-blur-sm">
@@ -813,13 +813,13 @@ const BreastCancerPage = () => {
                             transition={{ duration: 0.6 }}
                         >
                             <span className="inline-block py-2 px-4 rounded-full bg-medical-blue/10 text-medical-blue text-sm font-semibold mb-4">
-                                ⭐ Patient Reviews & Ratings
+                                Patient Reviews & Ratings
                             </span>
                             <h2 className="text-3xl md:text-5xl font-bold text-medical-dark mb-4">
-                                Most Reviewed & Highest Rated <span className="text-medical-blue">Breast Cancer Treatment Doctor in India</span>
+                                Most Reviewed & Highest Rated <span className="text-medical-blue">Lung Cancer Treatment Doctor in India</span>
                             </h2>
                             <p className="text-gray-600 text-lg">
-                                Dr. Vijay Anand Reddy has earned the trust of thousands of breast cancer patients through exceptional care, advanced treatment techniques, and outstanding clinical outcomes.
+                                Dr. Vijay Anand Reddy has earned the trust of thousands of lung cancer patients through exceptional care, advanced treatment techniques, affordable costs, and outstanding clinical outcomes.
                             </p>
                         </motion.div>
                     </div>
@@ -871,7 +871,7 @@ const BreastCancerPage = () => {
                         >
                             <div className="text-4xl font-bold text-medical-purple mb-2">#1</div>
                             <p className="text-gray-600 font-semibold">Ranked in India</p>
-                            <p className="text-xs text-gray-500 mt-1">For Breast Cancer Treatment</p>
+                            <p className="text-xs text-gray-500 mt-1">For Lung Cancer Treatment</p>
                         </motion.div>
                     </div>
 
@@ -887,10 +887,10 @@ const BreastCancerPage = () => {
                             Patient Stories
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">
-                            Breast Cancer Patient Video Testimonials
+                            Lung Cancer Patient Video Testimonials
                         </h2>
                         <p className="text-gray-600 text-lg">
-                            Hear from our patients about their successful breast cancer treatment journey with Dr. Vijay Anand Reddy.
+                            Hear from our patients about their successful lung cancer treatment journey with Dr. Vijay Anand Reddy.
                         </p>
                     </div>
 
@@ -975,9 +975,9 @@ const BreastCancerPage = () => {
             <section className="py-14">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions About Breast Cancer Treatment in India</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions About Lung Cancer Treatment Cost in India</h2>
                         <p className="text-gray-600 mb-6 text-center">
-                            Get answers to common questions about breast cancer treatment, costs, success rates, and what to expect from India's best breast cancer treatment doctor, Dr. Vijay Anand Reddy.
+                            Get answers to common questions about lung cancer treatment cost in India, pricing, success rates, and what to expect from India's best lung cancer treatment doctor, Dr. Vijay Anand Reddy.
                         </p>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
@@ -1041,4 +1041,4 @@ const BreastCancerPage = () => {
     );
 };
 
-export default BreastCancerPage;
+export default LungCancerPage;
