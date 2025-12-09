@@ -270,7 +270,7 @@ const Header = () => {
         style={{ top: '36px' }}>
 
         {/* Add a container with better responsive handling */}
-        <div className="w-full">
+        <div className="container mx-auto">
         <div className="max-w-full 2xl:max-w-[1800px] mx-auto px-2 sm:px-4 lg:px-4 xl:px-6 2xl:px-8">
           <div className="flex justify-between items-center py-2 sm:py-3 lg:py-0 min-h-14 sm:min-h-16 gap-1">
             {/* Logo */}
