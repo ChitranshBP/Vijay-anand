@@ -38,6 +38,15 @@ import PancreaticCancerIndiaPage from './pages/services/PancreaticCancerIndiaPag
 import AdrenalCancerIndiaPage from './pages/services/AdrenalCancerIndiaPage';
 import ProtonTherapyIndiaPage from './pages/services/ProtonTherapyIndiaPage';
 import BreastCancerPage from './pages/conditions/BreastCancerPage';
+import LungCancerPage from './pages/conditions/LungCancerPage';
+import ProstateCancerPage from './pages/conditions/ProstateCancerPage';
+import CervicalCancerPage from './pages/conditions/CervicalCancerPage';
+import OvarianCancerPage from './pages/conditions/OvarianCancerPage';
+import ColorectalCancerPage from './pages/conditions/ColorectalCancerPage';
+import LiverCancerPage from './pages/conditions/LiverCancerPage';
+import KidneyCancerPage from './pages/conditions/KidneyCancerPage';
+import PancreaticCancerConditionPage from './pages/conditions/PancreaticCancerPage';
+import ThyroidCancerPage from './pages/conditions/ThyroidCancerPage';
 import EyeCancerPage from './pages/conditions/EyeCancerPage';
 import RetinoblastomaPage from './pages/conditions/RetinoblastomaPage';
 import UvealMelanomaPage from './pages/conditions/UvealMelanomaPage';
@@ -148,6 +157,15 @@ function App() {
 
           {/* Conditions */}
           <Route path="/conditions/breast-cancer" element={<BreastCancerPage />} />
+          <Route path="/conditions/lung-cancer" element={<LungCancerPage />} />
+          <Route path="/conditions/prostate-cancer" element={<ProstateCancerPage />} />
+          <Route path="/conditions/cervical-cancer" element={<CervicalCancerPage />} />
+          <Route path="/conditions/ovarian-cancer" element={<OvarianCancerPage />} />
+          <Route path="/conditions/colorectal-cancer" element={<ColorectalCancerPage />} />
+          <Route path="/conditions/liver-cancer" element={<LiverCancerPage />} />
+          <Route path="/conditions/kidney-cancer" element={<KidneyCancerPage />} />
+          <Route path="/conditions/pancreatic-cancer" element={<PancreaticCancerConditionPage />} />
+          <Route path="/conditions/thyroid-cancer" element={<ThyroidCancerPage />} />
           <Route path="/conditions/eye-cancer" element={<EyeCancerPage />} />
           <Route path="/conditions/retinoblastoma" element={<RetinoblastomaPage />} />
           <Route path="/conditions/uveal-melanoma" element={<UvealMelanomaPage />} />
@@ -158,6 +176,9 @@ function App() {
           <Route path="/conditions/pediatric-cancers" element={<PediatricCancersPage />} />
           <Route path="/conditions/oral-cancer" element={<OralCancerPage />} />
           <Route path="/conditions/head-and-neck-cancer" element={<HeadNeckSubConditionsPage />} />
+          <Route path="/conditions/head-neck-cancer" element={<HeadNeckSubConditionsPage />} />
+          <Route path="/conditions/headneck-cancer" element={<HeadNeckSubConditionsPage />} />
+          <Route path="/conditions/head-neck-sub-conditions" element={<HeadNeckSubConditionsPage />} />
 
           {/* Specialties */}
           <Route path="/specialty/radiation-oncology" element={<RadiationOncologyPage />} />

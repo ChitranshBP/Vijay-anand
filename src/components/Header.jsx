@@ -37,13 +37,15 @@ const Header = () => {
           { name: 'Books', href: '/books' },
           { name: 'Publications', href: '/publications' },
          { name: 'Presentations', href: '/presentations' },
-                  { name: 'Cancer Cl', href: '/cancer-clinics' },
+                  { name: 'Cancer Clinics', href: '/cancer-clinics' },
 
 
         ],
       },
       { name: 'Conferences Organized', href: '/conference' },
       { name: 'Awareness Talks', href: '/awareness-lectures' },
+      { name: "Doctor's Awareness Talks", href: '/doctor-speaks' },
+      { name: "Patient's Testimonials", href: '/testimonials' },
       { name: 'Family', href: '/family' },
       {
         name: 'Hobbies',
@@ -55,88 +57,71 @@ const Header = () => {
     ],
   },
   {
-    name: 'Expertise',
+    name: 'Conditions',
     href: '#',
     dropdown: [
-      { name: 'Our Services', href: '/services' },
-      { name: 'Know About Cancer', href: '/service/pancreatic-cancer' },
-      { name: 'Instructions to Patients', href: '/services/patient-instructions' },
-      {
-        name: 'Conditions',
-        href: '/conditions',
-        submenu: [
-          { name: 'Breast Cancer', href: '/conditions/breast-cancer' },
-          { name: 'Lung Cancer', href: '/conditions/lung-cancer' },
-          { name: 'Prostate Cancer', href: '/conditions/prostate-cancer' },
-          { name: 'Cervical Cancer', href: '/conditions/cervical-cancer' },
-          { name: 'Ovarian Cancer', href: '/conditions/ovarian-cancer' },
-          { name: 'Colorectal Cancer', href: '/conditions/colorectal-cancer' },
-          { name: 'Liver Cancer', href: '/conditions/liver-cancer' },
-          { name: 'Kidney Cancer', href: '/conditions/kidney-cancer' },
-          { name: 'Pancreatic Cancer', href: '/conditions/pancreatic-cancer' },
-          { name: 'Thyroid Cancer', href: '/conditions/thyroid-cancer' },
-          { name: 'Eye Cancer', href: '/conditions/eye-cancer' },
-          { name: 'Retinoblastoma', href: '/conditions/retinoblastoma' },
-          { name: 'Uveal Melanoma', href: '/conditions/uveal-melanoma' },
-          { name: 'Eyelid Cancer', href: '/conditions/eyelid-cancer' },
-          { name: 'Brain / CNS Tumors', href: '/conditions/brain-cns-tumors' },
-          { name: 'Bone Cancer / Osteosarcoma', href: '/conditions/bone-cancer-osteosarcoma' },
-          { name: 'Soft Tissue Sarcoma', href: '/conditions/soft-tissue-sarcoma' },
-          { name: 'Pediatric Cancers', href: '/conditions/pediatric-cancers' },
-          { name: 'Oral Cancer', href: '/conditions/oral-cancer' },
-          { name: 'Head & Neck Sub-Conditions', href: '/conditions/head-neck-sub-conditions' },
-        ],
-      },
-      {
-        name: 'Treatment',
-        href: '/treatment',
-        submenu: [
-          { name: 'Chemotherapy', href: '/treatment/chemotherapy' },
-          { name: 'Immunotherapy', href: '/treatment/immunotherapy' },
-          { name: 'Targeted Therapy', href: '/treatment/targeted-therapy' },
-          { name: 'Hormone Therapy', href: '/treatment/hormone-therapy' },
-          { name: 'Biological Therapy', href: '/treatment/biological-therapy' },
-          { name: 'Precision Oncology', href: '/treatment/precision-oncology' },
-          { name: 'External Beam Radiation', href: '/treatment/external-beam-radiation' },
-          { name: 'IMRT', href: '/treatment/imrt' },
-          { name: 'IGRT', href: '/treatment/igrt' },
-          { name: 'SRS', href: '/treatment/srs' },
-          { name: 'SBRT', href: '/treatment/sbrt' },
-          { name: 'Brachytherapy', href: '/treatment/brachytherapy' },
-          { name: 'Tomotherapy', href: '/treatment/tomotherapy' },
-          { name: 'Proton Therapy', href: '/treatment/proton-therapy' },
-          { name: 'Combined Modality Therapy', href: '/treatment/combined-modality-therapy' },
-          { name: 'Supportive Oncology Care', href: '/treatment/supportive-oncology-care' },
-        ],
-      },
-      {
-        name: 'Specialties',
-        href: '/specialty',
-        submenu: [
-          { name: 'Radiation Oncology', href: '/specialty/radiation-oncology' },
-          { name: 'Medical Oncology', href: '/specialty/medical-oncology' },
-          { name: 'Surgical Oncology', href: '/specialty/surgical-oncology' },
-          { name: 'Hemato-Oncology', href: '/specialty/hemato-oncology' },
-          { name: 'Breast Oncology', href: '/specialty/breast-oncology' },
-          { name: 'Head & Neck Oncology', href: '/specialty/head-neck-oncology' },
-          { name: 'Thoracic Oncology', href: '/specialty/thoracic-oncology' },
-          { name: 'Gastrointestinal Oncology', href: '/specialty/gastrointestinal-oncology' },
-          { name: 'Gynecologic Oncology', href: '/specialty/gynecologic-oncology' },
-          { name: 'Uro-Oncology', href: '/specialty/uro-oncology' },
-          { name: 'Ocular Oncology', href: '/specialty/ocular-oncology' },
-          { name: 'Pediatric Oncology', href: '/specialty/pediatric-oncology' },
-          { name: 'Neuro-Oncology', href: '/specialty/neuro-oncology' },
-        ],
-      },
+      { name: 'Breast Cancer', href: '/conditions/breast-cancer' },
+      { name: 'Lung Cancer', href: '/conditions/lung-cancer' },
+      { name: 'Prostate Cancer', href: '/conditions/prostate-cancer' },
+      { name: 'Cervical Cancer', href: '/conditions/cervical-cancer' },
+      { name: 'Ovarian Cancer', href: '/conditions/ovarian-cancer' },
+      { name: 'Colorectal Cancer', href: '/conditions/colorectal-cancer' },
+      { name: 'Liver Cancer', href: '/conditions/liver-cancer' },
+      { name: 'Kidney Cancer', href: '/conditions/kidney-cancer' },
+      { name: 'Pancreatic Cancer', href: '/conditions/pancreatic-cancer' },
+      { name: 'Thyroid Cancer', href: '/conditions/thyroid-cancer' },
+      { name: 'Eye Cancer', href: '/conditions/eye-cancer' },
+      { name: 'Retinoblastoma', href: '/conditions/retinoblastoma' },
+      { name: 'Uveal Melanoma', href: '/conditions/uveal-melanoma' },
+      { name: 'Eyelid Cancer', href: '/conditions/eyelid-cancer' },
+      { name: 'Brain / CNS Tumors', href: '/conditions/brain-cns-tumors' },
+      { name: 'Bone Cancer / Osteosarcoma', href: '/conditions/bone-cancer-osteosarcoma' },
+      { name: 'Soft Tissue Sarcoma', href: '/conditions/soft-tissue-sarcoma' },
+      { name: 'Pediatric Cancers', href: '/conditions/pediatric-cancers' },
+      { name: 'Oral Cancer', href: '/conditions/oral-cancer' },
+      { name: 'Head & Neck Sub-Conditions', href: '/conditions/head-neck-sub-conditions' },
     ],
   },
   {
-    name: "Doctor's Awareness Talks",
-    href: '/doctor-speaks',
+    name: 'Specialties',
+    href: '#',
+    dropdown: [
+      { name: 'Radiation Oncology', href: '/specialty/radiation-oncology' },
+      { name: 'Medical Oncology', href: '/specialty/medical-oncology' },
+      { name: 'Surgical Oncology', href: '/specialty/surgical-oncology' },
+      { name: 'Hemato-Oncology', href: '/specialty/hemato-oncology' },
+      { name: 'Breast Oncology', href: '/specialty/breast-oncology' },
+      { name: 'Head & Neck Oncology', href: '/specialty/head-neck-oncology' },
+      { name: 'Thoracic Oncology', href: '/specialty/thoracic-oncology' },
+      { name: 'Gastrointestinal Oncology', href: '/specialty/gastrointestinal-oncology' },
+      { name: 'Gynecologic Oncology', href: '/specialty/gynecologic-oncology' },
+      { name: 'Uro-Oncology', href: '/specialty/uro-oncology' },
+      { name: 'Ocular Oncology', href: '/specialty/ocular-oncology' },
+      { name: 'Pediatric Oncology', href: '/specialty/pediatric-oncology' },
+      { name: 'Neuro-Oncology', href: '/specialty/neuro-oncology' },
+    ],
   },
   {
-    name: "Patient's Testimonials",
-    href: '/testimonials',
+    name: 'Treatment',
+    href: '#',
+    dropdown: [
+      { name: 'Chemotherapy', href: '/treatment/chemotherapy' },
+      { name: 'Immunotherapy', href: '/treatment/immunotherapy' },
+      { name: 'Targeted Therapy', href: '/treatment/targeted-therapy' },
+      { name: 'Hormone Therapy', href: '/treatment/hormone-therapy' },
+      { name: 'Biological Therapy', href: '/treatment/biological-therapy' },
+      { name: 'Precision Oncology', href: '/treatment/precision-oncology' },
+      { name: 'External Beam Radiation', href: '/treatment/external-beam-radiation' },
+      { name: 'IMRT', href: '/treatment/imrt' },
+      { name: 'IGRT', href: '/treatment/igrt' },
+      { name: 'SRS', href: '/treatment/srs' },
+      { name: 'SBRT', href: '/treatment/sbrt' },
+      { name: 'Brachytherapy', href: '/treatment/brachytherapy' },
+      { name: 'Tomotherapy', href: '/treatment/tomotherapy' },
+      { name: 'Proton Therapy', href: '/treatment/proton-therapy' },
+      { name: 'Combined Modality Therapy', href: '/treatment/combined-modality-therapy' },
+      { name: 'Supportive Oncology Care', href: '/treatment/supportive-oncology-care' },
+    ],
   },
   {
     name: 'Community Services',
@@ -342,115 +327,9 @@ const Header = () => {
                     }
                   </a>
 
-                  {/* Dropdown Menu / Mega Menu */}
+                  {/* Dropdown Menu */}
                   <AnimatePresence>
                     {item.dropdown && activeDropdown === index && (
-                      item.name === 'Expertise' ? (
-                        // Mega Menu for Expertise
-                        <motion.div
-                          variants={dropdownVariants}
-                          initial="hidden"
-                          animate="visible"
-                          exit="exit"
-                          className="fixed top-[120px] left-[20%] -translate-x-1/2 w-[92vw] max-w-5xl bg-white rounded-xl shadow-2xl border border-gray-100 py-8 px-10 z-[100] backdrop-blur-sm"
-                          style={{
-                            boxShadow: '0 20px 60px -15px rgba(0, 0, 0, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.08)'
-                          }}>
-
-                          <div className="grid grid-cols-3 gap-12">
-                            {/* Column 1: Conditions */}
-                            <div className="group">
-                              <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-medical-blue/20">
-                                <div className="w-8 h-8 bg-medical-blue/10 rounded-lg flex items-center justify-center">
-                                  <SafeIcon icon={FiAlertCircle} className="w-4 h-4 text-medical-blue" />
-                                </div>
-                                <h3 className="text-base font-bold text-medical-dark tracking-wide">Conditions</h3>
-                              </div>
-                              <div className="space-y-0.5 max-h-[420px] overflow-y-auto pr-3 custom-scrollbar">
-                                {item.dropdown.find(d => d.name === 'Conditions')?.submenu?.map((subItem, idx) => (
-                                  <a
-                                    key={subItem.name}
-                                    href={subItem.href}
-                                    className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 rounded-lg transition-all duration-200 text-sm font-medium hover:translate-x-1 hover:shadow-sm"
-                                    style={{ animationDelay: `${idx * 20}ms` }}>
-                                    <span className="flex items-center gap-2">
-                                      <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60" />
-                                      {subItem.name}
-                                    </span>
-                                  </a>
-                                ))}
-                              </div>
-                            </div>
-
-                            {/* Column 2: Treatment */}
-                            <div className="group">
-                              <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-medical-blue/20">
-                                <div className="w-8 h-8 bg-medical-blue/10 rounded-lg flex items-center justify-center">
-                                  <SafeIcon icon={FiActivity} className="w-4 h-4 text-medical-blue" />
-                                </div>
-                                <h3 className="text-base font-bold text-medical-dark tracking-wide">Treatment</h3>
-                              </div>
-                              <div className="space-y-0.5 max-h-[420px] overflow-y-auto pr-3 custom-scrollbar">
-                                {item.dropdown.find(d => d.name === 'Treatment')?.submenu?.map((subItem, idx) => (
-                                  <a
-                                    key={subItem.name}
-                                    href={subItem.href}
-                                    className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 rounded-lg transition-all duration-200 text-sm font-medium hover:translate-x-1 hover:shadow-sm"
-                                    style={{ animationDelay: `${idx * 20}ms` }}>
-                                    <span className="flex items-center gap-2">
-                                      <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60" />
-                                      {subItem.name}
-                                    </span>
-                                  </a>
-                                ))}
-                              </div>
-                            </div>
-
-                            {/* Column 3: Specialties */}
-                            <div className="group">
-                              <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-medical-blue/20">
-                                <div className="w-8 h-8 bg-medical-blue/10 rounded-lg flex items-center justify-center">
-                                  <SafeIcon icon={FiAward} className="w-4 h-4 text-medical-blue" />
-                                </div>
-                                <h3 className="text-base font-bold text-medical-dark tracking-wide">Specialties</h3>
-                              </div>
-                              <div className="space-y-0.5 max-h-[420px] overflow-y-auto pr-3 custom-scrollbar">
-                                {item.dropdown.find(d => d.name === 'Specialties')?.submenu?.map((subItem, idx) => (
-                                  <a
-                                    key={subItem.name}
-                                    href={subItem.href}
-                                    className="block px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 rounded-lg transition-all duration-200 text-sm font-medium hover:translate-x-1 hover:shadow-sm"
-                                    style={{ animationDelay: `${idx * 20}ms` }}>
-                                    <span className="flex items-center gap-2">
-                                      <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60" />
-                                      {subItem.name}
-                                    </span>
-                                  </a>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Custom Scrollbar Styles */}
-                          <style jsx>{`
-                            .custom-scrollbar::-webkit-scrollbar {
-                              width: 6px;
-                            }
-                            .custom-scrollbar::-webkit-scrollbar-track {
-                              background: #e5e7eb;
-                              border-radius: 10px;
-                            }
-                            .custom-scrollbar::-webkit-scrollbar-thumb {
-                              background: #9ca3af;
-                              border-radius: 10px;
-                            }
-                            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-                              background: #6b7280;
-                            }
-                          `}</style>
-                        </motion.div>
-                      ) : (
-                        // Standard Dropdown for other nav items
                         <motion.div
                           variants={dropdownVariants}
                           initial="hidden"
@@ -506,7 +385,6 @@ const Header = () => {
                             </div>
                           )}
                         </motion.div>
-                      )
                     )}
                   </AnimatePresence>
                 </div>

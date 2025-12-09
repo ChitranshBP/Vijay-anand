@@ -31,7 +31,10 @@
       "Bash(for file in ChemotherapyPage.jsx ImmunotherapyPage.jsx TargetedTherapyPage.jsx HormoneTherapyPage.jsx BiologicalTherapyPage.jsx PrecisionOncologyPage.jsx ExternalBeamRadiationPage.jsx IMRTPage.jsx IGRTPage.jsx SRSPage.jsx SBRTPage.jsx BrachytherapyPage.jsx TomotherapyPage.jsx ProtonTherapyPage.jsx CombinedModalityTherapyPage.jsx SupportiveOncologyCarePage.jsx)",
       "Bash(for file in ImmunotherapyPage.jsx TargetedTherapyPage.jsx HormoneTherapyPage.jsx BiologicalTherapyPage.jsx PrecisionOncologyPage.jsx ExternalBeamRadiationPage.jsx IMRTPage.jsx IGRTPage.jsx SRSPage.jsx SBRTPage.jsx BrachytherapyPage.jsx TomotherapyPage.jsx ProtonTherapyPage.jsx CombinedModalityTherapyPage.jsx SupportiveOncologyCarePage.jsx)",
       "Bash(do sed -i \"s/FaProcedures,FaUsers ,/FaProcedures, FaUsers,/g\" \"$file\")",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(for file in *.jsx)",
+      "Bash(do echo \"Checking $file...\")",
+      "Bash(wc:*)"
     ],
     "deny": [],
     "ask": []
