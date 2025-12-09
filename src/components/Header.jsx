@@ -292,15 +292,15 @@ const Header = () => {
             <div className="flex items-center flex-shrink-0">
 <a href="/" className="cursor-pointer">
 <img
-  src="/assets/var-logo-final.png"
+  src="/assets/logo-reddy-FINAL.png"
   alt="Dr. Palkonda Vijay Anand Reddy - MD Radiation Oncology, Director Apollo Cancer Centres"
   className="h-20 w-auto object-contain sm:h-24 md:h-28 lg:h-32"
   style={{ maxWidth: '320px' }}
   onError={(e) => {
     if (e.target.src.includes('/assets/')) {
-      e.target.src = 'assets/var-logo-final.png';
+      e.target.src = 'assets/logo-reddy-FINAL.png';
     } else if (e.target.src.includes('assets/Dr.vijay')) {
-      e.target.src = './assets/var-logo-final.png';
+      e.target.src = './assets/logo-reddy-FINAL.png';
     } else {
       e.target.style.display = 'none';
       e.target.nextSibling.style.display = 'flex';

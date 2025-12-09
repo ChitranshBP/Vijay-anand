@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import JourneyPage from './pages/JourneyPage';
 import AchievementsPage from './pages/AchievementsPage';
 import AwardsPage from './pages/AwardsPage';
+import RadiationOncologyPage from './pages/specialty/RadiationOncologyPage';
 import PublicationsList from './pages/PublicationsPage';
 import BooksPage from './pages/BooksPage';
 import FamilyPage from './pages/FamilyPage';
@@ -25,6 +26,16 @@ import PancreaticCancerIndiaPage from './pages/services/PancreaticCancerIndiaPag
 import AdrenalCancerIndiaPage from './pages/services/AdrenalCancerIndiaPage';
 import ProtonTherapyIndiaPage from './pages/services/ProtonTherapyIndiaPage';
 import BreastCancerPage from './pages/conditions/BreastCancerPage';
+import EyeCancerPage from './pages/conditions/EyeCancerPage';
+import RetinoblastomaPage from './pages/conditions/RetinoblastomaPage';
+import UvealMelanomaPage from './pages/conditions/UvealMelanomaPage';
+import EyelidCancerPage from './pages/conditions/EyelidCancerPage';
+import BrainCNSTumorsPage from './pages/conditions/BrainCNSTumorsPage';
+import BoneCancerOsteosarcomaPage from './pages/conditions/BoneCancerOsteosarcomaPage';
+import SoftTissueSarcomaPage from './pages/conditions/SoftTissueSarcomaPage';
+import PediatricCancersPage from './pages/conditions/PediatricCancersPage';
+import OralCancerPage from './pages/conditions/OralCancerPage';
+import HeadNeckSubConditionsPage from './pages/conditions/HeadNeckSubConditionsPage';
 import ChemotherapyPage from './pages/treatment/ChemotherapyPage';
 import ImmunotherapyPage from './pages/treatment/ImmunotherapyPage';
 import TargetedTherapyPage from './pages/treatment/TargetedTherapyPage';
@@ -125,6 +136,19 @@ function App() {
 
           {/* Conditions */}
           <Route path="/conditions/breast-cancer" element={<BreastCancerPage />} />
+          <Route path="/conditions/eye-cancer" element={<EyeCancerPage />} />
+          <Route path="/conditions/retinoblastoma" element={<RetinoblastomaPage />} />
+          <Route path="/conditions/uveal-melanoma" element={<UvealMelanomaPage />} />
+          <Route path="/conditions/eyelid-cancer" element={<EyelidCancerPage />} />
+          <Route path="/conditions/brain-cns-tumors" element={<BrainCNSTumorsPage />} />
+          <Route path="/conditions/bone-cancer-osteosarcoma" element={<BoneCancerOsteosarcomaPage />} />
+          <Route path="/conditions/soft-tissue-sarcoma" element={<SoftTissueSarcomaPage />} />
+          <Route path="/conditions/pediatric-cancers" element={<PediatricCancersPage />} />
+          <Route path="/conditions/oral-cancer" element={<OralCancerPage />} />
+          <Route path="/conditions/head-and-neck-cancer" element={<HeadNeckSubConditionsPage />} />
+
+          {/* Specialties */}
+          <Route path="/specialty/radiation-oncology" element={<RadiationOncologyPage />} />
 
           {/* Treatment */}
           <Route path="/treatment/chemotherapy" element={<ChemotherapyPage />} />
