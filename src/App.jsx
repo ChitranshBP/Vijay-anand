@@ -9,6 +9,18 @@ import JourneyPage from './pages/JourneyPage';
 import AchievementsPage from './pages/AchievementsPage';
 import AwardsPage from './pages/AwardsPage';
 import RadiationOncologyPage from './pages/specialty/RadiationOncologyPage';
+import MedicalOncologyPage from './pages/specialty/MedicalOncologyPage';
+import SurgicalOncologyPage from './pages/specialty/SurgicalOncologyPage';
+import HematoOncologyPage from './pages/specialty/HematoOncologyPage';
+import BreastOncologyPage from './pages/specialty/BreastOncologyPage';
+import HeadNeckOncologyPage from './pages/specialty/HeadNeckOncologyPage';
+import ThoracicOncologyPage from './pages/specialty/ThoracicOncologyPage';
+import GastrointestinalOncologyPage from './pages/specialty/GastrointestinalOncologyPage';
+import GynecologicOncologyPage from './pages/specialty/GynecologicOncologyPage';
+import UroOncologyPage from './pages/specialty/UroOncologyPage';
+import OcularOncologyPage from './pages/specialty/OcularOncologyPage';
+import PediatricOncologyPage from './pages/specialty/PediatricOncologyPage';
+import NeuroOncologyPage from './pages/specialty/NeuroOncologyPage';
 import PublicationsList from './pages/PublicationsPage';
 import BooksPage from './pages/BooksPage';
 import FamilyPage from './pages/FamilyPage';
@@ -149,6 +161,18 @@ function App() {
 
           {/* Specialties */}
           <Route path="/specialty/radiation-oncology" element={<RadiationOncologyPage />} />
+          <Route path="/specialty/medical-oncology" element={<MedicalOncologyPage />} />
+          <Route path="/specialty/surgical-oncology" element={<SurgicalOncologyPage />} />
+          <Route path="/specialty/hemato-oncology" element={<HematoOncologyPage />} />
+          <Route path="/specialty/breast-oncology" element={<BreastOncologyPage />} />
+          <Route path="/specialty/head-neck-oncology" element={<HeadNeckOncologyPage />} />
+          <Route path="/specialty/thoracic-oncology" element={<ThoracicOncologyPage />} />
+          <Route path="/specialty/gastrointestinal-oncology" element={<GastrointestinalOncologyPage />} />
+          <Route path="/specialty/gynecologic-oncology" element={<GynecologicOncologyPage />} />
+          <Route path="/specialty/uro-oncology" element={<UroOncologyPage />} />
+          <Route path="/specialty/ocular-oncology" element={<OcularOncologyPage />} />
+          <Route path="/specialty/pediatric-oncology" element={<PediatricOncologyPage />} />
+          <Route path="/specialty/neuro-oncology" element={<NeuroOncologyPage />} />
 
           {/* Treatment */}
           <Route path="/treatment/chemotherapy" element={<ChemotherapyPage />} />
