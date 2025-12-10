@@ -88,12 +88,12 @@ const Footer = () => {
           >
             <div className="mb-6">
               <img
-                src="/assets/logo-reddy-FINAL.png"
+                src="/assets/var-white-logo.png"
                 alt="Dr. Palkonda Vijay Anand Reddy - MD Radiation Oncology, Director Apollo Cancer Centres"
-                className="h-28 w-auto object-contain brightness-0 invert"
+                className="h-28 w-auto object-contain "
                 onError={(e) => {
                   if (e.target.src.includes('/assets/')) {
-                    e.target.src = 'assets/logo-reddy-FINAL.png';
+                    e.target.src = 'assets/var-white-logo.png';
                   } else {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';
