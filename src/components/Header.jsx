@@ -335,76 +335,79 @@ const Header = () => {
                           initial="hidden"
                           animate="visible"
                           exit="exit"
-                          className="absolute left-0 top-full mt-1 w-64 xl:w-72 2xl:w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-3 z-[100] max-h-[calc(100vh-200px)] overflow-y-auto custom-scrollbar-dropdown"
+                          className={`absolute top-full mt-1 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-[100] ${
+                            item.name === 'Conditions' || item.name === 'Specialties' || item.name === 'Treatment'
+                              ? 'left-1/2 -translate-x-1/2 w-[800px] xl:w-[900px] 2xl:w-[1000px]'
+                              : 'left-0 w-64 xl:w-72 2xl:w-80'
+                          }`}
                           style={{
                             boxShadow: '0 20px 40px -10px rgba(0, 0, 0, 0.15), 0 8px 16px -5px rgba(0, 0, 0, 0.1)'
                           }}>
 
-                          {item.dropdown.map((dropdownItem, dropdownIndex) =>
-                            <div
-                              key={dropdownItem.name}
-                              className="relative"
-                              onMouseEnter={() => dropdownItem.submenu && handleSubMouseEnter(dropdownIndex)}
-                              onMouseLeave={handleSubMouseLeave}>
-
-                              <a
-                                href={dropdownItem.href}
-                                className="flex items-center justify-between px-5 py-3 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm font-medium rounded-lg mx-2 group">
-
-                                <span className="truncate pr-2 leading-tight group-hover:translate-x-0.5 transition-transform">{dropdownItem.name}</span>
-                                {dropdownItem.submenu &&
-                                  <SafeIcon icon={FiChevronRight} className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-medical-blue group-hover:translate-x-0.5 transition-all" />
-                                }
-                              </a>
-
-                              {/* Submenu (Sub-submenu) */}
-                              <AnimatePresence>
-                                {dropdownItem.submenu && activeSubDropdown === dropdownIndex &&
-                                  <motion.div
-                                    variants={submenuVariants}
-                                    initial="hidden"
-                                    animate="visible"
-                                    exit="exit"
-                                    className="absolute left-full top-0 ml-2 w-56 xl:w-64 2xl:w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-3 z-[120] max-h-[calc(100vh-200px)] overflow-y-auto custom-scrollbar-dropdown"
-                                    style={{
-                                      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.2), 0 10px 20px -5px rgba(0, 0, 0, 0.15)'
-                                    }}>
-
-                                    {dropdownItem.submenu.map((subItem, subIdx) =>
-                                      <a
-                                        key={subItem.name}
-                                        href={subItem.href}
-                                        className="block px-5 py-3 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm leading-tight rounded-lg mx-2 group"
-                                        style={{ animationDelay: `${subIdx * 20}ms` }}>
-                                        <span className="flex items-center gap-2.5 group-hover:translate-x-1 transition-transform">
-                                          <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60 flex-shrink-0" />
-                                          {subItem.name}
-                                        </span>
-                                      </a>
-                                    )}
-                                  </motion.div>
-                                }
-                              </AnimatePresence>
+                          {/* Mega Menu Layout for Conditions, Specialties, Treatment */}
+                          {(item.name === 'Conditions' || item.name === 'Specialties' || item.name === 'Treatment') ? (
+                            <div className="grid grid-cols-3 gap-x-6 gap-y-2 px-6">
+                              {item.dropdown.map((dropdownItem) => (
+                                <a
+                                  key={dropdownItem.name}
+                                  href={dropdownItem.href}
+                                  className="flex items-center px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm font-medium rounded-lg group">
+                                  <span className="truncate group-hover:translate-x-0.5 transition-transform">{dropdownItem.name}</span>
+                                </a>
+                              ))}
                             </div>
-                          )}
+                          ) : (
+                            /* Regular Dropdown for other menus */
+                            <>
+                              {item.dropdown.map((dropdownItem, dropdownIndex) =>
+                                <div
+                                  key={dropdownItem.name}
+                                  className="relative"
+                                  onMouseEnter={() => dropdownItem.submenu && handleSubMouseEnter(dropdownIndex)}
+                                  onMouseLeave={handleSubMouseLeave}>
 
-                          {/* Custom Scrollbar Styles for Dropdowns */}
-                          <style jsx>{`
-                            .custom-scrollbar-dropdown::-webkit-scrollbar {
-                              width: 6px;
-                            }
-                            .custom-scrollbar-dropdown::-webkit-scrollbar-track {
-                              background: #f3f4f6;
-                              border-radius: 10px;
-                            }
-                            .custom-scrollbar-dropdown::-webkit-scrollbar-thumb {
-                              background: #9ca3af;
-                              border-radius: 10px;
-                            }
-                            .custom-scrollbar-dropdown::-webkit-scrollbar-thumb:hover {
-                              background: #6b7280;
-                            }
-                          `}</style>
+                                  <a
+                                    href={dropdownItem.href}
+                                    className="flex items-center justify-between px-5 py-3 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm font-medium rounded-lg mx-2 group">
+
+                                    <span className="truncate pr-2 leading-tight group-hover:translate-x-0.5 transition-transform">{dropdownItem.name}</span>
+                                    {dropdownItem.submenu &&
+                                      <SafeIcon icon={FiChevronRight} className="w-4 h-4 flex-shrink-0 text-gray-400 group-hover:text-medical-blue group-hover:translate-x-0.5 transition-all" />
+                                    }
+                                  </a>
+
+                                  {/* Submenu (Sub-submenu) */}
+                                  <AnimatePresence>
+                                    {dropdownItem.submenu && activeSubDropdown === dropdownIndex &&
+                                      <motion.div
+                                        variants={submenuVariants}
+                                        initial="hidden"
+                                        animate="visible"
+                                        exit="exit"
+                                        className="absolute left-full top-0 ml-2 w-56 xl:w-64 2xl:w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-3 z-[120]"
+                                        style={{
+                                          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.2), 0 10px 20px -5px rgba(0, 0, 0, 0.15)'
+                                        }}>
+
+                                        {dropdownItem.submenu.map((subItem, subIdx) =>
+                                          <a
+                                            key={subItem.name}
+                                            href={subItem.href}
+                                            className="block px-5 py-3 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm leading-tight rounded-lg mx-2 group"
+                                            style={{ animationDelay: `${subIdx * 20}ms` }}>
+                                            <span className="flex items-center gap-2.5 group-hover:translate-x-1 transition-transform">
+                                              <SafeIcon icon={FiArrowRight} className="w-3 h-3 text-medical-blue/60 flex-shrink-0" />
+                                              {subItem.name}
+                                            </span>
+                                          </a>
+                                        )}
+                                      </motion.div>
+                                    }
+                                  </AnimatePresence>
+                                </div>
+                              )}
+                            </>
+                          )}
                         </motion.div>
                     )}
                   </AnimatePresence>
