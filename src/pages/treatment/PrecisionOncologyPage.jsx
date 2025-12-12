@@ -951,7 +951,7 @@ const PrecisionOncologyPage = () => {
                             Patient Stories
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">
-                            Precision Oncology Patient Video Testimonials
+                            Video Testimonials
                         </h2>
                         <p className="text-gray-600 text-lg">
                             Hear from our patients about their successful treatment journey with Dr. Vijay Anand Reddy.
@@ -963,10 +963,10 @@ const PrecisionOncologyPage = () => {
                         <div className="relative aspect-video bg-black">
                             {currentVideo ? (
                                 <iframe
-                                    src={`https://www.youtube.com/embed/${currentVideo.videoId}?autoplay=1&rel=0`}
+                                    src={`https://www.youtube.com/embed/${currentVideo.videoId}?rel=0`}
                                     title={currentVideo.title}
                                     className="w-full h-full"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                 ></iframe>
                             ) : (
@@ -1039,9 +1039,9 @@ const PrecisionOncologyPage = () => {
             <section className="py-14">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions About Precision Oncology</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-8 text-center">Frequently Asked Questions</h2>
                         <p className="text-gray-600 mb-6 text-center">
-                            Get answers to common questions about precision oncology treatment, costs, side effects, and what to expect from India's best precision oncology doctor, Dr. Vijay Anand Reddy.
+                            Get answers to common questions about treatment, costs, and what to expect from your treatment journey.
                         </p>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
@@ -1085,10 +1085,10 @@ const PrecisionOncologyPage = () => {
                             <iframe
                                 width="100%"
                                 height="100%"
-                                src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1`}
+                                src={`https://www.youtube.com/embed/${selectedVideo.videoId}`}
                                 title={selectedVideo.title}
                                 frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 className="w-full h-full"
                             ></iframe>

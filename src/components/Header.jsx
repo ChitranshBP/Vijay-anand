@@ -339,15 +339,15 @@ const Header = () => {
         {/* Add a container with better responsive handling */}
         <div className="container mx-auto">
         <div className="max-w-full 2xl:max-w-[1800px] mx-auto px-2 sm:px-4 lg:px-4 xl:px-6 2xl:px-8">
-          <div className="flex justify-between items-center py-2 sm:py-3 lg:py-0 min-h-14 sm:min-h-16 gap-1">
+          <div className="flex justify-between items-center py-1 sm:py-1.5 lg:py-0 min-h-12 sm:min-h-14 gap-1">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
 <a href="/" className="cursor-pointer">
 <img
   src="/assets/logo-reddy-FINAL.png"
   alt="Dr. Palkonda Vijay Anand Reddy - MD Radiation Oncology, Director Apollo Cancer Centres"
-  className="h-20 w-auto object-contain sm:h-24 md:h-28 lg:h-32"
-  style={{ maxWidth: '320px' }}
+  className="h-16 w-auto object-contain sm:h-18 md:h-20 lg:h-24"
+  style={{ maxWidth: '280px' }}
   onError={(e) => {
     if (e.target.src.includes('/assets/')) {
       e.target.src = 'assets/logo-reddy-FINAL.png';

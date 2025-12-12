@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(for file in /Users/boss/Desktop/Vijay-anand/src/pages/treatment/*.jsx)"
+      "Bash(for file in /Users/boss/Desktop/Vijay-anand/src/pages/treatment/*.jsx)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "ask": []
