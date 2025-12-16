@@ -187,12 +187,33 @@ const PrecisionOncologyPage = () => {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="bg-white/60 backdrop-blur-xl rounded-2xl border border-white/50 shadow-xl p-6">
                         <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
-                            {/* Google Logo & Rating */}
+                            {/* Best Business Award Image */}
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5 }}
+                                className="flex-shrink-0"
+                            >
+                                <img
+                                    src="/assets/3-best-best-business-of-2023.png"
+                                    alt="3 Best Rated Business of 2023"
+                                    className="h-24 md:h-28 w-auto object-contain"
+                                    onError={(e) => {
+                                        e.target.style.display = 'none';
+                                    }}
+                                />
+                            </motion.div>
+
+                            {/* Divider */}
+                            <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+
+                            {/* Google Logo & Rating */}
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: 0.1 }}
                                 className="flex items-center gap-4"
                             >
                                 <div className="bg-white/80 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-white/50">

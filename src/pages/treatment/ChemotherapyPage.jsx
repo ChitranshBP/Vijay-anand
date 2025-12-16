@@ -265,7 +265,7 @@ const ChemotherapyPage = () => {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.5 }}
+                                transition={{ duration: 0.5, delay: 0.1 }}
                                 className="flex items-center gap-4"
                             >
                                 <div className="bg-white/80 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-white/50">
