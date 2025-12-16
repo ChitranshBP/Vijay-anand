@@ -115,7 +115,7 @@ const BreastOncologyPage = () => {
             <section className="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop"
+                        src="/assets/condiotion-images/breast-cancer-condition.webp"
                         alt="Medical Background"
                         className="w-full h-full object-cover opacity-60"
                     />

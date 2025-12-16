@@ -380,7 +380,7 @@ const RetinoblastomaPage = () => {
 
                         <div className="relative h-full min-h-[400px]">
                             <img
-                                src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2079&auto=format&fit=crop"
+                                src="/assets/condiotion-images/retinoblastoma-var.webp"
                                 alt="Retinoblastoma Treatment in India"
                                 className="rounded-2xl shadow-xl w-full h-full object-cover"
                             />

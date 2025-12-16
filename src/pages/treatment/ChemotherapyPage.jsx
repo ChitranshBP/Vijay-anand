@@ -239,27 +239,27 @@ const ChemotherapyPage = () => {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="bg-white/60 backdrop-blur-xl rounded-2xl border border-white/50 shadow-xl p-6">
                         <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
-                         
-                               <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="flex-shrink-0"
-              >
-                <img
-                  src="/assets/3-best-best-business-of-2023.png"
-                  alt="3 Best Rated Business of 2023"
-                  className="h-24 md:h-28 w-auto object-contain"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                  }}
-                />
-              </motion.div>
 
-              {/* Divider */}
-              <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
-                         
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5 }}
+                                className="flex-shrink-0"
+                            >
+                                <img
+                                    src="/assets/3-best-best-business-of-2023.png"
+                                    alt="3 Best Rated Business of 2023"
+                                    className="h-24 md:h-28 w-auto object-contain"
+                                    onError={(e) => {
+                                        e.target.style.display = 'none';
+                                    }}
+                                />
+                            </motion.div>
+
+                            {/* Divider */}
+                            <div className="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+
                             {/* Google Logo & Rating */}
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.9 }}
@@ -432,7 +432,7 @@ const ChemotherapyPage = () => {
 
                         <div className="relative h-full min-h-[400px]">
                             <img
-                                src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2079&auto=format&fit=crop"
+                                src="/assets/treatments/chemotherapy.webp"
                                 alt="Chemotherapy Treatment in India"
                                 className="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
