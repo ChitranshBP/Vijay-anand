@@ -5,6 +5,8 @@ import { FaUserMd, FaHospital, FaProcedures, FaHandHoldingHeart, FaStethoscope, 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Test from '../../components/Test';
+import QuoteSection from '../../components/QuoteSection';
+import survivorQuotes from '../../../public/assets/quotes';
 
 const ChemotherapyPage = () => {
     const videos = [
@@ -548,6 +550,9 @@ const ChemotherapyPage = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Quote Section */}
+            <QuoteSection quoteId={24} quotes={survivorQuotes} />
 
             {/* Treatment Process */}
             <section className="py-14 bg-medical-light">

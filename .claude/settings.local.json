@@ -3,7 +3,8 @@
     "allow": [
       "Bash(for file in /Users/boss/Desktop/Vijay-anand/src/pages/treatment/*.jsx)",
       "Bash(grep:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []
