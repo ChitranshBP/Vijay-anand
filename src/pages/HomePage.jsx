@@ -18,6 +18,8 @@ import Test from '../components/Test';
 import FinalTest from '../components/FinalTest';
 import VideoTestimonials from '../components/VideoTestimonials';
 import PhotoTestimonials from '../components/PhotoTestimonials';
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 
 const HomePage = () => {
@@ -139,6 +141,7 @@ const HomePage = () => {
       </section>
 
       <About />
+      <QuoteSection quoteId={13} quotes={survivorQuotes} />
       <Services />
       <WhyChoose />
       {/* <HighestRated /> */}
