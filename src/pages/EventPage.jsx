@@ -17,7 +17,7 @@ const EventsPage = () => {
   return (
     <>
       <Header />
-      <div className="min-h-screen mt-20 bg-gray-50 py-16">
+      <div className="min-h-screen mt-10 bg-gray-50 py-16">
         {/* Hero Section */}
         <section className="pb-10 text-center bg-medical-blue/10">
           <h1 className="text-4xl font-extrabold text-medical-dark pt-10 mb-2">
