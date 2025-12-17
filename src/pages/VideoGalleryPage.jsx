@@ -4,6 +4,20 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const videos = [
+
+  { "id": "Nk_tfJbgIwY", "title": "Is One Vaccine for All Cancers Possible? | Dr P Vijay Anand Reddy" },
+  { "id": "NwBbGvNnogQ", "title": "Preventive Health Tips for Women Above 40 | Dr P Vijay Anand Reddy" },
+  { "id": "OLa-1urRMAY", "title": "Oral Cancer Burden in India | Dr P Vijay Anand Reddy" },
+  { "id": "a6lw6I0GQjc", "title": "When Are Mouth Ulcers Serious? | Dr P Vijay Anand Reddy" },
+  { "id": "0MJkFoS7xQk", "title": "Rising Breast Cancer Cases in India | Dr P Vijay Anand Reddy" },
+  { "id": "iWpXsDDJtOM", "title": "Diet Tips for Cancer Prevention & Care | Dr P Vijay Anand Reddy" },
+  { "id": "JFbGcv8XV5g", "title": "Cervical Cancer Awareness & Prevention | Dr P Vijay Anand Reddy" },
+  { "id": "oswzJc0Ih9o", "title": "Why Pap Smear Tests Are Important | Dr P Vijay Anand Reddy" },
+  { "id": "AkdpdWgwzyE", "title": "What Is Stereotactic Radiosurgery? | Dr P Vijay Anand Reddy" },
+
+
+
+
   { "id": "ZK62wLVizDc", "title": "Daily Annadaan: A Noble Cause Supported by Dr. Vijayanand Reddy" },
   { "id": "tueNCxI1IjE", "title": "Students & staff Osmania medical college gave unique heartfelt farewell : Dr P Shashikala principal" },
   { "id": "et5lAx7osfs", "title": "Ramp Walk – Models with Golfers | Hyderabad golfers on the ramp!" },

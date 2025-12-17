@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import SafeIcon from '../common/SafeIcon';
@@ -12,37 +12,159 @@ const Blog = () => {
     threshold: 0.1
   });
 
-  const blogPosts = [
-  {
-    id: 1,
-    title: "Early Detection: The Key to Successful Cancer Treatment",
-    excerpt: "Understanding the importance of regular screenings and recognizing early warning signs can significantly improve treatment outcomes and survival rates.",
-    image: "assets/key-to-early.png",
-    category: "Prevention",
-    readTime: "5 min read",
-    date: "Dec 15, 2023",
-    icon: FiShield
-  },
-  {
-    id: 2,
-    title: "Advanced Radiation Therapy: IMRT and IGRT Explained",
-    excerpt: "Learn about the latest advancements in radiation therapy techniques that offer more precise treatment with fewer side effects.",
-    image: "assets/Advanced-Radiation-Therapy.png",
-    category: "Treatment",
-    readTime: "7 min read",
-    date: "Dec 12, 2023",
-    icon: FiBrain
-  },
-  {
-    id: 3,
-    title: "Nutrition During Cancer Treatment: A Complete Guide",
-    excerpt: "Essential nutritional guidelines to help maintain strength and support your body's healing process during cancer treatment.",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=250&fit=crop&crop=center",
-    category: "Wellness",
-    readTime: "6 min read",
-    date: "Dec 10, 2023",
-    icon: FiHeart
-  }];
+  const [blogPosts, setBlogPosts] = useState([
+    {
+      id: 1,
+      title: "Early Detection: The Key to Successful Cancer Treatment",
+      excerpt: "Understanding the importance of regular screenings and recognizing early warning signs can significantly improve treatment outcomes and survival rates.",
+      image: "assets/key-to-early.png",
+      category: "Prevention",
+      readTime: "5 min read",
+      date: "Dec 15, 2023",
+      url: "https://drvijayanandreddy.com/blog/",
+      icon: FiShield
+    },
+    {
+      id: 2,
+      title: "Advanced Radiation Therapy: IMRT and IGRT Explained",
+      excerpt: "Learn about the latest advancements in radiation therapy techniques that offer more precise treatment with fewer side effects.",
+      image: "assets/Advanced-Radiation-Therapy.png",
+      category: "Treatment",
+      readTime: "7 min read",
+      date: "Dec 12, 2023",
+      url: "https://drvijayanandreddy.com/blog/",
+      icon: FiBrain
+    },
+    {
+      id: 3,
+      title: "Nutrition During Cancer Treatment: A Complete Guide",
+      excerpt: "Essential nutritional guidelines to help maintain strength and support your body's healing process during cancer treatment.",
+      image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=250&fit=crop&crop=center",
+      category: "Wellness",
+      readTime: "6 min read",
+      date: "Dec 10, 2023",
+      url: "https://drvijayanandreddy.com/blog/",
+      icon: FiHeart
+    }
+  ]);
+
+  const [loadingBlogs, setLoadingBlogs] = useState(false);
+
+  useEffect(() => {
+    setLoadingBlogs(true);
+
+    fetch("https://drvijayanandreddy.com/blog/")
+      .then(res => {
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return res.text();
+      })
+      .then(htmlString => {
+        // Parse the HTML
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlString, "text/html");
+
+        const formattedBlogs = [];
+
+        // First try: Look for article elements
+        let postElements = doc.querySelectorAll("article");
+
+        // Second try: Look for h2/h3 with anchor tags (blog post titles)
+        if (postElements.length === 0) {
+          const titleLinks = doc.querySelectorAll("h2 a, h3 a");
+
+          titleLinks.forEach((link, index) => {
+            if (index >= 3) return; // Only take first 3 posts
+
+            const title = link.textContent?.trim() || "Untitled Post";
+            const url = link.href || "https://drvijayanandreddy.com/blog/";
+
+            // Try to find the parent container to get excerpt and image
+            let container = link.closest("div");
+            while (container && !container.querySelector("img") && container.parentElement) {
+              container = container.parentElement;
+            }
+
+            // Extract excerpt - look for p tags near the title
+            let excerpt = "";
+            if (container) {
+              const paragraphs = container.querySelectorAll("p");
+              for (let p of paragraphs) {
+                const text = p.textContent?.trim();
+                if (text && text.length > 20 && !text.includes("Read More")) {
+                  excerpt = text;
+                  break;
+                }
+              }
+            }
+
+            // Extract image
+            let image = "assets/home-img/blogs/default-blog.webp";
+            if (container) {
+              const imgEl = container.querySelector("img");
+              if (imgEl && imgEl.src) {
+                image = imgEl.src;
+              }
+            }
+
+            formattedBlogs.push({
+              id: index + 1,
+              title,
+              excerpt: excerpt ? (excerpt.substring(0, 150) + (excerpt.length > 150 ? "..." : "")) : "Explore this article for valuable insights on cancer care and treatment.",
+              image,
+              category: "Blog",
+              readTime: "5 min read",
+              date: "Recent",
+              url,
+              icon: index === 0 ? FiShield : (index === 1 ? FiBrain : FiHeart)
+            });
+          });
+        } else {
+          // Process article elements
+          postElements.forEach((post, index) => {
+            if (index >= 3) return; // Only take first 3 posts
+
+            const titleEl = post.querySelector("h1, h2, h3, .title, .entry-title");
+            const title = titleEl?.textContent?.trim() || "Untitled Post";
+
+            const linkEl = titleEl?.querySelector("a") || post.querySelector("a");
+            const url = linkEl?.href || "https://drvijayanandreddy.com/blog/";
+
+            const excerptEl = post.querySelector("p, .excerpt, .entry-summary");
+            let excerpt = excerptEl?.textContent?.trim() || "";
+
+            const imgEl = post.querySelector("img");
+            const image = imgEl?.src || "assets/home-img/blogs/default-blog.webp";
+
+            const dateEl = post.querySelector("time, .date, .published");
+            const date = dateEl?.textContent?.trim() || "Recent";
+
+            formattedBlogs.push({
+              id: index + 1,
+              title,
+              excerpt: excerpt ? (excerpt.substring(0, 150) + (excerpt.length > 150 ? "..." : "")) : "Explore this article for valuable insights on cancer care and treatment.",
+              image,
+              category: "Blog",
+              readTime: "5 min read",
+              date,
+              url,
+              icon: index === 0 ? FiShield : (index === 1 ? FiBrain : FiHeart)
+            });
+          });
+        }
+
+        if (formattedBlogs.length > 0) {
+          setBlogPosts(formattedBlogs);
+        }
+        setLoadingBlogs(false);
+      })
+      .catch(error => {
+        console.error("Error fetching/parsing blog HTML:", error);
+        // Keep fallback static blogs
+        setLoadingBlogs(false);
+      });
+  }, []);
 
 
   const categories = [
@@ -130,7 +252,9 @@ const Blog = () => {
                 </div>
               </div>
               <a
-                href="#contact"
+                href={blogPosts[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-white text-medical-blue px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold text-lg shadow-lg">
                 <span>Read Full Article</span>
                 <SafeIcon icon={FiArrowRight} className="w-5 h-5" />
@@ -187,7 +311,9 @@ const Blog = () => {
                   </div>
                 </div>
                 <a
-                  href="#contact"
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200">
                   <span>Read More</span>
                   <SafeIcon icon={FiArrowRight} className="w-4 h-4" />
