@@ -3,7 +3,7 @@ import { FaFilePdf } from "react-icons/fa";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import QuoteSection from "../components/QuoteSection";
-import survivorQuotes from "../../public/assets/quotes";
+import survivorQuotes from "../data/quotes";
 
 export const publications = [
   {

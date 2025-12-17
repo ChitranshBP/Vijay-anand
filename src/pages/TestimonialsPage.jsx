@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { FiUser, FiX } from "react-icons/fi";
 import Test from "../components/Test";
 import QuoteSection from '../components/QuoteSection';
-import survivorQuotes from '../../public/assets/quotes';
+import survivorQuotes from '../data/quotes';
 
 const patientGallery = [
     { image: "assets/testimonials/test-new-1.jpg" },

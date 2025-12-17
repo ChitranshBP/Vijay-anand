@@ -6,7 +6,7 @@ import SafeIcon from '../common/SafeIcon';
 import { useInView } from 'react-intersection-observer';
 import { FiAward } from 'react-icons/fi';
 import QuoteSection from '../components/QuoteSection';
-import survivorQuotes from '../../public/assets/quotes';
+import survivorQuotes from '../data/quotes';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },

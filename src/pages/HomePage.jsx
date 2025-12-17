@@ -19,7 +19,7 @@ import FinalTest from '../components/FinalTest';
 import VideoTestimonials from '../components/VideoTestimonials';
 import PhotoTestimonials from '../components/PhotoTestimonials';
 import QuoteSection from '../components/QuoteSection';
-import survivorQuotes from '../../public/assets/quotes';
+import survivorQuotes from '../data/quotes';
 
 
 const HomePage = () => {

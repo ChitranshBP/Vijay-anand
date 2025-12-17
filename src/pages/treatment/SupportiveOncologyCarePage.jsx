@@ -6,7 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Test from '../../components/Test';
 import QuoteSection from '../../components/QuoteSection';
-import survivorQuotes from '../../../public/assets/quotes';
+import survivorQuotes from '../../data/quotes';
 
 const SupportiveOncologyCarePage = () => {
     const videos = [

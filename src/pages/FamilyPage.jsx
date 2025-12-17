@@ -5,7 +5,7 @@ import { FiUsers } from 'react-icons/fi';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import QuoteSection from '../components/QuoteSection';
-import survivorQuotes from '../../public/assets/quotes';
+import survivorQuotes from '../data/quotes';
 
 const familyPhoto = "assets/family/vijay-family.jpg"; // Main family photo URL
 const containerVariants = {

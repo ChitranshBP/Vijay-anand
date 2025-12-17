@@ -9,6 +9,62 @@ export const eventCategories = [
 ];
 
 export const events = [
+{
+  id: 'breast-cancer-awareness-flash-mob-gvk-one',
+  category: 'breast-cancer-awareness',
+  title: 'Breast Cancer Awareness Flash Mob at GVK One Mall',
+  date: '2025-11-01',
+  author: 'Dr. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/breast-cancer-awareness-flash-mob-gvk-one/banner-1.webp',
+  ],
+  description: `Apollo Cancer Centers, in association with the CURE Foundation, created a vibrant wave of awareness with a spectacular flash mob at GVK One Mall.
+
+Doctors and students came together with infectious energy and enthusiasm, spreading the message of breast cancer awareness with joy, purpose, and unity. The engaging performance captivated audiences and effectively highlighted the importance of early detection and awareness.
+
+The event was a massive success, widely appreciated by the public, and received excellent media attention—reinforcing Apollo's commitment to community-driven cancer awareness initiatives.`,
+  photos: [
+    '/assets/Events/breast-cancer-awareness-flash-mob-gvk-one/image-1a.webp',
+    '/assets/Events/breast-cancer-awareness-flash-mob-gvk-one/image-1b.webp',
+    '/assets/Events/breast-cancer-awareness-flash-mob-gvk-one/image-1c.webp',
+  ],
+  gallery: [
+    '/assets/Events/breast-cancer-awareness-flash-mob-gvk-one/image-1a.webp',
+    '/assets/Events/breast-cancer-awareness-flash-mob-gvk-one/image-1b.webp',
+    '/assets/Events/breast-cancer-awareness-flash-mob-gvk-one/image-1c.webp',
+  ]
+}, 
+  {
+  id: 'national-cancer-awareness-day-check-o-late',
+  category: 'cancer-awareness-day',
+  title: 'National Cancer Awareness Day – "Check O Late!" Initiative',
+  date: '2025-11-07',
+  author: 'Dr. P. Vijay Anand Reddy',
+  banners: [
+    '/assets/Events/national-cancer-awareness-day-check-o-late/banner-2.webp',
+  ],
+  description: `Apollo Cancer Centres, Hyderabad, in association with the CURE Foundation, marked National Cancer Awareness Day with the impactful "Check O Late!" initiative—encouraging people to turn the bitterness of cancer into hope through early detection.
+
+The event featured the launch of the Check O Late Box by Ms. Shikha Goel, IPS, Director General, Vigilance & Enforcement Department. An interactive QR code video focused on early detection awareness was unveiled by Dr. Vanitha Datla, Vice Chairperson & MD, Elico Healthcare Services Ltd.
+
+Ms. Sangita Reddy, Joint Managing Director, Apollo Hospitals Group, reaffirmed Apollo's strong commitment to preventive oncology and patient-centric care. Dr. P. Vijay Anand Reddy, Director, Apollo Cancer Centres, highlighted the life-saving impact of regular screening for early diagnosis and improved outcomes.
+
+The session was deeply moving, with inspiring patient stories and moments of hope. Dr. K. Shilpa Reddy, Dr. Sai Lakshmi Daayana, Dr. Rekha Bansal, and Dr. Rashmi Sudhir shared valuable insights on the importance of screening, awareness, and timely intervention in the fight against cancer.
+
+The event concluded with Dr. Nikhil Ghadyalpatil reiterating Apollo's mission to make early detection and cancer awareness a way of life.
+
+Let's pledge to "Check O Late" — check before it is late, because early detection saves lives.`,
+  photos: [
+    '/assets/Events/national-cancer-awareness-day-check-o-late/image-2a.webp',
+    '/assets/Events/national-cancer-awareness-day-check-o-late/image-2b.webp',
+    '/assets/Events/national-cancer-awareness-day-check-o-late/image-2c.webp',
+  ],
+  gallery: [
+    '/assets/Events/national-cancer-awareness-day-check-o-late/image-2a.webp',
+    '/assets/Events/national-cancer-awareness-day-check-o-late/image-2b.webp',
+    '/assets/Events/national-cancer-awareness-day-check-o-late/image-2c.webp',
+  ]
+},
   {
     id: 'i-am-a-survivor-hindi-version-book-launch',
     category: 'cancer-survivor-day',

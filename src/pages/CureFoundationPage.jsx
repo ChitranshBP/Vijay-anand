@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import QuoteSection from '../components/QuoteSection';
-import survivorQuotes from '../../public/assets/quotes';
+import survivorQuotes from '../data/quotes';
 const photos = [
   "assets/cure-foundation/cure-1.png",
   "assets/cure-foundation/cure-2.jpg",

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FiMic, FiCalendar } from "react-icons/fi";
 import QuoteSection from "../components/QuoteSection";
-import survivorQuotes from "../../public/assets/quotes";
+import survivorQuotes from "../data/quotes";
 
 const lectures = [
   {
