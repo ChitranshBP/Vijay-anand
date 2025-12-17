@@ -17,6 +17,7 @@ const Services = () => {
   const services = [
   {
     id: "pancreatic-cancer",
+    link: "/conditions/pancreatic-cancer-in-india",
     icon: FiActivity,
     title: "Pancreatic Cancer",
     description: "Personalized treatments with expert team and unmatched experience for advanced pancreatic cancer care",
@@ -25,6 +26,7 @@ const Services = () => {
   },
   {
     id: "adrenal-cancer",
+    link: "/adrenal-cancer-treatment-in-india",
     icon: FiShield,
     title: "Adrenal Cancer",
     description: "Expert diagnosis and personalized treatment using latest medical advances for adrenal tumors",
@@ -33,6 +35,7 @@ const Services = () => {
   },
   {
     id: "proton-therapy",
+    link: "/treatment/proton-therapy-in-india",
     icon: FiZap,
     title: "Proton Therapy",
     description: "Effective targeted cancer treatment with minimized side effects, especially for tumors near vital organs",
@@ -41,6 +44,7 @@ const Services = () => {
   },
   {
     id: "radiation-oncology",
+    link: "/specialty/radiation-oncology-in-india",
     icon: FiTarget,
     title: "Radiation Oncology",
     description: "Precise, technologically advanced cancer treatment with expert clinical support in Hyderabad",
@@ -49,6 +53,7 @@ const Services = () => {
   },
   {
     id: "throat-cancer",
+    link: "/conditions/head-and-neck-cancer-in-india",
     icon: FiBrain,
     title: "Throat Cancer",
     description: "Expert diagnosis, advanced surgery and radiation, plus holistic support for optimal outcomes",
@@ -57,6 +62,7 @@ const Services = () => {
   },
   {
     id: "eye-cancer",
+    link: "/conditions/eye-cancer-in-india",
     icon: FiEye,
     title: "Eye Cancer",
     description: "Comprehensive diagnosis, precise surgical and medical care, and holistic support for eye cancer patients",
@@ -121,9 +127,7 @@ const Services = () => {
                 </ul>
 
                 <a
-                  href={`/services/${service.id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={service.link}
                   className="text-medical-blue font-semibold hover:text-medical-purple transition-colors duration-200 inline-block">
                   Learn More →
                 </a>
