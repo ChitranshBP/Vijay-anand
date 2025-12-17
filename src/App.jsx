@@ -156,62 +156,62 @@ function App() {
           <Route path="/services/:serviceId" element={<ServiceDetailWrapper />} />
 
           {/* Conditions */}
-          <Route path="/conditions/breast-cancer" element={<BreastCancerPage />} />
-          <Route path="/conditions/lung-cancer" element={<LungCancerPage />} />
-          <Route path="/conditions/prostate-cancer" element={<ProstateCancerPage />} />
-          <Route path="/conditions/cervical-cancer" element={<CervicalCancerPage />} />
-          <Route path="/conditions/ovarian-cancer" element={<OvarianCancerPage />} />
-          <Route path="/conditions/colorectal-cancer" element={<ColorectalCancerPage />} />
-          <Route path="/conditions/liver-cancer" element={<LiverCancerPage />} />
-          <Route path="/conditions/kidney-cancer" element={<KidneyCancerPage />} />
-          <Route path="/conditions/pancreatic-cancer" element={<PancreaticCancerConditionPage />} />
-          <Route path="/conditions/thyroid-cancer" element={<ThyroidCancerPage />} />
-          <Route path="/conditions/eye-cancer" element={<EyeCancerPage />} />
-          <Route path="/conditions/retinoblastoma" element={<RetinoblastomaPage />} />
-          <Route path="/conditions/uveal-melanoma" element={<UvealMelanomaPage />} />
-          <Route path="/conditions/eyelid-cancer" element={<EyelidCancerPage />} />
-          <Route path="/conditions/brain-cns-tumors" element={<BrainCNSTumorsPage />} />
-          <Route path="/conditions/bone-cancer-osteosarcoma" element={<BoneCancerOsteosarcomaPage />} />
-          <Route path="/conditions/soft-tissue-sarcoma" element={<SoftTissueSarcomaPage />} />
-          <Route path="/conditions/pediatric-cancers" element={<PediatricCancersPage />} />
-          <Route path="/conditions/oral-cancer" element={<OralCancerPage />} />
-          <Route path="/conditions/head-and-neck-cancer" element={<HeadNeckSubConditionsPage />} />
-          <Route path="/conditions/head-neck-cancer" element={<HeadNeckSubConditionsPage />} />
-          <Route path="/conditions/headneck-cancer" element={<HeadNeckSubConditionsPage />} />
-          <Route path="/conditions/head-neck-sub-conditions" element={<HeadNeckSubConditionsPage />} />
+          <Route path="/conditions/breast-cancer-in-india" element={<BreastCancerPage />} />
+          <Route path="/conditions/lung-cancer-in-india" element={<LungCancerPage />} />
+          <Route path="/conditions/prostate-cancer-in-india" element={<ProstateCancerPage />} />
+          <Route path="/conditions/cervical-cancer-in-india" element={<CervicalCancerPage />} />
+          <Route path="/conditions/ovarian-cancer-in-india" element={<OvarianCancerPage />} />
+          <Route path="/conditions/colorectal-cancer-in-india" element={<ColorectalCancerPage />} />
+          <Route path="/conditions/liver-cancer-in-india" element={<LiverCancerPage />} />
+          <Route path="/conditions/kidney-cancer-in-india" element={<KidneyCancerPage />} />
+          <Route path="/conditions/pancreatic-cancer-in-india" element={<PancreaticCancerConditionPage />} />
+          <Route path="/conditions/thyroid-cancer-in-india" element={<ThyroidCancerPage />} />
+          <Route path="/conditions/eye-cancer-in-india" element={<EyeCancerPage />} />
+          <Route path="/conditions/retinoblastoma-in-india" element={<RetinoblastomaPage />} />
+          <Route path="/conditions/uveal-melanoma-in-india" element={<UvealMelanomaPage />} />
+          <Route path="/conditions/eyelid-cancer-in-india" element={<EyelidCancerPage />} />
+          <Route path="/conditions/brain-cns-tumors-in-india" element={<BrainCNSTumorsPage />} />
+          <Route path="/conditions/bone-cancer-osteosarcoma-in-india" element={<BoneCancerOsteosarcomaPage />} />
+          <Route path="/conditions/soft-tissue-sarcoma-in-india" element={<SoftTissueSarcomaPage />} />
+          <Route path="/conditions/pediatric-cancers-in-india" element={<PediatricCancersPage />} />
+          <Route path="/conditions/oral-cancer-in-india" element={<OralCancerPage />} />
+          <Route path="/conditions/head-and-neck-cancer-in-india" element={<HeadNeckSubConditionsPage />} />
+          <Route path="/conditions/head-neck-cancer-in-india" element={<HeadNeckSubConditionsPage />} />
+          <Route path="/conditions/headneck-cancer-in-india" element={<HeadNeckSubConditionsPage />} />
+          <Route path="/conditions/head-neck-sub-conditions-in-india" element={<HeadNeckSubConditionsPage />} />
 
           {/* Specialties */}
-          <Route path="/specialty/radiation-oncology" element={<RadiationOncologyPage />} />
-          <Route path="/specialty/medical-oncology" element={<MedicalOncologyPage />} />
-          <Route path="/specialty/surgical-oncology" element={<SurgicalOncologyPage />} />
-          <Route path="/specialty/hemato-oncology" element={<HematoOncologyPage />} />
-          <Route path="/specialty/breast-oncology" element={<BreastOncologyPage />} />
-          <Route path="/specialty/head-neck-oncology" element={<HeadNeckOncologyPage />} />
-          <Route path="/specialty/thoracic-oncology" element={<ThoracicOncologyPage />} />
-          <Route path="/specialty/gastrointestinal-oncology" element={<GastrointestinalOncologyPage />} />
-          <Route path="/specialty/gynecologic-oncology" element={<GynecologicOncologyPage />} />
-          <Route path="/specialty/uro-oncology" element={<UroOncologyPage />} />
-          <Route path="/specialty/ocular-oncology" element={<OcularOncologyPage />} />
-          <Route path="/specialty/pediatric-oncology" element={<PediatricOncologyPage />} />
-          <Route path="/specialty/neuro-oncology" element={<NeuroOncologyPage />} />
+          <Route path="/specialty/radiation-oncology-in-india" element={<RadiationOncologyPage />} />
+          <Route path="/specialty/medical-oncology-in-india" element={<MedicalOncologyPage />} />
+          <Route path="/specialty/surgical-oncology-in-india" element={<SurgicalOncologyPage />} />
+          <Route path="/specialty/hemato-oncology-in-india" element={<HematoOncologyPage />} />
+          <Route path="/specialty/breast-oncology-in-india" element={<BreastOncologyPage />} />
+          <Route path="/specialty/head-neck-oncology-in-india" element={<HeadNeckOncologyPage />} />
+          <Route path="/specialty/thoracic-oncology-in-india" element={<ThoracicOncologyPage />} />
+          <Route path="/specialty/gastrointestinal-oncology-in-india" element={<GastrointestinalOncologyPage />} />
+          <Route path="/specialty/gynecologic-oncology-in-india" element={<GynecologicOncologyPage />} />
+          <Route path="/specialty/uro-oncology-in-india" element={<UroOncologyPage />} />
+          <Route path="/specialty/ocular-oncology-in-india" element={<OcularOncologyPage />} />
+          <Route path="/specialty/pediatric-oncology-in-india" element={<PediatricOncologyPage />} />
+          <Route path="/specialty/neuro-oncology-in-india" element={<NeuroOncologyPage />} />
 
           {/* Treatment */}
-          <Route path="/treatment/chemotherapy" element={<ChemotherapyPage />} />
-          <Route path="/treatment/immunotherapy" element={<ImmunotherapyPage />} />
-          <Route path="/treatment/targeted-therapy" element={<TargetedTherapyPage />} />
-          <Route path="/treatment/hormone-therapy" element={<HormoneTherapyPage />} />
-          <Route path="/treatment/biological-therapy" element={<BiologicalTherapyPage />} />
-          <Route path="/treatment/precision-oncology" element={<PrecisionOncologyPage />} />
-          <Route path="/treatment/external-beam-radiation" element={<ExternalBeamRadiationPage />} />
-          <Route path="/treatment/imrt" element={<IMRTPage />} />
-          <Route path="/treatment/igrt" element={<IGRTPage />} />
-          <Route path="/treatment/srs" element={<SRSPage />} />
-          <Route path="/treatment/sbrt" element={<SBRTPage />} />
-          <Route path="/treatment/brachytherapy" element={<BrachytherapyPage />} />
-          <Route path="/treatment/tomotherapy" element={<TomotherapyPage />} />
-          <Route path="/treatment/proton-therapy" element={<ProtonTherapyPage />} />
-          <Route path="/treatment/combined-modality-therapy" element={<CombinedModalityTherapyPage />} />
-          <Route path="/treatment/supportive-oncology-care" element={<SupportiveOncologyCarePage />} />
+          <Route path="/treatment/chemotherapy-in-india" element={<ChemotherapyPage />} />
+          <Route path="/treatment/immunotherapy-in-india" element={<ImmunotherapyPage />} />
+          <Route path="/treatment/targeted-therapy-in-india" element={<TargetedTherapyPage />} />
+          <Route path="/treatment/hormone-therapy-in-india" element={<HormoneTherapyPage />} />
+          <Route path="/treatment/biological-therapy-in-india" element={<BiologicalTherapyPage />} />
+          <Route path="/treatment/precision-oncology-in-india" element={<PrecisionOncologyPage />} />
+          <Route path="/treatment/external-beam-radiation-in-india" element={<ExternalBeamRadiationPage />} />
+          <Route path="/treatment/imrt-in-india" element={<IMRTPage />} />
+          <Route path="/treatment/igrt-in-india" element={<IGRTPage />} />
+          <Route path="/treatment/srs-in-india" element={<SRSPage />} />
+          <Route path="/treatment/sbrt-in-india" element={<SBRTPage />} />
+          <Route path="/treatment/brachytherapy-in-india" element={<BrachytherapyPage />} />
+          <Route path="/treatment/tomotherapy-in-india" element={<TomotherapyPage />} />
+          <Route path="/treatment/proton-therapy-in-india" element={<ProtonTherapyPage />} />
+          <Route path="/treatment/combined-modality-therapy-in-india" element={<CombinedModalityTherapyPage />} />
+          <Route path="/treatment/supportive-oncology-care-in-india" element={<SupportiveOncologyCarePage />} />
         </Routes>
       </div>
     </Router>
