@@ -2,6 +2,8 @@ import React, { useState, useMemo } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FiCalendar, FiMic } from "react-icons/fi";
+import QuoteSection from "../components/QuoteSection";
+import survivorQuotes from "../../public/assets/quotes";
 
 const presentations = [
 
@@ -2355,6 +2357,8 @@ const ProfessionalPresentationsPage = () => {
     )}
   </main>
 </div>
+
+      <QuoteSection quoteId={62} quotes={survivorQuotes} />
 
       <Footer />
     </>

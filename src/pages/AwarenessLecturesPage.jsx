@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FiMic, FiCalendar } from "react-icons/fi";
+import QuoteSection from "../components/QuoteSection";
+import survivorQuotes from "../../public/assets/quotes";
 
 const lectures = [
   {
@@ -120,6 +122,8 @@ const AwarenessLecturesPage = () => (
         </ul>
       </div>
     </section>
+
+    <QuoteSection quoteId={66} quotes={survivorQuotes} />
 
     <Footer />
   </div>

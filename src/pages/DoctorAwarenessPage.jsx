@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FiArrowRight, FiPlay } from 'react-icons/fi';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const videos = [
   "-p-iSRQ2Q3M",
@@ -163,6 +165,7 @@ const DoctorAwarenessTalks = () => {
         </div>
       )}
     </div>
+    <QuoteSection quoteId={67} quotes={survivorQuotes} />
     <Footer />
     </>
     

@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 const photos = [
   "assets/cure-foundation/cure-1.png",
   "assets/cure-foundation/cure-2.jpg",
@@ -188,6 +190,7 @@ const CureFoundationPage = () => (
       </div>
     </section>
 
+    <QuoteSection quoteId={54} quotes={survivorQuotes} />
     <Footer />
   </div>
 );

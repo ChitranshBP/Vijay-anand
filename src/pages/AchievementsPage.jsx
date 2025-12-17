@@ -6,6 +6,8 @@ import Footer from '../components/Footer';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
 import { useInView } from 'react-intersection-observer';
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const {
   FiAward, FiUsers, FiHeart, FiTrendingUp, FiTarget, FiShield,
@@ -529,6 +531,7 @@ const AchievementsPage = () => {
           </motion.div>
         </div>
       </section>
+      <QuoteSection quoteId={56} quotes={survivorQuotes} />
 
       <Footer />
     </div>);

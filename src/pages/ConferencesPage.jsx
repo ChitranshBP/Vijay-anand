@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import QuoteSection from "../components/QuoteSection";
+import survivorQuotes from "../../public/assets/quotes";
 // Full conference lists (add your real content here)
 const organizedList = [
   "10th AROI-ESTRO Teaching Course on “Advanced Technologies in Radiation Oncology” (Nov 30–Dec 3, 2023, Apollo Hyderabad)",
@@ -229,6 +231,7 @@ export default function Conferences() {
         )}
       </section>
     </div>
+    <QuoteSection quoteId={65} quotes={survivorQuotes} />
     <Footer/>
     </>
    

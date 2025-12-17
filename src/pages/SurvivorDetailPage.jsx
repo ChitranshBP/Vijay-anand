@@ -4,6 +4,8 @@ import { survivors } from "./survivors";
 import { FiChevronLeft, FiChevronRight, FiCalendar, FiX, FiMapPin, FiUser } from "react-icons/fi";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const SurvivorDetailPage = () => {
   const { survivorId } = useParams();
@@ -257,6 +259,7 @@ const SurvivorDetailPage = () => {
           </div>
         )}
       </div>
+      <QuoteSection quoteId={60} quotes={survivorQuotes} />
       <Footer />
     </>
   );

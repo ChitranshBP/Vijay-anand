@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const books = [
   {
@@ -85,6 +87,7 @@ function BooksPage() {
         ))}
       </section>
     </div>
+    <QuoteSection quoteId={64} quotes={survivorQuotes} />
     <Footer/>
     </>
   

@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FiUsers, FiStar, FiCheckCircle, FiAward } from "react-icons/fi";
+import QuoteSection from "../components/QuoteSection";
+import survivorQuotes from "../../public/assets/quotes";
 
 const leadershipRoles = [
   "Advisory Committee member for Global Access to Cancer Care Foundation (GACCF), USA",
@@ -84,6 +86,8 @@ const ProfessionalAssociationPage = () => (
         ))}
       </ul>
     </section>
+
+    <QuoteSection quoteId={61} quotes={survivorQuotes} />
 
     <Footer />
   </div>

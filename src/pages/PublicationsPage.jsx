@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaFilePdf } from "react-icons/fa";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import QuoteSection from "../components/QuoteSection";
+import survivorQuotes from "../../public/assets/quotes";
 
 export const publications = [
   {
@@ -798,6 +800,7 @@ export default function PublicationsList() {
         </button>
       </nav>
     </div>
+    <QuoteSection quoteId={63} quotes={survivorQuotes} />
     <Footer/>
     </>
  

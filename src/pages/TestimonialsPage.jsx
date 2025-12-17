@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FiUser, FiX } from "react-icons/fi";
-import Test from "../components/Test"
+import Test from "../components/Test";
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const patientGallery = [
     { image: "assets/testimonials/test-new-1.jpg" },
@@ -334,6 +336,7 @@ const TestimonialPage = () => {
       </section>
       {/*...YouTube testimonials code here... */}
 
+      <QuoteSection quoteId={59} quotes={survivorQuotes} />
       <Footer />
     </div>
   );

@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { FiUsers } from 'react-icons/fi';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const familyPhoto = "assets/family/vijay-family.jpg"; // Main family photo URL
 const containerVariants = {
@@ -166,6 +168,7 @@ const FamilyPage = () => {
     </div>
   )}
 </div>
+<QuoteSection quoteId={58} quotes={survivorQuotes} />
 <Footer/>
     </>
 

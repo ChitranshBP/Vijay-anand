@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { survivors } from "./survivors";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const SurvivorsPage = () => {
   const navigate = useNavigate();
@@ -104,6 +106,7 @@ const SurvivorsPage = () => {
           )}
         </div>
       </div>
+      <QuoteSection quoteId={53} quotes={survivorQuotes} />
       <Footer />
     </>
   );

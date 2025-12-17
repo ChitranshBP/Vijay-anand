@@ -4,7 +4,16 @@
       "Bash(for file in /Users/boss/Desktop/Vijay-anand/src/pages/treatment/*.jsx)",
       "Bash(grep:*)",
       "Bash(dir:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(done)",
+      "Bash(for file in *.jsx)",
+      "Bash(do grep -q \"import QuoteSection\" \"$file\")",
+      "Bash(echo:*)",
+      "Bash(do grep \"<QuoteSection\" \"$file\")",
+      "Bash(find:*)",
+      "Bash(find src/pages -maxdepth 1 -name \"*.jsx\" -exec sh -c 'grep -q \"\"QuoteSection\"\" \"\"$1\"\" || basename \"\"$1\"\"' _ {} ;)",
+      "Bash(cat:*)",
+      "Bash(xargs:*)"
     ],
     "deny": [],
     "ask": []

@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import SafeIcon from '../common/SafeIcon';
 import { useInView } from 'react-intersection-observer';
 import { FiAward } from 'react-icons/fi';
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -292,8 +294,7 @@ const AwardsPage = () => {
   </div>
 </section>
 
-
-
+      <QuoteSection quoteId={57} quotes={survivorQuotes} />
       <Footer />
     </div>);
 

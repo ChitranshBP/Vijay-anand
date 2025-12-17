@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import { useInView } from 'react-intersection-observer';
 import SafeIcon from '../common/SafeIcon';
 import { FiCompass, FiBook, FiActivity, FiUsers, FiAward, FiHeart } from 'react-icons/fi';
+import QuoteSection from '../components/QuoteSection';
+import survivorQuotes from '../../public/assets/quotes';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -318,6 +320,7 @@ const JourneyPage = () => {
           </motion.div>
         </div>
       </section>
+      <QuoteSection quoteId={55} quotes={survivorQuotes} />
       <Footer />
     </div>
   );
