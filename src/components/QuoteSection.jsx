@@ -9,7 +9,7 @@ const QuoteSection = ({ quoteId, quotes }) => {
     if (!quote) return null;
 
     return (
-        <section className="py-6 sm:py-8 md:py-10 relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+        <section className="py-4 sm:py-5 md:py-6 relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
             <div className="container mx-auto px-4 sm:px-6 md:px-8 relative">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

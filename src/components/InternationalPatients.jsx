@@ -31,7 +31,7 @@ const InternationalPatients = () => {
 
 
   return (
-    <section id="international-patients" className="py-14 medical-gradient">
+    <section id="international-patients" className="py-8 medical-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}

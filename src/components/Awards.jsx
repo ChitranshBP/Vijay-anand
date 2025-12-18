@@ -124,7 +124,7 @@ const Awards = () => {
 
 
   return (
-    <section id="awards" className="py-14 medical-gradient">
+    <section id="awards" className="py-8 medical-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div
           ref={ref}
@@ -144,16 +144,17 @@ const Awards = () => {
 
         </div>
 
-        {/* Awards Grid */}
+        {/* Awards - Mobile: Slider, Desktop: Grid */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-  {awards.map((award, index) =>
-          <div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-white rounded-2xl shadow-lg card-hover group overflow-hidden">
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 mb-16">
+          <div className="flex md:contents gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0 -mx-4 pl-4 pr-8 md:mx-0 md:px-0">
+            {awards.map((award, index) =>
+            <div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-white rounded-2xl shadow-lg card-hover group overflow-hidden min-w-[80vw] md:min-w-0 snap-start">
 
       <div className="h-56 bg-gray-200 overflow-hidden">
         <img
@@ -185,6 +186,7 @@ const Awards = () => {
       </div>
     </div>
           )}
+          </div>
         </div>
 
         {/* View More Button */}
@@ -213,14 +215,16 @@ const Awards = () => {
     </p>
   </div>
 
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {certifications.map((cert, index) =>
-            <div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-              className="bg-gray-50 border rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-200 group">
+  {/* Mobile: Slider, Desktop: Grid */}
+  <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
+    <div className="flex md:contents gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0 -mx-4 pl-4 pr-8 md:mx-0 md:px-0">
+      {certifications.map((cert, index) =>
+              <div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={inView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                className="bg-gray-50 border rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-200 group min-w-[80vw] md:min-w-0 snap-start">
 
         <div className="h-40 bg-gray-200 overflow-hidden">
           <img
@@ -237,6 +241,7 @@ const Awards = () => {
         </div>
       </div>
             )}
+    </div>
   </div>
 
   {/* View More Button */}
@@ -268,14 +273,16 @@ const Awards = () => {
     </p>
   </div>
 
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {memberships.map((member, index) =>
-            <div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-              className="flex items-start space-x-4 p-4 bg-medical-light rounded-xl hover:bg-medical-blue/5 transition-all duration-200">
+  {/* Mobile: Slider, Desktop: Grid */}
+  <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
+    <div className="flex md:contents gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0 -mx-4 pl-4 pr-8 md:mx-0 md:px-0">
+      {memberships.map((member, index) =>
+              <div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={inView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                className="flex items-start space-x-4 p-4 bg-medical-light rounded-xl hover:bg-medical-blue/5 transition-all duration-200 min-w-[80vw] md:min-w-0 snap-start">
 
         <div className="w-12 h-12 bg-medical-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
           <SafeIcon icon={FiUsers} className="w-6 h-6 text-medical-blue" />
@@ -286,6 +293,7 @@ const Awards = () => {
         </div>
       </div>
             )}
+    </div>
   </div>
 
   {/* View More Button */}

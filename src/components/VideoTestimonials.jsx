@@ -48,7 +48,7 @@ const VideoTestimonials = () => {
   const closeVideo = () => setSelectedVideo(null);
 
   return (
-    <section className="py-14 bg-gray-50">
+    <section className="py-8 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={ref}
@@ -67,17 +67,19 @@ const VideoTestimonials = () => {
 
         {!selectedVideo ? (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-              {youtubeTestimonials.map((video, index) => (
-                <motion.button
-                  key={video.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="relative rounded-lg overflow-hidden shadow-lg bg-white focus:outline-none transition hover:scale-105"
-                  onClick={() => openVideo(video.id)}
-                  aria-label={`Play ${video.title}`}
-                >
+            {/* Mobile: Slider, Desktop: Grid */}
+            <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-7">
+              <div className="flex md:contents gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0 -mx-4 pl-4 pr-8 md:mx-0 md:px-0">
+                {youtubeTestimonials.map((video, index) => (
+                  <motion.button
+                    key={video.id}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    className="relative rounded-lg overflow-hidden shadow-lg bg-white focus:outline-none transition hover:scale-105 min-w-[80vw] md:min-w-0 snap-start"
+                    onClick={() => openVideo(video.id)}
+                    aria-label={`Play ${video.title}`}
+                  >
                   <img
                     src={video.thumbnail}
                     alt={video.title}
@@ -95,6 +97,7 @@ const VideoTestimonials = () => {
                   </div>
                 </motion.button>
               ))}
+              </div>
             </div>
 
             <div className="text-center mt-10">

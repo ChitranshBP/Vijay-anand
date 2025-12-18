@@ -72,7 +72,7 @@ const Services = () => {
 
 
   return (
-    <section id="services" className="py-14 medical-gradient">
+    <section id="services" className="py-8 medical-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={ref}
@@ -90,14 +90,16 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) =>
-          <div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-white rounded-2xl shadow-lg card-hover group overflow-hidden">
+        {/* Mobile: Horizontal Scroll, Desktop: Grid */}
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+          <div className="flex md:contents gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0 -mx-4 pl-4 pr-8 md:mx-0 md:px-0">
+            {services.map((service, index) =>
+            <div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-white rounded-2xl shadow-lg card-hover group overflow-hidden min-w-[80vw] md:min-w-0 snap-start">
 
               {/* Service Image */}
               <div className="relative h-48 overflow-hidden">
@@ -134,6 +136,7 @@ const Services = () => {
               </div>
             </div>
           )}
+          </div>
         </div>
 
         {/* CTA Section */}

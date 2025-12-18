@@ -73,7 +73,7 @@ const WhyChoose = () => {
 
 
   return (
-    <section id="why-choose" className="py-14 bg-white">
+    <section id="why-choose" className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={ref}
@@ -91,15 +91,16 @@ const WhyChoose = () => {
           </p>
         </div>
 
-        {/* Main Reasons Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {reasons.map((reason, index) =>
-          <div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-medical-light p-8 rounded-2xl card-hover group text-center">
+        {/* Main Reasons - Mobile: Slider, Desktop: Grid */}
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 mb-16">
+          <div className="flex md:contents gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0 -mx-4 pl-4 pr-8 md:mx-0 md:px-0">
+            {reasons.map((reason, index) =>
+            <div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-medical-light p-8 rounded-2xl card-hover group text-center min-w-[80vw] md:min-w-0 snap-start">
 
               <div className="relative mb-6">
                 <div className="w-20 h-20 bg-medical-blue/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-medical-blue transition-all duration-300">
@@ -114,6 +115,7 @@ const WhyChoose = () => {
               <p className="text-gray-600 leading-relaxed">{reason.description}</p>
             </div>
           )}
+          </div>
         </div>
 
         {/* Testimonial Highlights */}

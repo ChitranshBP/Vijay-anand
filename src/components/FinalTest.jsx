@@ -22,7 +22,7 @@ const FinalTest = () => {
 
 
   return (
-    <section id="highest-rated" className="py-14 bg-white">
+    <section id="highest-rated" className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           ref={ref}
