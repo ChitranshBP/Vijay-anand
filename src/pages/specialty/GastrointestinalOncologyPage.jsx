@@ -4,19 +4,19 @@ import { FiCheckCircle, FiActivity, FiUserCheck, FiClock, FiAward, FiPlay, FiChe
 import { FaUserMd, FaHospital, FaProcedures, FaUsers, FaHandHoldingHeart, FaStethoscope, FaNotesMedical, FaMicroscope, FaXRay, FaSyringe, FaHeartbeat, FaLungs, FaDna, FaFlask, FaPills } from 'react-icons/fa';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import { youtubeTestimonials } from '../../data/testimonials';
 import Test from '../../components/Test';
 import QuoteSection from '../../components/QuoteSection';
 import survivorQuotes from '../../data/quotes';
 
 const GastrointestinalOncologyPage = () => {
-    const videos = [
-        { id: 1, title: "Talk by a cancer survivor | Happy Patient", videoId: "ugvDtjZrXxE", thumbnail: "https://img.youtube.com/vi/ugvDtjZrXxE/hqdefault.jpg" },
-        { id: 2, title: "What do my patients think about my treatment?", videoId: "hefT59hk4Tk", thumbnail: "https://img.youtube.com/vi/hefT59hk4Tk/hqdefault.jpg" },
-        { id: 3, title: "Stage 3 Eye Cancer - Patient Testimonial", videoId: "_fQ1-kAPh64", thumbnail: "https://img.youtube.com/vi/_fQ1-kAPh64/hqdefault.jpg" },
-        { id: 4, title: "Cervical Cancer Treatment Success", videoId: "MaWOvdr6RDw", thumbnail: "https://img.youtube.com/vi/MaWOvdr6RDw/hqdefault.jpg" },
-        { id: 5, title: "Vocal Cord Radiation Treatment", videoId: "532AAKNrSb4", thumbnail: "https://img.youtube.com/vi/532AAKNrSb4/hqdefault.jpg" },
-        { id: 6, title: "I am a survivor - Patient Story", videoId: "C_qQ8O6LnS0", thumbnail: "https://img.youtube.com/vi/C_qQ8O6LnS0/hqdefault.jpg" },
-    ];
+    // Map centralized testimonials to page format (first 6 videos)
+    const videos = youtubeTestimonials.slice(0, 6).map((video, index) => ({
+        id: index + 1,
+        title: video.title,
+        videoId: video.id,
+        thumbnail: video.thumbnail
+    }));
 
     const [openFaq, setOpenFaq] = useState(null);
     const [selectedVideo, setSelectedVideo] = useState(null);

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiX, FiUser } from 'react-icons/fi';
+import { patientGallery as allPhotos } from '../data/testimonials';
 
 const PhotoTestimonials = () => {
   const [ref, inView] = useInView({
@@ -12,19 +13,8 @@ const PhotoTestimonials = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Fetched from TestimonialsPage - showing first 10 photos for homepage
-  const patientGallery = [
-    { image: "assets/testimonials/test-new-1.jpg" },
-    { image: "assets/testimonials/test-new-2.jpg" },
-    { image: "assets/testimonials/IMG_0638.webp" },
-    { image: "assets/testimonials/IMG_0639.webp" },
-    { image: "assets/testimonials/IMG_0640.webp" },
-    { image: "assets/testimonials/IMG_0641.webp" },
-    { image: "assets/testimonials/IMG_0642.webp" },
-    { image: "assets/testimonials/IMG_0643.webp" },
-    { image: "assets/testimonials/IMG_0644.webp" },
-    { image: "assets/testimonials/IMG_1818.webp" },
-  ];
+  // Show first 10 photos for homepage
+  const patientGallery = allPhotos.slice(0, 10);
 
   const openModal = (patient) => {
     setSelectedImage(patient);

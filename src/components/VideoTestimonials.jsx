@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { youtubeTestimonials as allVideos } from '../data/testimonials';
 
 const VideoTestimonials = () => {
   const [ref, inView] = useInView({
@@ -10,39 +11,8 @@ const VideoTestimonials = () => {
 
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  // Fetched from TestimonialsPage - showing first 6 videos for homepage
-  const youtubeTestimonials = [
-    {
-      id: "ugvDtjZrXxE",
-      thumbnail: "https://img.youtube.com/vi/ugvDtjZrXxE/hqdefault.jpg",
-      title: "Talk by a cancer survivor | Happy Patient | Best Cancer/ Radiation oncology doctor in india",
-    },
-    {
-      id: "hefT59hk4Tk",
-      thumbnail: "https://img.youtube.com/vi/hefT59hk4Tk/hqdefault.jpg",
-      title: "What do my patients think about my treatment?",
-    },
-    {
-      id: "_fQ1-kAPh64",
-      thumbnail: "https://img.youtube.com/vi/_fQ1-kAPh64/hqdefault.jpg",
-      title: "Stage 3 Breast Cancer",
-    },
-    {
-      id: "MaWOvdr6RDw",
-      thumbnail: "https://img.youtube.com/vi/MaWOvdr6RDw/hqdefault.jpg",
-      title: "Cervical Cancer Treatment",
-    },
-    {
-      id: "532AAKNrSb4",
-      thumbnail: "https://img.youtube.com/vi/532AAKNrSb4/hqdefault.jpg",
-      title: "Vocal Cord Radiation Treatment",
-    },
-    {
-      id: "C_qQ8O6LnS0",
-      thumbnail: "https://img.youtube.com/vi/C_qQ8O6LnS0/hqdefault.jpg",
-      title: "I am a survivor",
-    },
-  ];
+  // Show first 6 videos for homepage
+  const youtubeTestimonials = allVideos.slice(0, 6);
 
   const openVideo = (id) => setSelectedVideo(id);
   const closeVideo = () => setSelectedVideo(null);

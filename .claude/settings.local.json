@@ -13,7 +13,16 @@
       "Bash(find:*)",
       "Bash(find src/pages -maxdepth 1 -name \"*.jsx\" -exec sh -c 'grep -q \"\"QuoteSection\"\" \"\"$1\"\" || basename \"\"$1\"\"' _ {} ;)",
       "Bash(cat:*)",
-      "Bash(xargs:*)"
+      "Bash(xargs:*)",
+      "Bash(bash:*)",
+      "Bash(do if ! grep -q \"import SEO\" \"$file\")",
+      "Bash(then echo \"Missing SEO import: $file\")",
+      "Bash(fi)",
+      "Bash(do)",
+      "Bash(if ! grep -q \"import { youtubeTestimonials }\" \"$file\")",
+      "Bash(then)",
+      "Bash(for file in treatment/*.jsx)",
+      "Bash(for file in specialty/*.jsx)"
     ],
     "deny": [],
     "ask": []
