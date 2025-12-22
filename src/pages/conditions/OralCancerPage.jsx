@@ -435,12 +435,7 @@ const OralCancerPage = () => {
                             </div>
                         </motion.div>
 
-                        <motion.div
-                            initial={{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8 }}
-                        >
+                        <div>
                             <span className="inline-block py-1 px-3 rounded-full bg-medical-blue/10 text-medical-blue text-sm font-semibold mb-4">
                                 Meet the Expert
                             </span>
@@ -496,7 +491,7 @@ const OralCancerPage = () => {
                             <a href="/achievements" className="inline-flex items-center gap-2 text-medical-blue font-semibold hover:gap-3 transition-all">
                                 Read Full Profile <FiArrowRight />
                             </a>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </section >

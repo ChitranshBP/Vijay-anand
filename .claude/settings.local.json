@@ -22,7 +22,8 @@
       "Bash(if ! grep -q \"import { youtubeTestimonials }\" \"$file\")",
       "Bash(then)",
       "Bash(for file in treatment/*.jsx)",
-      "Bash(for file in specialty/*.jsx)"
+      "Bash(for file in specialty/*.jsx)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
