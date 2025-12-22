@@ -366,7 +366,7 @@ const Header = () => {
                   DR
                 </div>
                 <div>
-                  <h1 className="text-sm sm:text-base lg:text-lg font-bold text-medical-dark">Dr. Vijay Anand Reddy</h1>
+                  <div className="text-sm sm:text-base lg:text-lg font-bold text-medical-dark">Dr. Vijay Anand Reddy</div>
                   <p className="text-xs text-gray-600">Radiation Oncologist</p>
                 </div>
               </div>
