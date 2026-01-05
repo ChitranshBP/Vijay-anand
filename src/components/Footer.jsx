@@ -1,10 +1,12 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import SafeIcon from '../common/SafeIcon';
 import * as FiIcons from 'react-icons/fi';
-const { FiPhone, FiMapPin, FiClock, FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiYoutube, FiAward, FiHeart } = FiIcons;
+const { FiPhone, FiMapPin, FiClock, FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiYoutube, FiAward, FiHeart, FiChevronDown, FiChevronUp } = FiIcons;
+import HydrabadPages from '../data/seo-hydrebad';
 
 const Footer = () => {
+  const [isLocationsOpen, setIsLocationsOpen] = useState(false);
 
   const quickLinks = [
     { name: 'Know the Doctor', href: '/journey' },
@@ -285,6 +287,56 @@ const Footer = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Hyderabad Speciality Locations */}
+        {/* Hyderabad Speciality Locations */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="border-t border-gray-700/50 pt-8 mt-2 mb-8 bg-gray-800/20 p-4 rounded-xl"
+        >
+          <div
+            className="flex items-center justify-between cursor-pointer group"
+            onClick={() => setIsLocationsOpen(!isLocationsOpen)}
+          >
+            <h4 className="text-lg font-bold text-white flex items-center select-none">
+              <span className="w-1 h-6 bg-medical-blue mr-3 rounded"></span>
+              Speciality Locations in Hyderabad
+            </h4>
+            <div className={`p-2 rounded-full bg-gray-700/50 text-gray-400 group-hover:text-white group-hover:bg-medical-blue transition-all duration-300 transform ${isLocationsOpen ? 'rotate-180' : ''}`}>
+              {isLocationsOpen ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
+            </div>
+          </div>
+
+          <AnimatePresence>
+            {isLocationsOpen && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="overflow-hidden"
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-3 gap-x-4 pt-6">
+                  {HydrabadPages.map((page, index) => (
+                    <a
+                      key={index}
+                      href={`/hyderabad/${page.pageName.toLowerCase().replace(/ /g, '-')}-treatment`}
+                      className="flex items-start space-x-2 text-gray-400 hover:text-medical-blue transition-colors duration-200 group text-sm"
+                    >
+                      <SafeIcon icon={FiMapPin} className="w-4 h-4 text-medical-blue flex-shrink-0 mt-0.5" />
+                      <span className="group-hover:translate-x-1 transition-transform duration-200">
+                        {page.pageName} in Hyderabad
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
 
         {/* Trust Indicators */}
         <motion.div

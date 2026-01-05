@@ -74,6 +74,7 @@ import ProtonTherapyPage from './pages/treatment/ProtonTherapyPage';
 import CombinedModalityTherapyPage from './pages/treatment/CombinedModalityTherapyPage';
 import SupportiveOncologyCarePage from './pages/treatment/SupportiveOncologyCarePage';
 import './App.css';
+import HyderabadConditionPage from './pages/hyderabad/HyderabadConditionPage';
 import Conferences from './pages/ConferencesPage';
 import DoctorAwarenessTalks from './pages/DoctorAwarenessPage';
 import EventDetailPage from './pages/EventDetailPage';
@@ -212,6 +213,25 @@ function App() {
           <Route path="/treatment/proton-therapy-in-india" element={<ProtonTherapyPage />} />
           <Route path="/treatment/combined-modality-therapy-in-india" element={<CombinedModalityTherapyPage />} />
           <Route path="/treatment/supportive-oncology-care-in-india" element={<SupportiveOncologyCarePage />} />
+
+          {/* Hyderabad Condition Pages */}
+          <Route path="/hyderabad/bone-cancer-treatment" element={<HyderabadConditionPage pageName="Bone Cancer" />} />
+          <Route path="/hyderabad/brain-tumor-treatment" element={<HyderabadConditionPage pageName="Brain Tumor" />} />
+          <Route path="/hyderabad/breast-cancer-treatment" element={<HyderabadConditionPage pageName="Breast Cancer" />} />
+          <Route path="/hyderabad/cervical-cancer-treatment" element={<HyderabadConditionPage pageName="Cervical Cancer" />} />
+          <Route path="/hyderabad/colorectal-cancer-treatment" element={<HyderabadConditionPage pageName="Colorectal Cancer" />} />
+          <Route path="/hyderabad/eye-cancer-treatment" element={<HyderabadConditionPage pageName="Eye Cancer" />} />
+          <Route path="/hyderabad/eyelid-cancer-treatment" element={<HyderabadConditionPage pageName="Eyelid Cancer" />} />
+          <Route path="/hyderabad/kidney-cancer-treatment" element={<HyderabadConditionPage pageName="Kidney Cancer" />} />
+          <Route path="/hyderabad/liver-cancer-treatment" element={<HyderabadConditionPage pageName="Liver Cancer" />} />
+          <Route path="/hyderabad/lung-cancer-treatment" element={<HyderabadConditionPage pageName="Lung Cancer" />} />
+          <Route path="/hyderabad/melanoma-treatment" element={<HyderabadConditionPage pageName="Melanoma" />} />
+          <Route path="/hyderabad/oral-cancer-treatment" element={<HyderabadConditionPage pageName="Oral Cancer" />} />
+          <Route path="/hyderabad/ovarian-cancer-treatment" element={<HyderabadConditionPage pageName="Ovarian Cancer" />} />
+          <Route path="/hyderabad/pancreatic-cancer-treatment" element={<HyderabadConditionPage pageName="Pancreatic Cancer" />} />
+          <Route path="/hyderabad/prostate-cancer-treatment" element={<HyderabadConditionPage pageName="Prostate Cancer" />} />
+          <Route path="/hyderabad/soft-tissue-sarcoma-treatment" element={<HyderabadConditionPage pageName="Soft Tissue Sarcoma" />} />
+          <Route path="/hyderabad/thyroid-cancer-treatment" element={<HyderabadConditionPage pageName="Thyroid Cancer" />} />
         </Routes>
       </div>
     </Router>

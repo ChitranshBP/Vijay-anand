@@ -87,7 +87,7 @@ const HyderabadConditionTemplate = ({ config }) => {
 
     return (
         <div className="min-h-screen bg-white font-sans text-gray-800">
-            <SEO page={config.seoPage} />
+            <SEO page={config.seoPage} title={config.metaTitle} description={config.metaDescription} />
             <Header />
 
             {/* Hero Section */}
@@ -447,25 +447,47 @@ const HyderabadConditionTemplate = ({ config }) => {
             </section>
 
             {/* Why Choose Hyderabad */}
-            <section className="py-14 bg-white">
+            <section className="py-14 bg-medical-light">
                 <div className="container mx-auto px-4">
-                    <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-4">
-                            Why Choose Hyderabad for {config.conditionName} Treatment?
-                        </h2>
-                        <p className="text-gray-600 text-lg">
-                            Hyderabad is emerging as India's healthcare capital with world-class medical infrastructure and highly experienced oncologists.
-                        </p>
-                    </div>
-                    <div className="max-w-3xl mx-auto">
-                        <ul className="space-y-4">
-                            {config.whyChoose.map((reason, idx) => (
-                                <li key={idx} className="flex items-center gap-3 text-gray-700 font-medium">
-                                    <FiCheckCircle className="text-medical-blue flex-shrink-0" size={20} />
-                                    {reason}
-                                </li>
-                            ))}
-                        </ul>
+                    <div className="flex flex-col lg:flex-row gap-16 items-center">
+                        <div className="lg:w-1/2">
+                            <h2 className="text-3xl md:text-4xl font-bold text-medical-dark mb-6">
+                                Why Choose Dr. Vijay Anand Reddy for {config.conditionName} Treatment?
+                            </h2>
+                            <p className="text-gray-600 mb-8 text-lg">
+                                As a pioneer in {config.conditionName} treatment in Hyderabad, Dr. Vijay Anand Reddy brings world-class expertise in radiation oncology and comprehensive cancer care. His dedication to evidence-based medicine and patient outcomes makes him the preferred choice for {config.conditionName} treatment.
+                            </p>
+                            <ul className="space-y-4">
+                                {config.whyChoose.map((reason, idx) => (
+                                    <li key={idx} className="flex items-center gap-3 text-gray-700 font-medium">
+                                        <FiCheckCircle className="text-medical-blue flex-shrink-0" size={20} />
+                                        {reason}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="lg:w-1/2 grid grid-cols-2 gap-4">
+                            <div className="bg-medical-blue/10 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-medical-blue/20">
+                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiClock size={28} /></div>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">30+</div>
+                                <h4 className="font-bold text-medical-dark text-sm">Years Experience</h4>
+                            </div>
+                            <div className="bg-medical-blue/15 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-medical-blue/30">
+                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiActivity size={28} /></div>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">10k+</div>
+                                <h4 className="font-bold text-medical-dark text-sm">Cases Treated</h4>
+                            </div>
+                            <div className="bg-medical-blue/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl transition border border-medical-blue/40">
+                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiHeart size={28} /></div>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">24/7</div>
+                                <h4 className="font-bold text-medical-dark text-sm">Support</h4>
+                            </div>
+                            <div className="bg-medical-blue/25 p-6 rounded-2xl text-center translate-y-8 shadow-md hover:shadow-xl transition border border-medical-blue/50">
+                                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 text-medical-blue text-2xl font-bold shadow-md"><FiUsers size={28} /></div>
+                                <div className="text-3xl font-bold text-medical-blue mb-1">95%</div>
+                                <h4 className="font-bold text-medical-dark text-sm">Success Rate</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

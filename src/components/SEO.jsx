@@ -1,9 +1,15 @@
 import { useEffect } from 'react';
 import pagesMeta from '../data/seo';
 
-const SEO = ({ page }) => {
+const SEO = ({ page, title, description }) => {
   useEffect(() => {
-    const seoData = pagesMeta.find(meta => meta.page === page);
+    let seoData = null;
+
+    if (title && description) {
+      seoData = { metaTitle: title, metaDescription: description };
+    } else {
+      seoData = pagesMeta.find(meta => meta.page === page);
+    }
 
     if (seoData) {
       // Set document title
@@ -64,7 +70,7 @@ const SEO = ({ page }) => {
         document.head.appendChild(twitterDescription);
       }
     }
-  }, [page]);
+  }, [page, title, description]);
 
   return null;
 };
