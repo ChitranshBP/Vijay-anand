@@ -107,13 +107,105 @@
 
     <?php include 'navbar.php'; ?>
 
-    <!-- HERO SECTION -->
+    <!-- BANNERS SECTION -->
+    <section id="banners" class="relative pt-24 md:pt-32 pb-8 bg-gray-50 overflow-hidden">
+        <div class="relative w-full h-[300px] md:h-[500px] lg:h-[600px] group">
+            <!-- Slide 1 -->
+            <div class="banner-slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-100 z-10" data-index="0">
+                <img src="../public/assets/banners/padma-shree-banner.jpeg" alt="Padma Shree Banner" class="w-full h-full object-contain">
+            </div>
+            <!-- Slide 2 -->
+            <div class="banner-slide absolute inset-0 w-full h-full transition-opacity duration-500 opacity-0 z-0" data-index="1">
+                <img src="../public/assets/banners/var-banner-review.jpg" alt="Review Banner" class="w-full h-full object-contain">
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full backdrop-blur-sm transition-all z-20 text-medical-dark opacity-0 group-hover:opacity-100">
+                <i data-feather="chevron-left" class="w-6 h-6"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full backdrop-blur-sm transition-all z-20 text-medical-dark opacity-0 group-hover:opacity-100">
+                <i data-feather="chevron-right" class="w-6 h-6"></i>
+            </button>
+
+            <!-- Dots -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+                <button onclick="goToSlide(0)" class="banner-dot w-6 h-3 rounded-full bg-medical-blue transition-all" data-index="0"></button>
+                <button onclick="goToSlide(1)" class="banner-dot w-3 h-3 rounded-full bg-gray-300 transition-all" data-index="1"></button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.banner-slide');
+        const dots = document.querySelectorAll('.banner-dot');
+        const totalSlides = slides.length;
+        let slideInterval;
+
+        function updateSlides() {
+            slides.forEach((slide, index) => {
+                if (index === currentSlide) {
+                    slide.classList.remove('opacity-0', 'z-0');
+                    slide.classList.add('opacity-100', 'z-10');
+                } else {
+                    slide.classList.remove('opacity-100', 'z-10');
+                    slide.classList.add('opacity-0', 'z-0');
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove('bg-gray-300', 'w-3');
+                    dot.classList.add('bg-medical-blue', 'w-6');
+                } else {
+                    dot.classList.remove('bg-medical-blue', 'w-6');
+                    dot.classList.add('bg-gray-300', 'w-3');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlides();
+            resetTimer();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlides();
+            resetTimer();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlides();
+            resetTimer();
+        }
+
+        function startTimer() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetTimer() {
+            clearInterval(slideInterval);
+            startTimer();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            startTimer();
+             if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+        });
+    </script>
+
+    <!-- HERO SECTION (Commented Out) -->
+    <!--
     <section id="home" class="relative min-h-[700px] pt-44 pb-5 overflow-hidden">
         <div class="absolute inset-0 medical-gradient"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 
-                <!-- Content -->
                 <div class="text-center lg:text-left reveal">
                     <div class="inline-flex items-center bg-medical-blue/10 text-medical-blue px-4 py-2 rounded-full text-sm font-medium mb-6">
                         <i data-feather="award" class="w-4 h-4 mr-2"></i>
@@ -140,12 +232,10 @@
                     </div>
                 </div>
 
-                <!-- Doctor Image -->
                 <div class="relative reveal delay-200">
                     <div class="relative z-10">
                         <img src="../public/assets/vijay-snand-hero.png" alt="Dr. Vijay Anand Reddy" class="w-full max-w-lg mx-auto rounded-2xl shadow-2xl object-cover">
                         
-                        <!-- Floating Cards -->
                         <div class="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-lg hidden md:block animate-float">
                             <div class="flex items-center space-x-3">
                                 <div class="w-12 h-12 bg-medical-blue/10 rounded-full flex items-center justify-center">
@@ -174,6 +264,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- FINAL TEST / GOOGLE RATINGS SECTION (From FinalTest.jsx) -->
     <?php
@@ -668,6 +759,177 @@
       </div>
     </section>
 
+    <!-- RATING SECTION (From FinalTest.jsx) -->
+    <?php
+    $googleStats = [
+        ['number' => "4.9/5", 'label' => "Google Rating", 'description' => "Based on 2,847 reviews"],
+        ['number' => "#1", 'label' => "Top Oncologist", 'description' => "In India"],
+        ['number' => "2,847", 'label' => "Google Reviews", 'description' => "Highest in India"],
+        ['number' => "98.7%", 'label' => "5-Star Reviews", 'description' => "Exceptional satisfaction"]
+    ];
+    ?>
+    <section id="highest-rated" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <div class="inline-flex items-center bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <i data-feather="star" class="w-4 h-4 mr-2"></i>
+            #1 Highest Rated Oncologist in India
+          </div>
+          <h2 class="text-4xl md:text-5xl font-bold text-medical-dark mb-6">
+            Most Reviewed & Highest Rated
+            <span class="text-medical-blue block">Oncologist in India</span>
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Dr. Vijay Anand Reddy holds the record for the highest number of Google reviews 
+            and maintains the highest rating among oncologists in India, reflecting exceptional patient satisfaction.
+          </p>
+        </div>
+
+        <!-- Google Stats Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <?php foreach($googleStats as $index => $stat): ?>
+          <div class="text-center p-8 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border border-yellow-200 hover:shadow-lg transition-shadow duration-300 reveal delay-<?= $index * 100 ?>">
+            <div class="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+              <?= $stat['number'] ?>
+            </div>
+            <h3 class="text-xl font-bold text-medical-dark mb-3"><?= $stat['label'] ?></h3>
+            <p class="text-gray-600"><?= $stat['description'] ?></p>
+          </div>
+          <?php endforeach; ?>
+        </div>
+        
+        <!-- Testimonials Include equivalent -->
+        <div class="text-center reveal">
+             <?php include 'extract_testimonials.php'; ?>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATIENT GALLERY SECTION (From PhotoTestimonials.jsx) -->
+    <?php
+    $patientGallery = [
+        ["image" => "../public/assets/testimonials/test-new-1.jpg"],
+        ["image" => "../public/assets/testimonials/test-new-2.jpg"],
+        ["image" => "../public/assets/testimonials/IMG_0638.webp"],
+        ["image" => "../public/assets/testimonials/IMG_0639.webp"],
+        ["image" => "../public/assets/testimonials/IMG_0640.webp"],
+        ["image" => "../public/assets/testimonials/IMG_0641.webp"],
+        ["image" => "../public/assets/testimonials/IMG_0642.webp"],
+        ["image" => "../public/assets/testimonials/IMG_0643.webp"],
+        ["image" => "../public/assets/testimonials/IMG_0644.webp"],
+        ["image" => "../public/assets/testimonials/IMG_1818.webp"]
+    ];
+    ?>
+    <section id="gallery" class="py-8 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 reveal">
+          <h2 class="text-4xl md:text-5xl font-bold text-medical-dark mb-6">
+            Patient Gallery
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Moments of hope, healing, and happiness with our patients and their families.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          <?php foreach($patientGallery as $index => $p): ?>
+            <div class="relative cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200 reveal delay-<?= $index * 50 ?>">
+              <img
+                  src="<?= $p['image'] ?>"
+                  alt="Patient testimonial <?= $index + 1 ?>"
+                  class="w-full h-48 object-cover object-center transform transition-transform duration-200 ease-in-out hover:scale-110"
+                  loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-200"></div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+
+        <div class="text-center mt-10 reveal">
+          <a
+            href="/testimonials.php"
+            class="inline-block bg-medical-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-medical-dark transition-colors duration-200 shadow-lg hover:shadow-xl"
+          >
+            View All Patient Photos
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- BLOG SECTION (From Blog.jsx) -->
+    <?php
+    // Static fallback blogs as fetched in React initially
+    $blogPosts = [
+        [
+            "title" => "How Is Cancer Caused? | Causes, Risk Factors & Prevention Guide",
+            "excerpt" => "That is a question that cuts straight to the heart of what",
+            "image" => "../public/assets/homepage/Radiation-Therapy.jpg",
+            "url" => "https://drvijayanandreddy.com/blog/"
+        ],
+        [
+            "title" => "Top 10 Cancer Specialist Doctor in India",
+            "excerpt" => "Choosing the right cancer specialist is one of the most important decisions",
+            "image" => "../public/assets/vijay-anand-about.jpg",
+            "url" => "https://drvijayanandreddy.com/blog/"
+        ],
+        [
+            "title" => "Can Stage 2 Lung Cancer Be Cured {Expert Guide}",
+            "excerpt" => "When faced with a Stage 2 lung cancer diagnosis, the immediate and",
+            "image" => "../public/assets/homepage/Lung-Cancer-Treatment.jpg",
+            "url" => "https://drvijayanandreddy.com/blog/"
+        ]
+    ];
+    ?>
+    <section id="blog" class="py-6 sm:py-8 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-12 sm:mb-16 reveal">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-medical-dark mb-4">
+            Blogs
+          </h2>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 sm:md:gap-8">
+          <div id="blog-posts-container" class="flex md:contents gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 md:pb-0 -mx-4 pl-4 pr-8 md:mx-0 md:px-0">
+            <?php foreach($blogPosts as $index => $post): ?>
+              <div class="group min-w-[80vw] md:min-w-0 snap-start reveal delay-<?= $index * 100 ?>">
+              <a href="<?= $post['url'] ?>" target="_blank" rel="noopener noreferrer" class="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                <!-- Image Container -->
+                <div class="relative h-56 sm:h-64 overflow-hidden">
+                  <img src="<?= $post['image'] ?>" alt="<?= $post['title'] ?>" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+
+                <!-- Content Container -->
+                <div class="bg-white p-5 sm:p-6">
+                  <h4 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-medical-blue transition-colors duration-200">
+                    <?= $post['title'] ?>
+                  </h4>
+                  <p class="text-gray-600 text-sm sm:text-base line-clamp-2 mb-4">
+                    <?= $post['excerpt'] ?>
+                  </p>
+                  <span class="inline-block text-medical-blue font-semibold text-sm hover:text-medical-purple">
+                    Read More
+                  </span>
+                </div>
+              </a>
+            </div>
+            <?php endforeach; ?>
+          </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-12 reveal">
+          <a href="https://drvijayanandreddy.com/blog/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-4 bg-medical-blue text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <span>View All Blogs</span>
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT SECTION (From Contact.jsx) -->
     <section id="contact" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -734,6 +996,48 @@
             }, { threshold: 0.1 });
 
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Fetch dynamic blogs
+            const blogContainer = document.getElementById('blog-posts-container');
+            if (blogContainer) {
+                fetch('https://drvijayanandreddy.com/wp-json/wp/v2/posts?per_page=3&_embed')
+                    .then(response => response.json())
+                    .then(posts => {
+                        const newContent = posts.map((post, index) => {
+                             let excerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
+                             excerpt = excerpt.substring(0, 80) + (excerpt.length > 80 ? "" : "");
+                             
+                             let imgUrl = '../public/assets/homepage/Radiation-Therapy.jpg';
+                             if (post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0]) {
+                                 imgUrl = post._embedded['wp:featuredmedia'][0].source_url;
+                             }
+
+                             return `
+                              <div class="group min-w-[80vw] md:min-w-0 snap-start reveal">
+                                <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                                  <div class="relative h-56 sm:h-64 overflow-hidden">
+                                    <img src="${imgUrl}" alt="${post.title.rendered}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                  </div>
+                                  <div class="bg-white p-5 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-medical-blue transition-colors duration-200">
+                                      ${post.title.rendered}
+                                    </h4>
+                                    <p class="text-gray-600 text-sm sm:text-base line-clamp-2 mb-4">
+                                      ${excerpt}
+                                    </p>
+                                    <span class="inline-block text-medical-blue font-semibold text-sm hover:text-medical-purple">
+                                      Read More
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                             `; 
+                        }).join('');
+                        blogContainer.innerHTML = newContent;
+                        blogContainer.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+                    })
+                    .catch(err => console.error('Failed to fetch blogs', err));
+            }
         });
     </script>
 </body>

@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiCheckCircle } from 'react-icons/fi';
 import Header from '../components/Header';
-import Hero from '../components/Hero';
+// import Hero from '../components/Hero';
+import Banners from '../components/Banners';
 import About from '../components/About';
 import Services from '../components/Services';
 import WhyChoose from '../components/WhyChoose';
@@ -28,7 +29,8 @@ const HomePage = () => {
 
       <Header />
 
-      <Hero />
+      {/* <Hero /> */}
+      <Banners />
 
       {/* Google Rating Highlight Section */}
       <section className="py-8 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative">
@@ -148,14 +150,14 @@ const HomePage = () => {
       <Awards />
       {/* <Test /> */}
       {/* <Testimonials/> */}
-        <FinalTest/>
+      <FinalTest />
       <PhotoTestimonials />
       <VideoTestimonials />
       <Blog />
       <Contact />
       <Footer />
       <CookieBanner />
-      
+
     </div>);
 
 };
