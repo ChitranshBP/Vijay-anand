@@ -24,7 +24,14 @@
       "Bash(for file in treatment/*.jsx)",
       "Bash(for file in specialty/*.jsx)",
       "Bash(git checkout:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(xcopy:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(php:*)"
     ],
     "deny": [],
     "ask": []

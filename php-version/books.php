@@ -53,31 +53,31 @@
             [
                 'title' => "Retinoblastoma – They Live And See",
                 'description' => "Focused on retinoblastoma, this book highlights advances in treatment for young patients, emphasizing early diagnosis and teamwork for life and vision preservation.",
-                'cover' => "../public/assets/books/ret-book.jpg",
-                'pdfUrl' => "../public/assets/books/retinoblastoma-they-live-and-see-book.pdf"
+                'cover' => "assets/books/ret-book.jpg",
+                'pdfUrl' => "assets/books/retinoblastoma-they-live-and-see-book.pdf"
             ],
             [
                 'title' => "Apollo Life: The Oncology Issue",
                 'description' => "A resource on oncology, presenting expert perspectives. Covers personalized treatment, diagnosis, supportive care, and latest research for cancer care.",
-                'cover' => "../public/assets/books/apoll-book.jpg",
-                'pdfUrl' => "../public/assets/books/oncology-issue-book.pdf"
+                'cover' => "assets/books/apoll-book.jpg",
+                'pdfUrl' => "assets/books/oncology-issue-book.pdf"
             ],
             [
                 'title' => "I AM A SURVIVOR – 108 Stories of Triumph Over Cancer",
                 'description' => "Celebrates resilience through 108 survivor stories. Inspires hope and awareness, supporting families and encouraging early detection and treatment.",
-                'cover' => "../public/assets/books/i-am-survivor-book.jpeg",
-                'pdfUrl' => "../public/assets/books/3-stories-1-book.pdf",
+                'cover' => "assets/books/i-am-survivor-book.jpeg",
+                'pdfUrl' => "assets/books/3-stories-1-book.pdf",
                 'buyUrl' => "https://amzn.in/d/afn8ojH"
             ],
             [
                 'title' => "I AM A SURVIVOR – 108 Stories of Triumph Over Cancer (Hindi Version)",
                 'description' => "Celebrates resilience through 108 survivor stories. Inspires hope and awareness, supporting families and encouraging early detection and treatment.",
-                'cover' => "../public/assets/books/Hindi-version.jpg"
+                'cover' => "assets/books/Hindi-version.jpg"
             ],
             [
                 'title' => "I AM A SURVIVOR – 108 Stories of Triumph Over Cancer (Telugu version)",
                 'description' => "Celebrates resilience through 108 survivor stories. Inspires hope and awareness, supporting families and encouraging early detection and treatment.",
-                'cover' => "../public/assets/books/telugu-version.jpg"
+                'cover' => "assets/books/telugu-version.jpg"
             ]
         ];
         ?>

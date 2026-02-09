@@ -129,7 +129,7 @@ const getConditionImage = (name) => {
         "Thyroid Cancer": "thyroid-cancer.webp",
     };
     const fileName = map[name] || "cancer-care.jpg";
-    return `../public/assets/condiotion-images/${fileName}`;
+    return `assets/condiotion-images/${fileName}`;
 };
 
 const outputDir = path.join(__dirname, 'php-version');
@@ -147,7 +147,7 @@ HydrabadPages.forEach(pageData => {
     const keyword = pageData.keywords && pageData.keywords.length > 0 ? pageData.keywords[0] : `${pageData.pageName} treatment in Hyderabad`;
     const metaTitle = pageData.metaTitle;
     const metaDescription = pageData.metaDescription;
-    const heroImage = "../public/assets/vijay-snand-hero.png";
+    const heroImage = "assets/vijay-snand-hero.png";
     const conditionImage = getConditionImage(pageData.pageName);
     const description = pageData.metaDescription;
     const overview = `Dr. Vijay Anand Reddy is a leading expert in ${pageData.pageName} treatment in Hyderabad. With over 30 years of experience, he provides comprehensive care using state-of-the-art technology and personalized treatment plans designed to achieve the best possible outcomes for patients.`;
@@ -258,7 +258,7 @@ HydrabadPages.forEach(pageData => {
             <div class="bg-white/60 backdrop-blur-xl rounded-2xl border border-white/50 shadow-xl p-6">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
                     <div class="flex-shrink-0">
-                         <img src="../public/assets/3-best-best-business-of-2023.png" alt="3 Best Rated Business of 2023" class="h-24 md:h-28 w-auto object-contain">
+                         <img src="assets/3-best-best-business-of-2023.png" alt="3 Best Rated Business of 2023" class="h-24 md:h-28 w-auto object-contain">
                     </div>
                     <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
                     <div class="flex items-center gap-4">
@@ -415,7 +415,7 @@ HydrabadPages.forEach(pageData => {
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="../public/assets/vijay-anand-about.jpg" alt="Dr. Vijay Anand Reddy" class="w-full h-full object-cover">
+                        <img src="assets/vijay-anand-about.jpg" alt="Dr. Vijay Anand Reddy" class="w-full h-full object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                             <h3 class="text-2xl font-bold">Dr. Vijay Anand Reddy</h3>
                             <p class="opacity-90">Director, Apollo Cancer Centres Hyderabad</p>

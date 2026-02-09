@@ -3,9 +3,9 @@ include 'navbar.php';
 
 // Data
 $photos = [
-    "../public/assets/golf-championship/golf-1.jpg",
-    "../public/assets/golf-championship/golf-2.jpg",
-    "../public/assets/golf-championship/golf-3.png"
+    "assets/golf-championship/golf-1.jpg",
+    "assets/golf-championship/golf-2.jpg",
+    "assets/golf-championship/golf-3.png"
 ];
 $EVENT_LINK = "https://www.cancercrusadersgolf.com/";
 ?>

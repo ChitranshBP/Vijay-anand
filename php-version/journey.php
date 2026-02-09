@@ -77,7 +77,7 @@
         <!-- Left Image -->
         <div class="relative w-full h-full rounded-2xl overflow-hidden shadow-xl reveal">
           <img
-            src="../public/assets/journey/Early-Life.png"
+            src="assets/journey/Early-Life.png"
             alt="Dr. Vijay Anand Reddy's Journey"
             class="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -144,56 +144,56 @@
             'location' => "Klinikum Frankfurt (Oder) GmbH, Frankfurt (Oder), Germany",
             'supervisor' => "Dr. Reinhard E. Wurm",
             'month' => "March 2010",
-            'image' => "../public/assets/journey/Stereotactic-Radiosurgery.png"
+            'image' => "assets/journey/Stereotactic-Radiosurgery.png"
         ],
         [
             'title' => "Ocular Oncology Fellowship",
             'location' => "Will’s Eye Hospital, Philadelphia, USA",
             'supervisor' => "Dr. Mr & Mrs. Shields",
             'month' => "May – June 2003",
-            'image' => "../public/assets/journey/Ocular-Oncology.png"
+            'image' => "assets/journey/Ocular-Oncology.png"
         ],
         [
             'title' => "Pediatric Oncology Fellowship",
             'location' => "Children’s Hospital of Philadelphia, USA",
             'supervisor' => "Dr. Anna Meadows",
             'month' => "May – June 2003",
-            'image' => "../public/assets/journey/Pediatric-Oncology.png"
+            'image' => "assets/journey/Pediatric-Oncology.png"
         ],
         [
             'title' => "Head & Neck Oncology Fellowship",
             'location' => "Peter McCallum Cancer Institute, Melbourne, Australia",
             'supervisor' => "Dr. Lester Peters",
             'month' => "July – August 1998",
-            'image' => "../public/assets/journey/Head & Neck-Oncology.png"
+            'image' => "assets/journey/Head & Neck-Oncology.png"
         ],
         [
             'title' => "Hyperthermia Fellowship",
             'location' => "New York Medical College, Valhalla, NY, USA",
             'supervisor' => "Dr. Chitty R. Moorthy",
             'month' => "May 1995",
-            'image' => "../public/assets/journey/Hyperthermia-Fellowship.png"
+            'image' => "assets/journey/Hyperthermia-Fellowship.png"
         ],
         [
             'title' => "Nargis Dutt Memorial Cancer Foundation Fellowship",
             'location' => "New York Hospital, Medical Centre of Queens, NY, USA",
             'supervisor' => "Dr. Dattetreyudu Nori",
             'month' => "June 1995",
-            'image' => "../public/assets/journey/The-Nargis-Dutt-Memorial.png"
+            'image' => "assets/journey/The-Nargis-Dutt-Memorial.png"
         ],
         [
             'title' => "Head & Neck Brachytherapy Observership",
             'location' => "Memorial Sloan Kettering Cancer Centre, New York, USA",
             'supervisor' => "Dr. Louise Harrison",
             'month' => "July 1995",
-            'image' => "../public/assets/journey/Head & Neck-Brachytherapy.png"
+            'image' => "assets/journey/Head & Neck-Brachytherapy.png"
         ],
         [
             'title' => "Clinical Oncology Fellowship",
             'location' => "Meyerstein Institute of Clinical Oncology, Middlesex Hospital, London",
             'supervisor' => "Dr Margaret Spittle",
             'month' => "July – Sept 1992",
-            'image' => "../public/assets/journey/The-Clinical-Oncology.png"
+            'image' => "assets/journey/The-Clinical-Oncology.png"
         ],
         // No images for the following
         [

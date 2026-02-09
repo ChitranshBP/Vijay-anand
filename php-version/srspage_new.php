@@ -400,7 +400,7 @@ $videos = [
 
                         <div class="relative h-full min-h-[400px]">
                             <img
-                                src="/public/assets/treatments/radiation-oncology.webp"
+                                src="assets/treatments/radiation-oncology.webp"
                                 alt="Immunotherapy Treatment in India"
                                 class="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
@@ -465,7 +465,7 @@ $videos = [
                         >
                             <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="/public/assets/vijay-anand-about.jpg"
+                                    src="assets/vijay-anand-about.jpg"
                                     alt="Dr. Vijay Anand Reddy - Best Immunotherapy Doctor in India"
                                     class="w-full h-full object-cover"
                                 />

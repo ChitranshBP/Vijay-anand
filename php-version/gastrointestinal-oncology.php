@@ -239,7 +239,7 @@ $videos = [
                                 class="flex-shrink-0"
                             >
                                 <img
-                                    src="/public/assets/3-best-best-business-of-2023.png"
+                                    src="assets/3-best-best-business-of-2023.png"
                                     alt="3 Best Rated Business of 2023"
                                     class="h-24 md:h-28 w-auto object-contain"
                                     
@@ -427,7 +427,7 @@ $videos = [
 
                         <div class="relative h-full min-h-[400px]">
                             <img
-                                src="/public/assets/condiotion-images/Colorectal-cancer.webp"
+                                src="assets/condiotion-images/Colorectal-cancer.webp"
                                 alt="Eye Cancer Treatment in India"
                                 class="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
@@ -467,7 +467,7 @@ $videos = [
                         >
                             <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="/public/assets/vijay-anand-about.jpg"
+                                    src="assets/vijay-anand-about.jpg"
                                     alt="Dr. Vijay Anand Reddy - Best Gastrointestinal Oncologist in India"
                                     class="w-full h-full object-cover"
                                 />

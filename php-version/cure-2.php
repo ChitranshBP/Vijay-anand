@@ -3,9 +3,9 @@ include 'navbar.php';
 
 // Data
 $photos = [
-    "../public/assets/cure-foundation/cure-1.png",
-    "../public/assets/cure-foundation/cure-2.jpg",
-    "../public/assets/cure-foundation/cure-3.jpg"
+    "assets/cure-foundation/cure-1.png",
+    "assets/cure-foundation/cure-2.jpg",
+    "assets/cure-foundation/cure-3.jpg"
 ];
 $EVENT_LINK = "http://www.curefoundationindia.com";
 ?>

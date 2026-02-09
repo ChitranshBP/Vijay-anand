@@ -34,7 +34,7 @@
     <!-- Hero Section -->
     <section class="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden bg-white">
         <div class="absolute inset-0 z-0">
-            <img src="../public/assets/vijay-snand-hero.png" alt="Prostate Cancer Treatment in Hyderabad" class="w-full h-full object-cover opacity-60">
+            <img src="assets/vijay-snand-hero.png" alt="Prostate Cancer Treatment in Hyderabad" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-gradient-hero"></div>
         </div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -93,7 +93,7 @@
             <div class="bg-white/60 backdrop-blur-xl rounded-2xl border border-white/50 shadow-xl p-6">
                 <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
                     <div class="flex-shrink-0">
-                         <img src="../public/assets/3-best-best-business-of-2023.png" alt="3 Best Rated Business of 2023" class="h-24 md:h-28 w-auto object-contain">
+                         <img src="assets/3-best-best-business-of-2023.png" alt="3 Best Rated Business of 2023" class="h-24 md:h-28 w-auto object-contain">
                     </div>
                     <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
                     <div class="flex items-center gap-4">
@@ -220,7 +220,7 @@
                 </div>
 
                 <div class="relative h-full min-h-[400px]">
-                    <img src="../public/assets/condiotion-images/prostate-cancer.webp" alt="Prostate Cancer Treatment in Hyderabad" class="rounded-2xl shadow-xl w-full h-full object-cover">
+                    <img src="assets/condiotion-images/prostate-cancer.webp" alt="Prostate Cancer Treatment in Hyderabad" class="rounded-2xl shadow-xl w-full h-full object-cover">
                 </div>
             </div>
 
@@ -250,7 +250,7 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="../public/assets/vijay-anand-about.jpg" alt="Dr. Vijay Anand Reddy" class="w-full h-full object-cover">
+                        <img src="assets/vijay-anand-about.jpg" alt="Dr. Vijay Anand Reddy" class="w-full h-full object-cover">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                             <h3 class="text-2xl font-bold">Dr. Vijay Anand Reddy</h3>
                             <p class="opacity-90">Director, Apollo Cancer Centres Hyderabad</p>

@@ -2,20 +2,20 @@
 include 'navbar.php';
 
 // Data
-$familyPhoto = "../public/assets/family/vijay-family.jpg";
+$familyPhoto = "assets/family/vijay-family.jpg";
 $housePhotos = [
-    "../public/assets/family/house-2.jpg",
-    "../public/assets/family/house-3.jpg",
-    "../public/assets/family/house-4.jpg",
-    "../public/assets/family/house-5.jpg",
-    "../public/assets/family/house-6.jpg",
-    "../public/assets/family/house-7.jpg",
-    "../public/assets/family/house-8.jpg",
-    "../public/assets/family/house-9.jpg",
-    "../public/assets/family/house-10.jpg",
-    "../public/assets/family/house-11.jpg",
-    "../public/assets/family/house-12.jpg",
-    "../public/assets/family/house-13.jpg",
+    "assets/family/house-2.jpg",
+    "assets/family/house-3.jpg",
+    "assets/family/house-4.jpg",
+    "assets/family/house-5.jpg",
+    "assets/family/house-6.jpg",
+    "assets/family/house-7.jpg",
+    "assets/family/house-8.jpg",
+    "assets/family/house-9.jpg",
+    "assets/family/house-10.jpg",
+    "assets/family/house-11.jpg",
+    "assets/family/house-12.jpg",
+    "assets/family/house-13.jpg",
 ];
 ?>
 <!DOCTYPE html>
@@ -136,7 +136,7 @@ $housePhotos = [
                 <!-- Left side: Image -->
                 <div class="flex-shrink-0">
                     <img 
-                        src="../public/assets/family/house-1.jpg" 
+                        src="assets/family/house-1.jpg" 
                         alt="Residence" 
                         class="w-48 h-48 object-cover rounded-lg shadow-md"
                     >

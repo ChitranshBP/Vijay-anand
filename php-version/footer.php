@@ -94,7 +94,7 @@ $hyderabadPages = [
             <!-- About Section with Logo - Spans 2 columns -->
             <div class="lg:col-span-2">
                 <div class="mb-6">
-                    <img src="../public/assets/var-white-logo.png" alt="Dr. Palkonda Vijay Anand Reddy" class="h-28 w-auto object-contain">
+                    <img src="assets/var-white-logo.png" alt="Dr. Palkonda Vijay Anand Reddy" class="h-28 w-auto object-contain">
                 </div>
 
                 <p class="text-gray-300 mb-6 leading-relaxed text-base max-w-md">

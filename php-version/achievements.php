@@ -67,7 +67,7 @@
           <!-- RIGHT SIDE - IMAGE -->
           <div class="flex justify-center reveal delay-200">
             <img
-              src="../public/assets/vijay-snand-hero.png" 
+              src="assets/vijay-snand-hero.png" 
               alt="Dr. Vijay Anand Reddy"
               class="rounded-2xl shadow-lg max-h-[500px] object-cover"
             />
@@ -222,12 +222,12 @@
                 <!-- RIGHT IMAGES -->
                 <div class="grid gap-6">
                     <img
-                        src="../public/assets/achievements/achievement-2.jpg"
+                        src="assets/achievements/achievement-2.jpg"
                         alt="Ocular Oncology Treatment Case 1"
                         class="rounded-lg shadow-lg object-cover w-full"
                     />
                     <img
-                        src="../public/assets/achievements/achievement-1.jpg"
+                        src="assets/achievements/achievement-1.jpg"
                         alt="Ocular Oncology Treatment Case 2"
                         class="rounded-lg shadow-lg object-cover w-full"
                     />

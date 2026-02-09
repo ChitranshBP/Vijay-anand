@@ -159,7 +159,7 @@ $videos = [
             <section class="relative pt-28 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
                 <div class="absolute inset-0 z-0">
                     <img
-                        src="/public/assets/condiotion-images/breast-cancer-condition.webp"
+                        src="assets/condiotion-images/breast-cancer-condition.webp"
                         alt="Medical Background"
                         class="w-full h-full object-cover opacity-60"
                     />
@@ -239,7 +239,7 @@ $videos = [
                                 class="flex-shrink-0"
                             >
                                 <img
-                                    src="/public/assets/3-best-best-business-of-2023.png"
+                                    src="assets/3-best-best-business-of-2023.png"
                                     alt="3 Best Rated Business of 2023"
                                     class="h-24 md:h-28 w-auto object-contain"
                                     
@@ -467,7 +467,7 @@ $videos = [
                         >
                             <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src="/public/assets/vijay-anand-about.jpg"
+                                    src="assets/vijay-anand-about.jpg"
                                     alt="Dr. Vijay Anand Reddy - Best Breast Oncologist in India"
                                     class="w-full h-full object-cover"
                                 />
