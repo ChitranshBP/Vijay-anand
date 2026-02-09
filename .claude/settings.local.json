@@ -23,7 +23,8 @@
       "Bash(then)",
       "Bash(for file in treatment/*.jsx)",
       "Bash(for file in specialty/*.jsx)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []

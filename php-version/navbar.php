@@ -123,31 +123,65 @@ $navItems = [
 
 function getMenuIcon($name) {
     $map = [
+        // Conditions
         'Breast Cancer' => 'heart',
         'Lung Cancer' => 'activity',
         'Prostate Cancer' => 'target',
         'Cervical Cancer' => 'circle',
+        'Ovarian Cancer' => 'circle',
+        'Colorectal Cancer' => 'circle',
+        'Liver Cancer' => 'droplet',
+        'Kidney Cancer' => 'droplet',
+        'Pancreatic Cancer' => 'circle',
+        'Thyroid Cancer' => 'circle',
+        'Eye Cancer' => 'eye',
+        'Retinoblastoma' => 'eye',
+        'Uveal Melanoma' => 'eye',
+        'Eyelid Cancer' => 'eye',
+        'Brain / CNS Tumors' => 'cpu',
+        'Bone Cancer / Osteosarcoma' => 'hexagon',
+        'Soft Tissue Sarcoma' => 'hexagon',
+        'Pediatric Cancers' => 'users',
+        'Oral Cancer' => 'circle',
+        'Head & Neck Sub-Conditions' => 'circle',
+        // Specialties
         'Radiation Oncology' => 'radio',
         'Medical Oncology' => 'alert-circle',
         'Surgical Oncology' => 'crosshair',
         'Hemato-Oncology' => 'droplet',
-        'Kidney Cancer' => 'droplet',
-        'Eye Cancer' => 'eye',
-        'Pediatric Cancers' => 'users',
-        'Brain / CNS Tumors' => 'cpu',
-        'Bone Cancer / Osteosarcoma' => 'hexagon',
+        'Breast Oncology' => 'heart',
+        'Head & Neck Oncology' => 'circle',
+        'Thoracic Oncology' => 'activity',
+        'Gastrointestinal Oncology' => 'circle',
+        'Gynecologic Oncology' => 'circle',
+        'Uro-Oncology' => 'droplet',
+        'Ocular Oncology' => 'eye',
+        'Pediatric Oncology' => 'users',
+        'Neuro-Oncology' => 'cpu',
+        // Treatments
+        'Chemotherapy' => 'droplet',
+        'Immunotherapy' => 'shield',
+        'Targeted Therapy' => 'target',
+        'Hormone Therapy' => 'circle',
+        'Biological Therapy' => 'circle',
+        'Precision Oncology' => 'crosshair',
+        'External Beam Radiation' => 'radio',
         'IMRT' => 'zap',
         'IGRT' => 'zap',
         'SRS' => 'star',
         'SBRT' => 'star',
-        'Immunotherapy' => 'shield',
+        'Brachytherapy' => 'radio',
+        'Tomotherapy' => 'radio',
+        'Proton Therapy' => 'zap',
+        'Combined Modality Therapy' => 'circle',
+        'Supportive Oncology Care' => 'life-buoy',
     ];
     return $map[$name] ?? 'circle';
 }
 ?>
 
 <!-- Top Bar -->
-<div class="fixed top-0 w-full bg-medical-blue text-white py-2 px-4 text-sm z-[60]">
+<div class="fixed top-0 w-full bg-medical-blue text-white py-2 px-4 text-sm" style="z-index: 9999;">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
         <div class="flex items-center space-x-6">
             <a href="tel:+919676720002" class="flex items-center space-x-2 hover:text-white transition">
@@ -159,7 +193,7 @@ function getMenuIcon($name) {
                 <span>cancercare@drvijayanandreddy.com</span>
             </a>
         </div>
-        <a href="https://goo.gl/maps/..." target="_blank" rel="noopener noreferrer" class="hidden lg:flex items-center space-x-2 hover:text-white transition">
+        <a href="https://www.google.com/maps?ll=17.414722,78.412148&z=12&t=m&hl=en-US&gl=US&mapclient=embed&cid=1736553121756056830" target="_blank" rel="noopener noreferrer" class="hidden lg:flex items-center space-x-2 hover:text-white transition">
             <i data-feather="map-pin" class="w-4 h-4"></i>
             <span>Apollo Cancer Centre, Hyderabad</span>
         </a>
@@ -167,33 +201,34 @@ function getMenuIcon($name) {
 </div>
 
 <!-- Main Header -->
-<header id="main-header" class="fixed w-full z-[50] transition-all duration-300 bg-white shadow-sm" style="top: 36px;">
+<header id="main-header" class="fixed w-full transition-all duration-300 bg-white shadow-sm" style="top: 36px; z-index: 9998;">
     <div class="container mx-auto">
         <div class="max-w-full 2xl:max-w-[1800px] mx-auto px-2 sm:px-4 lg:px-4 xl:px-6 2xl:px-8">
             <div class="flex justify-between items-center py-1 sm:py-1.5 lg:py-0 min-h-12 sm:min-h-14 gap-1">
-                
+
                 <!-- Logo -->
                 <div class="flex items-center flex-shrink-0">
                     <a href="index.php" class="cursor-pointer">
-                        <img src="../public/assets/logo-reddy-FINAL.png" alt="Dr. Vijay Anand Reddy" class="h-16 w-auto object-contain sm:h-18 md:h-20 lg:h-24" style="max-width: 280px;">
+                        <img src="../public/assets/logo-reddy-FINAL.png" alt="Dr. Palkonda Vijay Anand Reddy - MD Radiation Oncology, Director Apollo Cancer Centres" class="h-16 w-auto object-contain sm:h-18 md:h-20 lg:h-24" style="max-width: 280px;">
                     </a>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden xl:flex items-center justify-end flex-1 space-x-0.5 xl:space-x-1 2xl:space-x-2 flex-shrink-0 min-w-0 relative">
                     <?php foreach ($navItems as $index => $item): ?>
-                        <div class="group relative flex-shrink-0" onmouseenter="openDropdown(this)" onmouseleave="closeDropdown(this)">
+                        <?php $isMega = in_array($item['name'], ['Conditions', 'Specialties', 'Treatment']); ?>
+                        <div class="<?= $isMega ? 'flex-shrink-0' : 'relative flex-shrink-0' ?>" onmouseenter="openDesktopDropdown(<?= $index ?>, this)" onmouseleave="closeDesktopDropdown(<?= $index ?>)">
                             <a href="<?= $item['href'] ?>" class="flex items-center px-1.5 xl:px-2 2xl:px-3 py-2 text-gray-700 hover:text-medical-blue font-medium transition-colors duration-200 whitespace-nowrap text-xs xl:text-sm 2xl:text-base leading-tight">
                                 <span><?= $item['name'] ?></span>
                                 <?php if (isset($item['dropdown'])): ?>
-                                    <i data-feather="chevron-down" class="ml-0.5 xl:ml-1 w-3 h-3 xl:w-4 xl:h-4 transition-transform duration-200"></i>
+                                    <i data-feather="chevron-down" class="ml-0.5 xl:ml-1 w-3 h-3 xl:w-4 xl:h-4 transition-transform duration-200 nav-chevron-<?= $index ?>"></i>
                                 <?php endif; ?>
                             </a>
 
                             <?php if (isset($item['dropdown'])): ?>
-                                <?php if (in_array($item['name'], ['Conditions', 'Specialties', 'Treatment'])): ?>
+                                <?php if ($isMega): ?>
                                     <!-- Mega Menu -->
-                                    <div class="absolute right-0 top-full mt-1 w-[800px] xl:w-[900px] 2xl:w-[1000px] bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-[100] hidden group-hover:block left-auto transition-opacity duration-200 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0" style="right: -20%;">
+                                    <div id="dropdown-desktop-<?= $index ?>" class="absolute left-0 right-0 top-full mt-1 mx-auto w-[800px] xl:w-[900px] 2xl:w-[1000px] bg-white rounded-xl shadow-2xl border border-gray-100 py-4 hidden" style="position: fixed; left: 50%; transform: translateX(-50%); top: auto; z-index: 9999;">
                                         <div class="grid grid-cols-3 gap-x-6 gap-y-2 px-6">
                                             <?php foreach ($item['dropdown'] as $subItem): ?>
                                                 <a href="<?= $subItem['href'] ?>" class="flex items-center gap-3 px-4 py-2.5 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm font-medium rounded-lg group">
@@ -205,8 +240,8 @@ function getMenuIcon($name) {
                                     </div>
                                 <?php else: ?>
                                     <!-- Regular Dropdown -->
-                                    <div class="absolute left-0 top-full mt-1 w-64 xl:w-72 2xl:w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-[100] hidden group-hover:block transition-opacity duration-200 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0">
-                                        <?php foreach ($item['dropdown'] as $subItem): ?>
+                                    <div id="dropdown-desktop-<?= $index ?>" class="absolute left-0 top-full mt-1 w-64 xl:w-72 2xl:w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 hidden" style="z-index: 9999;">
+                                        <?php foreach ($item['dropdown'] as $subIdx => $subItem): ?>
                                             <div class="relative group/sub">
                                                 <a href="<?= $subItem['href'] ?>" class="flex items-center justify-between px-5 py-3 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm font-medium rounded-lg mx-2">
                                                     <span class="truncate"><?= $subItem['name'] ?></span>
@@ -216,7 +251,7 @@ function getMenuIcon($name) {
                                                 </a>
                                                 <?php if (isset($subItem['submenu'])): ?>
                                                     <!-- Sub-submenu -->
-                                                    <div class="absolute left-full top-0 ml-2 w-56 xl:w-64 2xl:w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-3 z-[120] hidden group-hover/sub:block">
+                                                    <div class="absolute left-full top-0 ml-2 w-56 xl:w-64 2xl:w-72 bg-white rounded-xl shadow-2xl border border-gray-100 py-3 hidden group-hover/sub:block" style="z-index: 10000;">
                                                         <?php foreach ($subItem['submenu'] as $subSubItem): ?>
                                                             <a href="<?= $subSubItem['href'] ?>" class="block px-5 py-3 text-gray-700 hover:text-medical-blue hover:bg-medical-blue/5 transition-all duration-200 text-sm leading-tight rounded-lg mx-2">
                                                                 <span class="flex items-center gap-2.5">
@@ -241,15 +276,15 @@ function getMenuIcon($name) {
                 </nav>
 
                 <!-- Mobile Menu Button -->
-                <button onclick="toggleMobileMenu()" class="xl:hidden p-2 rounded-md text-gray-700 hover:text-medical-blue flex-shrink-0">
-                    <i data-feather="menu" class="w-6 h-6"></i>
+                <button onclick="toggleMobileMenu()" id="mobile-menu-btn" class="xl:hidden p-2 rounded-md text-gray-700 hover:text-medical-blue flex-shrink-0">
+                    <i data-feather="menu" class="w-6 h-6" id="mobile-menu-icon"></i>
                 </button>
             </div>
         </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-gray-200 z-[45]">
+    <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-gray-200" style="z-index: 9997;">
         <div class="px-4 py-4 space-y-2 max-h-96 overflow-y-auto">
             <?php foreach ($navItems as $index => $item): ?>
                 <div>
@@ -292,7 +327,7 @@ function getMenuIcon($name) {
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
-            
+
             <a href="contact.php" class="block w-full bg-medical-blue text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors duration-200 font-medium mt-4 text-center">
                 Book Appointment
             </a>
@@ -302,23 +337,97 @@ function getMenuIcon($name) {
 <div class="md:h-4"></div>
 
 <script>
+    // Desktop dropdown management
+    var activeDesktopDropdown = null;
+    var dropdownTimeout = null;
+
+    function openDesktopDropdown(index, el) {
+        if (dropdownTimeout) {
+            clearTimeout(dropdownTimeout);
+            dropdownTimeout = null;
+        }
+        // Close previous
+        if (activeDesktopDropdown !== null && activeDesktopDropdown !== index) {
+            var prevEl = document.getElementById('dropdown-desktop-' + activeDesktopDropdown);
+            if (prevEl) prevEl.classList.add('hidden');
+            var prevChevron = document.querySelector('.nav-chevron-' + activeDesktopDropdown);
+            if (prevChevron) prevChevron.classList.remove('rotate-180');
+        }
+        // Open current
+        var dropdown = document.getElementById('dropdown-desktop-' + index);
+        if (dropdown) {
+            dropdown.classList.remove('hidden');
+            // Position mega menus
+            if (dropdown.style.position === 'fixed') {
+                var headerRect = document.getElementById('main-header').getBoundingClientRect();
+                dropdown.style.top = (headerRect.bottom) + 'px';
+            }
+        }
+        var chevron = document.querySelector('.nav-chevron-' + index);
+        if (chevron) chevron.classList.add('rotate-180');
+        activeDesktopDropdown = index;
+    }
+
+    function closeDesktopDropdown(index) {
+        dropdownTimeout = setTimeout(function() {
+            var dropdown = document.getElementById('dropdown-desktop-' + index);
+            if (dropdown) dropdown.classList.add('hidden');
+            var chevron = document.querySelector('.nav-chevron-' + index);
+            if (chevron) chevron.classList.remove('rotate-180');
+            if (activeDesktopDropdown === index) activeDesktopDropdown = null;
+        }, 100);
+    }
+
+    // Keep mega menu open when hovering over it
+    document.querySelectorAll('[id^="dropdown-desktop-"]').forEach(function(el) {
+        el.addEventListener('mouseenter', function() {
+            if (dropdownTimeout) {
+                clearTimeout(dropdownTimeout);
+                dropdownTimeout = null;
+            }
+        });
+        el.addEventListener('mouseleave', function() {
+            var index = parseInt(el.id.replace('dropdown-desktop-', ''));
+            closeDesktopDropdown(index);
+        });
+    });
+
+    // Mobile menu
     function toggleMobileMenu() {
-        const menu = document.getElementById('mobile-menu');
+        var menu = document.getElementById('mobile-menu');
         menu.classList.toggle('hidden');
     }
 
     function toggleMobileDropdown(id) {
-        const el = document.getElementById(id);
-        const icon = document.getElementById('icon-' + id);
+        var el = document.getElementById(id);
+        var icon = document.getElementById('icon-' + id);
         el.classList.toggle('hidden');
-        if(icon) {
+        if (icon) {
             icon.classList.toggle('rotate-180');
         }
     }
 
+    // Scroll behavior - backdrop blur on scroll (matching React)
+    window.addEventListener('scroll', function() {
+        var header = document.getElementById('main-header');
+        if (window.scrollY > 50) {
+            header.style.backgroundColor = 'rgba(255,255,255,0.95)';
+            header.style.backdropFilter = 'blur(4px)';
+            header.style.webkitBackdropFilter = 'blur(4px)';
+            header.classList.add('shadow-lg');
+            header.classList.remove('shadow-sm');
+        } else {
+            header.style.backgroundColor = 'white';
+            header.style.backdropFilter = 'none';
+            header.style.webkitBackdropFilter = 'none';
+            header.classList.remove('shadow-lg');
+            header.classList.add('shadow-sm');
+        }
+    });
+
     // Initialize Feather Icons
-    document.addEventListener('DOMContentLoaded', () => {
-        if(typeof feather !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof feather !== 'undefined') {
             feather.replace();
         }
     });

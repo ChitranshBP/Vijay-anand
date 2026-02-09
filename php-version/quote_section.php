@@ -1,76 +1,44 @@
 <?php
-// Simple helper to get a quote by ID
-function getQuote($id) {
-    // Data from src/data/quotes.js
-    $quotes = [
-        55 => [
-            'text' => "The human spirit is stronger than anything that can happen to it.",
-            'author' => "Prasad Chowdary P."
-        ],
-        56 => [
-            'text' => "Where there is hope, there is faith; where there is faith, miracles happen.",
-            'author' => "Prem Kishore Pagadala"
-        ],
-        61 => [
-            'text' => "Worrying doesn’t take away tomorrow’s troubles, it takes away today’s peace.",
-            'author' => "Rama Krishna L."
-        ],
-        63 => [
-            'text' => "I cried because I had no shoes until I met a man who had no feet.",
-            'author' => "Ramanujam T."
-        ],
-        64 => [
-            'text' => "You can be a victim of cancer or a survivor of cancer. It’s a mindset.",
-            'author' => "Dave Pelzer"
-        ],
-        62 => [
-            'text' => "Hope is real.",
-            'author' => "Ramanjaneyulu L."
-        ],
-        65 => [
-            'text' => "When you stand and share your story in an empowering way, your story will heal you and somebody else.",
-            'author' => "Iyanla Vanzant"
-        ],
-        66 => [
-            'text' => "Hope there’s a day when cancer is just a zodiac sign.",
-            'author' => "Samuel Hilel Lal"
-        ],
-        67 => [
-            'text' => "It is ironic how you feel most alive when your heart skips a few beats.",
-            'author' => "Saritha Reddy Cheruku"
-        ],
-        59 => [
-            'text' => "Faith or fear—your mind cannot occupy both at the same time.",
-            'author' => "Rafath Unnisa"
-        ],
-        58 => [
-            'text' => "I’m thankful for my struggle, because without it, I wouldn’t have stumbled across my strength.",
-            'author' => "Radha Kumari Suri"
-        ],
-        54 => [
-            'text' => "Cancer is a word, not a sentence.",
-            'author' => "John Diamond"
-        ],
-    ];
-
-    return $quotes[$id] ?? null;
-}
-
-$quoteId = isset($quoteId) ? $quoteId : 55; // Default ID
-$pQuote = getQuote($quoteId);
-
-if($pQuote):
+// Simple quote section matching the React component's design
+$quote = [
+    "quote" => "Dr. Vijay Anand Reddy gave me a second chance at life. His expertise and the care at Apollo Hyderabad are unmatched.",
+    "author" => "Ramesh K.",
+    "role" => "Survivor"
+];
 ?>
-<section class="py-12 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
-    <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center relative reveal">
-            <div class="text-5xl text-medical-blue/10 absolute -top-4 -left-6 font-serif select-none">"</div>
-            <blockquote class="text-xl md:text-2xl text-gray-800 font-light italic mb-4">
-                "<?= $pQuote['text'] ?>"
+<section class="py-12 relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+    <div class="container mx-auto px-4 relative">
+        <div class="max-w-3xl mx-auto relative text-center">
+            <!-- Decorative Quote Marks -->
+            <div class="hidden sm:block absolute -top-4 -left-6 text-medical-blue opacity-10 text-6xl font-serif leading-none select-none pointer-events-none">
+                "
+            </div>
+            <div class="hidden sm:block absolute -bottom-4 -right-6 text-medical-blue opacity-10 text-6xl font-serif leading-none select-none pointer-events-none rotate-180">
+                "
+            </div>
+            
+            <blockquote class="text-center relative z-10">
+                <p class="text-xl md:text-2xl text-gray-800 font-light leading-relaxed mb-6 italic">
+                    <?= $quote['quote'] ?>
+                </p>
+
+                <!-- Decorative Divider -->
+                <div class="flex items-center justify-center mb-4">
+                    <div class="h-px w-10 bg-gradient-to-r from-transparent via-medical-blue to-transparent"></div>
+                    <div class="mx-3 w-1.5 h-1.5 rounded-full bg-medical-blue"></div>
+                    <div class="h-px w-10 bg-gradient-to-l from-transparent via-medical-blue to-transparent"></div>
+                </div>
+
+                <!-- Author Attribution -->
+                <footer>
+                    <cite class="text-medical-blue font-medium text-base not-italic block mb-1">
+                        <?= $quote['author'] ?>
+                    </cite>
+                    <p class="text-gray-500 text-sm font-light">
+                        <?= $quote['role'] ?>
+                    </p>
+                </footer>
             </blockquote>
-            <div class="text-5xl text-medical-blue/10 absolute -bottom-8 -right-6 font-serif rotate-180 select-none">"</div>
-            <footer class="text-medical-blue font-medium">- <?= $pQuote['author'] ?></footer>
         </div>
     </div>
 </section>
-<?php endif; ?>

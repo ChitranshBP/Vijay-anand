@@ -61,11 +61,23 @@ $socialLinks = [
 
 // Replicating HydrabadPages data from seo-hydrebad.js manually for this example
 $hyderabadPages = [
-    ['pageName' => 'Breast Cancer Treatment'],
-    ['pageName' => 'Lung Cancer Treatment'],
-    // ... add more as needed, keeping it short for now
-    ['pageName' => 'Prostate Cancer Treatment'],
-    ['pageName' => 'Head and Neck Cancer Treatment'],
+    ['pageName' => 'Bone Cancer'],
+    ['pageName' => 'Brain Tumor'],
+    ['pageName' => 'Breast Cancer'],
+    ['pageName' => 'Cervical Cancer'],
+    ['pageName' => 'Colorectal Cancer'],
+    ['pageName' => 'Eye Cancer'],
+    ['pageName' => 'Eyelid Cancer'],
+    ['pageName' => 'Kidney Cancer'],
+    ['pageName' => 'Liver Cancer'],
+    ['pageName' => 'Lung Cancer'],
+    ['pageName' => 'Melanoma'],
+    ['pageName' => 'Oral Cancer'],
+    ['pageName' => 'Ovarian Cancer'],
+    ['pageName' => 'Pancreatic Cancer'],
+    ['pageName' => 'Prostate Cancer'],
+    ['pageName' => 'Soft Tissue Sarcoma'],
+    ['pageName' => 'Thyroid Cancer'],
 ];
 ?>
 
@@ -240,8 +252,10 @@ $hyderabadPages = [
 
             <div id="locations-content" class="hidden overflow-hidden transition-all duration-300 ease-in-out">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-3 gap-x-4 pt-6">
-                    <?php foreach ($hyderabadPages as $page): ?>
-                        <a href="hyderabad-treatment.php?page=<?= urlencode($page['pageName']) ?>" class="flex items-start space-x-2 text-gray-400 hover:text-medical-blue transition-colors duration-200 group text-sm">
+                    <?php foreach ($hyderabadPages as $page): 
+                        $slug = strtolower(str_replace(' ', '-', $page['pageName']));
+                    ?>
+                        <a href="hyderabad-<?= $slug ?>-treatment.php" class="flex items-start space-x-2 text-gray-400 hover:text-medical-blue transition-colors duration-200 group text-sm">
                             <i data-feather="map-pin" class="w-4 h-4 text-medical-blue flex-shrink-0 mt-0.5"></i>
                             <span class="group-hover:translate-x-1 transition-transform duration-200">
                                 <?= $page['pageName'] ?> in Hyderabad
