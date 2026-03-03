@@ -1577,4 +1577,30 @@ The colorful vintage rally had super luxury cars like Mercedes e63, BMW m3, Ferr
       30 => 'assets/Events/cancer-awareness-super-car/31.jpg',
     ),
   ),
+  47 => 
+  array (
+    'id' => 'felicitation-chairman-apollo-hospitals-2026',
+    'category' => 'events',
+    'title' => 'Felicitation by Chairman Apollo Hospitals Sri Pratap’s C Reddy on Founder’s Day @ Chennai 8/2/26',
+    'date' => '2026-02-08',
+    'author' => 'Dr. P. Vijay Anand Reddy',
+    'banners' => 
+    array (
+      0 => 'assets/Events/2026-with-cm/with-cm-1.webp',
+    ),
+    'description' => 'I am deeply humbled and honoured by the award bestowed upon me by the Government of India.I owe this honour to my teachers for their guidance and training; to my patients for their trust, courage, and resilience in the fight against cancer; and to my family for their unwavering support throughout my journey—especially my wife, Dr. Shashikala, who has been my constant strength.
+
+I am profoundly grateful to Apollo Hospitals and Ms. Sangita Reddy for providing me with a peaceful and wonderful platform to do what I intended to do. My special thanks to Ms. Sangita Reddy for her continued trust and encouragement.
+
+I will remain forever indebted to our Chairman, Sri Pratap C. Reddy garu, for his unwavering support and encouragement throughout my career. I fondly recall a statement once made by Chairman Sir: “If I had the power to clone, I would clone Vijay Anand into six and rule the oncology world.” Such trust and affection mean more to me than words can express.
+
+This honour comes with a deeper sense of responsibility and a renewed commitment to serve humanity with greater dedication.',
+    'photos' => 
+    array (
+      0 => 'assets/Events/2026-with-cm/with-cm-1.webp',
+      1 => 'assets/Events/2026-with-cm/with-cm-2.webp',
+      2 => 'assets/Events/2026-with-cm/with-cm-3.webp',
+      3 => 'assets/Events/2026-with-cm/with-cm-4.webp',
+    ),
+  ),
 );

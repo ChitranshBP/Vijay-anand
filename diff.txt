@@ -1,0 +1,385 @@
+diff --git a/php-version/events_data.php b/php-version/events_data.php
+index 922068b..5cfb588 100644
+--- a/php-version/events_data.php
++++ b/php-version/events_data.php
+@@ -1577,4 +1577,30 @@ The colorful vintage rally had super luxury cars like Mercedes e63, BMW m3, Ferr
+       30 => 'assets/Events/cancer-awareness-super-car/31.jpg',
+     ),
+   ),
++  47 => 
++  array (
++    'id' => 'felicitation-chairman-apollo-hospitals-2026',
++    'category' => 'events',
++    'title' => 'Felicitation by Chairman Apollo Hospitals Sri Pratap’s C Reddy on Founder’s Day @ Chennai 8/2/26',
++    'date' => '2026-02-08',
++    'author' => 'Dr. P. Vijay Anand Reddy',
++    'banners' => 
++    array (
++      0 => 'assets/Events/2026-with-cm/with-cm-1.webp',
++    ),
++    'description' => 'I am deeply humbled and honoured by the award bestowed upon me by the Government of India.I owe this honour to my teachers for their guidance and training; to my patients for their trust, courage, and resilience in the fight against cancer; and to my family for their unwavering support throughout my journey—especially my wife, Dr. Shashikala, who has been my constant strength.
++
++I am profoundly grateful to Apollo Hospitals and Ms. Sangita Reddy for providing me with a peaceful and wonderful platform to do what I intended to do. My special thanks to Ms. Sangita Reddy for her continued trust and encouragement.
++
++I will remain forever indebted to our Chairman, Sri Pratap C. Reddy garu, for his unwavering support and encouragement throughout my career. I fondly recall a statement once made by Chairman Sir: “If I had the power to clone, I would clone Vijay Anand into six and rule the oncology world.” Such trust and affection mean more to me than words can express.
++
++This honour comes with a deeper sense of responsibility and a renewed commitment to serve humanity with greater dedication.',
++    'photos' => 
++    array (
++      0 => 'assets/Events/2026-with-cm/with-cm-1.webp',
++      1 => 'assets/Events/2026-with-cm/with-cm-2.webp',
++      2 => 'assets/Events/2026-with-cm/with-cm-3.webp',
++      3 => 'assets/Events/2026-with-cm/with-cm-4.webp',
++    ),
++  ),
+ );
+diff --git a/php-version/extract_testimonials.php b/php-version/extract_testimonials.php
+index fa1ddc9..89c7dab 100644
+--- a/php-version/extract_testimonials.php
++++ b/php-version/extract_testimonials.php
+@@ -106,14 +106,14 @@ $textTestimonials = [
+ </section>
+ 
+ <script>
+-    let currentSlide = 0;
+-    const slides = document.querySelectorAll('.testimonial-slide');
+-    const dots = document.querySelectorAll('.dot-indicator');
+-    const totalSlides = slides.length;
+-
+-    function updateSlides() {
+-        slides.forEach((slide, index) => {
+-            if (index === currentSlide) {
++    var currentTestimonial = 0;
++    var testimonialSlides = document.querySelectorAll('.testimonial-slide');
++    var testimonialDots = document.querySelectorAll('.dot-indicator');
++    var totalTestimonials = testimonialSlides.length;
++
++    function updateTestimonialSlides() {
++        testimonialSlides.forEach(function(slide, index) {
++            if (index === currentTestimonial) {
+                 slide.classList.remove('opacity-0', 'z-0');
+                 slide.classList.add('opacity-100', 'z-10');
+             } else {
+@@ -122,8 +122,8 @@ $textTestimonials = [
+             }
+         });
+ 
+-        dots.forEach((dot, index) => {
+-            if (index === currentSlide) {
++        testimonialDots.forEach(function(dot, index) {
++            if (index === currentTestimonial) {
+                 dot.classList.remove('bg-gray-300');
+                 dot.classList.add('bg-medical-blue');
+             } else {
+@@ -131,26 +131,24 @@ $textTestimonials = [
+                 dot.classList.add('bg-gray-300');
+             }
+         });
+-        
+-        // Re-init feather icons if needed (unlikely for static icons but good practice)
++
+         if(typeof feather !== 'undefined') feather.replace();
+     }
+ 
+     function nextTestimonial() {
+-        currentSlide = (currentSlide + 1) % totalSlides;
+-        updateSlides();
++        currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
++        updateTestimonialSlides();
+     }
+ 
+     function prevTestimonial() {
+-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+-        updateSlides();
++        currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
++        updateTestimonialSlides();
+     }
+ 
+     function goToTestimonial(index) {
+-        currentSlide = index;
+-        updateSlides();
++        currentTestimonial = index;
++        updateTestimonialSlides();
+     }
+-    
+-    // Initialize icons
++
+     if(typeof feather !== 'undefined') feather.replace();
+ </script>
+diff --git a/php-version/index.php b/php-version/index.php
+index 3557b95..44dda23 100644
+--- a/php-version/index.php
++++ b/php-version/index.php
+@@ -266,44 +266,76 @@
+     </section>
+     -->
+ 
+-    <!-- FINAL TEST / GOOGLE RATINGS SECTION (From FinalTest.jsx) -->
+-    <?php
+-    $googleStats = [
+-        ['number' => "4.9/5", 'label' => "Google Rating", 'description' => "Based on 2,847 reviews"],
+-        ['number' => "#1", 'label' => "Top Oncologist", 'description' => "In India"],
+-        ['number' => "2,847", 'label' => "Google Reviews", 'description' => "Highest in India"],
+-        ['number' => "98.7%", 'label' => "5-Star Reviews", 'description' => "Exceptional satisfaction"]
+-    ];
+-    ?>
+-    <section id="highest-rated" class="py-8 bg-white">
+-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+-        <div class="text-center mb-16 reveal">
+-          <div class="inline-flex items-center bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+-            <i data-feather="star" class="w-4 h-4 mr-2"></i>
+-            #1 Highest Rated Oncologist in India
+-          </div>
+-          <h2 class="text-4xl md:text-5xl font-bold text-medical-dark mb-6">
+-            Most Reviewed & Highest Rated
+-            <span class="text-medical-blue block">Oncologist in India</span>
+-          </h2>
+-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+-            Dr. Vijay Anand Reddy holds the record for the highest number of Google reviews 
+-            and maintains the highest rating among oncologists in India, reflecting exceptional patient satisfaction.
+-          </p>
+-        </div>
++    <!-- Google Rating Highlight Section (From HomePage.jsx inline) -->
++    <section class="py-8 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative">
++        <div class="absolute inset-0 backdrop-blur-3xl bg-white/40"></div>
++        <div class="container mx-auto px-4 relative z-10">
++            <div class="bg-white/60 backdrop-blur-xl rounded-2xl border border-white/50 shadow-xl p-6">
++                <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
++                    <!-- Best Business Award Image -->
++                    <div class="flex-shrink-0">
++                        <img src="assets/3-best-best-business-of-2023.png" alt="3 Best Rated Business of 2023" class="h-24 md:h-28 w-auto object-contain">
++                    </div>
+ 
+-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+-          <?php foreach($googleStats as $index => $stat): ?>
+-          <div class="text-center p-8 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border border-yellow-200 card-hover reveal delay-<?= $index * 100 ?>">
+-              <div class="text-4xl md:text-5xl font-bold text-yellow-600 mb-2">
+-                <?= $stat['number'] ?>
+-              </div>
+-              <h3 class="text-xl font-bold text-medical-dark mb-3"><?= $stat['label'] ?></h3>
+-              <p class="text-gray-600"><?= $stat['description'] ?></p>
+-          </div>
+-          <?php endforeach; ?>
++                    <!-- Divider -->
++                    <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
++
++                    <!-- Google Logo & Rating -->
++                    <div class="flex items-center gap-4">
++                        <div class="bg-white/80 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-white/50">
++                            <svg class="w-12 h-12" viewBox="0 0 48 48">
++                                <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/>
++                                <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/>
++                                <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/>
++                                <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
++                            </svg>
++                        </div>
++                        <div class="text-left">
++                            <div class="flex items-center gap-2 mb-1">
++                                <div class="flex gap-1">
++                                    <svg class="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
++                                    <svg class="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
++                                    <svg class="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
++                                    <svg class="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
++                                    <svg class="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
++                                </div>
++                                <span class="text-3xl font-bold text-medical-dark">4.9</span>
++                            </div>
++                            <p class="text-gray-600 text-sm font-medium">Google Rating</p>
++                        </div>
++                    </div>
++
++                    <!-- Divider -->
++                    <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
++
++                    <!-- Reviews Count -->
++                    <div class="text-medical-dark">
++                        <div class="text-4xl font-bold mb-1" style="background: linear-gradient(to right, #9B528F, #8B5CF6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">2,500+</div>
++                        <p class="text-gray-600 text-sm font-medium">Verified Patient Reviews</p>
++                    </div>
++
++                    <!-- Divider -->
++                    <div class="hidden md:block w-px h-16 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
++
++                    <!-- Trust Badge -->
++                    <div class="text-medical-dark">
++                        <div class="flex items-center gap-2 mb-2">
++                            <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
++                            <span class="text-2xl font-bold">Most Trusted</span>
++                        </div>
++                        <p class="text-gray-600 text-sm font-medium">Oncology Expert in India</p>
++                    </div>
++
++                    <!-- CTA Button -->
++                    <div>
++                        <a href="https://www.google.com/maps?ll=17.414722,78.412148&z=12&t=m&hl=en-US&gl=US&mapclient=embed&cid=1736553121756056830" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-medical-blue to-medical-purple text-white rounded-lg font-bold hover:shadow-xl transition-all shadow-lg">
++                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
++                            Read Reviews
++                        </a>
++                    </div>
++                </div>
++            </div>
+         </div>
+-      </div>
+     </section>
+ 
+     <!-- ABOUT SECTION (From About.jsx) -->
+@@ -355,12 +387,14 @@
+         </div>
+     </section>
+ 
++    <?php include 'quote_section.php'; ?>
++
+     <!-- SERVICES SECTION (From Services.jsx) -->
+     <?php
+     $services = [
+       [
+         'id' => "pancreatic-cancer",
+-        'link' => "/conditions/pancreatic-cancer-in-india",
++        'link' => "pancreatic-cancer.php",
+         'icon' => 'activity',
+         'title' => "Pancreatic Cancer",
+         'description' => "Personalized treatments with expert team and unmatched experience for advanced pancreatic cancer care",
+@@ -368,17 +402,17 @@
+         'features' => ["Whipple Procedure", "Chemotherapy Protocols", "Precision Radiation", "Palliative Care"]
+       ],
+       [
+-        'id' => "adrenal-cancer",
+-        'link' => "/adrenal-cancer-treatment-in-india",
++        'id' => "kidney-cancer",
++        'link' => "kidney-cancer.php",
+         'icon' => 'shield',
+-        'title' => "Adrenal Cancer",
+-        'description' => "Expert diagnosis and personalized treatment using latest medical advances for adrenal tumors",
++        'title' => "Kidney Cancer",
++        'description' => "Expert diagnosis and personalized treatment using latest medical advances for kidney cancer",
+         'image' => "assets/services/Adrenal-Cancer.jpg",
+-        'features' => ["Advanced Imaging", "Surgical Treatment", "Targeted Therapies", "Hormone Management"]
++        'features' => ["Advanced Imaging", "Surgical Treatment", "Targeted Therapies", "Immunotherapy"]
+       ],
+       [
+         'id' => "proton-therapy",
+-        'link' => "/treatment/proton-therapy-in-india",
++        'link' => "proton-therapy.php",
+         'icon' => 'zap',
+         'title' => "Proton Therapy",
+         'description' => "Effective targeted cancer treatment with minimized side effects, especially for tumors near vital organs",
+@@ -387,7 +421,7 @@
+       ],
+       [
+         'id' => "radiation-oncology",
+-        'link' => "/specialty/radiation-oncology-in-india",
++        'link' => "radiation-oncology.php",
+         'icon' => 'target',
+         'title' => "Radiation Oncology",
+         'description' => "Precise, technologically advanced cancer treatment with expert clinical support in Hyderabad",
+@@ -396,7 +430,7 @@
+       ],
+       [
+         'id' => "throat-cancer",
+-        'link' => "/conditions/head-and-neck-cancer-in-india",
++        'link' => "head-neck-oncology.php",
+         'icon' => 'brain', // Assuming 'brain' maps to something visually approximate or use a custom one
+         'title' => "Throat Cancer",
+         'description' => "Expert diagnosis, advanced surgery and radiation, plus holistic support for optimal outcomes",
+@@ -405,7 +439,7 @@
+       ],
+       [
+         'id' => "eye-cancer",
+-        'link' => "/conditions/eye-cancer-in-india",
++        'link' => "eye-cancer.php",
+         'icon' => 'eye',
+         'title' => "Eye Cancer",
+         'description' => "Comprehensive diagnosis, precise surgical and medical care, and holistic support for eye cancer patients",
+@@ -856,6 +890,92 @@
+       </div>
+     </section>
+     
++    <?php include 'video_testimonials.php'; ?>
++
++    <!-- RECENT EVENTS SECTION -->
++    <?php
++    include_once 'events_data.php';
++    
++    // Sort events by date (latest first)
++    $sortedEvents = $events ?? [];
++    usort($sortedEvents, function($a, $b) {
++        $dateA = isset($a['date']) ? strtotime($a['date']) : 0;
++        $dateB = isset($b['date']) ? strtotime($b['date']) : 0;
++        return $dateB - $dateA;
++    });
++    
++    $recentEvents = array_slice($sortedEvents, 0, 3);
++    ?>
++    <section id="recent-events" class="py-16 bg-medical-gradient relative overflow-hidden">
++      <!-- Decorative background element -->
++      <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-medical-blue opacity-5 blur-3xl"></div>
++      <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-medical-purple opacity-5 blur-3xl"></div>
++      
++      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
++        <div class="text-center mb-16 reveal">
++          <h2 class="text-4xl md:text-5xl font-bold text-medical-dark mb-6">
++            Recent Events & Awareness
++          </h2>
++          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
++            Stay updated with our latest healthcare initiatives, awareness programs, and community events.
++          </p>
++        </div>
++
++        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
++          <?php foreach ($recentEvents as $index => $event): ?>
++            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col overflow-hidden reveal delay-<?= $index * 100 ?> cursor-pointer group" onclick="window.location.href='events.php?id=<?= $event['id'] ?>'">
++              <div class="h-56 w-full relative overflow-hidden">
++                <?php if (!empty($event['banners'])): ?>
++                  <img src="<?= htmlspecialchars($event['banners'][0]) ?>" alt="<?= htmlspecialchars($event['title']) ?>" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
++                <?php else: ?>
++                  <div class="w-full h-full bg-gradient-to-br from-medical-blue to-blue-700 flex items-center justify-center p-6 text-center">
++                    <h3 class="text-white text-2xl font-bold"><?= htmlspecialchars($event['title']) ?></h3>
++                  </div>
++                <?php endif; ?>
++                <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-medical-dark px-3 py-1.5 rounded-lg text-sm font-bold shadow-md">
++                  <?php if (!empty($event['date'])): ?>
++                    <?= date('d M', strtotime($event['date'])) ?>
++                  <?php else: ?>
++                    Latest
++                  <?php endif; ?>
++                </div>
++              </div>
++              <div class="p-6 md:p-8 flex flex-col flex-grow">
++                <?php if (!empty($event['date'])): ?>
++                  <div class="flex items-center text-sm text-medical-blue font-semibold mb-3">
++                    <i data-feather="calendar" class="w-4 h-4 mr-2"></i>
++                    <?= date('F j, Y', strtotime($event['date'])) ?>
++                  </div>
++                <?php endif; ?>
++                
++                <h3 class="font-bold text-xl md:text-2xl mb-4 text-medical-dark line-clamp-2 group-hover:text-medical-blue transition-colors">
++                  <?= htmlspecialchars($event['title']) ?>
++                </h3>
++                
++                <p class="text-gray-600 line-clamp-3 mb-6 flex-grow text-sm leading-relaxed">
++                  <?= htmlspecialchars(substr($event['description'], 0, 150)) ?>...
++                </p>
++                
++                <div class="mt-auto pt-4 border-t border-gray-100 flex justify-between items-center">
++                  <span class="inline-flex items-center text-medical-blue font-bold group-hover:text-medical-purple transition-colors">
++                    Read More 
++                    <i data-feather="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
++                  </span>
++                </div>
++              </div>
++            </div>
++          <?php endforeach; ?>
++        </div>
++
++        <div class="text-center reveal">
++          <a href="events.php" class="inline-flex items-center bg-medical-blue text-white px-8 py-4 rounded-xl font-bold hover:bg-medical-dark transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1">
++            <i data-feather="grid" class="w-5 h-5 mr-3"></i>
++            View All Events
++          </a>
++        </div>
++      </div>
++    </section>
++
+     <!-- BLOG SECTION (From Blog.jsx) -->
+     <?php
+     // Static fallback blogs as fetched in React initially

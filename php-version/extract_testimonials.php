@@ -106,14 +106,14 @@ $textTestimonials = [
 </section>
 
 <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.testimonial-slide');
-    const dots = document.querySelectorAll('.dot-indicator');
-    const totalSlides = slides.length;
+    var currentTestimonial = 0;
+    var testimonialSlides = document.querySelectorAll('.testimonial-slide');
+    var testimonialDots = document.querySelectorAll('.dot-indicator');
+    var totalTestimonials = testimonialSlides.length;
 
-    function updateSlides() {
-        slides.forEach((slide, index) => {
-            if (index === currentSlide) {
+    function updateTestimonialSlides() {
+        testimonialSlides.forEach(function(slide, index) {
+            if (index === currentTestimonial) {
                 slide.classList.remove('opacity-0', 'z-0');
                 slide.classList.add('opacity-100', 'z-10');
             } else {
@@ -122,8 +122,8 @@ $textTestimonials = [
             }
         });
 
-        dots.forEach((dot, index) => {
-            if (index === currentSlide) {
+        testimonialDots.forEach(function(dot, index) {
+            if (index === currentTestimonial) {
                 dot.classList.remove('bg-gray-300');
                 dot.classList.add('bg-medical-blue');
             } else {
@@ -131,26 +131,24 @@ $textTestimonials = [
                 dot.classList.add('bg-gray-300');
             }
         });
-        
-        // Re-init feather icons if needed (unlikely for static icons but good practice)
+
         if(typeof feather !== 'undefined') feather.replace();
     }
 
     function nextTestimonial() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlides();
+        currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+        updateTestimonialSlides();
     }
 
     function prevTestimonial() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateSlides();
+        currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+        updateTestimonialSlides();
     }
 
     function goToTestimonial(index) {
-        currentSlide = index;
-        updateSlides();
+        currentTestimonial = index;
+        updateTestimonialSlides();
     }
-    
-    // Initialize icons
+
     if(typeof feather !== 'undefined') feather.replace();
 </script>
