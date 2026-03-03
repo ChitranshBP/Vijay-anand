@@ -1,0 +1,19 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	ignored_files.txt
+	status3.txt
+
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+	dist/
+	error.log
+	node_modules/
+	package-lock.json
+	php-version/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018/Thumbs.db
+	php-version/dist/
+	public/assets/Publications (Year wise)/2018/RB in younger versus older children Clinical features and outcom 06-07-2018/Thumbs.db
+
+nothing added to commit but untracked files present (use "git add" to track)
